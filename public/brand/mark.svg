@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 730 668">
+  <defs>
+    <linearGradient id="hth-bronze-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2b785" />
+      <stop offset="55%" stop-color="#c48c58" />
+      <stop offset="100%" stop-color="#8a5a33" />
+    </linearGradient>
+  </defs>
+  <!-- Structural elements -->
+  <polygon points="0.0,203.5 63.0,171.5 63.0,668.0 0.0,668.0" fill="currentColor" opacity="0.9" />
+  <polygon points="139.0,138.5 202.0,106.5 202.0,316.0 139.0,350.2" fill="currentColor" opacity="0.9" />
+  <polygon points="139.0,419.5 202.0,404.7 202.0,668.0 139.0,668.0" fill="currentColor" opacity="0.9" />
+  <polygon points="528.0,74.5 591.0,106.5 591.0,349.7 528.0,315.5" fill="currentColor" opacity="0.9" />
+  <polygon points="528.0,404.5 591.0,419.2 591.0,668.0 528.0,668.0" fill="currentColor" opacity="0.9" />
+  <polygon points="667.0,139.5 730.0,171.5 730.0,668.0 667.0,668.0" fill="currentColor" opacity="0.9" />
+  <!-- Central Aircraft Symbol in Gold/Bronze Gradient -->
+  <path d="M365.5 0.5 L374.0 3.0 L382.0 8.5 L389.0 17.5 L395.0 30.5 L399.0 46.5 L401.5 64.5 L402.0 82.5 L402.0 258.5 L667.0 402.5 L667.0 426.5 L399.0 364.5 L396.0 438.5 L387.0 582.5 L385.0 598.5 L444.0 640.5 L444.0 666.5 L377.0 656.5 L365.5 672.5 L354.0 656.5 L287.0 666.5 L287.0 640.5 L346.0 598.5 L344.0 582.5 L335.0 438.5 L332.0 364.5 L64.0 426.5 L64.0 402.5 L329.0 258.5 L329.0 82.5 L329.5 64.5 L332.0 46.5 L336.0 30.5 L342.0 17.5 L349.0 8.5 L357.0 3.0Z" fill="url(#hth-bronze-grad)" />
+</svg>

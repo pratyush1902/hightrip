@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
+@theme {
+  --color-obsidian: #0d0b09;
+  --color-obsidian-surface: #141210;
+  --color-obsidian-card: #1a1715;
+  --color-obsidian-border: #282420;
+  --color-bronze: #c48c58;
+  --color-bronze-light: #e2b785;
+  --color-bronze-dark: #8a5a33;
+  --color-parchment: #fbf9f5;
+  --color-sand: #f3eadb;
+  --color-sand-subtle: #faf5ee;
+  --color-sand-border: #e8ded0;
+  --color-muted-stone: #78716c;
+  --color-muted-foreground: #a8a29e;
+  --font-serif: var(--font-serif), Georgia, serif;
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-mono: var(--font-mono), monospace;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0d0b09;
+  --foreground: #fbf9f5;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: auto; /* Managed by Lenis */
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  overflow-x: clip;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Lenis Smooth Scroll styles */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Solid luxury bronze button style (no gradients) */
+.bg-bronze-gradient {
+  background-color: #c48c58;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+.bg-bronze-gradient:hover {
+  background-color: #b57d4a;
+}
+
+.text-bronze-gradient {
+  background: linear-gradient(135deg, #f3eadb 0%, #e2b785 45%, #c48c58 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-bronze-gradient {
+  border-image: linear-gradient(to right, #c48c58, transparent) 1;
+}
+
+/* Custom discreet scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0b09;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #282420;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c48c58;
+}
+
+/* Destination morphing animation */
+@keyframes sceneFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-scene-fade {
+  animation: sceneFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
