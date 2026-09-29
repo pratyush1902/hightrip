@@ -1,12 +1,12 @@
 'use client';
 
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { heroDestinations } from '@/data/heroDestinations';
 import { HeroIntro } from './HeroIntro';
-import { Globe3D } from './Globe3D';
+import { Logo3DTakeoff } from './Logo3DTakeoff';
 import { DestinationScene } from './DestinationScene';
 import { HeroProgress } from './HeroProgress';
 
@@ -18,28 +18,11 @@ export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
   const viewportRef = useRef<HTMLDivElement>(null);
   const introRef = useRef<HTMLDivElement>(null);
-  const globeContainerRef = useRef<HTMLDivElement>(null);
+  const logoContainerRef = useRef<HTMLDivElement>(null);
   const fullPageBgRef = useRef<HTMLDivElement>(null);
 
   const [activeDestIndex, setActiveDestIndex] = useState(0);
   const [isExpanded, setIsExpanded] = useState(false);
-  const [scrollProgress, setScrollProgress] = useState(0);
-
-  // Helper to determine responsive layout coordinates
-  const getLayoutMetrics = useCallback(() => {
-    if (typeof window === 'undefined') {
-      return { isDesktop: true, initialLeft: 70, initialTop: 50, initialScale: 1 };
-    }
-    const w = window.innerWidth;
-    const isDesktop = w >= 1024;
-    const isTablet = w >= 640 && w < 1024;
-    return {
-      isDesktop,
-      initialLeft: isDesktop ? 70 : 50,
-      initialTop: isDesktop ? 50 : isTablet ? 68 : 73,
-      initialScale: isDesktop ? 1 : isTablet ? 0.82 : 0.65,
-    };
-  }, []);
 
   // 1. Initial Page Load Animation
   useEffect(() => {
@@ -60,15 +43,10 @@ export function Hero() {
         gsap.set('.hero-intro-cta', { opacity: 0, y: 20 });
         gsap.set('.hero-intro-meta', { opacity: 0 });
       }
-      if (globeContainerRef.current) {
-        const m = getLayoutMetrics();
-        gsap.set(globeContainerRef.current, {
+      if (logoContainerRef.current) {
+        gsap.set(logoContainerRef.current, {
           opacity: 0,
-          scale: m.initialScale * 0.85,
-          left: `${m.initialLeft}%`,
-          top: `${m.initialTop}%`,
-          xPercent: -50,
-          yPercent: -50,
+          scale: 0.85,
         });
       }
 
@@ -80,12 +58,12 @@ export function Hero() {
         .to('.hero-intro-sub', { opacity: 1, y: 0, duration: 0.5 }, '-=0.4')
         .to('.hero-intro-cta', { opacity: 1, y: 0, duration: 0.5 }, '-=0.3')
         .to('.hero-intro-meta', { opacity: 1, duration: 0.5 }, '-=0.3')
-        // 3D Globe reveals into position
+        // HighTrip Flight Logo reveals into position
         .to(
-          globeContainerRef.current,
+          logoContainerRef.current,
           {
             opacity: 1,
-            scale: () => getLayoutMetrics().initialScale,
+            scale: 1,
             duration: 0.9,
             ease: 'power2.out',
           },
@@ -94,133 +72,94 @@ export function Hero() {
     }, containerRef);
 
     return () => ctx.revert();
-  }, [getLayoutMetrics]);
+  }, []);
 
-  // 2. Scroll-Driven Globe Zoom & Full-Page Destination Morphing
+  // 2. Scroll-Driven Flight Takeoff & Destination Morphing
   useEffect(() => {
     if (!containerRef.current || !viewportRef.current) return;
 
     const ctx = gsap.context(() => {
-      const globeEl = globeContainerRef.current;
+      const logoEl = logoContainerRef.current;
       const introEl = introRef.current;
       const bgEl = fullPageBgRef.current;
 
-      const metrics = getLayoutMetrics();
-
-      // Set initial dimensions cleanly
-      if (globeEl) {
-        gsap.set(globeEl, {
-          left: `${metrics.initialLeft}%`,
-          top: `${metrics.initialTop}%`,
-          xPercent: -50,
-          yPercent: -50,
-          scale: metrics.initialScale,
-          opacity: 1,
-        });
-      }
+      const isDesktop = window.innerWidth >= 1024;
 
       if (bgEl) {
         gsap.set(bgEl, { opacity: 0 });
       }
 
-      ScrollTrigger.create({
-        trigger: containerRef.current,
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: 0.3,
-        onUpdate: (self) => {
-          const p = self.progress;
-          setScrollProgress(p);
+      // Master Scroll-Driven Takeoff & Destination Morphing Timeline
+      const masterTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: 'top top',
+          end: 'bottom bottom',
+          scrub: 0.3,
+          onUpdate: (self) => {
+            const p = self.progress;
 
-          const liveMetrics = getLayoutMetrics();
-
-          // Phase 1 (0 to 0.20): Intro text fades out, 3D Globe glides to dead center
-          if (p <= 0.20) {
-            const p1 = p / 0.20;
-
-            if (introEl) {
-              gsap.set(introEl, {
-                opacity: 1 - p1,
-                y: -25 * p1,
-              });
+            // Live HUD Telemetry readouts (Direct DOM for 120fps performance without React re-render lag)
+            const altEl = document.getElementById('hero-flight-altitude');
+            const statusEl = document.getElementById('hero-flight-status');
+            if (altEl && statusEl) {
+              if (p < 0.05) {
+                statusEl.textContent = 'HT-FLIGHT READY';
+                altEl.textContent = `ALT ${Math.round(p * 20000)} FT`;
+              } else if (p < 0.25) {
+                statusEl.textContent = 'CLIMBING';
+                altEl.textContent = `ALT ${Math.round(1000 + (p - 0.05) * 60000)} FT`;
+              } else {
+                statusEl.textContent = 'AIRBORNE';
+                altEl.textContent = 'ALT 35,000 FT';
+              }
             }
 
-            if (globeEl) {
-              const currentLeft = liveMetrics.initialLeft + (50 - liveMetrics.initialLeft) * p1;
-              const currentTop = liveMetrics.initialTop + (50 - liveMetrics.initialTop) * p1;
-              const currentScale = liveMetrics.initialScale + (1.15 - liveMetrics.initialScale) * p1;
-              gsap.set(globeEl, {
-                left: `${currentLeft}%`,
-                top: `${currentTop}%`,
-                scale: currentScale,
-                opacity: 1,
-              });
+            // Cross-destination stage transitions (Only updates state when stage actually changes)
+            const shouldExpand = p > 0.28;
+            setIsExpanded((prev) => (prev !== shouldExpand ? shouldExpand : prev));
+
+            if (p > 0.45) {
+              const destProgress = (p - 0.45) / 0.55;
+              const count = heroDestinations.length;
+              const targetIdx = Math.min(Math.floor(destProgress * count), count - 1);
+              setActiveDestIndex((prev) => (prev !== targetIdx ? targetIdx : prev));
+            } else {
+              setActiveDestIndex(0);
             }
-
-            if (bgEl) {
-              gsap.set(bgEl, { opacity: 0 });
-            }
-
-            setIsExpanded(false);
-            setActiveDestIndex(0);
-          }
-          // Phase 2 (0.20 to 0.45): Globe zooms in toward camera, Full-Page Image fades in
-          else if (p > 0.20 && p <= 0.45) {
-            const p2 = (p - 0.20) / 0.25;
-
-            if (introEl) {
-              gsap.set(introEl, { opacity: 0 });
-            }
-
-            if (globeEl) {
-              // Zoom deeply into the globe like descending from planetary orbit
-              const zoomScale = 1.15 + (3.2 - 1.15) * p2;
-              const globeOpacity = Math.max(0, 1 - p2 * 1.25);
-              gsap.set(globeEl, {
-                left: '50%',
-                top: '50%',
-                scale: zoomScale,
-                opacity: globeOpacity,
-              });
-            }
-
-            // Full-page background photo fades in to 100% full screen
-            if (bgEl) {
-              gsap.set(bgEl, { opacity: p2 });
-            }
-
-            setIsExpanded(p2 > 0.6);
-            setActiveDestIndex(0); // Vietnam
-          }
-          // Phase 3 & 4 (0.45 to 1.0): Full-Page Destination Scenes & Morphing
-          else {
-            if (introEl) gsap.set(introEl, { opacity: 0 });
-
-            if (globeEl) {
-              gsap.set(globeEl, { opacity: 0, scale: 3.5 });
-            }
-
-            if (bgEl) {
-              gsap.set(bgEl, { opacity: 1 });
-            }
-
-            setIsExpanded(true);
-
-            // Morph across the 5 destinations:
-            // Vietnam (0) -> Switzerland (1) -> Japan (2) -> Maldives (3) -> Bali (4)
-            const destProgress = (p - 0.45) / 0.55;
-            const destCount = heroDestinations.length;
-            const targetIdx = Math.min(
-              Math.floor(destProgress * destCount),
-              destCount - 1
-            );
-            setActiveDestIndex(targetIdx);
-          }
+          },
         },
       });
-      requestAnimationFrame(() => {
-        ScrollTrigger.refresh();
-      });
+
+      // ========================================================
+      // Intro fades out smoothly as scroll begins
+      if (introEl) {
+        masterTl.to(
+          introEl,
+          { opacity: 0, y: -25, ease: 'power1.out', duration: 0.2 },
+          0
+        );
+      }
+
+      // Logo container stays rock-solid in place (no horizontal sliding across screen)
+      // Only the airplane inside the 3D canvas flies straight up into the sky!
+
+      // ========================================================
+      // PHASE 2 (0.20 to 0.45): High-Speed Ascent & Sky Penetration
+      // Flight accelerates UPWARDS in 3D WebGL leaving the strips!
+      // ========================================================
+      // Full-page background photograph fades in to 100%
+      if (bgEl) {
+        masterTl.to(
+          bgEl,
+          { opacity: 1, ease: 'power1.inOut', duration: 0.25 },
+          0.2
+        );
+      }
+
+      if (logoEl) {
+        masterTl.to(logoEl, { opacity: 0, duration: 0.1 }, 0.38);
+      }
     }, containerRef);
 
     // Refresh on resize
@@ -233,7 +172,7 @@ export function Hero() {
       ctx.revert();
       window.removeEventListener('resize', handleResize);
     };
-  }, [getLayoutMetrics]);
+  }, []);
 
   const handleSelectDestination = (index: number) => {
     setActiveDestIndex(index);
@@ -252,17 +191,18 @@ export function Hero() {
 
   return (
     <section
+      id="hero-scroll-container"
       ref={containerRef}
-      className="relative w-full h-[380vh] bg-[#f8f4ee] transition-colors duration-700"
+      className="relative w-full h-[380vh] bg-[#fbf9f5] transition-colors duration-700"
     >
       {/* Sticky Pinned Viewport Stage */}
       <div
         ref={viewportRef}
         className={`sticky top-0 h-[100dvh] w-full overflow-hidden flex flex-col justify-between transition-colors duration-700 ${
-          isExpanded ? 'bg-black text-[#fbf9f5]' : 'bg-[#f8f4ee] text-[#181512]'
+          isExpanded ? 'bg-[#181512] text-[#fbf9f5]' : 'bg-[#fbf9f5] text-[#1c1917]'
         }`}
       >
-        {/* Layer 0: Full-Page Destination Photo (True 100vw x 100vh Edge-to-Edge Canvas) */}
+        {/* Layer 0: Full-Page Destination Photo (Edge-to-Edge Canvas) */}
         <div
           ref={fullPageBgRef}
           style={{ opacity: 0 }}
@@ -290,26 +230,20 @@ export function Hero() {
           })}
         </div>
 
-        {/* Layer 1: 3D Interactive WebGL Globe (Responsive Geometry) */}
+        {/* Layer 1: HighTrip 3D WebGL Flight Takeoff (Volumetric Extrusion) */}
         <div
-          ref={globeContainerRef}
-          className="absolute z-10 pointer-events-auto will-change-[transform,opacity]"
-          style={{
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            width: 'min(76vw, 480px)',
-            height: 'min(76vw, 480px)',
-            maxWidth: '480px',
-            maxHeight: '480px',
-          }}
+          ref={logoContainerRef}
+          className="absolute z-10 pointer-events-none will-change-[transform,opacity] left-1/2 -translate-x-1/2 -translate-y-1/2 top-[64%] sm:top-[66%] lg:top-1/2 lg:left-[70%] w-[210px] h-[210px] sm:w-[270px] sm:h-[270px] lg:w-[420px] lg:h-[420px]"
         >
-          <Globe3D activeDestinationIndex={activeDestIndex} className="w-full h-full" />
+          <Logo3DTakeoff
+            isExpanded={isExpanded}
+            className="w-full h-full"
+          />
         </div>
 
         {/* Layer 2: Editorial Typography & Intro (Visible in Initial View) */}
         <div
-          className="relative z-20 w-full h-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 flex items-start lg:items-center pt-20 sm:pt-24 lg:pt-0 pointer-events-none"
+          className="relative z-20 w-full h-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 flex items-start lg:items-center pt-16 sm:pt-24 lg:pt-0 pointer-events-none"
         >
           <div className="w-full lg:w-1/2 pointer-events-auto">
             <HeroIntro

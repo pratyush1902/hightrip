@@ -12,11 +12,11 @@ interface BrandLogoProps {
 
 export function BrandLogo({ 
   className = '', 
-  variant = 'auto', 
+  variant = 'dark', 
   showTagline = false,
   fullImage = false 
 }: BrandLogoProps) {
-  const isDarkText = variant === 'dark';
+  const isDarkText = variant !== 'light';
 
   if (fullImage) {
     return (
@@ -66,17 +66,21 @@ export function BrandLogo({
         <div className="flex items-baseline gap-1.5 leading-none">
           <span
             className={`font-sans font-extrabold tracking-[0.22em] text-sm sm:text-base uppercase transition-colors ${
-              isDarkText ? 'text-[#181512]' : 'text-parchment'
+              isDarkText ? 'text-[#181512]' : 'text-[#f5efe6]'
             }`}
           >
             High Trip
           </span>
-          <span className="font-serif italic text-xs sm:text-sm text-bronze-light font-normal tracking-wide">
+          <span className="font-serif italic text-xs sm:text-sm text-bronze font-normal tracking-wide">
             Holidays
           </span>
         </div>
         {showTagline && (
-          <span className="text-[8.5px] font-mono tracking-[0.25em] text-muted-stone uppercase mt-1">
+          <span
+            className={`text-[8.5px] font-mono tracking-[0.25em] uppercase mt-1 ${
+              isDarkText ? 'text-muted-stone' : 'text-stone-400'
+            }`}
+          >
             Travel · Explore · Experience
           </span>
         )}

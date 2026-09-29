@@ -26,7 +26,7 @@ export function AirplaneWindow({
       ref={frameRef}
       className={`relative overflow-hidden will-change-[transform,border-radius,width,height] ${className}`}
       style={{
-        borderRadius: '110px',
+        borderRadius: '40% / 30%',
         ...style,
       }}
     >
@@ -35,7 +35,7 @@ export function AirplaneWindow({
         className="airplane-window-frame-bevel absolute inset-0 pointer-events-none z-20 transition-opacity duration-500 rounded-[inherit]"
         style={{
           boxShadow:
-            'inset 0 0 0 14px #e5ddd0, inset 0 0 0 16px rgba(0,0,0,0.12), inset 0 10px 24px rgba(0,0,0,0.28), 0 25px 60px -15px rgba(24,21,18,0.3)',
+            'inset 0 0 0 12px rgba(20, 18, 16, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.15), 0 2px 4px rgba(20, 18, 16, 0.06), 0 36px 70px -34px rgba(20, 18, 16, 0.45)',
         }}
       />
 

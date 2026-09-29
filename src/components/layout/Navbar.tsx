@@ -38,32 +38,33 @@ export function Navbar() {
     setMobileOpen(false);
   }, [pathname]);
 
-  const isLightHomeHeader = pathname === '/' && !isScrolled;
-  const navTextColor = isLightHomeHeader
-    ? 'text-[#181512] hover:text-[#c48c58]'
-    : 'text-sand hover:text-parchment';
-  const iconTextColor = isLightHomeHeader
-    ? 'text-[#181512] hover:text-[#c48c58] hover:bg-black/5'
-    : 'text-sand hover:text-bronze-light hover:bg-obsidian-surface';
-  const waBtnClass = isLightHomeHeader
-    ? 'bg-emerald-900/10 text-emerald-800 border-emerald-700/25 hover:bg-emerald-900/15'
-    : 'bg-emerald-950/40 text-emerald-400 border-emerald-800/40 hover:bg-emerald-900/40';
+  const isDarkPage = pathname.startsWith('/experiences');
+
+  const navTextColor = isDarkPage
+    ? 'text-[#e6dfd5] hover:text-[#c48c58]'
+    : 'text-[#1c1917] hover:text-[#c48c58]';
+  const iconTextColor = isDarkPage
+    ? 'text-[#e6dfd5] hover:text-[#c48c58] hover:bg-white/10'
+    : 'text-[#1c1917] hover:text-[#c48c58] hover:bg-black/5';
+  const waBtnClass = isDarkPage
+    ? 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/25'
+    : 'bg-emerald-900/10 text-emerald-800 border-emerald-700/25 hover:bg-emerald-900/15';
 
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled
-            ? 'bg-obsidian/95 backdrop-blur-md border-b border-obsidian-border py-3 shadow-lg'
-            : isLightHomeHeader
-            ? 'bg-transparent py-5'
-            : 'bg-gradient-to-b from-black/80 via-black/40 to-transparent py-5'
+            ? isDarkPage
+              ? 'bg-[#0e0d0b]/92 backdrop-blur-md border-b border-[#2e2822] py-3 shadow-lg'
+              : 'bg-[#fbf9f5]/90 backdrop-blur-md border-b border-[#e8ded0] py-3 shadow-sm'
+            : 'bg-transparent py-5'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <BrandLogo variant={isLightHomeHeader ? 'dark' : 'light'} />
+            <BrandLogo variant={isDarkPage ? 'light' : 'dark'} />
 
             {/* Desktop Navigation Links */}
             <nav className="hidden lg:flex items-center gap-1.5" aria-label="Main Navigation">
@@ -312,7 +313,11 @@ export function Navbar() {
               <button
                 type="button"
                 onClick={() => setMobileOpen(true)}
-                className="p-2 rounded-lg text-sand hover:text-parchment hover:bg-obsidian-surface transition-colors"
+                className={`p-2 rounded-lg transition-colors ${
+                  isDarkPage
+                    ? 'text-[#e6dfd5] hover:text-white hover:bg-white/10'
+                    : 'text-sand hover:text-parchment hover:bg-obsidian-surface'
+                }`}
                 aria-label="Open mobile navigation menu"
               >
                 <Menu className="w-6 h-6" />

@@ -30,7 +30,7 @@ export function MobileSheet({ isOpen, onClose, onOpenInquiry }: MobileSheetProps
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl flex flex-col justify-between overflow-y-auto animate-fade-in text-parchment"
+      className="fixed inset-0 z-50 bg-[#fbf9f5]/98 backdrop-blur-xl flex flex-col justify-between overflow-y-auto animate-fade-in text-parchment"
       role="dialog"
       aria-modal="true"
     >

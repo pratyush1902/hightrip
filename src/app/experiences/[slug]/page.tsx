@@ -44,7 +44,10 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
   }
 
   return (
-    <div className="bg-obsidian min-h-screen text-parchment selection:bg-bronze/30 selection:text-bronze-light">
+    <div
+      style={{ backgroundColor: '#0b0a08' }}
+      className="bg-[#0b0a08] min-h-screen text-[#f5efe6] selection:bg-bronze/30 selection:text-bronze"
+    >
       {/* Client Component with interactive inquiry, gallery, and dossier details */}
       <ExperienceDetailClient exp={exp} />
     </div>

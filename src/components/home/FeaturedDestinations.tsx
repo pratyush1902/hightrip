@@ -26,58 +26,63 @@ export function FeaturedDestinations() {
           <Link
             key={dest.slug}
             href={`/destinations/${dest.slug}`}
-            className="group block relative bg-obsidian-surface border border-obsidian-border rounded-2xl overflow-hidden hover:border-bronze/50 transition-all duration-300 shadow-md"
+            style={{
+              borderRadius: '40% / 30%',
+              boxShadow:
+                'inset 0 0 0 10px rgba(20, 18, 16, 0.08), 0 4px 10px rgba(20, 18, 16, 0.06), 0 32px 64px -28px rgba(20, 18, 16, 0.45)',
+            }}
+            className="group relative block aspect-[3/4] w-full overflow-hidden bg-[#0b0f1c] hover:scale-[1.02] transition-all duration-500 ease-out cursor-pointer"
           >
-            {/* Top Card Bar with Index & Airport code */}
-            <div className="p-4 sm:p-5 flex items-center justify-between border-b border-obsidian-border/60 bg-obsidian/40 font-mono text-xs text-muted-stone">
-              <span className="flex items-center gap-2">
-                <span className="text-bronze-light font-bold">0{idx + 1}</span>
-                <span>/</span>
-                <span>{dest.category}</span>
-              </span>
-              <span className="px-2.5 py-0.5 rounded-full bg-obsidian border border-obsidian-border text-sand font-bold">
-                {dest.airportCode}
-              </span>
-            </div>
+            {/* Destination Image with Ken Burns hover effect */}
+            <Image
+              src={dest.cardImage}
+              alt={dest.name}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+            />
 
-            {/* Photo with subtle hover zoom */}
-            <div className="relative aspect-[4/3] w-full overflow-hidden bg-obsidian">
-              <Image
-                src={dest.cardImage}
-                alt={dest.name}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-obsidian/20 to-transparent" />
+            {/* Gradient Scrim for Content Legibility */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10 pointer-events-none" />
 
-              {/* Floating Action Arrow */}
-              <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/60 backdrop-blur-md border border-white/20 flex items-center justify-center text-parchment group-hover:bg-bronze group-hover:text-obsidian group-hover:border-bronze transition-colors">
+            {/* Cabin Glass Glare Reflection */}
+            <div className="absolute inset-0 pointer-events-none bg-gradient-to-tr from-transparent via-white/10 to-white/20 opacity-70 group-hover:opacity-90 transition-opacity duration-500" />
+
+            {/* Authentic Airplane Window Breather Hole */}
+            <div className="absolute bottom-2.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-black/60 border border-white/30 pointer-events-none shadow-sm z-20" />
+
+            {/* Top Floating Badges (Index & Airport Code) */}
+            <div className="absolute top-5 left-5 right-5 flex items-center justify-between z-10">
+              <span className="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-black/60 backdrop-blur-md border border-white/20 text-stone-200 flex items-center gap-1.5">
+                <span className="text-bronze font-bold">0{idx + 1}</span>
+                <span className="text-white/40">/</span>
+                <span>{dest.airportCode}</span>
+              </span>
+
+              <div className="w-8 h-8 rounded-full bg-black/50 backdrop-blur-md border border-white/20 flex items-center justify-center text-white group-hover:bg-bronze group-hover:text-[#1c1917] group-hover:border-bronze transition-all duration-300">
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </div>
-
-              {/* Bottom Card Overlay Content */}
-              <div className="absolute bottom-4 left-4 right-4">
-                <div className="flex items-baseline justify-between">
-                  <h3 className="font-serif text-2xl text-parchment tracking-tight group-hover:text-bronze-light transition-colors">
-                    {dest.name}
-                  </h3>
-                  <span className="font-mono text-xs text-bronze-light bg-black/60 px-2 py-1 rounded border border-bronze/20">
-                    From ₹{dest.startingPriceINR.toLocaleString('en-IN')}
-                  </span>
-                </div>
-                <p className="mt-1.5 text-xs text-sand/80 line-clamp-1 font-light">
-                  {dest.tagline}
-                </p>
-              </div>
             </div>
 
-            {/* Card Footer Details */}
-            <div className="p-4 sm:p-5 flex items-center justify-between text-xs text-muted-stone font-mono bg-obsidian-surface">
-              <span>Best: {dest.bestTimeToVisit.split('&')[0]}</span>
-              <span className="text-sand group-hover:text-bronze-light group-hover:underline flex items-center gap-1 transition-colors">
-                View holidays →
-              </span>
+            {/* Bottom Card Content Inside Window */}
+            <div className="absolute bottom-5 inset-x-5 z-10">
+              <div className="flex items-baseline justify-between gap-2">
+                <h3 className="font-serif text-2xl sm:text-3xl text-white tracking-tight group-hover:text-amber-200 transition-colors drop-shadow-md">
+                  {dest.name}
+                </h3>
+                <span className="font-mono text-xs text-amber-200 bg-black/70 backdrop-blur-sm px-2.5 py-1 rounded-md border border-amber-300/20 font-medium">
+                  From ₹{dest.startingPriceINR.toLocaleString('en-IN')}
+                </span>
+              </div>
+              <p className="mt-1 text-xs sm:text-sm text-stone-200 line-clamp-1 font-light drop-shadow mb-3">
+                {dest.tagline}
+              </p>
+
+              {/* Jeto-Style Flight Tag at bottom of window */}
+              <div className="pt-2 border-t border-white/15 flex items-center justify-between text-[10px] font-mono uppercase tracking-[0.14em] text-white/90 drop-shadow">
+                <span>DEL → {dest.airportCode} · {dest.name}</span>
+                <span className="text-amber-300 font-bold">High Trip</span>
+              </div>
             </div>
           </Link>
         ))}

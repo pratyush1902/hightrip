@@ -1,32 +1,34 @@
 @import "tailwindcss";
 
 @theme {
-  --color-obsidian: #0d0b09;
-  --color-obsidian-surface: #141210;
-  --color-obsidian-card: #1a1715;
-  --color-obsidian-border: #282420;
+  --color-obsidian: #fbf9f5;
+  --color-obsidian-surface: #ffffff;
+  --color-obsidian-card: #fdfcfb;
+  --color-obsidian-border: #e8ded0;
+  --color-sandstone: #f5efe6;
+  --color-sandstone-light: #faf5ee;
   --color-bronze: #c48c58;
-  --color-bronze-light: #e2b785;
-  --color-bronze-dark: #8a5a33;
-  --color-parchment: #fbf9f5;
-  --color-sand: #f3eadb;
+  --color-bronze-light: #9a6a38;
+  --color-bronze-dark: #7c4f28;
+  --color-parchment: #1c1917;
+  --color-sand: #1c1917;
   --color-sand-subtle: #faf5ee;
   --color-sand-border: #e8ded0;
   --color-muted-stone: #78716c;
-  --color-muted-foreground: #a8a29e;
+  --color-muted-foreground: #57534e;
   --font-serif: var(--font-serif), Georgia, serif;
   --font-sans: var(--font-sans), system-ui, sans-serif;
   --font-mono: var(--font-mono), monospace;
 }
 
 :root {
-  --background: #0d0b09;
-  --foreground: #fbf9f5;
+  --background: #fbf9f5;
+  --foreground: #1c1917;
 }
 
 html {
   scroll-behavior: auto; /* Managed by Lenis */
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
@@ -60,9 +62,15 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
-/* Solid luxury bronze button style (no gradients) */
+/* High-contrast dark espresso text for bronze buttons, badges, and tags */
+.text-obsidian {
+  color: #1c1917 !important;
+}
+
+/* Solid luxury bronze button style */
 .bg-bronze-gradient {
   background-color: #c48c58;
+  color: #1c1917;
   transition: background-color 0.2s ease, opacity 0.2s ease;
 }
 .bg-bronze-gradient:hover {
@@ -70,7 +78,7 @@ html.lenis, html.lenis body {
 }
 
 .text-bronze-gradient {
-  background: linear-gradient(135deg, #f3eadb 0%, #e2b785 45%, #c48c58 100%);
+  background: linear-gradient(135deg, #1c1917 0%, #9a6a38 50%, #c48c58 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -79,18 +87,18 @@ html.lenis, html.lenis body {
   border-image: linear-gradient(to right, #c48c58, transparent) 1;
 }
 
-/* Custom discreet scrollbar */
+/* Custom discreet scrollbar for light Sandstone palette */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0d0b09;
+  background: #fbf9f5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #282420;
+  background: #e8ded0;
   border-radius: 3px;
 }
 
@@ -113,3 +121,19 @@ html.lenis, html.lenis body {
 .animate-scene-fade {
   animation: sceneFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* Experiences Dark Tourism Page Theme Overrides */
+html:has(#experiences-root),
+body:has(#experiences-root) {
+  background-color: #0b0a08 !important;
+  color: #f5efe6 !important;
+}
+
+html:has(#experiences-root) ::-webkit-scrollbar-track {
+  background: #0b0a08;
+}
+
+html:has(#experiences-root) ::-webkit-scrollbar-thumb {
+  background: #2a241e;
+}
+

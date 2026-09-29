@@ -10,14 +10,26 @@ export function BottomActionBar() {
   const pathname = usePathname();
   const [inquiryOpen, setInquiryOpen] = useState(false);
 
+  const isDark = pathname.startsWith('/experiences');
+
   return (
     <>
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-30 bg-obsidian-surface/95 backdrop-blur-lg border-t border-obsidian-border px-3 py-2">
+      <div
+        className={`lg:hidden fixed bottom-0 left-0 right-0 z-30 backdrop-blur-lg border-t px-3 py-2 transition-colors ${
+          isDark
+            ? 'bg-[#0e0d0b]/95 border-[#26211c] text-[#f5efe6]'
+            : 'bg-obsidian-surface/95 border-obsidian-border text-parchment'
+        }`}
+      >
         <div className="grid grid-cols-5 items-center text-center">
           <Link
             href="/"
             className={`flex flex-col items-center py-1 transition-colors ${
-              pathname === '/' ? 'text-bronze' : 'text-muted-foreground hover:text-parchment'
+              pathname === '/'
+                ? 'text-bronze'
+                : isDark
+                ? 'text-[#8a8174] hover:text-[#f5efe6]'
+                : 'text-muted-foreground hover:text-parchment'
             }`}
           >
             <Home className="w-5 h-5 mb-1" />
@@ -29,6 +41,8 @@ export function BottomActionBar() {
             className={`flex flex-col items-center py-1 transition-colors ${
               pathname.startsWith('/packages')
                 ? 'text-bronze'
+                : isDark
+                ? 'text-[#8a8174] hover:text-[#f5efe6]'
                 : 'text-muted-foreground hover:text-parchment'
             }`}
           >
@@ -38,7 +52,9 @@ export function BottomActionBar() {
 
           <button
             onClick={() => setInquiryOpen(true)}
-            className="flex flex-col items-center py-1 text-bronze-light hover:text-sand cursor-pointer"
+            className={`flex flex-col items-center py-1 cursor-pointer ${
+              isDark ? 'text-bronze hover:text-white' : 'text-bronze-light hover:text-sand'
+            }`}
           >
             <div className="w-6 h-6 rounded-full bg-bronze/20 border border-bronze/40 flex items-center justify-center mb-1">
               <CalendarCheck className="w-3.5 h-3.5 text-bronze" />
@@ -48,7 +64,9 @@ export function BottomActionBar() {
 
           <a
             href="tel:+919155566268"
-            className="flex flex-col items-center py-1 text-muted-foreground hover:text-parchment transition-colors"
+            className={`flex flex-col items-center py-1 transition-colors ${
+              isDark ? 'text-[#8a8174] hover:text-[#f5efe6]' : 'text-muted-foreground hover:text-parchment'
+            }`}
           >
             <Phone className="w-5 h-5 mb-1" />
             <span className="text-[10px] font-mono tracking-tight">Call</span>

@@ -1,4 +1,5 @@
 import { Hero } from '@/components/hero/Hero';
+import { OurSignature } from '@/components/home/OurSignature';
 import { FeaturedDestinations } from '@/components/home/FeaturedDestinations';
 import { SignaturePackages } from '@/components/home/SignaturePackages';
 import { ExperienceTeaser } from '@/components/home/ExperienceTeaser';
@@ -11,7 +12,10 @@ export default function HomePage() {
       {/* 1. Cinematic Window-Seat Hero */}
       <Hero />
 
-      {/* 2. Curated Featured Destinations */}
+      {/* 2. Our Signature - The Ones We're Known For */}
+      <OurSignature />
+
+      {/* 3. Curated Featured Destinations */}
       <FeaturedDestinations />
 
       {/* 4. Signature Packages Showcase */}

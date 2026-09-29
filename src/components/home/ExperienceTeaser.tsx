@@ -9,7 +9,7 @@ import { ImageReveal } from '@/components/animation/ImageReveal';
 export function ExperienceTeaser() {
   return (
     <section className="py-24 sm:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="bg-obsidian-surface border border-obsidian-border rounded-3xl overflow-hidden p-8 sm:p-12 lg:p-16">
+      <div className="bg-sandstone border border-obsidian-border rounded-3xl overflow-hidden p-8 sm:p-12 lg:p-16 shadow-sm">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Editorial Manifesto */}
           <div className="lg:col-span-6 space-y-6">

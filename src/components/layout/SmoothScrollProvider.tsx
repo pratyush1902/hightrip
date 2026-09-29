@@ -13,6 +13,8 @@ export function SmoothScrollProvider({ children }: { children: React.ReactNode }
   const lenisRef = useRef<Lenis | null>(null);
 
   useEffect(() => {
+    ScrollTrigger.config({ ignoreMobileResize: true });
+
     const lenis = new Lenis({
       duration: 1.0,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
