@@ -37,7 +37,6 @@ export function Hero() {
         gsap.set(fullPageBgRef.current, { opacity: 0 });
       }
       if (introRef.current) {
-        gsap.set('.hero-intro-kicker', { opacity: 0, y: 15 });
         gsap.set('.hero-intro-headline', { opacity: 0, y: 25 });
         gsap.set('.hero-intro-sub', { opacity: 0, y: 20 });
         gsap.set('.hero-intro-cta', { opacity: 0, y: 20 });
@@ -53,7 +52,6 @@ export function Hero() {
       // Background fades in
       tl.to(viewportRef.current, { opacity: 1, duration: 0.6 })
         // Headline reveals line-by-line & intro components
-        .to('.hero-intro-kicker', { opacity: 1, y: 0, duration: 0.5 }, '-=0.3')
         .to('.hero-intro-headline', { opacity: 1, y: 0, duration: 0.6 }, '-=0.3')
         .to('.hero-intro-sub', { opacity: 1, y: 0, duration: 0.5 }, '-=0.4')
         .to('.hero-intro-cta', { opacity: 1, y: 0, duration: 0.5 }, '-=0.3')
@@ -103,12 +101,16 @@ export function Hero() {
             const altEl = document.getElementById('hero-flight-altitude');
             const statusEl = document.getElementById('hero-flight-status');
             if (altEl && statusEl) {
-              if (p < 0.05) {
+              if (p < 0.10) {
+                statusEl.textContent = 'CENTERING';
+                altEl.textContent = 'ALT 0 FT';
+              } else if (p < 0.18) {
                 statusEl.textContent = 'HT-FLIGHT READY';
-                altEl.textContent = `ALT ${Math.round(p * 20000)} FT`;
-              } else if (p < 0.25) {
+                altEl.textContent = 'ALT 0 FT';
+              } else if (p < 0.38) {
                 statusEl.textContent = 'CLIMBING';
-                altEl.textContent = `ALT ${Math.round(1000 + (p - 0.05) * 60000)} FT`;
+                const climbP = (p - 0.18) / 0.20;
+                altEl.textContent = `ALT ${Math.round(1000 + climbP * 34000)} FT`;
               } else {
                 statusEl.textContent = 'AIRBORNE';
                 altEl.textContent = 'ALT 35,000 FT';
@@ -132,33 +134,46 @@ export function Hero() {
       });
 
       // ========================================================
-      // Intro fades out smoothly as scroll begins
+      // PHASE 1 (0.0 to 0.18): ZOOM AND COME TO CENTER
+      // Intro fades out, while the airplane & 3D logo zoom and glide to dead center
+      // ========================================================
       if (introEl) {
         masterTl.to(
           introEl,
-          { opacity: 0, y: -25, ease: 'power1.out', duration: 0.2 },
+          { opacity: 0, y: -25, ease: 'power1.out', duration: 0.14 },
           0
         );
       }
 
-      // Logo container stays rock-solid in place (no horizontal sliding across screen)
-      // Only the airplane inside the 3D canvas flies straight up into the sky!
+      if (logoEl) {
+        // Airplane and container smoothly zoom and glide to screen center (left: 50%, top: 50%)
+        masterTl.to(
+          logoEl,
+          {
+            left: '50%',
+            top: '50%',
+            scale: isDesktop ? 1.38 : 1.25,
+            ease: 'power2.inOut',
+            duration: 0.18,
+          },
+          0
+        );
+
+        // Once the airplane has ascended upwards out of view, fade out the launch container
+        masterTl.to(logoEl, { opacity: 0, duration: 0.08 }, 0.38);
+      }
 
       // ========================================================
-      // PHASE 2 (0.20 to 0.45): High-Speed Ascent & Sky Penetration
+      // PHASE 2 (0.22 to 0.45): High-Speed Ascent & Sky Penetration
       // Flight accelerates UPWARDS in 3D WebGL leaving the strips!
-      // ========================================================
       // Full-page background photograph fades in to 100%
+      // ========================================================
       if (bgEl) {
         masterTl.to(
           bgEl,
-          { opacity: 1, ease: 'power1.inOut', duration: 0.25 },
-          0.2
+          { opacity: 1, ease: 'power1.inOut', duration: 0.24 },
+          0.22
         );
-      }
-
-      if (logoEl) {
-        masterTl.to(logoEl, { opacity: 0, duration: 0.1 }, 0.38);
       }
     }, containerRef);
 

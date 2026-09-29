@@ -360,54 +360,56 @@ export function Logo3DTakeoff({
       state.rightStripsGroup.rotation.set(0, 0, 0);
 
       // ========================================================
-      // 3D TAKEOFF PHYSICS: STRICTLY STRAIGHT UPWARDS FLIGHT (+Y)
-      // Absolutely no direction change, no sideways drift
+      // 3D TAKEOFF PHYSICS:
+      // Phase 1 (p <= 0.18): ZOOM FORWARD & CENTER (Ground runway alignment)
+      // Plane moves forward in Z (+Z) and scales up, staying centered (Y = 0)
+      // Phase 2 (0.18 < p <= 0.26): LIFT-OFF straight UP (+Y)
+      // Phase 3 (0.26 < p <= 0.45): SUPERSONIC ASCENT through top of screen
       // ========================================================
-      if (p <= 0.05) {
-        // IDLE DOCKED STATE: Rock-solid, perfectly centered & upright
-        const subP = p / 0.05;
-        state.planeGroup.position.set(0, subP * 0.06, 0.04);
-        state.planeGroup.scale.setScalar(1);
+      if (p <= 0.18) {
+        // DOCKED & ZOOMING: Plane zooms towards camera in Z (+Z) while container glides to center
+        const subP = p / 0.18;
+        state.planeGroup.position.set(0, 0, 0.04 + subP * 0.45);
+        state.planeGroup.scale.setScalar(1 + subP * 0.18);
 
         state.leftStripsGroup.position.set(0, 0, -0.04);
         state.rightStripsGroup.position.set(0, 0, -0.04);
         state.stripsMaterial.opacity = 1;
         state.stripsBevelMaterial.opacity = 1;
 
-        state.contrailMaterial.opacity = subP * 0.4;
-        state.contrailMesh.scale.set(1, 0.2 + subP * 0.8, 1);
+        state.contrailMaterial.opacity = subP * 0.35;
+        state.contrailMesh.scale.set(1, 0.2 + subP * 0.7, 1);
         state.afterburnerLight.intensity = subP * 2.5;
-      } else if (p <= 0.22) {
-        // PHASE 1: LIFT-OFF
-        // Ascends straight UP (+Y), leaving the two strips grounded
-        const subP = (p - 0.05) / 0.17;
+        state.afterburnerLight.position.y = -3.1;
+      } else if (p <= 0.26) {
+        // PHASE 1: LIFT-OFF - Ascends straight UP (+Y) from center runway
+        const subP = (p - 0.18) / 0.08;
 
-        state.planeGroup.position.set(0, 0.06 + subP * 0.95, 0.04);
-        state.planeGroup.scale.setScalar(1 + subP * 0.08);
+        state.planeGroup.position.set(0, subP * 1.25, 0.49);
+        state.planeGroup.scale.setScalar(1.18 + subP * 0.05);
 
-        // Strips remain grounded in place
+        // Strips remain grounded in place at center
         state.leftStripsGroup.position.set(0, 0, -0.04);
         state.rightStripsGroup.position.set(0, 0, -0.04);
         state.stripsMaterial.opacity = 1;
         state.stripsBevelMaterial.opacity = 1;
 
         // Engine contrails stream straight down behind
-        state.contrailMaterial.opacity = 0.4 + subP * 0.55;
-        state.contrailMesh.scale.set(1, 1 + subP * 1.5, 1);
+        state.contrailMaterial.opacity = 0.35 + subP * 0.55;
+        state.contrailMesh.scale.set(1, 0.9 + subP * 1.6, 1);
         state.afterburnerLight.intensity = 2.5 + subP * 3.5;
-        state.afterburnerLight.position.y = -3.1 + subP * 0.95;
+        state.afterburnerLight.position.y = -3.1 + subP * 1.25;
       } else if (p <= 0.45) {
-        // PHASE 2: SUPERSONIC CLIMB
-        // Shoots straight UP out of the top of the viewport
-        const subP = (p - 0.22) / 0.23;
-        const climbEase = Math.pow(subP, 1.6);
+        // PHASE 2: SUPERSONIC CLIMB - Shoots straight UP out of the top of the viewport
+        const subP = (p - 0.26) / 0.19;
+        const climbEase = Math.pow(subP, 1.65);
 
-        state.planeGroup.position.set(0, 1.01 + climbEase * 14.5, 0.04);
-        state.planeGroup.scale.setScalar(1.08 + subP * 0.3);
+        state.planeGroup.position.set(0, 1.25 + climbEase * 18.0, 0.49);
+        state.planeGroup.scale.setScalar(1.23 + subP * 0.25);
 
         // Contrails fade as plane ascends into sky
-        state.contrailMaterial.opacity = Math.max(0, 0.95 - subP * 1.5);
-        state.afterburnerLight.intensity = Math.max(0, 6.0 - subP * 7);
+        state.contrailMaterial.opacity = Math.max(0, 0.9 - subP * 1.4);
+        state.afterburnerLight.intensity = Math.max(0, 6.0 - subP * 7.5);
 
         // The two strips remain grounded and dissolve
         state.leftStripsGroup.position.set(0, 0, -0.04);
@@ -417,7 +419,7 @@ export function Logo3DTakeoff({
         state.stripsBevelMaterial.opacity = stripAlpha;
       } else {
         // PHASE 3+: CRUISE
-        state.planeGroup.position.set(0, 25, 0.04);
+        state.planeGroup.position.set(0, 30, 0.49);
         state.contrailMaterial.opacity = 0;
         state.stripsMaterial.opacity = 0;
         state.stripsBevelMaterial.opacity = 0;
@@ -432,26 +434,33 @@ export function Logo3DTakeoff({
       const glowEl = document.getElementById('logo3d-flight-glow');
 
       if (hudEl) {
-        hudEl.style.opacity = `${Math.max(0, 1 - p * 3.2)}`;
+        const hudAlpha = p <= 0.18 ? 1 : Math.max(0, 1 - (p - 0.18) / 0.12);
+        hudEl.style.opacity = `${hudAlpha}`;
       }
       if (badgeEl) {
-        badgeEl.style.opacity = `${Math.max(0, 1 - p * 3.5)}`;
-        badgeEl.style.transform = `translate(-50%, ${p * 15}px)`;
+        const badgeAlpha = p <= 0.18 ? 1 : Math.max(0, 1 - (p - 0.18) / 0.12);
+        badgeEl.style.opacity = `${badgeAlpha}`;
+        badgeEl.style.transform = `translate(-50%, ${p * 12}px)`;
       }
       if (statusEl && altEl) {
-        if (p < 0.05) {
+        if (p < 0.10) {
+          statusEl.textContent = 'CENTERING';
+          altEl.textContent = 'ALT 0 FT';
+        } else if (p < 0.18) {
           statusEl.textContent = '3D FLIGHT READY';
-          altEl.textContent = `ALT ${Math.round(p * 20000)} FT`;
-        } else if (p < 0.22) {
+          altEl.textContent = 'ALT 0 FT';
+        } else if (p < 0.38) {
           statusEl.textContent = 'CLIMBING';
-          altEl.textContent = `ALT ${Math.round(1000 + (p - 0.05) * 85000)} FT`;
+          const climbP = (p - 0.18) / 0.20;
+          altEl.textContent = `ALT ${Math.round(1000 + climbP * 34000)} FT`;
         } else {
           statusEl.textContent = 'AIRBORNE';
           altEl.textContent = 'ALT 35,000 FT';
         }
       }
       if (glowEl) {
-        glowEl.style.opacity = `${Math.max(0, 1 - p * 2.8)}`;
+        const glowAlpha = p <= 0.22 ? 1 : Math.max(0, 1 - (p - 0.22) / 0.15);
+        glowEl.style.opacity = `${glowAlpha}`;
       }
 
       renderer.render(scene, camera);

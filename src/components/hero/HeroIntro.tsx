@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { HeroCTA } from './HeroCTA';
 
 interface HeroIntroProps {
@@ -17,23 +16,8 @@ export function HeroIntro({
   return (
     <div
       ref={introRef}
-      className={`flex flex-col justify-center items-center text-center lg:items-start lg:text-left space-y-2 sm:space-y-4 lg:space-y-6 text-[#181512] will-change-[opacity,transform] ${className}`}
+      className={`flex flex-col justify-center items-center text-center lg:items-start lg:text-left space-y-3 sm:space-y-5 lg:space-y-6 text-[#181512] will-change-[opacity,transform] ${className}`}
     >
-      {/* Top Editorial Kicker & Dark Tourism Pioneering Tag */}
-      <div className="hero-intro-kicker flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
-        <Link
-          href="/experiences"
-          className="group inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f4ece1] hover:bg-[#ebdccb] border border-[#d8cbba] hover:border-[#c48c58] transition-all duration-300 shadow-xs"
-        >
-          <span className="w-1.5 h-1.5 rounded-full bg-[#c48c58] ring-2 ring-[#c48c58]/20" />
-          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-wider font-semibold text-[#2c2621]">
-            India&apos;s First Travel Company Working in Dark Tourism
-          </span>
-          <span className="text-[11px] text-[#c48c58] font-bold group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
-            ↗
-          </span>
-        </Link>
-      </div>
 
       {/* Main Headline */}
       <div className="hero-intro-headline">
@@ -47,9 +31,9 @@ export function HeroIntro({
       </div>
 
       {/* Supporting Copy */}
-      <div className="hero-intro-sub max-w-xs sm:max-w-md lg:max-w-lg">
+      <div className="hero-intro-sub max-w-xs sm:max-w-md lg:max-w-xl">
         <p className="text-xs sm:text-base lg:text-lg text-[#59534c] font-light leading-relaxed">
-          New views. Unfamiliar places. Journeys that stay with you.
+          India’s only travel company that takes dark tourism into mainstream travel.
         </p>
       </div>
 
