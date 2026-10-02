@@ -348,8 +348,8 @@ export function Logo3DTakeoff({
       const state = sceneRef.current;
       if (!state) return;
 
-      // Smooth interpolation for scroll scrub
-      state.currentProgress += (state.targetProgress - state.currentProgress) * 0.14;
+      // Instant, silky-smooth progress tracking with zero scroll lag
+      state.currentProgress = state.targetProgress;
       const p = Math.max(0, Math.min(1, state.currentProgress));
 
       // STRICTLY LOCK ALL ROTATIONS TO ZERO:
@@ -360,65 +360,31 @@ export function Logo3DTakeoff({
       state.rightStripsGroup.rotation.set(0, 0, 0);
 
       // ========================================================
-      // 3D TAKEOFF PHYSICS:
-      // Phase 1 (p <= 0.18): ZOOM FORWARD & CENTER (Ground runway alignment)
-      // Plane moves forward in Z (+Z) and scales up, staying centered (Y = 0)
-      // Phase 2 (0.18 < p <= 0.26): LIFT-OFF straight UP (+Y)
-      // Phase 3 (0.26 < p <= 0.45): SUPERSONIC ASCENT through top of screen
+      // 3D TAKEOFF PHYSICS (Starts IMMEDIATELY on scroll at p = 0)
       // ========================================================
-      if (p <= 0.18) {
-        // DOCKED & ZOOMING: Plane zooms towards camera in Z (+Z) while container glides to center
-        const subP = p / 0.18;
-        state.planeGroup.position.set(0, 0, 0.04 + subP * 0.45);
-        state.planeGroup.scale.setScalar(1 + subP * 0.18);
+      if (p <= 0.20) {
+        // CONTINUOUS ASCENT: Plane ascends straight UP (+Y) immediately as user scrolls
+        const climbP = p / 0.20;
+        const climbEase = Math.pow(climbP, 1.4);
 
+        // Y ascends smoothly from 0 to 20.0 units immediately
+        state.planeGroup.position.set(0, climbEase * 20.0, 0.04 + climbP * 0.45);
+        state.planeGroup.scale.setScalar(1 + climbP * 0.25);
+
+        // Strips stay grounded and dissolve smoothly
         state.leftStripsGroup.position.set(0, 0, -0.04);
         state.rightStripsGroup.position.set(0, 0, -0.04);
-        state.stripsMaterial.opacity = 1;
-        state.stripsBevelMaterial.opacity = 1;
-
-        state.contrailMaterial.opacity = subP * 0.35;
-        state.contrailMesh.scale.set(1, 0.2 + subP * 0.7, 1);
-        state.afterburnerLight.intensity = subP * 2.5;
-        state.afterburnerLight.position.y = -3.1;
-      } else if (p <= 0.26) {
-        // PHASE 1: LIFT-OFF - Ascends straight UP (+Y) from center runway
-        const subP = (p - 0.18) / 0.08;
-
-        state.planeGroup.position.set(0, subP * 1.25, 0.49);
-        state.planeGroup.scale.setScalar(1.18 + subP * 0.05);
-
-        // Strips remain grounded in place at center
-        state.leftStripsGroup.position.set(0, 0, -0.04);
-        state.rightStripsGroup.position.set(0, 0, -0.04);
-        state.stripsMaterial.opacity = 1;
-        state.stripsBevelMaterial.opacity = 1;
-
-        // Engine contrails stream straight down behind
-        state.contrailMaterial.opacity = 0.35 + subP * 0.55;
-        state.contrailMesh.scale.set(1, 0.9 + subP * 1.6, 1);
-        state.afterburnerLight.intensity = 2.5 + subP * 3.5;
-        state.afterburnerLight.position.y = -3.1 + subP * 1.25;
-      } else if (p <= 0.45) {
-        // PHASE 2: SUPERSONIC CLIMB - Shoots straight UP out of the top of the viewport
-        const subP = (p - 0.26) / 0.19;
-        const climbEase = Math.pow(subP, 1.65);
-
-        state.planeGroup.position.set(0, 1.25 + climbEase * 18.0, 0.49);
-        state.planeGroup.scale.setScalar(1.23 + subP * 0.25);
-
-        // Contrails fade as plane ascends into sky
-        state.contrailMaterial.opacity = Math.max(0, 0.9 - subP * 1.4);
-        state.afterburnerLight.intensity = Math.max(0, 6.0 - subP * 7.5);
-
-        // The two strips remain grounded and dissolve
-        state.leftStripsGroup.position.set(0, 0, -0.04);
-        state.rightStripsGroup.position.set(0, 0, -0.04);
-        const stripAlpha = Math.max(0, 1 - subP * 1.4);
+        const stripAlpha = Math.max(0, 1 - climbP * 1.8);
         state.stripsMaterial.opacity = stripAlpha;
         state.stripsBevelMaterial.opacity = stripAlpha;
+
+        // Contrail trails & engine afterburner ignite immediately
+        state.contrailMaterial.opacity = climbP < 0.7 ? climbP * 1.2 : Math.max(0, (1 - climbP) * 3);
+        state.contrailMesh.scale.set(1, 0.3 + climbP * 2.2, 1);
+        state.afterburnerLight.intensity = Math.sin(climbP * Math.PI) * 6.0;
+        state.afterburnerLight.position.y = -3.1 + climbEase * 20.0;
       } else {
-        // PHASE 3+: CRUISE
+        // AIRBORNE / OUT OF VIEW
         state.planeGroup.position.set(0, 30, 0.49);
         state.contrailMaterial.opacity = 0;
         state.stripsMaterial.opacity = 0;
@@ -426,7 +392,7 @@ export function Logo3DTakeoff({
         state.afterburnerLight.intensity = 0;
       }
 
-      // Live HUD DOM updates (no rotation, clean fade)
+      // Live HUD DOM updates (Immediate fade out on scroll)
       const hudEl = document.getElementById('logo3d-flight-hud');
       const badgeEl = document.getElementById('logo3d-flight-badge');
       const statusEl = document.getElementById('logo3d-flight-status');
@@ -434,25 +400,22 @@ export function Logo3DTakeoff({
       const glowEl = document.getElementById('logo3d-flight-glow');
 
       if (hudEl) {
-        const hudAlpha = p <= 0.18 ? 1 : Math.max(0, 1 - (p - 0.18) / 0.12);
+        const hudAlpha = Math.max(0, 1 - p / 0.12);
         hudEl.style.opacity = `${hudAlpha}`;
       }
       if (badgeEl) {
-        const badgeAlpha = p <= 0.18 ? 1 : Math.max(0, 1 - (p - 0.18) / 0.12);
+        const badgeAlpha = Math.max(0, 1 - p / 0.14);
         badgeEl.style.opacity = `${badgeAlpha}`;
-        badgeEl.style.transform = `translate(-50%, ${p * 12}px)`;
+        badgeEl.style.transform = `translate(-50%, ${p * 15}px)`;
       }
       if (statusEl && altEl) {
-        if (p < 0.10) {
-          statusEl.textContent = 'CENTERING';
-          altEl.textContent = 'ALT 0 FT';
-        } else if (p < 0.18) {
+        if (p < 0.02) {
           statusEl.textContent = '3D FLIGHT READY';
           altEl.textContent = 'ALT 0 FT';
-        } else if (p < 0.38) {
+        } else if (p < 0.28) {
           statusEl.textContent = 'CLIMBING';
-          const climbP = (p - 0.18) / 0.20;
-          altEl.textContent = `ALT ${Math.round(1000 + climbP * 34000)} FT`;
+          const climbP = Math.min(1, p / 0.26);
+          altEl.textContent = `ALT ${Math.round(climbP * 35000)} FT`;
         } else {
           statusEl.textContent = 'AIRBORNE';
           altEl.textContent = 'ALT 35,000 FT';
@@ -474,7 +437,7 @@ export function Logo3DTakeoff({
         trigger: heroContainer,
         start: 'top top',
         end: 'bottom bottom',
-        scrub: 0.3,
+        scrub: 0.05,
         onUpdate: (self) => {
           if (sceneRef.current) {
             sceneRef.current.targetProgress = self.progress;

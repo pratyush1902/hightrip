@@ -1,7 +1,7 @@
 import { TravelPackage } from '@/types/travel';
 
 export const travelPackages: TravelPackage[] = [
-  {
+{
     slug: 'maldives-overwater-haven',
     title: 'Maldives Overwater Escape',
     tagline: '5 Days of Barefoot Solitude & Coral Reef Exploration',
@@ -96,7 +96,7 @@ export const travelPackages: TravelPackage[] = [
     featured: true,
     cardFeatures: ['Overwater stay', 'Breakfast', 'Transfers', 'Experiences'],
   },
-  {
+{
     slug: 'vietnam-grand-heritage-karsts',
     title: 'Vietnam: Karst Waters, Train Street & Imperial Relics',
     tagline: '7 Days across Hanoi, Lan Ha Bay & Lantern-Lit Hoi An',
@@ -209,238 +209,7 @@ export const travelPackages: TravelPackage[] = [
     featured: true,
     cardFeatures: ['Boutique stay & bay cruise', 'Breakfast', 'Transfers', 'Experiences'],
   },
-  {
-    slug: 'amalfi-coast-renaissance-italy',
-    title: 'Amalfi Coast, Tuscan Hills & Eternal Rome',
-    tagline: '8 Days of Mediterranean Clifftops, Wine Estates & Antiquity',
-    destinationSlug: 'italy',
-    destinationName: 'Italy',
-    durationDays: 8,
-    durationNights: 7,
-    priceINR: 135000,
-    originalPriceINR: 155000,
-    priceValidUntil: '30 Sep 2026',
-    type: 'international',
-    style: 'Luxury Escapes',
-    heroImage: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=2000&q=85',
-    cardImage: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1520175480921-4edfa2983e0f?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?auto=format&fit=crop&w=1200&q=80',
-    ],
-    overview: 'An Italian odyssey curated for those who appreciate slow, sensory travel. Begin amidst the lemon terraces of Sorrento and Positano, journey north via high-speed train to Renaissance Florence, and conclude under the historic arches of Rome.',
-    highlights: [
-      'Private day tour along the scenic Amalfi Drive with Positano & Ravello stops',
-      'High-speed Frecciarossa first-class rail tickets between Naples, Florence & Rome',
-      'Skip-the-line early entrance to the Uffizi Gallery & Vatican Museums',
-      'Chianti wine tasting at an aristocratic 16th-century family estate',
-      'Chauffeured Mercedes transfers throughout',
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: 'Arrival in Naples & Transfer to Sorrento Coast',
-        location: 'Sorrento',
-        description: 'Private driver greets you at Naples airport or rail station. Scenic drive winding along the Bay of Naples with views of Mount Vesuvius to your sea-facing clifftop hotel in Sorrento.',
-        meals: 'Welcome Aperitivo & Dinner',
-        stay: 'Grand Hotel Panoramic, Sorrento',
-        activities: ['Private Coast Transfer', 'Evening Terrace Aperitivo'],
-      },
-      {
-        day: 2,
-        title: 'The Amalfi Drive: Positano, Amalfi & Ravello',
-        location: 'Amalfi Coast',
-        description: 'Chauffeured scenic tour along Europe’s most dramatic coastline. Walk the stepped pastel alleys of Positano, inspect the 9th-century bronze doors of Amalfi Cathedral, and stroll the cliffside gardens of Villa Rufolo in Ravello.',
-        meals: 'Breakfast & Seafood Lunch',
-        stay: 'Grand Hotel Panoramic, Sorrento',
-        activities: ['Amalfi Coast Drive', 'Villa Rufolo Gardens', 'Limoncello Tasting'],
-      },
-      {
-        day: 3,
-        title: 'Isle of Capri Private Boat Excursion',
-        location: 'Capri & Faraglioni Rocks',
-        description: 'Board a private gozzo wooden motorboat across the sparkling Tyrrhenian Sea to Capri. Circle the dramatic Faraglioni sea stacks and swim in secluded turquoise grottoes.',
-        meals: 'Breakfast included',
-        stay: 'Grand Hotel Panoramic, Sorrento',
-        activities: ['Private Capri Boat Cruise', 'Swim at White Grotto'],
-      },
-      {
-        day: 4,
-        title: 'High-Speed Rail to Florence & Historic Ponte Vecchio',
-        location: 'Florence (Firenze)',
-        description: 'Morning transfer to Naples Central for your high-speed Frecciarossa train to Florence. Check into a boutique Renaissance palazzo hotel steps from the Duomo. Sunset walk along the Arno river.',
-        meals: 'Breakfast included',
-        stay: 'Historic Palazzo Hotel, Florence',
-        activities: ['High-Speed Train Journey', 'Duomo & Piazza della Signoria Walk'],
-      },
-      {
-        day: 5,
-        title: 'Uffizi Masterpieces & Tuscan Chianti Wine Tour',
-        location: 'Florence & Chianti Valley',
-        description: 'Beat the crowds with early privileged entry to the Uffizi Gallery to stand before Botticelli’s Birth of Venus. In the afternoon, drive into the cypress-lined Chianti hills for a private estate cellar tour and wine tasting.',
-        meals: 'Breakfast & Tuscan Estate Lunch',
-        stay: 'Historic Palazzo Hotel, Florence',
-        activities: ['Uffizi Gallery Tour', 'Chianti Cellar Tasting'],
-      },
-      {
-        day: 6,
-        title: 'High-Speed Rail to Rome & The Trevi Fountain by Night',
-        location: 'Rome (Roma)',
-        description: 'Relax on the 90-minute morning rail journey to the Eternal City. Evening guided twilight stroll discovering the illuminated Trevi Fountain, Pantheon, and Piazza Navona.',
-        meals: 'Breakfast included',
-        stay: 'Boutique Hotel near Spanish Steps, Rome',
-        activities: ['Frecciarossa Train', 'Illuminated Rome Twilight Walk'],
-      },
-      {
-        day: 7,
-        title: 'Vatican Museums, Sistine Chapel & The Colosseum',
-        location: 'Rome',
-        description: 'Immerse in classical antiquity. Walk through the private galleries of the Vatican leading to Michelangelo’s Sistine Chapel ceiling, followed by afternoon guided access to the Colosseum arena floor.',
-        meals: 'Breakfast included',
-        stay: 'Boutique Hotel near Spanish Steps, Rome',
-        activities: ['Vatican Museums & Sistine Chapel', 'Colosseum & Roman Forum Walk'],
-      },
-      {
-        day: 8,
-        title: 'Arrivederci Rome',
-        location: 'Rome Fiumicino (FCO)',
-        description: 'Enjoy a leisurely Roman espresso and warm sfogliatella. Private chauffeur transfer to Rome Fiumicino Airport for your flight back.',
-        meals: 'Breakfast included',
-        stay: 'Departure',
-        activities: ['Chauffeured Airport Transfer'],
-      },
-    ],
-    inclusions: [
-      '7 Nights in 4-Star Superior & 5-Star handpicked historic properties',
-      'All high-speed Frecciarossa train tickets in First Class',
-      'Private Mercedes-Benz sedan transfers throughout',
-      'VIP skip-the-line admissions to Uffizi, Colosseum, and Vatican',
-      'Private Capri coastal boat charter',
-      'Daily Italian artisanal breakfast and signature vineyard lunch',
-    ],
-    exclusions: [
-      'International flights to/from Rome/Naples',
-      'Schengen Visa processing fee and travel insurance',
-      'City tourist taxes payable directly to hotels (approx. €4-€7 per person/night)',
-      'Discretionary tips for guides and private chauffeurs',
-    ],
-    hotelStandard: '4-Star Superior & Historic Palazzos',
-    groupSize: 'Private Chauffeured Journey (2-4 Guests)',
-    featured: true,
-    cardFeatures: ['Boutique hotel stay', 'Breakfast', 'Transfers', 'Experiences'],
-  },
-  {
-    slug: 'swiss-alps-panoramic-rail-retreat',
-    title: 'Swiss Alps: Glacier Express & Bernese Oberland',
-    tagline: '7 Days of Mountain Passes, Mirror Lakes & Alpine Silence',
-    destinationSlug: 'switzerland',
-    destinationName: 'Switzerland',
-    durationDays: 7,
-    durationNights: 6,
-    priceINR: 154000,
-    originalPriceINR: 172000,
-    priceValidUntil: '15 Oct 2026',
-    type: 'international',
-    style: 'Luxury Escapes',
-    heroImage: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=2000&q=85',
-    cardImage: 'https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&w=1200&q=80',
-    ],
-    overview: 'Witness Europe’s most revered mountain engineering. Gliding through dramatic deep valleys, snow-crowned summits, and idyllic timber hamlets. Highlights include Zermatt at the foot of the Matterhorn, the Glacier Express panorama rail, and the fairytale waterfalls of Lauterbrunnen.',
-    highlights: [
-      'Swiss Travel Pass First Class: Unlimited rail, lake steamers, and postal coaches',
-      'Guaranteed Excellence Class or First Class seating on the world-famed Glacier Express',
-      'Ascent to Jungfraujoch – Top of Europe via the Eiger Express tricable gondola',
-      'Strolls through car-free Zermatt and Lauterbrunnen’s 72 waterfall valley',
-      'Luxury alpine chalet hotel stays with heated mountain-view pools',
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: 'Arrival in Zurich & Rail Transfer to Lucerne',
-        location: 'Lucerne (Luzern)',
-        description: 'Arrive at Zurich Airport (ZRH). Board the seamless panoramic rail directly to lakeside Lucerne. Evening walk across the historic 14th-century wooden Chapel Bridge (Kapellbrücke).',
-        meals: 'Welcome Dinner included',
-        stay: 'Lakeview Hotel, Lucerne',
-        activities: ['Scenic Lake Rail', 'Chapel Bridge Walk'],
-      },
-      {
-        day: 2,
-        title: 'Mount Pilatus Golden Roundtrip',
-        location: 'Mount Pilatus',
-        description: 'Take a vintage lake paddle steamer to Alpnachstad, ascend via the world’s steepest cogwheel railway (48% gradient) to Pilatus Kulm, and glide down via the Dragon Ride aerial cableway.',
-        meals: 'Breakfast included',
-        stay: 'Lakeview Hotel, Lucerne',
-        activities: ['Cogwheel Railway', 'Lake Paddle Steamer Cruise'],
-      },
-      {
-        day: 3,
-        title: 'Interlaken & Lauterbrunnen Valley of Waterfalls',
-        location: 'Lauterbrunnen & Wengen',
-        description: 'Scenic train into the heart of the Bernese Oberland. Walk the dramatic valley floor where Staubbach Falls cascades down vertical limestone cliffs into alpine pastures.',
-        meals: 'Breakfast included',
-        stay: 'Alpine Chalet Boutique, Wengen/Grindelwald',
-        activities: ['Lauterbrunnen Valley Walk', 'Trümmelbach Glacial Caves'],
-      },
-      {
-        day: 4,
-        title: 'Jungfraujoch – Top of Europe',
-        location: 'Jungfrau Region',
-        description: 'Board the ultra-modern Eiger Express cable car gliding past the monumental north face of the Eiger, connecting to the historic cogwheel train up to 3,454m at the Jungfraujoch Ice Palace.',
-        meals: 'Breakfast included',
-        stay: 'Alpine Chalet Boutique, Wengen/Grindelwald',
-        activities: ['Jungfraujoch Sphinx Observatory', 'Aletsch Glacier Ice Palace'],
-      },
-      {
-        day: 5,
-        title: 'Glacier Express Crossing to Zermatt',
-        location: 'Glacier Express Rail & Zermatt',
-        description: 'Board the legendary Glacier Express. Relax under panoramic domed glass ceilings with white-glove three-course dining served at your seat as you climb over the Oberalp Pass down to Zermatt.',
-        meals: 'Breakfast & Onboard 3-Course Lunch',
-        stay: 'Matterhorn View Chalet, Zermatt',
-        activities: ['Glacier Express Scenic Journey', 'Car-free Zermatt Evening Walk'],
-      },
-      {
-        day: 6,
-        title: 'Gornergrat Cogwheel & Matterhorn Reflections',
-        location: 'Gornergrat (3,089m)',
-        description: 'Ascend Europe’s highest open-air cogwheel railway to Gornergrat. Walk to the pristine Riffelsee lake to capture the iconic inverted reflection of the Matterhorn in calm glacial water.',
-        meals: 'Breakfast included',
-        stay: 'Matterhorn View Chalet, Zermatt',
-        activities: ['Gornergrat Cogwheel Train', 'Riffelsee Reflection Hike'],
-      },
-      {
-        day: 7,
-        title: 'Scenic Rail to Zurich & Departure',
-        location: 'Zurich Airport (ZRH)',
-        description: 'Board the prompt Swiss rail system back to Zurich Airport for your international departure flight.',
-        meals: 'Breakfast included',
-        stay: 'Departure',
-        activities: ['First Class Swiss Rail Transfer to Airport'],
-      },
-    ],
-    inclusions: [
-      '6 Nights in luxury 4-star and 5-star mountain chalet hotels',
-      '8-Day Swiss Travel Pass in First Class',
-      'Glacier Express seat reservation with multi-course dining',
-      'Jungfraujoch mountain rail and Eiger Express excursion tickets',
-      'Daily hot breakfast buffet featuring regional cheeses and fresh pastries',
-    ],
-    exclusions: [
-      'International flights to/from Switzerland',
-      'Schengen Visa fees and mandatory overseas health insurance',
-      'Lunches and dinners not explicitly specified',
-      'Personal equipment rental or optional helicopter rides',
-    ],
-    hotelStandard: '4-Star Superior & 5-Star Alpine Chalets',
-    groupSize: 'Independent / Couples Travel (2 Guests)',
-    featured: true,
-    cardFeatures: ['Alpine chalet stay', 'Breakfast', 'Transfers', 'Experiences'],
-  },
-  {
+{
     slug: 'kerala-tranquil-backwaters-misty-hills',
     title: 'Kerala: Houseboat Drift, Tea Mist & Heritage Coast',
     tagline: '6 Days across Fort Kochi, Munnar Hills & Alleppey Backwaters',
@@ -542,108 +311,7 @@ export const travelPackages: TravelPackage[] = [
     groupSize: 'Private Family / Couple (2-4 Guests)',
     featured: false,
   },
-  {
-    slug: "phu-quoc-island-escape-all-inclusive-vietnam-direct-flight",
-    title: "Phu Quoc Island Escape – All-Inclusive Vietnam Direct Flight Holiday",
-    tagline: "All-Inclusive Direct Flight Escape with Theme Parks & Island Wonders",
-    destinationSlug: "vietnam",
-    destinationName: "Vietnam",
-    durationDays: 5,
-    durationNights: 4,
-    priceINR: 69999,
-    originalPriceINR: 79999,
-    priceValidUntil: "31 Jan 2026",
-    type: 'fixed-departure',
-    style: "Family Journey",
-    heroImage: "https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=2000&q=85",
-    cardImage: "https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=1200&q=80",
-    gallery: ["https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=1200&q=80","https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80"],
-    overview: "Fly direct from Delhi to Phu Quoc in just 5 hours and dive into pristine beaches, luxury resorts, thrilling theme parks, and unforgettable sunsets. This 4-night experience blends adventure, leisure, and comfort – perfect for couples, families, and group travellers looking for a visa-free international holiday with everything taken care of.",
-    highlights: [
-      "Arrival in Phu Quoc – Safari & Grand World Fun",
-      "Thrills at VinWonders Theme Park",
-      "Sunset Dreams & Night Market Vibes",
-      "Cable Cars, Beaches & Kiss of the Sea Show",
-      "Departure Day"
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: "Arrival in Phu Quoc – Safari & Grand World Fun",
-        location: "Vietnam",
-        description: "Arrive via direct flight from Delhi. After early check-in and breakfast, visit Vinpearl Safari, Vietnam’s first open wildlife park. Later, explore Grand World – The Sleepless City, enjoy a Gondola Boat Ride, visit the Teddy Bear Museum, and witness the Quintessence of Vietnam Cultural Show.\n\nMeals: Breakfast, Lunch & Indian Dinner",
-        meals: "Breakfast & Dinner included",
-        stay: "4-Star & 5-Star Luxury Beach Resorts (Holiday Vinfiesta / Best Western Premier Sonasea)",
-        activities: ["Arrival in Phu Quoc – Safari & Grand Wor"],
-      },
-      {
-        day: 2,
-        title: "Thrills at VinWonders Theme Park",
-        location: "Vietnam",
-        description: "Spend your day at VinWonders Phu Quoc, Vietnam’s largest theme park featuring over 100 attractions, Southeast Asia’s biggest water park, and the stunning Seashell Aquarium.\n\nMeals: Breakfast, Lunch in Park & Indian Dinner",
-        meals: "Breakfast & Dinner included",
-        stay: "4-Star & 5-Star Luxury Beach Resorts (Holiday Vinfiesta / Best Western Premier Sonasea)",
-        activities: ["Thrills at VinWonders Theme Park"],
-      },
-      {
-        day: 3,
-        title: "Sunset Dreams & Night Market Vibes",
-        location: "Vietnam",
-        description: "Relax in the morning and enjoy a laid-back beachside afternoon at Sunset Sanato Beach — Phu Quoc’s most iconic photospot. In the evening, stroll through Phu Quoc Night Market and enjoy shopping, food, and local energy.\n\nMeals: Breakfast, Lunch & Indian Dinner",
-        meals: "Breakfast & Dinner included",
-        stay: "4-Star & 5-Star Luxury Beach Resorts (Holiday Vinfiesta / Best Western Premier Sonasea)",
-        activities: ["Sunset Dreams & Night Market Vibes"],
-      },
-      {
-        day: 4,
-        title: "Cable Cars, Beaches & Kiss of the Sea Show",
-        location: "Vietnam",
-        description: "Ride the world’s longest overwater cable car to Hon Thom Island, experience Aquatopia Water Park, and relax on the beach. End the day with Kiss of the Sea, a breathtaking multimedia show of lights, fire, and music at Sunset Town.\n\nMeals: Breakfast, Lunch & Dinner",
-        meals: "Breakfast & Dinner included",
-        stay: "4-Star & 5-Star Luxury Beach Resorts (Holiday Vinfiesta / Best Western Premier Sonasea)",
-        activities: ["Cable Cars, Beaches & Kiss of the Sea Sh"],
-      },
-      {
-        day: 5,
-        title: "Departure Day",
-        location: "Vietnam",
-        description: "After breakfast, check out and transfer to Phu Quoc Airport for your return flight to Delhi.\n\nMeals: Breakfast",
-        meals: "Breakfast included",
-        stay: "4-Star & 5-Star Luxury Beach Resorts (Holiday Vinfiesta / Best Western Premier Sonasea)",
-        activities: ["Departure Day"],
-      }
-    ],
-    inclusions: [
-      "Return Direct Flights (Delhi – Phu Quoc – Delhi)",
-      "4 Nights Stay in 4*/ 5* Hotels (Choice Available)",
-      "Early Check-In on Arrival",
-      "All Meals Included (Breakfast, Lunch & Indian Dinner)",
-      "All Sightseeing Tickets & Transfers",
-      "Vin Wonders Theme Park Entry",
-      "Hon Thom Cable Car Ride (World’s Longest Overwater Cable Car)",
-      "Aquatopia Water Park Access",
-      "Vinpearl Safari Visit",
-      "Sunset Town + Kiss Bridge + Kiss of the Sea Show",
-      "Night Market Visit",
-      "English-speaking Tour Leader",
-      "Airport Transfers",
-      "Visa-Free Entry (Exclusive for Direct Charter)",
-      "Daily Indian Meals (Veg & Non-Veg Options)"
-],
-    exclusions: [
-      "Travel Insurance",
-      "Personal Expenses (Tips, Shopping, etc.)",
-      "Anything not mentioned in “Inclusions”",
-      "USD 3/person/day Tips (Mandatory)",
-      "TCS (5%) - REFUNDABLE Through ITR",
-      "GST (5%)"
-],
-    hotelStandard: "4-Star & 5-Star Luxury Beach Resorts (Holiday Vinfiesta / Best Western Premier Sonasea)",
-    groupSize: "Fixed Group (15-25 Guests)",
-    featured: true,
-    departureDates: ["12 Dec 2025","13 Dec 2025","17 Dec 2025","21 Dec 2025","25 Dec 2025","29 Dec 2025","2 Jan 2026","6 Jan 2026"],
-  },
-  {
+{
     slug: "vietnam-group-departure-7-nights-8-days",
     title: "Vietnam Group Departure – 7 Nights / 8 Days",
     tagline: "7 Nights across Hoi An, Da Nang, Hanoi & Dreamy Halong Bay Cruise",
@@ -771,7 +439,7 @@ export const travelPackages: TravelPackage[] = [
     featured: true,
     departureDates: ["10 Oct 2025","24 Oct 2025","14 Nov 2025","28 Nov 2025"],
   },
-  {
+{
     slug: "thailand-fixed-departure-4n-phuket-krabi-with-flights",
     title: "Thailand Fixed Departure – 4N Phuket & Krabi with Flights",
     tagline: "4 Nights in Phuket & Krabi with Speedboat Island Excursions & Flights",
@@ -873,7 +541,7 @@ export const travelPackages: TravelPackage[] = [
     featured: true,
     departureDates: ["15 Nov 2025","05 Dec 2025","15 Jan 2026","12 Feb 2026","10 Mar 2026"],
   },
-  {
+{
     slug: "singapore-cruise-getaway-5n-fixed-departure-flights-included",
     title: "Singapore + Cruise Getaway – 5N Fixed Departure (Flights Included)",
     tagline: "5 Nights Exploring Futuristic Singapore & Sailing on Genting Dream Cruise",
@@ -983,7 +651,7 @@ export const travelPackages: TravelPackage[] = [
     featured: true,
     departureDates: ["15 Aug 2025","12 Sep 2025","16 Oct 2025","20 Nov 2025"],
   },
-  {
+{
     slug: "vietnam-4-nights-central-vietnam-coastal-bliss",
     title: "Vietnam 4 Nights – Central Vietnam Coastal Bliss",
     tagline: "4 Nights Coastal Escape across Da Nang, Ba Na Hills & Lantern Town Hoi An",
@@ -1080,7 +748,7 @@ export const travelPackages: TravelPackage[] = [
     featured: false,
     departureDates: ["18 Oct 2025","08 Nov 2025","22 Nov 2025","13 Dec 2025"],
   },
-  {
+{
     slug: "all-in-thailand-8-nights-across-bangkok-pattaya-phuket-krabi",
     title: "All-In Thailand – 8 Nights Across Bangkok, Pattaya, Phuket & Krabi",
     tagline: "8 Nights across Bangkok, Pattaya, Coral Islands, Phuket & Krabi",
@@ -1222,7 +890,7 @@ export const travelPackages: TravelPackage[] = [
     featured: false,
     departureDates: ["10 Oct 2025","25 Oct 2025","15 Nov 2025","05 Dec 2025"],
   },
-  {
+{
     slug: '3n-abu-dhabi-icons-and-adventures-yas-plaza',
     title: '3N Abu Dhabi Icons & Adventures',
     tagline: '4 Days / 3 Nights of Yas Theme Parks & Grand Mosque Cultural Wonders',
@@ -1314,7 +982,7 @@ export const travelPackages: TravelPackage[] = [
       'Park Access & City Tour',
     ],
   },
-  {
+{
     slug: '3n-abu-dhabi-icons-and-adventures-crowne-plaza-ihg',
     title: '3N Abu Dhabi Icons & Adventures (IHG Sea View)',
     tagline: '4 Days / 3 Nights at Crowne Plaza Yas Island IHG 5★ with Sea Views & Theme Parks',
@@ -1406,7 +1074,7 @@ export const travelPackages: TravelPackage[] = [
       'Park Access & City Tour',
     ],
   },
-  {
+{
     slug: '6n-exploring-balis-beauty',
     title: "6N Exploring Bali's Beauty",
     tagline: '7 Days / 6 Nights across Kuta & Ubud with Nusa Penida West Tour',
@@ -1526,7 +1194,7 @@ export const travelPackages: TravelPackage[] = [
       'Daily Breakfast Included',
     ],
   },
-  {
+{
     slug: '5n-bali-magic-adventure',
     title: '5N Bali Magic Adventure',
     tagline: '6 Days / 5 Nights across Seminyak & Ubud with Nusa Penida Expedition',
@@ -1630,7 +1298,7 @@ export const travelPackages: TravelPackage[] = [
       'Seminyak & Ubud Exploration',
     ],
   },
-  {
+{
     slug: '5n-bali-explorers-dream',
     title: "5N Bali Explorer's Dream",
     tagline: '6 Days / 5 Nights across Nusa Dua & Ubud with 3-Point Reef Snorkelling',
@@ -1734,7 +1402,7 @@ export const travelPackages: TravelPackage[] = [
       'Daily Breakfast Included',
     ],
   },
-  {
+{
     slug: '7n-sun-sea-and-serenity-bali',
     title: '7N Sun, Sea & Serenity – Bali',
     tagline: '8 Days / 7 Nights across Kuta, Nusa Penida, Gili Trawangan & Ubud',
@@ -1856,7 +1524,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: '5n-bali-romantic-getaway',
     title: '5N Bali Romantic Getaway',
     tagline: '6 Days / 5 Nights across Kuta & Ubud designed for couples',
@@ -1960,7 +1628,7 @@ export const travelPackages: TravelPackage[] = [
       'Couple Sightseeings',
     ],
   },
-  {
+{
     slug: '8n-bali-buzz-break',
     title: '8N Bali Buzz Break',
     tagline: '9 Days / 8 Nights across Kuta, Nusa Penida & Ubud with Balinese Spa',
@@ -2091,7 +1759,7 @@ export const travelPackages: TravelPackage[] = [
       'Nusa Penida & Ubud Stays',
     ],
   },
-  {
+{
     slug: '5n-whispers-of-bali',
     title: '5N Whispers of Bali',
     tagline: '6 Days / 5 Nights across Ubud & Karangasem Luxury Pool Villas',
@@ -2195,7 +1863,7 @@ export const travelPackages: TravelPackage[] = [
       'Luxury Private Pool Stays',
     ],
   },
-  {
+{
     slug: '5n-tropical-tribe-getaway',
     title: '5N Tropical Tribe Getaway',
     tagline: '6 Days / 5 Nights across Canggu & Gianyar with South Bali Beach Hopping',
@@ -2299,7 +1967,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: '5n-dazzling-dubai-deals',
     title: '5N Dazzling Dubai Deals',
     tagline: '6 Days / 5 Nights across Deira & Yas Island with Theme Parks',
@@ -2402,7 +2070,7 @@ export const travelPackages: TravelPackage[] = [
       'Yas Island & Dubai Stays',
     ],
   },
-  {
+{
     slug: '4n-dubai-deira-deal',
     title: '4N Dubai Deira Deal',
     tagline: '5 Days / 4 Nights at Majestic Cove with Burj Khalifa 124th Floor Access',
@@ -2495,7 +2163,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: '4n-dubai-safari-explorer',
     title: '4N Dubai Safari Explorer',
     tagline: '5 Days / 4 Nights at Savoy Park Bur Dubai with Burj Khalifa & City Tour',
@@ -2588,7 +2256,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: '5n-emirates-on-a-budget',
     title: '5N Emirates on a Budget',
     tagline: '6 Days / 5 Nights across Deira & Yas Island with BAPS Hindu Temple',
@@ -2690,7 +2358,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: '4n-best-of-dubai',
     title: '4N Best of Dubai',
     tagline: '5 Days / 4 Nights at Majestic Cove with Dubai Trio & Burj Khalifa',
@@ -2784,7 +2452,7 @@ export const travelPackages: TravelPackage[] = [
       'Burj Khalifa 124th Floor',
     ],
   },
-  {
+{
     slug: '4n-dubai-dhamaka-mgallery',
     title: '4N Dubai Dhamaka (MGallery 5★)',
     tagline: '5 Days / 4 Nights at The Canvas Dubai MGallery 5★ with Complete Dubai Trio',
@@ -2877,7 +2545,7 @@ export const travelPackages: TravelPackage[] = [
       'Burj Khalifa 124th Floor',
     ],
   },
-  {
+{
     slug: '4n-golden-dunes-residences',
     title: '4N Golden Dunes Residences',
     tagline: '5 Days / 4 Nights at Majestic Cove with Abu Dhabi Tour & BAPS Hindu Temple',
@@ -2968,7 +2636,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: '4n-dubai-highlights-holiday',
     title: '4N Dubai Highlights Holiday',
     tagline: '5 Days / 4 Nights with City Tour, Burj Khalifa & Marina Cruise',
@@ -3061,7 +2729,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: '3n-affordable-dubai',
     title: '3N Affordable Dubai',
     tagline: '4 Days / 3 Nights at Citymax Bur Dubai with Trio Standard & Burj Khalifa',
@@ -3145,7 +2813,7 @@ export const travelPackages: TravelPackage[] = [
       'Creek Dhow Cruise Dinner',
     ],
   },
-  {
+{
     slug: '4n-dubai-budget-friendly',
     title: '4N Dubai Budget Friendly',
     tagline: '5 Days / 4 Nights at Holiday Inn Express Airport with SIM & Insurance',
@@ -3238,7 +2906,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'egypt-journey-through-time-oct-nov',
     title: 'Egypt: Journey Through Time',
     tagline: '9 Days / 8 Nights across Cairo, Aswan, Luxor & Hurghada',
@@ -3378,7 +3046,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers included',
     ],
   },
-  {
+{
     slug: 'egypt-journey-through-time-december',
     title: 'Egypt: Journey Through Time — December Departure',
     tagline: '9 Days / 8 Nights across Cairo, Aswan, Luxor & Hurghada in Prime Winter Weather',
@@ -3510,7 +3178,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers included',
     ],
   },
-  {
+{
     slug: 'egypt-journey-through-time-christmas-special',
     title: 'Egypt: Journey Through Time — Christmas & New Year Special',
     tagline: '10 Days / 9 Nights across Cairo, Aswan, Luxor & Hurghada with Gala Celebrations',
@@ -3650,7 +3318,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers included',
     ],
   },
-  {
+{
     slug: 'europe-twin-escape-5n',
     title: '5N Europe Twin Escape',
     tagline: '3N Paris & 2N Amsterdam with Louvre Museum, Seine Cruise & Private Transfers',
@@ -3752,7 +3420,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'grand-european-escape-7n',
     title: '7N Grand European Escape',
     tagline: '3N London, 2N Paris & 2N Amsterdam with Buckingham Palace, Louvre & Canal Cruises',
@@ -3872,7 +3540,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'art-culture-getaway-rome-florence-5n',
     title: '5N Art & Culture Getaway',
     tagline: "3N Rome & 2N Florence with Accademia Gallery & Michelangelo's David",
@@ -3974,7 +3642,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'timeless-cities-escape-london-paris-5n',
     title: '5N Timeless Cities Escape',
     tagline: '3N London & 2N Paris with 5★ Luxury Accommodations & Warner Bros Harry Potter Studio Tour',
@@ -4076,7 +3744,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'continental-charms-amsterdam-brussels-5n',
     title: '5N Continental Charms Journey',
     tagline: '3N Amsterdam & 2N Brussels with Zaanse Schans Windmills, Edam, Volendam & Private Transfers',
@@ -4178,7 +3846,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'glimpse-of-europe-paris-amsterdam-4n',
     title: '4N Glimpse of Europe',
     tagline: '2N Paris & 2N Amsterdam with Big Bus 24h Hop-On Hop-Off, River Cruise & Private Transfers',
@@ -4271,7 +3939,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'euro-odyssey-barcelona-madrid-5n',
     title: '5N Euro Odyssey',
     tagline: '3N Barcelona & 2N Madrid with Montserrat Cogwheel Train & La Morenita Access',
@@ -4373,7 +4041,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'central-europe-charm-vienna-prague-5n',
     title: '5N Central Europe Charm',
     tagline: '3N Vienna & 2N Prague with Belvedere Palace, Gardens & Private Transfers',
@@ -4475,7 +4143,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'alpine-heritage-adventure-munich-salzburg-5n',
     title: '5N Alpine Heritage Adventure',
     tagline: '3N Munich & 2N Salzburg with Bavarian Alpine Excursion & Private Transfers',
@@ -4577,7 +4245,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'swiss-alps-exploration-zurich-lucerne-5n',
     title: '5N Swiss Alps Exploration',
     tagline: '3N Zurich & 2N Lucerne with Mount Pilatus Cruise, Cable Car & Cogwheel Rail Ride',
@@ -4679,7 +4347,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'japan-cherry-blossom-special-with-flights-7n',
     title: '7N Japan: Cherry Blossom Special | With Flights',
     tagline: 'Tokyo, Mount Fuji, Hakone, Osaka, Kyoto, Nara & Amanohashidate with Flights Included',
@@ -4807,7 +4475,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers included',
     ],
   },
-  {
+{
     slug: 'japan-grand-explorer-7n8d',
     title: 'Japan – Grand Explorer – 7N/8D',
     tagline: 'Tokyo, Mount Fuji, Hakone, Osaka, Kyoto & Nara (Land Package)',
@@ -4934,7 +4602,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers included',
     ],
   },
-  {
+{
     slug: 'japan-land-package-7n8d',
     title: 'Japan – Land Package – 7N/8D',
     tagline: 'Osaka, Kyoto, Nara, Mount Fuji, Hakone & Tokyo (Land Package)',
@@ -5060,7 +4728,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers included',
     ],
   },
-  {
+{
     slug: 'korean-highlights-escape-4n',
     title: '4N Korean Highlights Escape',
     tagline: '2N Seoul, 1N Busan & 1N Jeju Island with Paju DMZ Tour & Private Transfers',
@@ -5157,683 +4825,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-
-  // --- MALAYSIA ---
-  {
-    slug: 'malaysia-short-escape-2n',
-    title: '2N Malaysia Short Escape',
-    tagline: '2N Kuala Lumpur with Central Market Stay, SIM & Travel Insurance',
-    destinationSlug: 'malaysia',
-    destinationName: 'Malaysia',
-    durationDays: 3,
-    durationNights: 2,
-    priceINR: 35152,
-    originalPriceINR: 31152,
-    priceValidUntil: '',
-    hasStarMark: true,
-    type: 'international',
-    style: 'Expedition & Culture',
-    heroImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=2000&q=85',
-    cardImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
-    ],
-    overview: 'A convenient 3-day short break in the heart of Kuala Lumpur. Stay steps away from Central Market (Pasar Seni) and Chinatown, enjoy hassle-free private airport transfers, a complimentary tourist SIM card, travel insurance, and guided orientation.',
-    highlights: [
-      '2 Nights in Pacific Express Hotel Central Market',
-      'Complimentary Malaysia Tourist SIM card & travel insurance (+2 Sightseeings)',
-      'Chinatown Petaling Street & Central Market heritage shopping',
-      'Petronas Twin Towers & Merdeka Square evening views',
-      'Private airport round-trip transfers included',
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: 'Arrival in Kuala Lumpur & Chinatown',
-        location: 'Kuala Lumpur',
-        description: 'Arrive at Kuala Lumpur International Airport (KLIA/KLIA2). Meet your private driver and receive your tourist SIM card. Transfer to Pacific Express Hotel Central Market. Evening stroll through Petaling Street night market.',
-        meals: 'Room only',
-        stay: 'Pacific Express Hotel Central Market',
-        activities: ['Private Airport Transfer', 'SIM Card Activation', 'Petaling Street Stroll'],
-      },
-      {
-        day: 2,
-        title: 'KL City Icons: Petronas Towers & Batu Caves',
-        location: 'Kuala Lumpur',
-        description: 'Discover the best of KL: explore the 272 steps of Batu Caves, take photos at the foot of the Petronas Twin Towers, and visit the historic Sultan Abdul Samad Building on Merdeka Square.',
-        meals: 'Breakfast Included',
-        stay: 'Pacific Express Hotel Central Market',
-        activities: ['Batu Caves Excursion', 'Petronas Twin Towers Photo Stop', 'Merdeka Square'],
-      },
-      {
-        day: 3,
-        title: 'KL Departure',
-        location: 'Kuala Lumpur Airport (KUL)',
-        description: 'Breakfast at hotel before your private transfer to KLIA for your departure flight back home.',
-        meals: 'Breakfast Included',
-        stay: 'Departure',
-        activities: ['Private Airport Transfer'],
-      },
-    ],
-    inclusions: [
-      '2 Nights in Pacific Express Hotel Central Market',
-      'Daily breakfast',
-      'Tourist SIM card and basic travel insurance',
-      'Private airport round-trip transfers',
-    ],
-    exclusions: ['Airfares', 'Malaysia Tourism Tax (MYR 10/night payable at hotel)', 'Personal expenses'],
-    hotelStandard: 'Pacific Express Hotel Central Market',
-    groupSize: 'Custom Private FIT Itinerary',
-    featured: false,
-    cardFeatures: [
-      '2N Kuala Lumpur',
-      'Pacific Express Hotel Central Market',
-      'SIM and Insurance (+2 Sightseeings)',
-      'Transfers (Private)',
-    ],
-  },
-  {
-    slug: 'malaysia-super-adventure-3n',
-    title: '3N Malaysia Super Adventure',
-    tagline: '3N Kuala Lumpur with Chow Kit Stay & Evening Half-Day City Tour',
-    destinationSlug: 'malaysia',
-    destinationName: 'Malaysia',
-    durationDays: 4,
-    durationNights: 3,
-    priceINR: 26088,
-    originalPriceINR: 22088,
-    priceValidUntil: '',
-    hasStarMark: true,
-    type: 'international',
-    style: 'Expedition & Culture',
-    heroImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=2000&q=85',
-    cardImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
-    ],
-    overview: 'An unbeatable value adventure in Kuala Lumpur. Stay 3 nights at Kingston Hotel 05 Chow Kit, embark on an evening half-day city tour past illuminated city monuments, and enjoy private airport transfers.',
-    highlights: [
-      '3 Nights in Kingston Hotel 05 Chow Kit',
-      'Evening Half-Day Kuala Lumpur City Tour (3 Hours) (+1 Sightseeing)',
-      'King Palace, National Mosque & Independence Square orientation',
-      'Petronas Twin Towers illuminated night photography',
-      'Private airport transfers included',
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: 'Arrival in Kuala Lumpur',
-        location: 'Kuala Lumpur',
-        description: 'Arrive at KLIA. Private transfer to Kingston Hotel 05 Chow Kit. Evening free to explore local markets and Malay street food in the Chow Kit district.',
-        meals: 'Room only',
-        stay: 'Kingston Hotel 05 Chow Kit',
-        activities: ['Private Airport Transfer', 'Chow Kit Evening Walk'],
-      },
-      {
-        day: 2,
-        title: 'Evening Half-Day Kuala Lumpur City Tour',
-        location: 'Kuala Lumpur',
-        description: 'Spend your morning at leisure. In the late afternoon, enjoy an evening 3-hour city tour past King’s Palace (Istana Negara), National Monument, National Mosque, and the glowing Petronas Twin Towers.',
-        meals: 'Breakfast Included',
-        stay: 'Kingston Hotel 05 Chow Kit',
-        activities: ['Evening KL City Tour (3 Hours)', 'King’s Palace Exterior', 'Petronas Towers Evening View'],
-      },
-      {
-        day: 3,
-        title: 'Bukit Bintang Shopping & Street Cuisine',
-        location: 'Kuala Lumpur',
-        description: 'Day at leisure to explore Bukit Bintang’s premier shopping malls like Pavilion KL and sample street delicacies along Jalan Alor food street.',
-        meals: 'Breakfast Included',
-        stay: 'Kingston Hotel 05 Chow Kit',
-        activities: ['Pavilion KL Shopping', 'Jalan Alor Street Food Stroll'],
-      },
-      {
-        day: 4,
-        title: 'Kuala Lumpur Departure',
-        location: 'Kuala Lumpur Airport (KUL)',
-        description: 'Breakfast at hotel before your private transfer to KLIA for your onward journey.',
-        meals: 'Breakfast Included',
-        stay: 'Departure',
-        activities: ['Private Airport Departure Transfer'],
-      },
-    ],
-    inclusions: [
-      '3 Nights in Kingston Hotel 05 Chow Kit',
-      'Daily breakfast',
-      'Evening Half-Day Kuala Lumpur City Tour (3 Hours)',
-      'Private airport round-trip transfers',
-    ],
-    exclusions: ['Airfares', 'Malaysia Tourism Tax', 'Personal expenses'],
-    hotelStandard: 'Kingston Hotel 05 Chow Kit',
-    groupSize: 'Custom Private FIT Itinerary',
-    featured: false,
-    cardFeatures: [
-      '3N Kuala Lumpur',
-      'Kingston Hotel 05 Chow Kit',
-      'Evening Half Day Kuala Lumpur City Tour (+1 Sightseeing)',
-      'Transfers (Private)',
-    ],
-  },
-  {
-    slug: 'malaysian-mosaic-experience-3n',
-    title: '3N Malaysian Mosaic Experience',
-    tagline: '3N Langkawi Island Luxury at Berjaya Langkawi Resort with Private Transfers',
-    destinationSlug: 'malaysia',
-    destinationName: 'Malaysia',
-    durationDays: 4,
-    durationNights: 3,
-    priceINR: 64280,
-    originalPriceINR: 60280,
-    priceValidUntil: '',
-    hasStarMark: true,
-    type: 'international',
-    style: 'Luxury Escapes',
-    heroImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=2000&q=85',
-    cardImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
-    ],
-    overview: 'Unwind amidst the lush prehistoric rainforest and turquoise waters of Burau Bay at the 5-star Berjaya Langkawi Resort. Stay in luxury chalets on stilts over water or nestled in rainforest greenery, with private transfers, SIM card, and travel insurance.',
-    highlights: [
-      '3 Nights in 5★ Berjaya Langkawi Resort',
-      'SIM card and travel insurance package (+2 Sightseeings)',
-      'Private beach sanctuary & rainforest nature trails',
-      'Langkawi SkyBridge and cable car access nearby',
-      'Private Langkawi airport transfers included',
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: 'Arrival in Tropical Langkawi',
-        location: 'Langkawi',
-        description: 'Arrive at Langkawi International Airport (LGK). Meet your private driver and transfer to Berjaya Langkawi Resort set between ancient rainforest and Burau Bay. Evening sunset cocktails by the private beach.',
-        meals: 'Room only',
-        stay: 'Berjaya Langkawi Resort 5★',
-        activities: ['Private Airport Transfer', 'Resort Orientation', 'Beach Sunset'],
-      },
-      {
-        day: 2,
-        title: 'Langkawi SkyCab, SkyBridge & Seven Wells',
-        location: 'Langkawi',
-        description: 'Ride the Langkawi SkyCab up Mount Machinchang for panoramic views of the Andaman Sea and Thailand in the distance. Walk across the curved suspension SkyBridge and visit Telaga Tujuh waterfalls.',
-        meals: 'Breakfast Included',
-        stay: 'Berjaya Langkawi Resort 5★',
-        activities: ['Langkawi SkyCab Cable Car', 'SkyBridge Walk', 'Seven Wells Waterfalls'],
-      },
-      {
-        day: 3,
-        title: 'Island Hopping Safari or Rainforest Spa',
-        location: 'Langkawi Archipelago',
-        description: 'Spend your morning on an island hopping speedboat tour visiting the Lake of the Pregnant Maiden (Dayang Bunting) and watching wild Brahminy kites feeding, or indulge in a signature spa session.',
-        meals: 'Breakfast Included',
-        stay: 'Berjaya Langkawi Resort 5★',
-        activities: ['Island Hopping Speedboat Tour', 'Eagle Feeding Watch', 'Rainforest Spa Treatment'],
-      },
-      {
-        day: 4,
-        title: 'Langkawi Departure',
-        location: 'Langkawi Airport (LGK)',
-        description: 'Breakfast at the resort before your private transfer to Langkawi Airport for your onward flight.',
-        meals: 'Breakfast Included',
-        stay: 'Departure',
-        activities: ['Private Airport Transfer'],
-      },
-    ],
-    inclusions: [
-      '3 Nights in 5★ Berjaya Langkawi Resort',
-      'Daily breakfast',
-      'Tourist SIM card and travel insurance',
-      'Private Langkawi airport transfers',
-    ],
-    exclusions: ['Airfares', 'Langkawi Tourism Promotion fee', 'Personal expenses'],
-    hotelStandard: 'Berjaya Langkawi Resort (5★)',
-    groupSize: 'Custom Private FIT Itinerary',
-    featured: true,
-    cardFeatures: [
-      '3N Langkawi',
-      'Berjaya Langkawi Resort',
-      'SIM and Insurance (+2 Sightseeings)',
-      'Transfers (Private)',
-    ],
-  },
-  {
-    slug: 'mystical-malaysia-escape-4n',
-    title: '4N Mystical Malaysia Escape',
-    tagline: '2N Kuala Lumpur & 2N Langkawi with 4★ Verdant Hill Hotel & Island Paradise',
-    destinationSlug: 'malaysia',
-    destinationName: 'Malaysia',
-    durationDays: 5,
-    durationNights: 4,
-    priceINR: 56712,
-    originalPriceINR: 52712,
-    priceValidUntil: '',
-    hasStarMark: true,
-    type: 'international',
-    style: 'Luxury Escapes',
-    heroImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=2000&q=85',
-    cardImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
-    ],
-    overview: 'The quintessential Malaysia combo combining the urban excitement of Kuala Lumpur with the idyllic beaches of Langkawi. Stay 2 nights at 4-star Verdant Hill Kuala Lumpur and 2 nights at an upscale Langkawi beach resort with all private transfers, SIM card, and travel insurance.',
-    highlights: [
-      '2 Nights Kuala Lumpur 4★ Hotel + 2 Nights Langkawi 4★ Beach Resort',
-      'SIM card and travel insurance (+3 Sightseeings included)',
-      'Kuala Lumpur city tour & Batu Caves visit',
-      'Langkawi island hopping & white sand beach relaxation',
-      'Private airport transfers in both cities',
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: 'Arrival in Kuala Lumpur & Bukit Bintang',
-        location: 'Kuala Lumpur',
-        description: 'Arrive at KLIA. Private transfer to 4-star Verdant Hill Hotel in Bukit Bintang. Evening walk to Pavilion KL and Jalan Alor street food.',
-        meals: 'Room only',
-        stay: 'Verdant Hill Hotel Kuala Lumpur 4★',
-        activities: ['Private Airport Transfer', 'Bukit Bintang Evening Stroll'],
-      },
-      {
-        day: 2,
-        title: 'Batu Caves & Petronas Twin Towers',
-        location: 'Kuala Lumpur',
-        description: 'Visit the limestone caves and rainbow staircase at Batu Caves. Photo stop at the Petronas Twin Towers, King’s Palace, and National Monument.',
-        meals: 'Breakfast Included',
-        stay: 'Verdant Hill Hotel Kuala Lumpur 4★',
-        activities: ['Batu Caves Tour', 'Petronas Towers Photo Stop', 'National Mosque'],
-      },
-      {
-        day: 3,
-        title: 'Flight to Langkawi & Beach Leisure',
-        location: 'KL to Langkawi',
-        description: 'Private transfer to airport for your flight to Langkawi. Transfer to your beach resort in Pantai Cenang or Burau Bay. Relax with sunset beach cocktails.',
-        meals: 'Breakfast Included',
-        stay: 'Langkawi 4★ Beach Resort',
-        activities: ['Flight to Langkawi', 'Resort Check-in', 'Beachside Sunset'],
-      },
-      {
-        day: 4,
-        title: 'Langkawi Island Hopping & Cable Car',
-        location: 'Langkawi',
-        description: 'Morning speedboat island hopping tour to Dayang Bunting and Beras Basah Island. Afternoon excursion to the Langkawi SkyCab and SkyBridge.',
-        meals: 'Breakfast Included',
-        stay: 'Langkawi 4★ Beach Resort',
-        activities: ['Island Hopping Speedboat Tour', 'Langkawi SkyCab & SkyBridge'],
-      },
-      {
-        day: 5,
-        title: 'Langkawi Departure',
-        location: 'Langkawi Airport (LGK)',
-        description: 'Breakfast at hotel followed by private transfer to Langkawi Airport for your departure flight.',
-        meals: 'Breakfast Included',
-        stay: 'Departure',
-        activities: ['Private Departure Transfer'],
-      },
-    ],
-    inclusions: [
-      '2 Nights Kuala Lumpur 4★ Hotel & 2 Nights Langkawi 4★ Resort',
-      'Daily breakfast',
-      'Tourist SIM card & travel insurance',
-      'Private airport transfers in both cities',
-    ],
-    exclusions: ['Airfares', 'City and tourism taxes', 'Personal expenditures'],
-    hotelStandard: 'Verdant Hill Kuala Lumpur (+1 Hotels)',
-    groupSize: 'Custom Private FIT Itinerary',
-    featured: true,
-    cardFeatures: [
-      '2N Kuala Lumpur, 2N Langkawi',
-      'Verdant Hill Kuala Lumpur (+1 Hotels)',
-      'SIM and Insurance (+3 Sightseeings)',
-      'Transfers (Private)',
-    ],
-  },
-  {
-    slug: 'serene-malaysia-sojourn-3n',
-    title: '3N Serene Malaysia Sojourn',
-    tagline: '3N Kuala Lumpur at Furama Bukit Bintang with SIM, Insurance & Private Transfers',
-    destinationSlug: 'malaysia',
-    destinationName: 'Malaysia',
-    durationDays: 4,
-    durationNights: 3,
-    priceINR: 45624,
-    originalPriceINR: 41624,
-    priceValidUntil: '',
-    hasStarMark: true,
-    type: 'international',
-    style: 'Luxury Escapes',
-    heroImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=85',
-    cardImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
-    ],
-    overview: 'Enjoy an upscale city stay at the 4-star Furama Bukit Bintang, situated near Kuala Lumpur’s trendiest shopping, entertainment, and culinary precincts. Includes round-trip private airport transfers, tourist SIM card, and travel insurance.',
-    highlights: [
-      '3 Nights in Furama Bukit Bintang (4★)',
-      'SIM card and travel insurance (+2 Sightseeings)',
-      'Central location near Berjaya Times Square and Pavilion KL',
-      'Batu Caves & city orientation exploration',
-      'Private airport transfers included',
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: 'Arrival in Kuala Lumpur & Bukit Bintang',
-        location: 'Kuala Lumpur',
-        description: 'Arrive at KLIA. Private transfer to Furama Bukit Bintang. Unpack and explore the nearby shopping plazas and rooftop bars.',
-        meals: 'Room only',
-        stay: 'Furama Bukit Bintang 4★',
-        activities: ['Private Airport Transfer', 'Bukit Bintang Evening Walk'],
-      },
-      {
-        day: 2,
-        title: 'Kuala Lumpur City Highlights & Batu Caves',
-        location: 'Kuala Lumpur',
-        description: 'Discover the 272 steps at Batu Caves, take photos at the Petronas Twin Towers, and wander through Merdeka Square and the River of Life.',
-        meals: 'Breakfast Included',
-        stay: 'Furama Bukit Bintang 4★',
-        activities: ['Batu Caves Visit', 'Petronas Towers Photo Stop', 'River of Life Walk'],
-      },
-      {
-        day: 3,
-        title: 'Genting Highlands Day Trip / City Leisure',
-        location: 'Genting & KL',
-        description: 'Day at leisure or optional day excursion to Genting Highlands via the Awana SkyWay cable car for theme parks and shopping outlets.',
-        meals: 'Breakfast Included',
-        stay: 'Furama Bukit Bintang 4★',
-        activities: ['Leisure Day / Optional Genting Tour', 'Shopping & Dining'],
-      },
-      {
-        day: 4,
-        title: 'Departure',
-        location: 'Kuala Lumpur Airport (KUL)',
-        description: 'Breakfast at hotel before your private transfer to KLIA for your onward flight.',
-        meals: 'Breakfast Included',
-        stay: 'Departure',
-        activities: ['Private Airport Departure Transfer'],
-      },
-    ],
-    inclusions: [
-      '3 Nights in Furama Bukit Bintang 4★ Hotel',
-      'Daily breakfast',
-      'Tourist SIM card & travel insurance',
-      'Private airport round-trip transfers',
-    ],
-    exclusions: ['Airfares', 'Tourism Tax', 'Personal expenses'],
-    hotelStandard: 'Furama Bukit Bintang (4★)',
-    groupSize: 'Custom Private FIT Itinerary',
-    featured: false,
-    cardFeatures: [
-      '3N Kuala Lumpur',
-      'Furama Bukit Bintang',
-      'SIM and Insurance (+2 Sightseeings)',
-      'Transfers (Private)',
-    ],
-  },
-  {
-    slug: 'explore-malaysia-4n',
-    title: '4N Explore Malaysia',
-    tagline: '2N Kuala Lumpur & 2N Langkawi with Kingston Hotel 08 Bukit Bintang & Island Tour',
-    destinationSlug: 'malaysia',
-    destinationName: 'Malaysia',
-    durationDays: 5,
-    durationNights: 4,
-    priceINR: 58472,
-    originalPriceINR: 54472,
-    priceValidUntil: '',
-    hasStarMark: true,
-    type: 'international',
-    style: 'Expedition & Culture',
-    heroImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=2000&q=85',
-    cardImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
-    ],
-    overview: 'An action-packed exploration across Malaysia’s glittering capital and emerald island jewel. Stay 2 nights at Kingston Hotel 08 Bukit Bintang in KL and 2 nights in Langkawi with private transfers, SIM card, and insurance included.',
-    highlights: [
-      '2 Nights Kuala Lumpur 3★ Hotel + 2 Nights Langkawi 3★ Resort',
-      'SIM card and travel insurance (+4 Sightseeings included)',
-      'KL City tour, Batu Caves & Petronas Twin Towers',
-      'Langkawi island hopping & cable car excursions',
-      'All private airport transfers included',
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: 'Arrival in Kuala Lumpur',
-        location: 'Kuala Lumpur',
-        description: 'Arrive at KLIA. Private transfer to Kingston Hotel 08 Bukit Bintang. Evening stroll to the Jalan Alor food street.',
-        meals: 'Room only',
-        stay: 'Kingston Hotel 08 Bukit Bintang 3★',
-        activities: ['Private Airport Transfer', 'Jalan Alor Evening Walk'],
-      },
-      {
-        day: 2,
-        title: 'KL Landmarks & Batu Caves',
-        location: 'Kuala Lumpur',
-        description: 'Explore Batu Caves, Petronas Twin Towers, King’s Palace, and National Monument with your English-speaking driver.',
-        meals: 'Breakfast Included',
-        stay: 'Kingston Hotel 08 Bukit Bintang 3★',
-        activities: ['Batu Caves Visit', 'Petronas Towers Photo Stop', 'City Orientation'],
-      },
-      {
-        day: 3,
-        title: 'Flight to Langkawi & Beachside Sunset',
-        location: 'KL to Langkawi',
-        description: 'Transfer to airport for flight to Langkawi. Private transfer to your island hotel. Relax by the sandy shores of Pantai Cenang.',
-        meals: 'Breakfast Included',
-        stay: 'Langkawi 3★ Beach Hotel',
-        activities: ['Flight to Langkawi', 'Pantai Cenang Beach Sunset'],
-      },
-      {
-        day: 4,
-        title: 'Langkawi Island Hopping Tour',
-        location: 'Langkawi',
-        description: 'Half-day island hopping tour by speedboat: visit Dayang Bunting lake, watch eagles feeding, and swim at Beras Basah beach.',
-        meals: 'Breakfast Included',
-        stay: 'Langkawi 3★ Beach Hotel',
-        activities: ['Speedboat Island Hopping', 'Lake of the Pregnant Maiden', 'Beras Basah Beach'],
-      },
-      {
-        day: 5,
-        title: 'Langkawi Departure',
-        location: 'Langkawi Airport (LGK)',
-        description: 'Breakfast before your private transfer to Langkawi Airport for your onward journey.',
-        meals: 'Breakfast Included',
-        stay: 'Departure',
-        activities: ['Private Airport Transfer'],
-      },
-    ],
-    inclusions: [
-      '2 Nights KL 3★ Hotel & 2 Nights Langkawi 3★ Resort',
-      'Daily breakfast',
-      'Tourist SIM card & travel insurance',
-      'Private airport transfers in both destinations',
-    ],
-    exclusions: ['Airfares', 'Local tourism taxes', 'Personal expenses'],
-    hotelStandard: 'Kingston Hotel 08 Bukit Bintang (+1 Hotels)',
-    groupSize: 'Custom Private FIT Itinerary',
-    featured: false,
-    cardFeatures: [
-      '2N Kuala Lumpur, 2N Langkawi',
-      'Kingston Hotel 08 Bukit Bintang (+1 Hotels)',
-      'SIM and Insurance (+4 Sightseeings)',
-      'Transfers (Private)',
-    ],
-  },
-  {
-    slug: 'enchanting-malaysia-2n',
-    title: '2N Enchanting Malaysia',
-    tagline: '2N Kuala Lumpur with KL Tower Observation Deck Ticket & Private Transfers',
-    destinationSlug: 'malaysia',
-    destinationName: 'Malaysia',
-    durationDays: 3,
-    durationNights: 2,
-    priceINR: 26968,
-    originalPriceINR: 22968,
-    priceValidUntil: '',
-    hasStarMark: true,
-    type: 'international',
-    style: 'Expedition & Culture',
-    heroImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=2000&q=85',
-    cardImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
-    ],
-    overview: 'A budget-friendly 3-day getaway to Kuala Lumpur. Stay at Pacific Express Hotel Central Market, take in 360-degree skyline views from the KL Tower Observation Deck during a 4-hour city tour, and enjoy private transfers.',
-    highlights: [
-      '2 Nights in Pacific Express Hotel Central Market (3★)',
-      'Half Day City Tour with KL Tower Observation Deck admission ticket (4 Hours)',
-      'Central Market & Petaling Street cultural exploration',
-      'Merdeka Square and King’s Palace photo stops',
-      'Private airport transfers included',
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: 'Arrival in Kuala Lumpur & Chinatown',
-        location: 'Kuala Lumpur',
-        description: 'Arrive at KLIA. Private transfer to Pacific Express Hotel Central Market. Evening free to wander through Chinatown and Petaling Street night market.',
-        meals: 'Room only',
-        stay: 'Pacific Express Hotel Central Market 3★',
-        activities: ['Private Airport Transfer', 'Chinatown Evening Walk'],
-      },
-      {
-        day: 2,
-        title: 'KL City Tour with KL Tower Observation Deck',
-        location: 'Kuala Lumpur',
-        description: '4-hour city tour including an admission ticket to the KL Tower Observation Deck for panoramic city vistas. Stop at Merdeka Square, King’s Palace, and National Mosque.',
-        meals: 'Breakfast Included',
-        stay: 'Pacific Express Hotel Central Market 3★',
-        activities: ['KL Tower Observation Deck Visit', 'KL City Tour (4 Hours)', 'Merdeka Square'],
-      },
-      {
-        day: 3,
-        title: 'Kuala Lumpur Departure',
-        location: 'Kuala Lumpur Airport (KUL)',
-        description: 'Breakfast at hotel before your private departure transfer to KLIA.',
-        meals: 'Breakfast Included',
-        stay: 'Departure',
-        activities: ['Private Airport Transfer'],
-      },
-    ],
-    inclusions: [
-      '2 Nights in Pacific Express Hotel Central Market',
-      'Daily breakfast',
-      'Half Day City Tour with KL Tower Observation Deck ticket (4 Hours)',
-      'Private airport round-trip transfers',
-    ],
-    exclusions: ['Airfares', 'Tourism Tax', 'Personal expenses'],
-    hotelStandard: 'Pacific Express Hotel Central Market',
-    groupSize: 'Custom Private FIT Itinerary',
-    featured: false,
-    cardFeatures: [
-      '2N Kuala Lumpur',
-      'Pacific Express Hotel Central Market',
-      'Half Day City Tour with KL Tower (Observation Deck) (4 Hours)',
-      'Transfers (Private)',
-    ],
-  },
-  {
-    slug: 'luxurious-malaysia-escape-3n',
-    title: '3N Luxurious Malaysia Escape',
-    tagline: '3N Kuala Lumpur 5★ Luxury at Berjaya Times Square with Private Transfers',
-    destinationSlug: 'malaysia',
-    destinationName: 'Malaysia',
-    durationDays: 4,
-    durationNights: 3,
-    priceINR: 52136,
-    originalPriceINR: 48136,
-    priceValidUntil: '',
-    hasStarMark: true,
-    type: 'international',
-    style: 'Luxury Escapes',
-    heroImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=2000&q=85',
-    cardImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
-    ],
-    overview: 'Experience 5-star city sophistication at Berjaya Times Square, boasting direct access to Malaysia’s largest indoor theme park and mega shopping mall. Enjoy rooftop pool views, tourist SIM card, travel insurance, and private chauffeured transfers.',
-    highlights: [
-      '3 Nights in 5★ Berjaya Times Square Hotel',
-      'SIM card and travel insurance (+2 Sightseeings)',
-      'Direct monorail connection and shopping mall integration',
-      'Batu Caves & Petronas Twin Towers orientation',
-      'Private airport round-trip transfers included',
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: 'Arrival in 5★ Luxury in Kuala Lumpur',
-        location: 'Kuala Lumpur',
-        description: 'Arrive at KLIA. Private chauffeured transfer to the 5-star Berjaya Times Square Hotel. Settle into your suite and explore the indoor entertainment complex.',
-        meals: 'Room only',
-        stay: 'Berjaya Times Square Hotel 5★',
-        activities: ['Private Airport Transfer', 'Hotel Orientation & Pool Leisure'],
-      },
-      {
-        day: 2,
-        title: 'Batu Caves & Petronas Twin Towers',
-        location: 'Kuala Lumpur',
-        description: 'Discover the iconic rainbow steps at Batu Caves and capture photos at the base of the Petronas Twin Towers. Spend the afternoon shopping at Pavilion KL.',
-        meals: 'Breakfast Included',
-        stay: 'Berjaya Times Square Hotel 5★',
-        activities: ['Batu Caves Visit', 'Petronas Towers Photo Stop', 'Pavilion KL Shopping'],
-      },
-      {
-        day: 3,
-        title: 'City Leisure & Rooftop Dining',
-        location: 'Kuala Lumpur',
-        description: 'Full day at leisure to unwind by the Olympic-sized swimming pool or take a private tour to Putrajaya’s pink mosque. Evening rooftop dining overlooking the skyline.',
-        meals: 'Breakfast Included',
-        stay: 'Berjaya Times Square Hotel 5★',
-        activities: ['Rooftop Pool Leisure', 'Evening Skyline Dining'],
-      },
-      {
-        day: 4,
-        title: 'Departure',
-        location: 'Kuala Lumpur Airport (KUL)',
-        description: 'Breakfast at hotel before your private transfer to KLIA for your departure flight.',
-        meals: 'Breakfast Included',
-        stay: 'Departure',
-        activities: ['Private Departure Airport Transfer'],
-      },
-    ],
-    inclusions: [
-      '3 Nights in 5★ Berjaya Times Square Hotel',
-      'Daily breakfast',
-      'Tourist SIM card & travel insurance',
-      'Private airport round-trip transfers',
-    ],
-    exclusions: ['Airfares', 'Tourism Tax', 'Personal expenses'],
-    hotelStandard: 'Berjaya Times Square (5★)',
-    groupSize: 'Custom Private FIT Itinerary',
-    featured: true,
-    cardFeatures: [
-      '3N Kuala Lumpur',
-      'Berjaya Times Square',
-      'SIM and Insurance (+2 Sightseeings)',
-      'Transfers (Private)',
-    ],
-  },
-
-  // --- MALDIVES ---
-  {
+{
     slug: 'sheraton-full-moon-resort-spa-maldives-4n',
     title: 'Sheraton Full Moon Resort & Spa',
     tagline: '4 Nights of 5★ Barefoot Luxury on Furanafushi Island with Speedboat Transfers',
@@ -5927,7 +4919,7 @@ export const travelPackages: TravelPackage[] = [
       'Daily Gourmet Breakfast & Dinner',
     ],
   },
-  {
+{
     slug: 'villa-nautica-paradise-island-resort-maldives-4n',
     title: 'Villa Nautica Paradise Island Resort',
     tagline: '4 Nights of 5★ Marine Glamour on Lankanfinolhu Island with Speedboat Transfers',
@@ -6021,7 +5013,7 @@ export const travelPackages: TravelPackage[] = [
       'Beach & Overwater Villa Stays',
     ],
   },
-  {
+{
     slug: 'centara-grand-lagoon-maldives-3n',
     title: 'Centara Grand Lagoon',
     tagline: '3 Nights of 5★ All-Inclusive Thai-Maldivian Luxury with Speedboat Transfers',
@@ -6106,7 +5098,7 @@ export const travelPackages: TravelPackage[] = [
       'All-Inclusive Meal Plan & Spa Credits',
     ],
   },
-  {
+{
     slug: 'park-hyatt-maldives-hadahaa-4n',
     title: 'Park Hyatt Maldives',
     tagline: '4 Nights of Ultra-Luxury on Pristine Hadahaa Island in Huvadhoo Atoll',
@@ -6200,7 +5192,7 @@ export const travelPackages: TravelPackage[] = [
       'Private Coral Atoll Reef Snorkeling',
     ],
   },
-  {
+{
     slug: 'centara-mirage-lagoon-maldives-4n',
     title: 'Centara Mirage Lagoon',
     tagline: '4 Nights of 4★ Family & Fun Luxury in North Malé Atoll with Waterpark Access',
@@ -6294,7 +5286,7 @@ export const travelPackages: TravelPackage[] = [
       'Waterpark Access & Kids Club',
     ],
   },
-  {
+{
     slug: 'oblu-xperience-ailafushi-maldives-4n',
     title: 'Oblu Xperience Ailafushi',
     tagline: '4 Nights of 4★ All-Inclusive Fushi Plan with Speedboat Transfers',
@@ -6388,7 +5380,7 @@ export const travelPackages: TravelPackage[] = [
       'Fushi Plan: Unlimited Dining & Drinks',
     ],
   },
-  {
+{
     slug: 'tropical-bliss-in-mauritius-4n',
     title: '4N Tropical Bliss in Mauritius',
     tagline: '4 Nights at Oceans Creek Beach Hotel with Speedboat Transfers',
@@ -6484,7 +5476,7 @@ export const travelPackages: TravelPackage[] = [
       'Half Board: Daily Breakfast & Dinner',
     ],
   },
-  {
+{
     slug: 'paradise-found-properties-so-sofitel-mauritius-4n',
     title: '4N Paradise Found Properties',
     tagline: '4 Nights of 5★ Designer Luxury at SO Sofitel Mauritius in Bel Ombre',
@@ -6580,7 +5572,7 @@ export const travelPackages: TravelPackage[] = [
       '5★ Kenzo Takada Designer Resort',
     ],
   },
-  {
+{
     slug: 'mauritius-magic-rentals-outrigger-beach-resort-4n',
     title: '4N Mauritius Magic Rentals',
     tagline: '4 Nights of 5★ Coastal Serenity at Outrigger Mauritius Beach Resort in Bel Ombre',
@@ -6676,7 +5668,7 @@ export const travelPackages: TravelPackage[] = [
       '5★ Sea-Facing Rooms & Creole Dining',
     ],
   },
-  {
+{
     slug: 'seaside-tranquility-long-beach-mauritius-6n',
     title: '6N Seaside Tranquility',
     tagline: '6 Nights of 5★ Lifestyle Luxury on Belle Mare Beach at Long Beach Mauritius',
@@ -6790,7 +5782,7 @@ export const travelPackages: TravelPackage[] = [
       '5★ Belle Mare Beachfront & Golf Access',
     ],
   },
-  {
+{
     slug: 'mauritius-marvel-beaches-luxury-fun-4n',
     title: '4N Mauritius Marvel: Beaches, Luxury, and Fun',
     tagline: '4 Nights of 5★ Lifestyle Luxury on Belle Mare Beach at Long Beach Mauritius',
@@ -6886,7 +5878,7 @@ export const travelPackages: TravelPackage[] = [
       '5★ Belle Mare Beachfront & Water Sports',
     ],
   },
-  {
+{
     slug: 'exotic-mauritius-perfect-island-escape-4n',
     title: '4N Exotic Mauritius: Your Perfect Island Escape',
     tagline: '4 Nights of 4★ Adults-Only All-Inclusive Bliss at Ambre Mauritius in Palmar',
@@ -6982,9 +5974,7 @@ export const travelPackages: TravelPackage[] = [
       '4★ Adults-Only All-Inclusive Resort',
     ],
   },
-
-  // --- MOROCCO ---
-  {
+{
     slug: 'moroccan-imperial-cities-desert-wonders-9n',
     title: '9N Moroccan Imperial Cities & Desert Wonders',
     tagline: 'Rabat, Fes, Erg Chebbi Sahara, Ouarzazate & Marrakech with Camel Trek & Private Transfers',
@@ -7124,7 +6114,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'moroccan-imperial-cities-sahara-escape-10n',
     title: '10N Moroccan Imperial Cities & Sahara Escape',
     tagline: 'Rabat, Chefchaouen Blue City, Fes, Sahara & Marrakech with 4x4 Desert Experience',
@@ -7273,7 +6263,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'moroccan-essence-7n8d',
     title: '7N Moroccan Essence',
     tagline: '7N / 8D Rabat, Fes, Marrakech & Casablanca with Hassan II Mosque & Private Guide',
@@ -7394,7 +6384,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'moroccan-coast-to-mountains-7n8d',
     title: '7N Moroccan Coast to Mountains',
     tagline: '7N / 8D Rabat, Chefchaouen Blue City, Fes & Marrakech with Private Transfers',
@@ -7515,7 +6505,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'moroccan-4-seasons-collection-6n7d',
     title: '6N Moroccan 4 Seasons Collection',
     tagline: '6N / 7D Ultra-Luxury 5★ Escape Across Casablanca & Marrakech with Private Chauffeur',
@@ -7627,9 +6617,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-
-  // --- PHILIPPINES ---
-  {
+{
     slug: 'philippines-city-duo-4n',
     title: '4N Philippines City Duo',
     tagline: '4 Nights in Manila with 4★ City Hotel & Private Airport Transfers',
@@ -7724,7 +6712,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'filipino-island-explorer-6n',
     title: '6N Filipino Island Explorer',
     tagline: '3N El Nido & 3N Coron with 4★ Stays & Private Island Transfers',
@@ -7837,7 +6825,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'tropical-paradise-cebu-5n',
     title: '5N Tropical Paradise',
     tagline: '5 Nights in Cebu with 4★ Hotel, Whale Shark Snorkeling & Kawasan Falls',
@@ -7941,7 +6929,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)',
     ],
   },
-  {
+{
     slug: 'singapore-explorers-delight-3n',
     title: '3N Singapore Explorers Delight',
     tagline: '3 Nights at Furama Riverfront with Universal Studios & SIC Transfers',
@@ -8044,7 +7032,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (SIC)'
     ]
   },
-  {
+{
     slug: 'mandai-magic-nature-adventure-4n',
     title: '4N Mandai Magic: A Retreat into Nature and Adventure',
     tagline: '4 Nights at Furama Riverfront with Universal Studios & Private Transfers',
@@ -8156,7 +7144,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'singapore-elite-experience-6n',
     title: '6N Singapore Elite Experience',
     tagline: '6 Nights at Furama Riverfront with City Tour & Guided Sightseeing',
@@ -8294,7 +7282,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (SIC)'
     ]
   },
-  {
+{
     slug: 'sentosa-sky-sea-retreat-2n',
     title: '2N Sentosa Sky & Sea Retreat',
     tagline: '2 Nights at Village Hotel Albert Court with Cable Car, Luge & Wings of Time',
@@ -8385,7 +7373,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'sentosa-escape-village-hotel-3n',
     title: '3N Sentosa Escape',
     tagline: '3 Nights at Village Hotel Albert Court with SIM & Insurance Included',
@@ -8487,7 +7475,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'beyond-the-merlion-singapores-hidden-gems-4n',
     title: '4N Beyond the Merlion: Singapore’s Hidden Gems',
     tagline: '4 Nights at Village Hotel Albert Court with Universal Studios & Private Transfers',
@@ -8599,7 +7587,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'joyful-jewelius-escape-singapore-3n',
     title: '3N Joyful Jewelius Escape',
     tagline: '3 Nights at The Boss Hotel with Universal Studios & Private Transfers',
@@ -8699,7 +7687,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'singapore-skyline-sojourn-4n',
     title: '4N Singapore Skyline Sojourn',
     tagline: '4 Nights at The Boss Hotel with City Tour & Licensed Guide',
@@ -8812,7 +7800,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'serene-sri-lanka-escapes-6n',
     title: '6N Serene Sri Lanka Escapes',
     tagline: '2N Kandy, 1N Nuwara Eliya, 2N Bentota & 1N Colombo with Private Car & Guide',
@@ -8952,7 +7940,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'sri-lanka-discovery-tour-4n',
     title: '4N Sri Lanka Discovery Tour',
     tagline: '1N Kandy, 1N Nuwara Eliya, 1N Bentota & 1N Colombo with Private Vehicle',
@@ -9066,7 +8054,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'best-of-sri-lanka-golden-crown-4n',
     title: '4N Best of Sri Lanka',
     tagline: '2N Kandy & 2N Bentota at 5★ The Golden Crown with Private Transfers',
@@ -9179,7 +8167,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'spice-island-odyssey-earls-regent-4n',
     title: '4N Spice Island Odyssey',
     tagline: '2N Kandy & 2N Bentota at Earls Regent with Private Transfers',
@@ -9292,7 +8280,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'sri-lanka-getaway-club-bentota-3n',
     title: '3N Sri Lanka Getaway',
     tagline: '1N Bentota, 1N Kandy & 1N Colombo at Club Bentota with Private Transfers',
@@ -9392,7 +8380,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'sri-lankan-safari-sojourn-radisson-4n',
     title: '4N Sri Lankan Safari Sojourn',
     tagline: '2N Galle & 2N Colombo at 5★ Radisson Blu Resort Galle with Private Transfers',
@@ -9505,7 +8493,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'exotic-sri-lanka-experience-radisson-4n',
     title: '4N Exotic Sri Lanka Experience',
     tagline: '2N Galle & 2N Colombo at 5★ Radisson Blu with 2 Added Sightseeings',
@@ -9617,7 +8605,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'sri-lankan-splendor-retreat-5n',
     title: '5N Sri Lankan Splendor Retreat',
     tagline: '2N Kandy, 1N Nuwara Eliya & 2N Colombo with Private Car & Chauffeur',
@@ -9743,7 +8731,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'land-of-smiles-escape-bangkok-pattaya-4n',
     title: '4N Land of Smiles Escape',
     tagline: '2N Bangkok & 2N Pattaya with Chao Phraya Dinner Cruise & Private Transfers',
@@ -9855,7 +8843,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'thai-island-odyssey-jurassic-world-5n',
     title: '5N Thai Island Odyssey',
     tagline: '2N Bangkok & 3N Pattaya with Jurassic World Exhibition & Private Transfers',
@@ -9979,7 +8967,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'unveiling-thailands-essence-krabi-phuket-5n',
     title: "5N Unveiling Thailand's Essence",
     tagline: '2N Krabi & 3N Phuket with 7 Island BBQ Long Tail Boat Tour & Plankton Swim',
@@ -10105,7 +9093,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'thailand-escape-bangkok-pattaya-6n',
     title: '6N Thailand Escape',
     tagline: '3N Bangkok & 3N Pattaya with Princess Chao Phraya Dinner Cruise & Private Transfers',
@@ -10241,7 +9229,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'vietnam-value-travel-4n',
     title: '4N Vietnam Value Travel',
     tagline: '2N Hanoi & 2N Danang with Ninh Binh Sampan Boat Ride & Private Transfers',
@@ -10356,7 +9344,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'vietscape-curated-for-you-4n',
     title: '4N VietScape: Curated for You',
     tagline: '2N Hanoi & 2N Danang with Halong Bay Harmony Deluxe Cruise & Private Transfers',
@@ -10469,7 +9457,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'hanoi-danang-package-the-q-hotel-4n',
     title: '4N Hanoi Danang package',
     tagline: '2N Hanoi & 2N Danang with Halong Bay Harmony Deluxe Cruise (+4 Sightseeings)',
@@ -10582,7 +9570,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'special-vietnam-getaway-5n',
     title: '5N Special Vietnam Getaway',
     tagline: '3N Hanoi & 2N Danang with Halong Bay Harmony Deluxe Cruise (+5 Sightseeings)',
@@ -10708,7 +9696,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'vietnam-value-voyage-5n',
     title: '5N Vietnam Value Voyage',
     tagline: '2N Hanoi & 3N Danang with Halong Bay Deluxe Cruise & Private Transfers',
@@ -10833,7 +9821,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'charming-vietnam-little-diamond-4n',
     title: '4N Charming Vietnam',
     tagline: '2N Hanoi & 2N Danang with Halong Bay Deluxe Cruise & Private Transfers',
@@ -10946,7 +9934,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'journey-through-vietnam-hanoi-ho-chi-minh-4n',
     title: '4N Journey Through Vietnam',
     tagline: '2N Hanoi & 2N Ho Chi Minh City with Halong Bay Deluxe Cruise & Private Transfers',
@@ -11060,7 +10048,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private)'
     ]
   },
-  {
+{
     slug: 'andaman-winter-gateway-standard-4n',
     title: '4N Andaman Winter Gateway (Standard)',
     tagline: '2N Port Blair, 1N Havelock & 1N Neil with Pvt Ferries & Cellular Jail',
@@ -11178,7 +10166,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private) & CP Meals'
     ]
   },
-  {
+{
     slug: 'andaman-coastal-escape-deluxe-4n',
     title: '4N Andaman Coastal Escape (Deluxe)',
     tagline: '2N Port Blair, 1N Havelock & 1N Neil at Aquays Resorts & Bay Leaf',
@@ -11294,7 +10282,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private) & CP Meals'
     ]
   },
-  {
+{
     slug: 'andaman-serenity-shores-premium-4n',
     title: '4N Andaman Serenity & Shores (Premium)',
     tagline: '2N Port Blair, 1N Havelock & 1N Neil at 4★ Lemon Tree & Sandyy Waves',
@@ -11410,7 +10398,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private) & CP Meals'
     ]
   },
-  {
+{
     slug: 'andaman-luxury-island-retreat-5star-4n',
     title: '4N Andaman Luxury Island Retreat (Luxury)',
     tagline: '2N Port Blair, 1N Havelock & 1N Neil at 5★ Symphony Samudra & De Foret',
@@ -11526,7 +10514,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private) & CP Meals'
     ]
   },
-  {
+{
     slug: 'andaman-island-odyssey-standard-5n',
     title: '5N Andaman Island Odyssey (Standard)',
     tagline: '2N Port Blair, 2N Havelock & 1N Neil with Elephant Beach Snorkeling',
@@ -11655,7 +10643,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private) & CP Meals'
     ]
   },
-  {
+{
     slug: 'andaman-tropical-haven-deluxe-5n',
     title: '5N Andaman Tropical Haven (Deluxe)',
     tagline: '2N Port Blair, 2N Havelock & 1N Neil at Aquays Resorts with Elephant Beach',
@@ -11783,7 +10771,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private) & CP Meals'
     ]
   },
-  {
+{
     slug: 'andaman-beachfront-splendor-premium-5n',
     title: '5N Andaman Beachfront Splendor (Premium)',
     tagline: '2N Port Blair, 2N Havelock & 1N Neil at 4★ Lemon Tree & Sandyy Waves',
@@ -11911,7 +10899,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private) & CP Meals'
     ]
   },
-  {
+{
     slug: 'andaman-symphony-luxury-experience-5star-5n',
     title: '5N Andaman Symphony Luxury Experience (Luxury)',
     tagline: '2N Port Blair, 2N Havelock & 1N Neil at 5★ Symphony Samudra & De Foret',
@@ -12039,7 +11027,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private) & CP Meals'
     ]
   },
-  {
+{
     slug: 'andaman-grand-island-explorer-standard-6n',
     title: '6N Andaman Grand Island Explorer (Standard)',
     tagline: '3N Port Blair, 2N Havelock & 1N Neil with Ross & North Bay Islands',
@@ -12180,7 +11168,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private) & CP Meals'
     ]
   },
-  {
+{
     slug: 'andaman-coral-heritage-voyage-deluxe-6n',
     title: '6N Andaman Coral & Heritage Voyage (Deluxe)',
     tagline: '3N Port Blair, 2N Havelock & 1N Neil at Aquays Resorts with Ross Island',
@@ -12321,7 +11309,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private) & CP Meals'
     ]
   },
-  {
+{
     slug: 'andaman-premium-coral-discovery-6n',
     title: '6N Andaman Premium Coral Discovery (Premium)',
     tagline: '3N Port Blair, 2N Havelock & 1N Neil at 4★ Lemon Tree & Sandyy Waves',
@@ -12462,7 +11450,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private) & CP Meals'
     ]
   },
-  {
+{
     slug: 'andaman-ultimate-symphony-luxury-6n',
     title: '6N Andaman Ultimate Symphony Luxury (Luxury)',
     tagline: '3N Port Blair, 2N Havelock & 1N Neil at 5★ Symphony Samudra & De Foret',
@@ -12603,7 +11591,7 @@ export const travelPackages: TravelPackage[] = [
       'Transfers (Private) & CP Meals'
     ]
   },
-  {
+{
     slug: 'bhutan-bliss-ex-bagdogra-standard-5n',
     title: '5N Bhutan Bliss - Ex Bagdogra (Standard)',
     tagline: '2N Paro, 1N Thimphu & 2N Phuntsholing with Tiger’s Nest Hike',
@@ -12736,7 +11724,7 @@ export const travelPackages: TravelPackage[] = [
       'Pvt Vehicle & CP Breakfast Plan'
     ]
   },
-  {
+{
     slug: 'bhutan-bliss-ex-bagdogra-premium-5n',
     title: '5N Bhutan Bliss - Ex Bagdogra (Premium)',
     tagline: '2N Paro, 1N Thimphu & 2N Phuntsholing at Treenz Lite & Khamsum Inn',
@@ -12865,7 +11853,7 @@ export const travelPackages: TravelPackage[] = [
       'Pvt Vehicle & CP Breakfast Plan'
     ]
   },
-  {
+{
     slug: 'bhutan-grand-discovery-standard-6n',
     title: '6N Bhutan Grand Himalayan Discovery (Standard)',
     tagline: '2N Paro, 2N Thimphu & 2N Phuntsholing with Full Day Thimphu Tour',
@@ -13009,7 +11997,7 @@ export const travelPackages: TravelPackage[] = [
       'Pvt Vehicle & CP Breakfast Plan'
     ]
   },
-  {
+{
     slug: 'bhutan-grand-discovery-premium-6n',
     title: '6N Bhutan Grand Himalayan Discovery (Premium)',
     tagline: '2N Paro, 2N Thimphu & 2N Phuntsholing at Treenz Lite & Khamsum Inn',
@@ -13152,7 +12140,7 @@ export const travelPackages: TravelPackage[] = [
       'Pvt Vehicle & CP Breakfast Plan'
     ]
   },
-  {
+{
     slug: '1n-rann-utsav-premium-ac-tent',
     title: '1N Gujarat Rann Utsav (Premium AC Tent)',
     tagline: '1 Night at Praveg White Rann Resort with Sunset at White Desert & Cultural Night',
@@ -13233,7 +12221,7 @@ export const travelPackages: TravelPackage[] = [
       'AC Coach Transfers from Bhuj (SIC) & All Meals'
     ]
   },
-  {
+{
     slug: '1n-rann-utsav-rajwadi-ac-bhunga',
     title: '1N Gujarat Rann Utsav (Rajwadi AC Bhunga)',
     tagline: '1 Night in Traditional Kutchi Mud Cottage with White Desert Sunset & Cultural Night',
@@ -13314,7 +12302,7 @@ export const travelPackages: TravelPackage[] = [
       'AC Coach Transfers from Bhuj (SIC) & All Meals'
     ]
   },
-  {
+{
     slug: '2n-rann-utsav-premium-ac-tent',
     title: '2N Gujarat Rann Utsav (Premium AC Tent)',
     tagline: '2 Nights at Praveg White Rann Resort with Kalo Dungar & Gandhi nu Gam',
@@ -13411,7 +12399,7 @@ export const travelPackages: TravelPackage[] = [
       'AC Coach Transfers from Bhuj (SIC) & All Meals'
     ]
   },
-  {
+{
     slug: '2n-rann-utsav-rajwadi-ac-bhunga',
     title: '2N Gujarat Rann Utsav (Rajwadi AC Bhunga)',
     tagline: '2 Nights in Traditional Luxury Bhunga with Kalo Dungar & White Desert Sunset',
@@ -13508,7 +12496,7 @@ export const travelPackages: TravelPackage[] = [
       'AC Coach Transfers from Bhuj (SIC) & All Meals'
     ]
   },
-  {
+{
     slug: 'andaman-winter-fixed-departure-5n',
     title: '5N Andaman Winter Fixed Departure',
     tagline: '5 Nights in Port Blair, Havelock & Neil Island with Elephant Beach & Neil Stargazing',
@@ -13669,7 +12657,7 @@ export const travelPackages: TravelPackage[] = [
       'Pvt AC Ferries, MAP Meals & Airport Transfers'
     ]
   },
-    {
+{
     slug: 'kerala-winter-package-early-bird',
     title: 'Kerala Winter Package (Early Bird Offer)',
     tagline: '3N to 6N across Munnar Tea Valleys, Thekkady Spices & Alleppey Houseboat Drift',
@@ -13805,7 +12793,7 @@ export const travelPackages: TravelPackage[] = [
       'Choice of 3-Star & 4-Star Resort Tiers'
     ]
   },
-    {
+{
     slug: 'kerala-winter-fixed-departure-5n',
     title: '5N Kerala Winter Fixed Departure',
     tagline: '5 Nights across Cochin, Munnar Tea Gardens, Thekkady & Alleppey Houseboat',
@@ -13963,7 +12951,7 @@ export const travelPackages: TravelPackage[] = [
       'Munnar Tea Hills & Thekkady Periyar Wildlife'
     ]
   },
-    {
+{
     slug: 'kerala-winter-honeymoon-package',
     title: 'Kerala Winter Special Packages for Honeymooners',
     tagline: 'Romantic Munnar Tea Retreat & Alleppey Houseboat with Candle Light Dinner & Flower Bed',
@@ -14074,7 +13062,7 @@ export const travelPackages: TravelPackage[] = [
       'Private AC Sedan Car for Entire Romantic Tour'
     ]
   },
-    {
+{
     slug: 'spiti-winter-fixed-departure-delhi',
     title: 'Spiti Valley Winter Road Trip (Delhi to Delhi Fixed Departure)',
     tagline: '7N/8D Winter Expedition across Chitkul, Tabo, Kaza, Key Monastery, Chicham & Kalpa',
@@ -14289,7 +13277,7 @@ export const travelPackages: TravelPackage[] = [
       'MAP Plan (Breakfast & Dinner) & Permits'
     ]
   },
-    {
+{
     slug: 'kashmir-fit-winter-packages',
     title: 'Kashmir FIT Winter Packages (Early Bird Offer)',
     tagline: '4N to 7N across Srinagar, Gulmarg Snow Slopes, Pahalgam Valleys & Dal Lake Houseboat',
@@ -14424,7 +13412,7 @@ export const travelPackages: TravelPackage[] = [
       'MAP Plan (Breakfast & Dinner) & Pvt Vehicle'
     ]
   },
-    {
+{
     slug: 'kashmir-winter-fixed-departure-5n',
     title: '5N Kashmir Winter Fixed Departure',
     tagline: '5 Nights across Srinagar, Gulmarg Snow Slopes, Pahalgam & Dal Lake Houseboat',
@@ -14580,7 +13568,7 @@ export const travelPackages: TravelPackage[] = [
       'MAP Plan (Daily Breakfast & Dinner) Included'
     ]
   },
-    {
+{
     slug: 'meghalaya-fit-4n-5n',
     title: 'Meghalaya FIT Explorer (4N/5D & 5N/6D)',
     tagline: 'Shillong, Cherrapunji Root Bridges, Dawki Umngot River & Phe Phe Falls',
@@ -14704,7 +13692,7 @@ export const travelPackages: TravelPackage[] = [
       'CP Plan (Daily Breakfast) & Pvt Vehicle'
     ]
   },
-        {
+{
     slug: 'meghalaya-fd-2026-2027',
     title: 'Meghalaya Fixed Departure 2026-2027 (5N/6D & 6N/7D)',
     tagline: '5N/6D Shillong, Cherrapunji & Dawki Camping (Optional 6N/7D Kaziranga Rhino Safari)',

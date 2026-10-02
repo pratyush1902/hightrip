@@ -29,6 +29,8 @@
 html {
   scroll-behavior: auto; /* Managed by Lenis */
   color-scheme: light;
+  overflow-x: clip;
+  max-width: 100vw;
 }
 
 body {
@@ -36,6 +38,8 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   overflow-x: clip;
+  max-width: 100vw;
+  width: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

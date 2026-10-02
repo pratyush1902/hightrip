@@ -183,7 +183,7 @@ export function EthicalCodeSwiper() {
                     }`}
                   >
                     <span>{spot.num}</span>
-                    <span className="hidden md:inline">{spot.shortName}</span>
+                    <span className="inline text-[11px] sm:text-xs truncate max-w-[80px] sm:max-w-none">{spot.shortName}</span>
                   </button>
                 );
               })}

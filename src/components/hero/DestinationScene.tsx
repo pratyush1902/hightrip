@@ -27,10 +27,11 @@ export function DestinationScene({
         isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       } ${className}`}
     >
-      {/* No dark overlay */}
+      {/* Ambient Gradient Overlay for Text Legibility */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/50 pointer-events-none" />
 
       {/* Main Full-Screen Destination Content Box */}
-      <div className="relative z-40 h-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 flex flex-col justify-between py-16 sm:py-22 lg:py-26 pointer-events-none">
+      <div className="relative z-40 h-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 flex flex-col justify-between pt-18 sm:pt-22 lg:pt-26 pb-12 sm:pb-20 pointer-events-none">
         {/* Top Flight Metadata Tag */}
         <div className="flex items-center justify-between gap-2 pt-2 sm:pt-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-[11px] sm:text-xs font-mono text-[#f3eadb]">

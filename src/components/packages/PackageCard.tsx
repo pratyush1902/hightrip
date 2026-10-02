@@ -48,25 +48,25 @@ export function PackageCard({ package: pkg, className = '' }: PackageCardProps) 
         </div>
 
         {/* Card Content following exact requested information hierarchy */}
-        <div className="p-6 sm:p-7 space-y-3.5">
+        <div className="p-5 sm:p-7 space-y-3 sm:space-y-3.5">
           {/* 1. Destination */}
-          <span className="font-mono text-xs font-bold uppercase tracking-widest text-[#9a6a38] block">
+          <span className="font-mono text-[11px] sm:text-xs font-bold uppercase tracking-widest text-[#9a6a38] block">
             {pkg.destinationName}
           </span>
 
           {/* 2. Package Title */}
-          <h3 className="font-serif text-2xl font-bold text-[#1c1917] group-hover:text-[#9a6a38] transition-colors leading-snug">
+          <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#1c1917] group-hover:text-[#9a6a38] transition-colors leading-snug">
             <Link href={`/packages/${pkg.slug}`}>{pkg.title}</Link>
           </h3>
 
           {/* 3. Duration */}
-          <p className="text-sm font-medium text-[#57534e]">
+          <p className="text-xs sm:text-sm font-medium text-[#57534e]">
             {pkg.durationDays} Days / {pkg.durationNights} Nights
           </p>
 
           {/* 4. Pricing */}
           <div className="pt-0.5">
-            <span className="font-mono text-base font-bold text-[#1c1917] tracking-wide uppercase">
+            <span className="font-mono text-sm sm:text-base font-bold text-[#1c1917] tracking-wide uppercase">
               STARTING FROM ₹{pkg.priceINR.toLocaleString('en-IN')}{pkg.hasStarMark ? '*' : ''} / PERSON
             </span>
           </div>
