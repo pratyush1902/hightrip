@@ -83,7 +83,7 @@ export function ExperienceTeaser() {
           <div className="lg:col-span-6">
             <ImageReveal className="rounded-2xl border border-obsidian-border shadow-2xl overflow-hidden aspect-[4/3]">
               <Image
-                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1400&q=85"
+                src="https://images.unsplash.com/photo-1644406733884-f90d90af8bc8?auto=format&fit=crop&w=1400&q=85"
                 alt="Historical perspective and quiet reflection"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

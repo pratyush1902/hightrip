@@ -10,9 +10,11 @@ import { RelatedPackages } from '@/components/packages/RelatedPackages';
 import { Check, ShieldCheck, MapPin } from 'lucide-react';
 
 export async function generateStaticParams() {
-  return travelPackages.map((pkg) => ({
-    slug: pkg.slug,
-  }));
+  return (travelPackages || [])
+    .filter((pkg) => Boolean(pkg && pkg.slug))
+    .map((pkg) => ({
+      slug: String(pkg.slug),
+    }));
 }
 
 export async function generateMetadata({
@@ -116,23 +118,6 @@ export default async function PackageDetailPage({
               inclusions={pkg.inclusions}
               exclusions={pkg.exclusions}
             />
-
-            {/* Accommodation & Quality Assurance */}
-            <div className="bg-obsidian-surface/60 border border-obsidian-border rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-              <div className="space-y-1">
-                <span className="font-mono text-xs uppercase tracking-widest text-bronze-light block">
-                  Accommodation Standard
-                </span>
-                <h4 className="font-serif text-xl text-parchment">{pkg.hotelStandard}</h4>
-                <p className="text-xs text-muted-foreground font-light">
-                  Hand-inspected properties with verified quietude and high hygiene benchmarks.
-                </p>
-              </div>
-
-              <div className="flex-shrink-0 font-mono text-xs text-sand bg-obsidian px-4 py-2 rounded-xl border border-obsidian-border">
-                Group standard: {pkg.groupSize}
-              </div>
-            </div>
           </div>
 
           {/* Right Column: Sticky Reservation & Inquiry Card */}

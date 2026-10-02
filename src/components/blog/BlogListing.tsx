@@ -57,8 +57,8 @@ export function BlogListing() {
               onClick={() => setSelectedCategory(cat.id)}
               className={`px-4 py-2 rounded-full text-xs font-mono transition-all cursor-pointer ${
                 selectedCategory === cat.id
-                  ? 'bg-sand text-obsidian font-bold shadow'
-                  : 'bg-obsidian text-muted-foreground hover:text-parchment border border-obsidian-border'
+                  ? 'bg-[#c48c58] text-white font-medium shadow-sm'
+                  : 'bg-obsidian text-muted-foreground hover:text-parchment border border-obsidian-border hover:border-bronze/40'
               }`}
             >
               {cat.label}

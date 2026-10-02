@@ -37,7 +37,7 @@ export function HeroWindow() {
       coordinates: '04°10\'N · 73°30\'E',
       metrics: 'ALT 35,000 FT · SPEED 480 KTS',
       icon: Plane,
-      photo: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=2000&q=85',
+      photo: 'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=2000&q=85',
     },
     {
       id: 'explore',
@@ -50,7 +50,7 @@ export function HeroWindow() {
       coordinates: '21°01\'N · 105°51\'E',
       metrics: 'WAYPOINT LAN HA · 400 ISLETS',
       icon: Navigation,
-      photo: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=2000&q=85',
+      photo: 'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=2000&q=85',
     },
     {
       id: 'experience',
@@ -293,7 +293,7 @@ export function HeroWindow() {
             <span className="text-sand/40">·</span>
             <span className="text-sand">{current.destination.name}</span>
             <span className="text-sand/40">·</span>
-            <span className="text-bronze-light">From ₹{current.destination.startingPriceINR.toLocaleString('en-IN')}</span>
+            <span className="text-bronze-light">Starting from ₹{current.destination.startingPriceINR.toLocaleString('en-IN')}</span>
             <Link
               href={`/destinations/${current.destination.slug}`}
               className="ml-1 inline-flex items-center gap-1 text-parchment hover:text-bronze transition-colors underline"

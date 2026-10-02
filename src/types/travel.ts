@@ -54,6 +54,8 @@ export interface TravelPackage {
   hotelStandard: string;
   groupSize: string;
   featured: boolean;
+  hasStarMark?: boolean;
+  cardFeatures?: string[];
   departureDates?: string[];
 }
 

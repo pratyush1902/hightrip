@@ -59,7 +59,7 @@ export function BottomActionBar() {
             <div className="w-6 h-6 rounded-full bg-bronze/20 border border-bronze/40 flex items-center justify-center mb-1">
               <CalendarCheck className="w-3.5 h-3.5 text-bronze" />
             </div>
-            <span className="text-[10px] font-mono tracking-tight">Enquire</span>
+            <span className="text-[10px] font-mono tracking-tight">Plan Trip</span>
           </button>
 
           <a

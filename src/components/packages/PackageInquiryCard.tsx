@@ -74,16 +74,16 @@ export function PackageInquiryCard({ pkg }: PackageInquiryCardProps) {
       {/* Price Block */}
       <div className="pb-4 border-b border-obsidian-border">
         <span className="text-[11px] font-mono uppercase tracking-wider text-muted-stone block">
-          Guaranteed Price
+          Starting from
         </span>
         <div className="flex items-baseline gap-2 mt-1">
           <span className="text-3xl font-serif font-bold text-parchment">
-            ₹{pkg.priceINR.toLocaleString('en-IN')}
+            ₹{pkg.priceINR.toLocaleString('en-IN')}{pkg.hasStarMark ? '*' : ''}
           </span>
           <span className="text-xs text-muted-foreground font-mono">/ person</span>
         </div>
         <p className="text-[11px] font-mono text-bronze-light mt-1">
-          Valid to {pkg.priceValidUntil} · All local taxes included
+          All local taxes included · Transparent published price
         </p>
       </div>
 

@@ -39,15 +39,18 @@ export function Navbar() {
   }, [pathname]);
 
   const isDarkPage = pathname.startsWith('/experiences');
+  const hasDarkHero = isDarkPage || (/^\/packages\/[^\/]+$/.test(pathname)) || (/^\/destinations\/[^\/]+$/.test(pathname));
 
-  const navTextColor = isDarkPage
-    ? 'text-[#e6dfd5] hover:text-[#c48c58]'
+  const isLightText = isDarkPage || (!isScrolled && hasDarkHero);
+
+  const navTextColor = isLightText
+    ? 'text-[#fbf9f5] hover:text-[#c48c58] drop-shadow-sm'
     : 'text-[#1c1917] hover:text-[#c48c58]';
-  const iconTextColor = isDarkPage
-    ? 'text-[#e6dfd5] hover:text-[#c48c58] hover:bg-white/10'
+  const iconTextColor = isLightText
+    ? 'text-[#fbf9f5] hover:text-[#c48c58] hover:bg-white/10'
     : 'text-[#1c1917] hover:text-[#c48c58] hover:bg-black/5';
-  const waBtnClass = isDarkPage
-    ? 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/25'
+  const waBtnClass = isLightText
+    ? 'bg-emerald-500/25 text-emerald-300 border-emerald-400/40 hover:bg-emerald-500/35 backdrop-blur-md'
     : 'bg-emerald-900/10 text-emerald-800 border-emerald-700/25 hover:bg-emerald-900/15';
 
   return (
@@ -58,13 +61,15 @@ export function Navbar() {
             ? isDarkPage
               ? 'bg-[#0e0d0b]/92 backdrop-blur-md border-b border-[#2e2822] py-3 shadow-lg'
               : 'bg-[#fbf9f5]/90 backdrop-blur-md border-b border-[#e8ded0] py-3 shadow-sm'
+            : hasDarkHero
+            ? 'bg-gradient-to-b from-black/80 via-black/35 to-transparent py-5'
             : 'bg-transparent py-5'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <BrandLogo variant={isDarkPage ? 'light' : 'dark'} />
+            <BrandLogo variant={isLightText ? 'light' : 'dark'} />
 
             {/* Desktop Navigation Links */}
             <nav className="hidden lg:flex items-center gap-1.5" aria-label="Main Navigation">
@@ -74,15 +79,15 @@ export function Navbar() {
                 onMouseEnter={() => setMegaOpen(true)}
                 onMouseLeave={() => setMegaOpen(false)}
               >
-                <button
-                  type="button"
-                  className={`px-3.5 py-2 text-sm font-medium transition-colors flex items-center gap-1 rounded-md cursor-pointer ${
-                    pathname.startsWith('/packages')
-                      ? 'text-bronze-light'
-                      : navTextColor
-                  }`}
-                  aria-expanded={megaOpen}
-                >
+                  <button
+                    type="button"
+                    className={`px-3.5 py-2 text-sm font-medium transition-colors flex items-center gap-1 rounded-md cursor-pointer ${
+                      pathname.startsWith('/packages')
+                        ? (isLightText ? 'text-[#c48c58]' : 'text-bronze-light')
+                        : navTextColor
+                    }`}
+                    aria-expanded={megaOpen}
+                  >
                   <span>Holidays</span>
                   <ChevronDown
                     className={`w-3.5 h-3.5 transition-transform duration-200 ${
@@ -185,7 +190,7 @@ export function Navbar() {
                                   </span>
                                 </div>
                                 <div className="text-[11px] font-mono text-bronze">
-                                  From ₹{dest.startingPriceINR.toLocaleString('en-IN')}
+                                  Starting from ₹{dest.startingPriceINR.toLocaleString('en-IN')}
                                 </div>
                               </div>
                             </Link>
@@ -212,7 +217,7 @@ export function Navbar() {
                 href="/destinations"
                 className={`px-3.5 py-2 text-sm font-medium transition-colors rounded-md ${
                   pathname.startsWith('/destinations')
-                    ? 'text-bronze-light'
+                    ? (isLightText ? 'text-[#c48c58]' : 'text-bronze-light')
                     : navTextColor
                 }`}
               >
@@ -224,7 +229,7 @@ export function Navbar() {
                 href="/experiences"
                 className={`px-3.5 py-2 text-sm font-medium transition-colors rounded-md flex items-center gap-1.5 ${
                   pathname.startsWith('/experiences')
-                    ? 'text-bronze-light'
+                    ? (isLightText ? 'text-[#c48c58]' : 'text-bronze-light')
                     : navTextColor
                 }`}
               >
@@ -237,7 +242,7 @@ export function Navbar() {
                 href="/about"
                 className={`px-3.5 py-2 text-sm font-medium transition-colors rounded-md ${
                   pathname === '/about'
-                    ? 'text-bronze-light'
+                    ? (isLightText ? 'text-[#c48c58]' : 'text-bronze-light')
                     : navTextColor
                 }`}
               >
@@ -249,7 +254,7 @@ export function Navbar() {
                 href="/blog"
                 className={`px-3.5 py-2 text-sm font-medium transition-colors rounded-md ${
                   pathname.startsWith('/blog')
-                    ? 'text-bronze-light'
+                    ? (isLightText ? 'text-[#c48c58]' : 'text-bronze-light')
                     : navTextColor
                 }`}
               >
@@ -261,7 +266,7 @@ export function Navbar() {
                 href="/contact"
                 className={`px-3.5 py-2 text-sm font-medium transition-colors rounded-md ${
                   pathname === '/contact'
-                    ? 'text-bronze-light'
+                    ? (isLightText ? 'text-[#c48c58]' : 'text-bronze-light')
                     : navTextColor
                 }`}
               >
@@ -297,7 +302,7 @@ export function Navbar() {
                 onClick={() => setInquiryOpen(true)}
                 className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-semibold bg-bronze-gradient text-obsidian tracking-wide hover:opacity-90 transition-opacity cursor-pointer shadow-sm"
               >
-                <span>Enquire Now</span>
+                <span>Plan My Trip</span>
               </button>
             </div>
 
@@ -307,15 +312,15 @@ export function Navbar() {
                 onClick={() => setInquiryOpen(true)}
                 className="px-3 py-1.5 rounded-full text-xs font-semibold bg-bronze-gradient text-obsidian"
               >
-                Enquire
+                Plan My Trip
               </button>
 
               <button
                 type="button"
                 onClick={() => setMobileOpen(true)}
                 className={`p-2 rounded-lg transition-colors ${
-                  isDarkPage
-                    ? 'text-[#e6dfd5] hover:text-white hover:bg-white/10'
+                  isLightText
+                    ? 'text-[#fbf9f5] hover:text-white hover:bg-white/10'
                     : 'text-sand hover:text-parchment hover:bg-obsidian-surface'
                 }`}
                 aria-label="Open mobile navigation menu"

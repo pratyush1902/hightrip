@@ -19,9 +19,11 @@ import { destinations } from '@/data/destinations';
 import { travelPackages } from '@/data/packages';
 
 export async function generateStaticParams() {
-  return destinations.map((dest) => ({
-    slug: dest.slug,
-  }));
+  return (destinations || [])
+    .filter((dest) => Boolean(dest && dest.slug))
+    .map((dest) => ({
+      slug: String(dest.slug),
+    }));
 }
 
 export async function generateMetadata({
@@ -61,59 +63,62 @@ export default async function DestinationDetailPage({
   return (
     <div className="bg-obsidian min-h-screen text-parchment">
       {/* 1. Panoramic Destination Header */}
-      <div className="relative w-full min-h-[500px] lg:min-h-[580px] flex items-end pb-12 pt-28 bg-obsidian overflow-hidden">
+      <div className="relative w-full min-h-[500px] lg:min-h-[580px] flex items-end pb-12 pt-32 bg-[#0c0a08] overflow-hidden">
         <Image
           src={dest.heroImage}
           alt={dest.name}
           fill
           priority
           sizes="100vw"
-          className="object-cover filter brightness-[0.6] contrast-[1.05]"
+          className="object-cover object-center filter brightness-[0.75] contrast-[1.05]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/50 to-transparent" />
+        {/* Atmospheric High-Contrast Dark Overlays */}
+        <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0c0a08] via-black/75 to-black/30 pointer-events-none" />
+        <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-black/85 via-black/40 to-transparent pointer-events-none z-10" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="mb-6">
             <Link
               href="/destinations"
-              className="inline-flex items-center gap-2 text-xs font-mono text-sand/80 hover:text-parchment transition-colors bg-black/40 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-sand/15"
+              className="inline-flex items-center gap-2 text-xs font-mono text-stone-200 hover:text-white transition-all bg-black/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 hover:border-[#c48c58] shadow-md group cursor-pointer"
             >
-              <ArrowLeft className="w-3.5 h-3.5 text-bronze" />
+              <ArrowLeft className="w-3.5 h-3.5 text-[#c48c58] group-hover:-translate-x-0.5 transition-transform" />
               <span>Back to All Destinations</span>
             </Link>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className="px-3 py-1 rounded-full text-xs font-mono bg-bronze/20 text-bronze-light border border-bronze/30">
+          <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 mb-4">
+            <span className="px-3.5 py-1.5 rounded-full text-xs font-mono font-medium bg-[#c48c58]/25 text-[#f5caa4] border border-[#c48c58]/50 shadow-sm">
               Airport Code: {dest.airportCode}
             </span>
-            <span className="px-3 py-1 rounded-full text-xs font-mono bg-black/60 backdrop-blur-md text-sand border border-sand/20">
+            <span className="px-3.5 py-1.5 rounded-full text-xs font-mono font-medium bg-black/65 backdrop-blur-md text-stone-200 border border-white/20 shadow-sm">
               {dest.region}
             </span>
-            <span className="px-3 py-1 rounded-full text-xs font-mono bg-black/60 backdrop-blur-md text-sand border border-sand/20">
+            <span className="px-3.5 py-1.5 rounded-full text-xs font-mono font-medium bg-black/65 backdrop-blur-md text-stone-200 border border-white/20 shadow-sm">
               {dest.category}
             </span>
           </div>
 
-          <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl text-parchment tracking-tight leading-[1.08]">
+          <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl text-white font-bold tracking-tight leading-[1.08] drop-shadow-xl">
             {dest.name}
           </h1>
 
-          <p className="mt-3 text-lg sm:text-2xl text-sand/90 font-light max-w-2xl leading-relaxed italic">
+          <p className="mt-3 text-lg sm:text-2xl text-stone-200 font-light max-w-2xl leading-relaxed italic drop-shadow-md">
             “{dest.tagline}”
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center gap-6 pt-4 border-t border-sand/20 text-xs font-mono text-sand">
+          <div className="mt-6 flex flex-wrap items-center gap-6 pt-4 border-t border-white/15 text-xs font-mono text-stone-300">
             <span className="flex items-center gap-1.5">
-              <Sun className="w-3.5 h-3.5 text-bronze" />
+              <Sun className="w-3.5 h-3.5 text-[#c48c58]" />
               <span>Average Temp: {dest.averageTemp}</span>
             </span>
             <span className="flex items-center gap-1.5">
-              <Calendar className="w-3.5 h-3.5 text-bronze" />
+              <Calendar className="w-3.5 h-3.5 text-[#c48c58]" />
               <span>Best Season: {dest.bestTimeToVisit}</span>
             </span>
             <span className="flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5 text-bronze" />
+              <Clock className="w-3.5 h-3.5 text-[#c48c58]" />
               <span>Ideal Stay: {dest.idealDuration}</span>
             </span>
           </div>
@@ -246,12 +251,12 @@ export default async function DestinationDetailPage({
                         <Clock className="w-3 h-3 text-bronze" />
                         <span>{pkg.durationDays}D / {pkg.durationNights}N</span>
                       </div>
-                      <div className="absolute bottom-4 left-4 right-4 flex items-baseline justify-between">
-                        <span className="text-2xl font-serif font-bold text-parchment">
-                          ₹{pkg.priceINR.toLocaleString('en-IN')}
+                      <div className="absolute bottom-4 left-4 right-4 flex flex-col items-start">
+                        <span className="text-[10px] font-mono uppercase tracking-wider text-stone-300 drop-shadow-sm">
+                          Starting from
                         </span>
-                        <span className="text-[11px] font-mono text-bronze-light bg-black/70 px-2 py-0.5 rounded border border-sand/15">
-                          Valid to {pkg.priceValidUntil}
+                        <span className="text-2xl font-serif font-bold text-white drop-shadow-md">
+                          ₹{pkg.priceINR.toLocaleString('en-IN')}{pkg.hasStarMark ? '*' : ''}
                         </span>
                       </div>
                     </div>

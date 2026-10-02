@@ -36,7 +36,7 @@ const darkTourismSpots: DarkTourismSpot[] = [
     location: 'Port Blair, Andaman Islands',
     slug: 'cellular-jail',
     quoteText: 'Exile across black waters. Seven solitary wings radiating into the silence of the Andaman sea.',
-    image: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1800&q=85',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfbDXN-URAottUJC4aTN71NN_U20m2DmKZ_yMwLQ71nA&s=10',
   },
   {
     num: '02',
@@ -45,7 +45,7 @@ const darkTourismSpots: DarkTourismSpot[] = [
     location: 'Jaisalmer, Thar Desert',
     slug: 'kuldhara-bhangarh',
     quoteText: 'Eighty-four villages abandoned overnight in 1825. Only the golden sandstone streets and desert wind remain.',
-    image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1800&q=85',
+    image: 'https://images.unsplash.com/photo-1621744299074-cc0ac49afc9d?auto=format&fit=crop&w=1800&q=85',
   },
   {
     num: '03',
@@ -54,7 +54,7 @@ const darkTourismSpots: DarkTourismSpot[] = [
     location: 'Amritsar, Punjab',
     slug: 'jallianwala-bagh',
     quoteText: 'Preserved bullet marks in red brick walls. A quiet walled garden of profound collective memory.',
-    image: 'https://images.unsplash.com/photo-1609137144822-45e0545fe221?auto=format&fit=crop&w=1800&q=85',
+    image: 'https://images.unsplash.com/photo-1644406733884-f90d90af8bc8?auto=format&fit=crop&w=1800&q=85',
   },
   {
     num: '04',
@@ -63,7 +63,7 @@ const darkTourismSpots: DarkTourismSpot[] = [
     location: 'Alwar, Rajasthan',
     slug: 'kuldhara-bhangarh',
     quoteText: 'A ruined 16th-century fortress city in the Aravallis. Where twilight brings absolute silence.',
-    image: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1800&q=85',
+    image: 'https://images.unsplash.com/photo-1578631048213-4162386d2bf0?auto=format&fit=crop&w=1800&q=85',
   },
   {
     num: '05',
@@ -72,7 +72,7 @@ const darkTourismSpots: DarkTourismSpot[] = [
     location: 'Rameswaram, Tamil Nadu',
     slug: 'dhanushkodi',
     quoteText: 'Swallowed by a midnight cyclone in 1964. Bleached gothic arches standing where two oceans meet.',
-    image: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1800&q=85',
+    image: 'https://images.unsplash.com/photo-1712305407926-b9057c496645?auto=format&fit=crop&w=1800&q=85',
   },
 ];
 

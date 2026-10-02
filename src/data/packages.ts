@@ -3,7 +3,7 @@ import { TravelPackage } from '@/types/travel';
 export const travelPackages: TravelPackage[] = [
   {
     slug: 'maldives-overwater-haven',
-    title: 'Maldives Overwater Haven & Lagoon Drift',
+    title: 'Maldives Overwater Escape',
     tagline: '5 Days of Barefoot Solitude & Coral Reef Exploration',
     destinationSlug: 'maldives',
     destinationName: 'Maldives',
@@ -14,12 +14,13 @@ export const travelPackages: TravelPackage[] = [
     priceValidUntil: '31 Oct 2026',
     type: 'international',
     style: 'Luxury Escapes',
-    heroImage: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=2000&q=85',
-    cardImage: 'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1200&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1574226780565-388f10f8121e?auto=format&fit=crop&w=1200&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1574226780565-388f10f8121e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1698726654908-834d3a5330d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616524629947-967525666467?auto=format&fit=crop&w=1200&q=80',
     ],
     overview: 'Escape into the pristine quietude of South Malé Atoll. Stay in a luxury sunrise overwater villa with direct crystal lagoon access, daily gourmet dining, private sunset dolphin cruise, and complimentary reef snorkeling equipment.',
     highlights: [
@@ -93,6 +94,7 @@ export const travelPackages: TravelPackage[] = [
     hotelStandard: '5-Star Luxury Private Island Resort',
     groupSize: 'Private / Couple (2 Guests)',
     featured: true,
+    cardFeatures: ['Overwater stay', 'Breakfast', 'Transfers', 'Experiences'],
   },
   {
     slug: 'vietnam-grand-heritage-karsts',
@@ -107,12 +109,13 @@ export const travelPackages: TravelPackage[] = [
     priceValidUntil: '15 Nov 2026',
     type: 'international',
     style: 'Expedition & Culture',
-    heroImage: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=2000&q=85',
-    cardImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?auto=format&fit=crop&w=1200&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1643030595382-79273ae819d9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1545172538-171a802bd867?auto=format&fit=crop&w=1200&q=80',
     ],
     overview: 'A deep journey through northern and central Vietnam. Wander the historic 36 Guild Streets of Hanoi, kayak through remote sea caves in tranquil Lan Ha Bay aboard an overnight boutique cruise, and stroll along the riverside heritage shophouses of Hoi An.',
     highlights: [
@@ -204,6 +207,7 @@ export const travelPackages: TravelPackage[] = [
     hotelStandard: '4-Star Curated Boutique Hotels & Heritage Ships',
     groupSize: 'Small Group / Private (2-8 Guests)',
     featured: true,
+    cardFeatures: ['Boutique stay & bay cruise', 'Breakfast', 'Transfers', 'Experiences'],
   },
   {
     slug: 'amalfi-coast-renaissance-italy',
@@ -324,6 +328,7 @@ export const travelPackages: TravelPackage[] = [
     hotelStandard: '4-Star Superior & Historic Palazzos',
     groupSize: 'Private Chauffeured Journey (2-4 Guests)',
     featured: true,
+    cardFeatures: ['Boutique hotel stay', 'Breakfast', 'Transfers', 'Experiences'],
   },
   {
     slug: 'swiss-alps-panoramic-rail-retreat',
@@ -433,6 +438,7 @@ export const travelPackages: TravelPackage[] = [
     hotelStandard: '4-Star Superior & 5-Star Alpine Chalets',
     groupSize: 'Independent / Couples Travel (2 Guests)',
     featured: true,
+    cardFeatures: ['Alpine chalet stay', 'Breakfast', 'Transfers', 'Experiences'],
   },
   {
     slug: 'kerala-tranquil-backwaters-misty-hills',
@@ -448,10 +454,13 @@ export const travelPackages: TravelPackage[] = [
     type: 'india',
     style: 'Family Journey',
     heroImage: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=2000&q=85',
-    cardImage: 'https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1200&q=80',
+    cardImage: 'https://images.unsplash.com/photo-1714489896584-233675ee2f62?auto=format&fit=crop&w=1200&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1714489896584-233675ee2f62?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1580818135730-ebd11086660b?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1621351652666-9d34b452a0db?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1688714839198-22e9c6c7eede?auto=format&fit=crop&w=1200&q=80',
     ],
     overview: 'Experience the gentle cadence of God’s Own Country. From the Portuguese spice quarters of Fort Kochi, climb into the cool, mist-shrouded tea gardens of Munnar, then embark upon an exclusive private houseboat through the serene palm-fringed backwaters of Alleppey.',
     highlights: [
@@ -546,9 +555,9 @@ export const travelPackages: TravelPackage[] = [
     priceValidUntil: "31 Jan 2026",
     type: 'fixed-departure',
     style: "Family Journey",
-    heroImage: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2000&q=85",
-    cardImage: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    gallery: ["https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80","https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80"],
+    heroImage: "https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=2000&q=85",
+    cardImage: "https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=1200&q=80",
+    gallery: ["https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=1200&q=80","https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80"],
     overview: "Fly direct from Delhi to Phu Quoc in just 5 hours and dive into pristine beaches, luxury resorts, thrilling theme parks, and unforgettable sunsets. This 4-night experience blends adventure, leisure, and comfort – perfect for couples, families, and group travellers looking for a visa-free international holiday with everything taken care of.",
     highlights: [
       "Arrival in Phu Quoc – Safari & Grand World Fun",
@@ -775,9 +784,15 @@ export const travelPackages: TravelPackage[] = [
     priceValidUntil: "31 May 2026",
     type: 'fixed-departure',
     style: "Coastal & Relaxation",
-    heroImage: "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=2000&q=85",
-    cardImage: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=80",
-    gallery: ["https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=1200&q=80","https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=80"],
+    heroImage: 'https://images.unsplash.com/photo-1493863438658-3e7743ac61cd?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1582468546235-9bf31e5bc4a1?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1712335870501-b70177ef645f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1493863438658-3e7743ac61cd?auto=format&fit=crop&w=1200&q=80'
+    ],
     overview: "Enjoy a hassle-free 4 Nights Thailand Fixed Departure covering Phuket & Krabi with return flights from Mumbai. This package is designed for travelers looking for a comfortable international holiday with 4 Star hotels, island tours, transfers, meals during excursions, and small group travel. Ideal for first-time international travelers, couples, friends, and budget-conscious explorers.",
     highlights: [
       "Arrival in Phuket – Transfer to Hotel",
@@ -871,9 +886,15 @@ export const travelPackages: TravelPackage[] = [
     priceValidUntil: "28 Sep 2026",
     type: 'fixed-departure',
     style: "Luxury Escapes",
-    heroImage: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=2000&q=85",
-    cardImage: "https://images.unsplash.com/photo-1565967511849-76a60a516170?auto=format&fit=crop&w=1200&q=80",
-    gallery: ["https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80","https://images.unsplash.com/photo-1565967511849-76a60a516170?auto=format&fit=crop&w=1200&q=80"],
+    heroImage: 'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1485257231869-6ddd116bc294?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1775306963755-8897be3967bb?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1569669568752-da18da0cef0e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1485257231869-6ddd116bc294?auto=format&fit=crop&w=1200&q=80'
+    ],
     overview: "Celebrate freedom in style with our 5 Nights Fixed Departure Special! Explore the dazzling streets of Singapore and sail the high seas aboard the luxurious Genting Dream Cruise. From iconic landmarks to onboard indulgence, this is a perfect blend of adventure, leisure, and celebration. Flights, hotels, transfers, cruise meals — everything is taken care of. Just pack your bags & go!",
     highlights: [
       "Arrival in Singapore – Transfer & Check-in",
@@ -1072,9 +1093,15 @@ export const travelPackages: TravelPackage[] = [
     priceValidUntil: "31 Oct 2025",
     type: 'fixed-departure',
     style: "Expedition & Culture",
-    heroImage: "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=2000&q=85",
-    cardImage: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=80",
-    gallery: ["https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=1200&q=80","https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=80"],
+    heroImage: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1582468546235-9bf31e5bc4a1?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1712335870501-b70177ef645f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1493863438658-3e7743ac61cd?auto=format&fit=crop&w=1200&q=80'
+    ],
     overview: "Explore the best of Thailand in one epic trip — Bangkok, Pattaya, Phuket & Krabi — all in 8 nights! From city temples and coral islands to turquoise beaches and island tours, this all-in-one package includes stays, transfers, and top experiences across 4 iconic destinations. Perfect for couples, families, or friends looking for a complete Thailand experience – hassle-free.",
     highlights: [
       "Arrival in Pattaya– Transfer to Hotel",
@@ -1195,4 +1222,13659 @@ export const travelPackages: TravelPackage[] = [
     featured: false,
     departureDates: ["10 Oct 2025","25 Oct 2025","15 Nov 2025","05 Dec 2025"],
   },
+  {
+    slug: '3n-abu-dhabi-icons-and-adventures-yas-plaza',
+    title: '3N Abu Dhabi Icons & Adventures',
+    tagline: '4 Days / 3 Nights of Yas Theme Parks & Grand Mosque Cultural Wonders',
+    destinationSlug: 'abu-dhabi',
+    destinationName: 'Abu Dhabi',
+    durationDays: 4,
+    durationNights: 3,
+    priceINR: 35666,
+    originalPriceINR: 42999,
+    priceValidUntil: '31 Oct 2026',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1512632578888-169bbbc64f33?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1590273089302-ebbc53986b6e?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1512632578888-169bbbc64f33?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1624317937315-0ced8736c9e9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1590273089302-ebbc53986b6e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1736421062030-5676477a443f?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Experience the crown jewel of the Emirates with 3 nights at Yas Plaza Mangroves 5★. Discover the majestic Sheikh Zayed Grand Mosque on a private guided tour, indulge in thrilling experiences across Yas Island Theme Parks, and enjoy seamless private transfers throughout your stay.',
+    highlights: [
+      '3 Nights accommodation at Yas Plaza Mangroves 5★ with park access',
+      'Daily breakfast included',
+      'Yas Island Theme Park Access (Ferrari World / Warner Bros. / Yas Waterworld)',
+      'Half-Day Abu Dhabi City Tour on Private Basis',
+      'Round-trip Private Transfers (Airport ·· Hotel)',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Abu Dhabi & Private Transfer',
+        location: 'Yas Island, Abu Dhabi',
+        description: 'Arrive at Abu Dhabi International Airport (AUH). Meet your private chauffeur at the arrivals hall and enjoy a comfortable private transfer to Yas Plaza Mangroves 5★. Check in and unwind amidst the mangrove sanctuary setting.',
+        meals: 'Room only',
+        stay: 'Yas Plaza Mangroves 5★',
+        activities: ['Private Airport Transfer', 'Hotel Check-in & Orientation'],
+      },
+      {
+        day: 2,
+        title: 'Private Abu Dhabi City Tour & Grand Mosque',
+        location: 'Abu Dhabi City & Cultural District',
+        description: 'After breakfast, embark on a private chauffeured city tour. Marvel at the sublime architecture of the Sheikh Zayed Grand Mosque, drive along the pristine Corniche, and glimpse the Emirates Palace and Presidential Palace.',
+        meals: 'Breakfast Included',
+        stay: 'Yas Plaza Mangroves 5★',
+        activities: ['Sheikh Zayed Grand Mosque Visit', 'Abu Dhabi Corniche Drive', 'Heritage Village Exploration'],
+      },
+      {
+        day: 3,
+        title: 'Yas Island Theme Park Adventure',
+        location: 'Yas Island',
+        description: 'Immerse yourself in world-class entertainment with included theme park access. Feel the adrenaline rush on the world’s fastest rollercoaster at Ferrari World or enter cartoon legend at Warner Bros. World.',
+        meals: 'Breakfast Included',
+        stay: 'Yas Plaza Mangroves 5★',
+        activities: ['Yas Island Theme Park Access', 'Ferrari World / Warner Bros. World Experience'],
+      },
+      {
+        day: 4,
+        title: 'Leisure & Private Departure Transfer',
+        location: 'Abu Dhabi Airport (AUH)',
+        description: 'Enjoy a relaxed breakfast at the hotel. Spend your final morning shopping at Yas Mall or relaxing by the pool before your private chauffeur transfers you to Abu Dhabi International Airport for your journey home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Morning Leisure', 'Private Hotel to Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights stay at Yas Plaza Mangroves 5★',
+      'Daily breakfast included',
+      'Abu Dhabi City Tour (Private Basis)',
+      'Yas Island Theme Park Access Ticket',
+      'Round-trip Private Transfers (Airport ·· Hotel)',
+      'All local taxes and service fees',
+    ],
+    exclusions: [
+      'International flights',
+      'UAE Tourist Visa fees',
+      'Meals not specified (Lunch & Dinner)',
+      'Personal expenses & gratuities',
+    ],
+    hotelStandard: 'Yas Plaza Mangroves 5★ — Park Access',
+    groupSize: 'Private / Family (2-4 Guests)',
+    featured: true,
+    cardFeatures: [
+      'Yas Plaza 5★ stay',
+      'Breakfast included',
+      'Transfers (Private)',
+      'Park Access & City Tour',
+    ],
+  },
+  {
+    slug: '3n-abu-dhabi-icons-and-adventures-crowne-plaza-ihg',
+    title: '3N Abu Dhabi Icons & Adventures (IHG Sea View)',
+    tagline: '4 Days / 3 Nights at Crowne Plaza Yas Island IHG 5★ with Sea Views & Theme Parks',
+    destinationSlug: 'abu-dhabi',
+    destinationName: 'Abu Dhabi',
+    durationDays: 4,
+    durationNights: 3,
+    priceINR: 38999,
+    originalPriceINR: 46999,
+    priceValidUntil: '31 Oct 2026',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1624317937315-0ced8736c9e9?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1736421062030-5676477a443f?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1512632578888-169bbbc64f33?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1624317937315-0ced8736c9e9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1590273089302-ebbc53986b6e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1736421062030-5676477a443f?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Upgrade to waterfront sophistication with 3 nights at Crowne Plaza Abu Dhabi Yas Island by IHG 5★ featuring premium Sea View rooms. Relish CP breakfast, a private guided tour of Abu Dhabi landmarks, Yas Island Theme Park access, and dedicated private airport transfers.',
+    highlights: [
+      '3 Nights in Crowne Plaza Abu Dhabi Yas Island by IHG 5★ in Sea View Room',
+      'Daily gourmet breakfast (CP Plan)',
+      'Yas Island Theme Park Access included',
+      'Private Abu Dhabi City Tour with Sheikh Zayed Grand Mosque',
+      'Round-trip Private Transfers (Airport ·· Hotel)',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Abu Dhabi & Private Sea View Check-in',
+        location: 'Yas Island, Abu Dhabi',
+        description: 'Land in Abu Dhabi and receive private VIP transfer service directly to Crowne Plaza Abu Dhabi Yas Island by IHG 5★. Check into your Sea View room and enjoy sunset vistas over the Yas marina waterways.',
+        meals: 'Room only',
+        stay: 'Crowne Plaza Yas Island IHG 5★ (Sea View)',
+        activities: ['Private Airport Meet & Transfer', 'Sea View Room Check-in'],
+      },
+      {
+        day: 2,
+        title: 'Private Iconic Abu Dhabi City Tour',
+        location: 'Abu Dhabi City Landmarks',
+        description: 'Savour a lavish international breakfast before your private chauffeur picks you up for the Abu Dhabi City Tour. Explore the white marble splendor of Sheikh Zayed Grand Mosque, scenic Corniche, and the Emirates Palace district.',
+        meals: 'Breakfast Included (CP)',
+        stay: 'Crowne Plaza Yas Island IHG 5★ (Sea View)',
+        activities: ['Sheikh Zayed Grand Mosque Private Tour', 'Corniche & Palace Photo Stops'],
+      },
+      {
+        day: 3,
+        title: 'Yas Island Theme Park Access',
+        location: 'Yas Island Theme Parks',
+        description: 'Full day of thrilling entertainment with your included Yas Island Theme Park ticket. Experience world-record speed coasters at Ferrari World or cinematic adventures at Warner Bros. World.',
+        meals: 'Breakfast Included (CP)',
+        stay: 'Crowne Plaza Yas Island IHG 5★ (Sea View)',
+        activities: ['Yas Island Theme Park Full-Day Access', 'Evening Marina Stroll'],
+      },
+      {
+        day: 4,
+        title: 'Morning Sea View Breakfast & Private Departure',
+        location: 'Abu Dhabi Airport (AUH)',
+        description: 'Wake to serene sea views and a hearty breakfast. Take advantage of last-minute tax-free shopping or relax by the landscaped pool deck before your private departure transfer to Abu Dhabi Airport.',
+        meals: 'Breakfast Included (CP)',
+        stay: 'Departure',
+        activities: ['Buffet Breakfast', 'Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights stay at Crowne Plaza Abu Dhabi Yas Island by IHG 5★ (CP)',
+      'Sea View Room with daily gourmet breakfast',
+      'Abu Dhabi City Tour on Private Basis',
+      'Yas Island Theme Park Access Ticket',
+      'Round-trip Private Transfers (Airport ·· Hotel)',
+      'All local taxes and tourism surcharges',
+    ],
+    exclusions: [
+      'International flight tickets',
+      'UAE Tourist Visa fees',
+      'Meals not specified (Lunch & Dinner)',
+      'Personal expenses & porterage',
+    ],
+    hotelStandard: 'Crowne Plaza Abu Dhabi Yas Island by IHG 5★ (CP) — Sea View',
+    groupSize: 'Private / Couple / Family (2-4 Guests)',
+    featured: true,
+    cardFeatures: [
+      'Crowne Plaza 5★ Sea View',
+      'Breakfast Included (CP)',
+      'Transfers (Private)',
+      'Park Access & City Tour',
+    ],
+  },
+  {
+    slug: '6n-exploring-balis-beauty',
+    title: "6N Exploring Bali's Beauty",
+    tagline: '7 Days / 6 Nights across Kuta & Ubud with Nusa Penida West Tour',
+    destinationSlug: 'bali',
+    destinationName: 'Bali',
+    durationDays: 7,
+    durationNights: 6,
+    priceINR: 54512,
+    originalPriceINR: 62999,
+    priceValidUntil: '31 Oct 2026',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1616484173745-07f25fd0547f?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1711609110590-5ad5c4599e56?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616484173745-07f25fd0547f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1543424376-0df9d9e216fc?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: "Immerse yourself in Bali's tropical charm with 3 nights in vibrant Kuta and 3 nights in cultural Ubud. Includes private transfers throughout, an exhilarating day tour to Nusa Penida's iconic Kelingking and Broken Beach with return ferry, and handpicked boutique stays.",
+    highlights: [
+      '3 Nights in Kuta (The One Legian) & 3 Nights in cultural Ubud',
+      'Nusa Penida West Tour: Kelingking Beach, Broken Beach, and Angel Billabong',
+      'Return 2-Way Speedboat Ferry to Nusa Penida with Local Lunch',
+      'Dedicated Private Chauffeur Transfers across all destinations',
+      'Daily international buffet breakfast',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Bali & Private Transfer to Kuta',
+        location: 'Kuta / Legian',
+        description: 'Arrive at Ngurah Rai International Airport (DPS). Meet our airport concierge and enjoy private transfer to The One Legian. Relax by the pool or stroll to the beach for sunset.',
+        meals: 'Room only',
+        stay: 'The One Legian 4★',
+        activities: ['Airport Meet & Greet', 'Private Transfer to Hotel'],
+      },
+      {
+        day: 2,
+        title: 'Nusa Penida West Island Expedition',
+        location: 'Nusa Penida Island',
+        description: 'Early morning transfer to Sanur harbour for a 45-minute speedboat to Nusa Penida. Discover jaw-dropping vistas at Kelingking T-Rex Beach, Angel’s Billabong natural infinity pool, and Broken Beach, followed by local lunch.',
+        meals: 'Breakfast & Local Lunch',
+        stay: 'The One Legian 4★',
+        activities: ['Speedboat to Nusa Penida', 'Kelingking Beach Exploration', 'Angel Billabong & Broken Beach'],
+      },
+      {
+        day: 3,
+        title: 'South Coast Sun & Uluwatu Temple Sunset',
+        location: 'Uluwatu, South Bali',
+        description: 'Day at leisure in Kuta. In the afternoon, journey south to Uluwatu Temple perched 70 meters high on an oceanic cliff. Watch the dramatic sunset over the Indian Ocean.',
+        meals: 'Breakfast Included',
+        stay: 'The One Legian 4★',
+        activities: ['Uluwatu Cliff Temple Visit', 'Sunset Coastal Drive'],
+      },
+      {
+        day: 4,
+        title: 'Scenic Transfer to Ubud Highlands',
+        location: 'Ubud',
+        description: 'Check out from Kuta and journey north into the emerald heart of Ubud. Check into your rainforest resort. Spend the evening browsing artisan markets and organic cafes along Monkey Forest Road.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Deluxe Resort 4★',
+        activities: ['Highland Scenic Transfer', 'Ubud Art Market Stroll'],
+      },
+      {
+        day: 5,
+        title: 'Tegalalang Rice Terraces & Bali Jungle Swing',
+        location: 'Tegalalang, Ubud',
+        description: 'Visit the world-heritage Subak rice terraces of Tegalalang. Capture timeless photos on the famous Bali Jungle Swing overlooking emerald palm valleys, followed by a visit to a local coffee plantation.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Deluxe Resort 4★',
+        activities: ['Tegalalang Rice Terraces', 'Bali Jungle Swing', 'Luwak Coffee Tasting'],
+      },
+      {
+        day: 6,
+        title: 'Sacred Monkey Forest & Waterfall Trek',
+        location: 'Central Ubud',
+        description: 'Explore the ancient moss-draped temple sanctuaries of Ubud Sacred Monkey Forest. Continue to Tegenungan Waterfall for an invigorating dip and serene jungle views.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Deluxe Resort 4★',
+        activities: ['Sacred Monkey Forest', 'Tegenungan Waterfall Visit'],
+      },
+      {
+        day: 7,
+        title: 'Farewell Bali & Private Airport Departure',
+        location: 'Denpasar Airport (DPS)',
+        description: 'Enjoy a leisurely breakfast amidst tropical greenery. Your private chauffeur transfers you comfortably to Ngurah Rai International Airport for your flight back home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Morning Leisure', 'Private Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights stay at The One Legian 4★ (+1 Hotels)',
+      '3 Nights stay in Ubud 4★ Resort',
+      'Daily breakfast at all hotels',
+      'Nusa Penida West Tour with return ferry tickets & local lunch',
+      'All airport, inter-hotel and sightseeing transfers on Private Basis',
+      'English-speaking driver concierge and parking charges',
+    ],
+    exclusions: [
+      'International flight tickets',
+      'Indonesia Visa on Arrival (approx. 500,000 IDR / ₹2,700)',
+      'Bali Tourist Tax (150,000 IDR)',
+      'Personal expenses, tips and optional activities',
+    ],
+    hotelStandard: 'The One Legian 4★ (+1 Hotels)',
+    groupSize: 'Private / Couple (2-4 Guests)',
+    featured: true,
+    cardFeatures: [
+      'The One Legian 4★ stay',
+      'Nusa Penida West Tour',
+      'Transfers (Private)',
+      'Daily Breakfast Included',
+    ],
+  },
+  {
+    slug: '5n-bali-magic-adventure',
+    title: '5N Bali Magic Adventure',
+    tagline: '6 Days / 5 Nights across Seminyak & Ubud with Nusa Penida Expedition',
+    destinationSlug: 'bali',
+    destinationName: 'Bali',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 54424,
+    originalPriceINR: 62999,
+    priceValidUntil: '31 Oct 2026',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1711609110590-5ad5c4599e56?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1711609110590-5ad5c4599e56?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616484173745-07f25fd0547f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1543424376-0df9d9e216fc?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Uncover the chic beach clubs of Seminyak and the mystical mist of Ubud. Includes 3 nights at Grand Kesambi (+1 Hotels), 2 nights in Ubud, the iconic Nusa Penida West tour, and private transfers.',
+    highlights: [
+      '3 Nights in Seminyak (Grand Kesambi) & 2 Nights in Ubud',
+      'Full Day Nusa Penida West Tour with return speed ferry & lunch',
+      'Seminyak beach clubs & Ubud cultural highlights',
+      'Private vehicle transfers throughout',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Bali & Seminyak Transfer',
+        location: 'Seminyak',
+        description: 'Private transfer from DPS airport to Grand Kesambi. Enjoy Seminyak’s renowned dining and beach sunset bars.',
+        meals: 'Room only',
+        stay: 'Grand Kesambi 4★',
+        activities: ['Private Airport Transfer', 'Hotel Check-in'],
+      },
+      {
+        day: 2,
+        title: 'Nusa Penida West Tour',
+        location: 'Nusa Penida Island',
+        description: 'Full-day speed boat trip to Nusa Penida to visit Kelingking T-Rex cliff, Broken Beach, and Angel Billabong.',
+        meals: 'Breakfast & Local Lunch',
+        stay: 'Grand Kesambi 4★',
+        activities: ['Nusa Penida Island Tour', 'Cliff Photography'],
+      },
+      {
+        day: 3,
+        title: 'Seminyak Leisure & Coastal Sunset',
+        location: 'Seminyak Beach',
+        description: 'Day at your own pace to explore boutique shops, beachfront cafes, and beach club pools.',
+        meals: 'Breakfast Included',
+        stay: 'Grand Kesambi 4★',
+        activities: ['Beachside Leisure', 'Sunset Dining'],
+      },
+      {
+        day: 4,
+        title: 'Transfer to Ubud & Rice Terraces',
+        location: 'Ubud',
+        description: 'Chauffeured transfer to Ubud with a scenic stop at Tegalalang Rice Terraces.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Valley Resort 4★',
+        activities: ['Scenic Transfer to Ubud', 'Rice Terrace Walk'],
+      },
+      {
+        day: 5,
+        title: 'Ubud Waterfall & Cultural Discovery',
+        location: 'Ubud',
+        description: 'Visit sacred springs, local craft villages, and stunning waterfalls.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Valley Resort 4★',
+        activities: ['Temple Visit', 'Waterfall Exploration'],
+      },
+      {
+        day: 6,
+        title: 'Private Airport Departure Transfer',
+        location: 'Denpasar Airport',
+        description: 'Final breakfast overlooking the valley before your private transfer to the airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights in Seminyak at Grand Kesambi 4★ (+1 Hotels)',
+      '2 Nights in Ubud 4★ Valley Resort',
+      'Daily breakfast',
+      'Nusa Penida West Tour with return ferry & lunch',
+      'Private airport and inter-hotel transfers',
+    ],
+    exclusions: ['Airfare', 'Visa on Arrival', 'Personal Expenses'],
+    hotelStandard: 'Grand Kesambi 4★ (+1 Hotels)',
+    groupSize: 'Private / Couple (2-4 Guests)',
+    featured: false,
+    cardFeatures: [
+      'Grand Kesambi 4★ stay',
+      'Nusa Penida West Tour',
+      'Transfers (Private)',
+      'Seminyak & Ubud Exploration',
+    ],
+  },
+  {
+    slug: '5n-bali-explorers-dream',
+    title: "5N Bali Explorer's Dream",
+    tagline: '6 Days / 5 Nights across Nusa Dua & Ubud with 3-Point Reef Snorkelling',
+    destinationSlug: 'bali',
+    destinationName: 'Bali',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 46680,
+    originalPriceINR: 53999,
+    priceValidUntil: '31 Oct 2026',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Coastal & Relaxation',
+    heroImage: 'https://images.unsplash.com/photo-1616484173745-07f25fd0547f?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1711609110590-5ad5c4599e56?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1711609110590-5ad5c4599e56?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616484173745-07f25fd0547f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1543424376-0df9d9e216fc?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Combines the white sand beaches of Nusa Dua with the rainforest serenity of Ubud. Features 3 nights at Sunrise Aventus Hotel Nusa Dua (+1 Hotels), Nusa Penida West tour with 3-point shared boat snorkeling, and private transfers.',
+    highlights: [
+      '3 Nights in Nusa Dua (Sunrise Aventus) & 2 Nights in Ubud',
+      'Nusa Penida West Tour + 3-Point Coral Snorkeling by Sharing Boat',
+      'Kelingking Beach, Broken Beach & Angel Billabong with Local Lunch',
+      'Round-trip Private Transfers',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival & Check-in at Nusa Dua',
+        location: 'Nusa Dua',
+        description: 'Private airport transfer to Sunrise Aventus Hotel Nusa Dua. Unwind by the rooftop infinity pool.',
+        meals: 'Room only',
+        stay: 'Sunrise Aventus Hotel Nusa Dua 4★',
+        activities: ['Private Airport Transfer'],
+      },
+      {
+        day: 2,
+        title: 'Nusa Penida Island & 3-Point Snorkel',
+        location: 'Nusa Penida Reefs',
+        description: 'Ferry to Nusa Penida for snorkeling across 3 vibrant reef spots followed by visits to Kelingking and Broken Beach.',
+        meals: 'Breakfast & Local Lunch',
+        stay: 'Sunrise Aventus Hotel Nusa Dua 4★',
+        activities: ['3-Point Snorkeling Safari', 'Nusa Penida Land Tour'],
+      },
+      {
+        day: 3,
+        title: 'Nusa Dua Beach & Water Blow',
+        location: 'Nusa Dua',
+        description: 'Explore the calm turquoise waters of Nusa Dua beach and the dramatic Water Blow geological formation.',
+        meals: 'Breakfast Included',
+        stay: 'Sunrise Aventus Hotel Nusa Dua 4★',
+        activities: ['Beach Relaxation', 'Water Blow Visit'],
+      },
+      {
+        day: 4,
+        title: 'Transfer to Ubud Tropical Haven',
+        location: 'Ubud',
+        description: 'Private drive to Ubud. Experience lush rainforest surroundings and Ubud art galleries.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Tropical Resort 4★',
+        activities: ['Inter-hotel Private Transfer'],
+      },
+      {
+        day: 5,
+        title: 'Ubud Village & River Valleys',
+        location: 'Ubud',
+        description: 'Explore traditional Balinese architecture, artisan craft workshops, and scenic river trails.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Tropical Resort 4★',
+        activities: ['Culture & Village Walk'],
+      },
+      {
+        day: 6,
+        title: 'Private Airport Departure',
+        location: 'DPS Airport',
+        description: 'Private transfer from Ubud to Denpasar airport for your return flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights at Sunrise Aventus Hotel Nusa Dua 4★ (+1 Hotels)',
+      '2 Nights in Ubud 4★ Resort',
+      'Daily breakfast',
+      'Nusa Penida West Tour with 3-Point Snorkeling boat and lunch',
+      'Private transfers',
+    ],
+    exclusions: ['Airfare', 'Visa on Arrival', 'Personal Expenses'],
+    hotelStandard: 'Sunrise Aventus Hotel Nusa Dua 4★ (+1 Hotels)',
+    groupSize: 'Private / Couple (2-4 Guests)',
+    featured: true,
+    cardFeatures: [
+      'Sunrise Aventus Nusa Dua',
+      '3-Point Snorkel & Penida',
+      'Transfers (Private)',
+      'Daily Breakfast Included',
+    ],
+  },
+  {
+    slug: '7n-sun-sea-and-serenity-bali',
+    title: '7N Sun, Sea & Serenity – Bali',
+    tagline: '8 Days / 7 Nights across Kuta, Nusa Penida, Gili Trawangan & Ubud',
+    destinationSlug: 'bali',
+    destinationName: 'Bali',
+    durationDays: 8,
+    durationNights: 7,
+    priceINR: 72288,
+    originalPriceINR: 82999,
+    priceValidUntil: '31 Oct 2026',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1543424376-0df9d9e216fc?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1616484173745-07f25fd0547f?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1711609110590-5ad5c4599e56?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616484173745-07f25fd0547f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1543424376-0df9d9e216fc?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'The definitive multi-island Indonesian journey: 3 nights in Kuta, 1 night on rugged Nusa Penida, 1 night on car-free tropical Gili Trawangan, and 2 nights in Ubud. Includes thrilling water sports, Uluwatu Temple, and private boat transfers.',
+    highlights: [
+      'Multi-island routing: Kuta, Nusa Penida, Gili Trawangan & Ubud',
+      'Full Day Tour of Watersports: Banana Boat, Jet Ski, Parasailing & Uluwatu Temple',
+      'Speedboat island crossings with luggage assistance',
+      'Private road transfers on mainland Bali',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Bali & Transfer to Kuta',
+        location: 'Kuta',
+        description: 'Private transfer to Grand Ixora Kuta Resort (+3 Hotels).',
+        meals: 'Room only',
+        stay: 'Grand Ixora Kuta Resort 4★',
+        activities: ['Airport Transfer'],
+      },
+      {
+        day: 2,
+        title: 'Watersports & Uluwatu Sunset',
+        location: 'Tanjung Benoa & Uluwatu',
+        description: 'Enjoy thrilling banana boat, jet ski, and parasailing at Tanjung Benoa followed by sunset at Uluwatu Temple.',
+        meals: 'Breakfast Included',
+        stay: 'Grand Ixora Kuta Resort 4★',
+        activities: ['3 Watersports Activities', 'Uluwatu Temple Visit'],
+      },
+      {
+        day: 3,
+        title: 'Speedboat to Nusa Penida Overstay',
+        location: 'Nusa Penida',
+        description: 'Ferry to Nusa Penida, explore Kelingking Beach and overnight on the island.',
+        meals: 'Breakfast Included',
+        stay: 'Nusa Penida Boutique Resort 4★',
+        activities: ['Speedboat to Nusa Penida', 'Island Sightseeing'],
+      },
+      {
+        day: 4,
+        title: 'Crossing to Gili Trawangan Island',
+        location: 'Gili Trawangan',
+        description: 'Speedboat to Gili Trawangan. Enjoy horse cart rides and turquoise waters.',
+        meals: 'Breakfast Included',
+        stay: 'Gili Trawangan Beach Villa 4★',
+        activities: ['Gili Island Speedboat Crossing', 'Bicycle Island Tour'],
+      },
+      {
+        day: 5,
+        title: 'Return to Bali & Transfer to Ubud',
+        location: 'Ubud',
+        description: 'Speedboat back to Bali mainland and private drive into peaceful Ubud.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Resort 4★',
+        activities: ['Return Boat Transfer', 'Ubud Check-in'],
+      },
+      {
+        day: 6,
+        title: 'Ubud Terraces & Artisan Villages',
+        location: 'Ubud',
+        description: 'Visit Tegalalang terraces and Celuk silver-carving artisan village.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Resort 4★',
+        activities: ['Terrace Walk', 'Artisan Village Tour'],
+      },
+      {
+        day: 7,
+        title: 'Ubud Waterfalls & Temple',
+        location: 'Ubud',
+        description: 'Trek to secluded jungle waterfalls and spiritual water temples.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Resort 4★',
+        activities: ['Jungle Waterfall Hike'],
+      },
+      {
+        day: 8,
+        title: 'Private Airport Departure',
+        location: 'DPS Airport',
+        description: 'Private transfer to airport for departure.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights Kuta, 1 Night Nusa Penida, 1 Night Gili Trawangan, 2 Nights Ubud',
+      'Daily breakfast',
+      'Watersports package (Banana boat, Jet Ski, Parasailing) + Uluwatu Temple',
+      'All speedboat tickets between Bali, Nusa Penida and Gili Trawangan',
+      'Private transfers on Bali mainland',
+    ],
+    exclusions: ['Airfare', 'Visa on Arrival', 'Personal Expenses'],
+    hotelStandard: 'Grand Ixora Kuta Resort 4★ (+3 Hotels)',
+    groupSize: 'Private / Couple (2-4 Guests)',
+    featured: true,
+    cardFeatures: [
+      'Grand Ixora Kuta Resort',
+      'Watersports & Uluwatu',
+      'Gili & Penida Island Stays',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: '5n-bali-romantic-getaway',
+    title: '5N Bali Romantic Getaway',
+    tagline: '6 Days / 5 Nights across Kuta & Ubud designed for couples',
+    destinationSlug: 'bali',
+    destinationName: 'Bali',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 45096,
+    originalPriceINR: 52999,
+    priceValidUntil: '31 Oct 2026',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Honeymoon',
+    heroImage: 'https://images.unsplash.com/photo-1711609110590-5ad5c4599e56?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1711609110590-5ad5c4599e56?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616484173745-07f25fd0547f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1543424376-0df9d9e216fc?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'A romantic couple escape featuring 3 nights in Kuta at The One Legian (+1 Hotels) and 2 nights in Ubud. Includes tourist SIM card, comprehensive travel insurance, romantic sightseeing, and private transfers.',
+    highlights: [
+      '3 Nights Kuta (The One Legian) & 2 Nights Ubud Resort',
+      'SIM Card & Travel Insurance included',
+      'Romantic coastal sunsets and serene highland retreats',
+      'Dedicated Private Chauffeur transfers',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Bali & Couple Welcome',
+        location: 'Kuta / Legian',
+        description: 'Private transfer from airport with tourist SIM card provided. Settle into The One Legian.',
+        meals: 'Room only',
+        stay: 'The One Legian 4★',
+        activities: ['Airport Meet & Greet', 'SIM Activation'],
+      },
+      {
+        day: 2,
+        title: 'Romantic Beach Day & Sunset Walk',
+        location: 'Legian Beach',
+        description: 'Stroll along soft sandy beaches and experience candlelit dining by the waves.',
+        meals: 'Breakfast Included',
+        stay: 'The One Legian 4★',
+        activities: ['Beach Walk', 'Sunset Leisure'],
+      },
+      {
+        day: 3,
+        title: 'Tanah Lot Sunset Temple Tour',
+        location: 'Tanah Lot',
+        description: 'Visit the world-famous offshore sea temple of Tanah Lot during golden sunset hour.',
+        meals: 'Breakfast Included',
+        stay: 'The One Legian 4★',
+        activities: ['Tanah Lot Temple Visit'],
+      },
+      {
+        day: 4,
+        title: 'Scenic Journey to Ubud Villa Haven',
+        location: 'Ubud',
+        description: 'Private drive to Ubud with waterfall stops en route.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Romantic Resort 4★',
+        activities: ['Private Scenic Transfer'],
+      },
+      {
+        day: 5,
+        title: 'Couple Swing & Rice Terrace Stroll',
+        location: 'Tegalalang',
+        description: 'Experience the iconic tandem swing overlooking lush jungle ravines.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Romantic Resort 4★',
+        activities: ['Tandem Jungle Swing', 'Terrace Walk'],
+      },
+      {
+        day: 6,
+        title: 'Private Departure Transfer',
+        location: 'DPS Airport',
+        description: 'Private transfer to airport for your flight home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights Kuta at The One Legian 4★ (+1 Hotels)',
+      '2 Nights Ubud 4★ Romantic Resort',
+      'Daily breakfast',
+      'Tourist SIM Card and Travel Insurance',
+      'Private transfers throughout',
+    ],
+    exclusions: ['Airfare', 'Visa on Arrival', 'Personal Expenses'],
+    hotelStandard: 'The One Legian 4★ (+1 Hotels)',
+    groupSize: 'Couple / Honeymoon (2 Guests)',
+    featured: false,
+    cardFeatures: [
+      'The One Legian 4★ stay',
+      'SIM & Travel Insurance',
+      'Transfers (Private)',
+      'Couple Sightseeings',
+    ],
+  },
+  {
+    slug: '8n-bali-buzz-break',
+    title: '8N Bali Buzz Break',
+    tagline: '9 Days / 8 Nights across Kuta, Nusa Penida & Ubud with Balinese Spa',
+    destinationSlug: 'bali',
+    destinationName: 'Bali',
+    durationDays: 9,
+    durationNights: 8,
+    priceINR: 66744,
+    originalPriceINR: 76999,
+    priceValidUntil: '31 Oct 2026',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1543424376-0df9d9e216fc?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1711609110590-5ad5c4599e56?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616484173745-07f25fd0547f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1543424376-0df9d9e216fc?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'An action-packed 8-night holiday: 3 nights Kuta, 2 nights on Nusa Penida island, and 3 nights in Ubud. Includes an authentic 120-minute traditional Balinese massage in Kalpika Kuta and complete private transfers.',
+    highlights: [
+      '3 Nights Kuta (Grand Ixora), 2 Nights Nusa Penida & 3 Nights Ubud',
+      '120-Minute Traditional Balinese Massage Session (for 2 pax)',
+      'Full Nusa Penida West & East Island Exploration',
+      'Round-trip Private Transfers & Ferry Tickets',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Bali & Check-in',
+        location: 'Kuta',
+        description: 'Private transfer from airport to Grand Ixora Kuta Resort (+2 Hotels).',
+        meals: 'Room only',
+        stay: 'Grand Ixora Kuta Resort 4★',
+        activities: ['Airport Transfer'],
+      },
+      {
+        day: 2,
+        title: '120-Min Traditional Balinese Massage',
+        location: 'Kalpika Kuta',
+        description: 'Rejuvenate with a signature 2-hour Balinese massage treatment using essential herbal oils.',
+        meals: 'Breakfast Included',
+        stay: 'Grand Ixora Kuta Resort 4★',
+        activities: ['120-Min Spa Experience'],
+      },
+      {
+        day: 3,
+        title: 'Kuta Beach & Seminyak Sunset',
+        location: 'Kuta',
+        description: 'Day of beach relaxation, shopping, and sunset dining.',
+        meals: 'Breakfast Included',
+        stay: 'Grand Ixora Kuta Resort 4★',
+        activities: ['Beach Relaxation'],
+      },
+      {
+        day: 4,
+        title: 'Ferry to Nusa Penida & West Island Tour',
+        location: 'Nusa Penida',
+        description: 'Speedboat to Nusa Penida, visit Kelingking Beach and check into your island resort.',
+        meals: 'Breakfast Included',
+        stay: 'Nusa Penida Island Hotel 4★',
+        activities: ['Speedboat Crossing', 'Kelingking Beach Tour'],
+      },
+      {
+        day: 5,
+        title: 'Nusa Penida East Coast Discovery',
+        location: 'Nusa Penida',
+        description: 'Explore Diamond Beach, Atuh Beach, and Thousand Islands viewpoint.',
+        meals: 'Breakfast Included',
+        stay: 'Nusa Penida Island Hotel 4★',
+        activities: ['Diamond Beach & Viewpoints'],
+      },
+      {
+        day: 6,
+        title: 'Ferry to Bali & Transfer to Ubud',
+        location: 'Ubud',
+        description: 'Return boat to Bali mainland and scenic private transfer to Ubud.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Resort 4★',
+        activities: ['Boat & Road Transfer'],
+      },
+      {
+        day: 7,
+        title: 'Ayung River Rafting Adventure',
+        location: 'Ayung River, Ubud',
+        description: 'Experience exciting grade 2-3 river rafting through scenic rainforest ravines.',
+        meals: 'Breakfast & Lunch',
+        stay: 'Ubud Resort 4★',
+        activities: ['White Water Rafting'],
+      },
+      {
+        day: 8,
+        title: 'Ubud Heritage & Artisan Markets',
+        location: 'Ubud',
+        description: 'Visit Ubud Palace, art markets, and relax in serene rice fields.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Resort 4★',
+        activities: ['Ubud Palace & Market Stroll'],
+      },
+      {
+        day: 9,
+        title: 'Private Airport Transfer',
+        location: 'DPS Airport',
+        description: 'Chauffeured transfer to the airport for your flight home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights Kuta, 2 Nights Nusa Penida, 3 Nights Ubud',
+      'Daily breakfast',
+      '120-Minute Traditional Balinese Massage in Kalpika Kuta',
+      'Return ferry tickets to Nusa Penida',
+      'Private transfers throughout',
+    ],
+    exclusions: ['Airfare', 'Visa on Arrival', 'Personal Expenses'],
+    hotelStandard: 'Grand Ixora Kuta Resort 4★ (+2 Hotels)',
+    groupSize: 'Private / Family (2-4 Guests)',
+    featured: false,
+    cardFeatures: [
+      'Grand Ixora Kuta Resort',
+      '120-Min Balinese Massage',
+      'Transfers (Private)',
+      'Nusa Penida & Ubud Stays',
+    ],
+  },
+  {
+    slug: '5n-whispers-of-bali',
+    title: '5N Whispers of Bali',
+    tagline: '6 Days / 5 Nights across Ubud & Karangasem Luxury Pool Villas',
+    destinationSlug: 'bali',
+    destinationName: 'Bali',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 110128,
+    originalPriceINR: 125999,
+    priceValidUntil: '31 Oct 2026',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1711609110590-5ad5c4599e56?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1711609110590-5ad5c4599e56?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616484173745-07f25fd0547f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1543424376-0df9d9e216fc?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'An exclusive luxury villa escape: 3 nights in Ubud and 2 nights at Fullmoon Villa in Karangasem. Features full day watersports, Uluwatu Temple with Kecak dance, and private chauffeur service.',
+    highlights: [
+      '3 Nights in Ubud & 2 Nights in Karangasem (Fullmoon Villa)',
+      'Full Day Tour of Watersports: Banana Boat, Jet Ski, Parasailing',
+      'Uluwatu Sunset Temple with Live Kecak Fire Dance performance',
+      'Dedicated Private Chauffeur transfers',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival & Transfer to Ubud Luxury Villa',
+        location: 'Ubud',
+        description: 'Private transfer from airport directly to your luxury pool villa in Ubud.',
+        meals: 'Room only',
+        stay: 'Ubud Private Pool Villa 5★',
+        activities: ['Private Airport Transfer'],
+      },
+      {
+        day: 2,
+        title: 'Watersports & Uluwatu Kecak Dance',
+        location: 'Tanjung Benoa & Uluwatu',
+        description: 'Banana boat, jet ski, and parasailing at Tanjung Benoa, followed by Uluwatu cliff temple and Kecak dance.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Private Pool Villa 5★',
+        activities: ['3 Watersports Activities', 'Uluwatu Kecak Dance'],
+      },
+      {
+        day: 3,
+        title: 'Ubud Highlands & Coffee Plantation',
+        location: 'Ubud',
+        description: 'Explore Tegalalang terraces, holy spring temple Tirta Empul, and artisanal coffee estate.',
+        meals: 'Breakfast Included',
+        stay: 'Ubud Private Pool Villa 5★',
+        activities: ['Tirta Empul Temple Visit'],
+      },
+      {
+        day: 4,
+        title: 'Transfer to Fullmoon Villa Karangasem',
+        location: 'Karangasem, East Bali',
+        description: 'Private drive to eastern Bali and check in at Fullmoon Villa with sweeping volcano and ocean views.',
+        meals: 'Breakfast Included',
+        stay: 'Fullmoon Villa 4★ (+1 Hotels)',
+        activities: ['Scenic East Bali Drive'],
+      },
+      {
+        day: 5,
+        title: 'Tirta Gangga Water Palace & Gates of Heaven',
+        location: 'Karangasem',
+        description: 'Visit the royal water palace of Tirta Gangga and iconic Lempuyang Temple with Mount Agung backdrop.',
+        meals: 'Breakfast Included',
+        stay: 'Fullmoon Villa 4★ (+1 Hotels)',
+        activities: ['Tirta Gangga & Lempuyang Temple'],
+      },
+      {
+        day: 6,
+        title: 'Private Airport Departure Transfer',
+        location: 'DPS Airport',
+        description: 'Private chauffeured transfer back to Denpasar airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights Ubud Luxury Villa, 2 Nights Fullmoon Villa Karangasem 4★ (+1 Hotels)',
+      'Daily breakfast',
+      'Watersports package (Banana boat, Jet Ski, Parasailing)',
+      'Uluwatu Temple entry + Kecak Fire Dance tickets',
+      'Private transfers throughout',
+    ],
+    exclusions: ['Airfare', 'Visa on Arrival', 'Personal Expenses'],
+    hotelStandard: 'Fullmoon Villa 4★ (+1 Hotels)',
+    groupSize: 'Private / Couple (2 Guests)',
+    featured: false,
+    cardFeatures: [
+      'Fullmoon Villa Karangasem',
+      'Watersports & Uluwatu Kecak',
+      'Transfers (Private)',
+      'Luxury Private Pool Stays',
+    ],
+  },
+  {
+    slug: '5n-tropical-tribe-getaway',
+    title: '5N Tropical Tribe Getaway',
+    tagline: '6 Days / 5 Nights across Canggu & Gianyar with South Bali Beach Hopping',
+    destinationSlug: 'bali',
+    destinationName: 'Bali',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 76776,
+    originalPriceINR: 87999,
+    priceValidUntil: '31 Oct 2026',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1711609110590-5ad5c4599e56?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1616484173745-07f25fd0547f?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1711609110590-5ad5c4599e56?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616484173745-07f25fd0547f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1543424376-0df9d9e216fc?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Stay at the stylish Aeera Villa by Ini Vie Hospitality (+1 Hotels) in vibrant Canggu for 3 nights, followed by 2 nights in serene Gianyar. Includes an exclusive South Bali beach hopping tour with sunset at Jimbaran Beach and private transfers.',
+    highlights: [
+      '3 Nights in Canggu (Aeera Villa by Ini Vie) & 2 Nights in Gianyar',
+      'South Bali Beach Hopping: Nusa Dua Peninsula, Pandawa Beach & Nyang Nyang Beach',
+      'Famous sunset at Jimbaran Beach',
+      'Private chauffeur transfers throughout',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Bali & Check-in at Aeera Villa',
+        location: 'Canggu',
+        description: 'Private transfer to stylish Aeera Villa by Ini Vie Hospitality in trendy Canggu.',
+        meals: 'Room only',
+        stay: 'Aeera Villa by Ini Vie Hospitality 4★',
+        activities: ['Airport Transfer', 'Villa Check-in'],
+      },
+      {
+        day: 2,
+        title: 'South Bali Beach Hopping & Jimbaran Sunset',
+        location: 'Nusa Dua & Jimbaran',
+        description: 'Visit pristine Pandawa Beach, hidden Nyang Nyang beach, and end with a world-famous sunset at Jimbaran bay.',
+        meals: 'Breakfast Included',
+        stay: 'Aeera Villa by Ini Vie Hospitality 4★',
+        activities: ['Beach Hopping Safari', 'Jimbaran Sunset'],
+      },
+      {
+        day: 3,
+        title: 'Canggu Surf & Cafe Culture',
+        location: 'Canggu',
+        description: 'Enjoy Canggu’s bohemian beach clubs, world-class surf breaks, and artisanal cafes.',
+        meals: 'Breakfast Included',
+        stay: 'Aeera Villa by Ini Vie Hospitality 4★',
+        activities: ['Beach Club Leisure'],
+      },
+      {
+        day: 4,
+        title: 'Transfer to Gianyar Rainforest Resort',
+        location: 'Gianyar',
+        description: 'Private transfer east into peaceful Gianyar, known for tranquil river valleys and cultural heritage.',
+        meals: 'Breakfast Included',
+        stay: 'Gianyar Nature Resort 4★',
+        activities: ['Scenic Private Transfer'],
+      },
+      {
+        day: 5,
+        title: 'Gianyar Hidden Waterfalls & Terraces',
+        location: 'Gianyar',
+        description: 'Discover Goa Gajah elephant cave sanctuary and secluded forest waterfalls.',
+        meals: 'Breakfast Included',
+        stay: 'Gianyar Nature Resort 4★',
+        activities: ['Goa Gajah Visit', 'Waterfall Trek'],
+      },
+      {
+        day: 6,
+        title: 'Private Airport Departure Transfer',
+        location: 'DPS Airport',
+        description: 'Private transfer from Gianyar to the airport for your flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights in Canggu at Aeera Villa by Ini Vie Hospitality 4★ (+1 Hotels)',
+      '2 Nights in Gianyar 4★ Nature Resort',
+      'Daily breakfast',
+      'South Bali Beach Hopping Tour with Jimbaran sunset',
+      'Private transfers throughout',
+    ],
+    exclusions: ['Airfare', 'Visa on Arrival', 'Personal Expenses'],
+    hotelStandard: 'Aeera Villa by Ini Vie Hospitality 4★ (+1 Hotels)',
+    groupSize: 'Private / Couple (2-4 Guests)',
+    featured: false,
+    cardFeatures: [
+      'Aeera Villa by Ini Vie',
+      'South Bali Beach Hopping',
+      'Jimbaran Sunset Dinner',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: '5n-dazzling-dubai-deals',
+    title: '5N Dazzling Dubai Deals',
+    tagline: '6 Days / 5 Nights across Deira & Yas Island with Theme Parks',
+    destinationSlug: 'dubai',
+    destinationName: 'Dubai',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 119104,
+    originalPriceINR: 135999,
+    priceValidUntil: 'Year-round',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Experience the dynamic contrast of historic Deira and ultra-modern Yas Island entertainment. Includes 3 nights in Deira, 2 nights on Yas Island, tourist SIM, travel insurance, and private transfers.',
+    highlights: [
+      '3 Nights in Deira (Holiday Inn Express) & 2 Nights on Yas Island',
+      'Tourist SIM Card and Comprehensive Travel Insurance included',
+      'Abu Dhabi & Yas Island sightseeing explorations',
+      'Private airport and inter-hotel transfers',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Dubai & Private Hotel Transfer',
+        location: 'Deira, Dubai',
+        description: 'Land at DXB International Airport. Meet your concierge and transfer privately to Holiday Inn Express Airport (+1 Hotels).',
+        meals: 'Room only',
+        stay: 'Holiday Inn Express Airport 3★',
+        activities: ['Private Airport Meet & Transfer'],
+      },
+      {
+        day: 2,
+        title: 'Dubai City Tour & Gold Souk Walk',
+        location: 'Dubai City',
+        description: 'Explore traditional heritage spice and gold souks, Dubai Creek, and photo stop at Burj Al Arab.',
+        meals: 'Breakfast Included',
+        stay: 'Holiday Inn Express Airport 3★',
+        activities: ['Half-Day Dubai City Tour', 'Souk Stroll'],
+      },
+      {
+        day: 3,
+        title: 'Dubai Mall & Fountain Show',
+        location: 'Downtown Dubai',
+        description: 'Visit Dubai Mall, watch the world-famous dancing fountains, and enjoy downtown dining.',
+        meals: 'Breakfast Included',
+        stay: 'Holiday Inn Express Airport 3★',
+        activities: ['Downtown Exploration', 'Fountain Show'],
+      },
+      {
+        day: 4,
+        title: 'Inter-Emirate Transfer to Yas Island',
+        location: 'Yas Island, Abu Dhabi',
+        description: 'Private transfer from Dubai to Yas Island entertainment district. Check into your hotel.',
+        meals: 'Breakfast Included',
+        stay: 'Yas Island Hotel 4★',
+        activities: ['Scenic Transfer to Abu Dhabi'],
+      },
+      {
+        day: 5,
+        title: 'Yas Island Theme Parks & Marina',
+        location: 'Yas Island',
+        description: 'Full day of thrilling entertainment across Yas Island parks and Yas Marina.',
+        meals: 'Breakfast Included',
+        stay: 'Yas Island Hotel 4★',
+        activities: ['Theme Park & Marina Leisure'],
+      },
+      {
+        day: 6,
+        title: 'Private Airport Departure Transfer',
+        location: 'DXB / AUH Airport',
+        description: 'Private transfer to the airport for your flight home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights in Deira at Holiday Inn Express Airport (+1 Hotels)',
+      '2 Nights on Yas Island 4★ Hotel',
+      'Daily breakfast',
+      'Tourist SIM Card & Travel Insurance',
+      'All inter-hotel and airport transfers on Private Basis',
+    ],
+    exclusions: ['Airfare', 'UAE Tourist Visa', 'Tourism Dirham Fee'],
+    hotelStandard: 'Holiday Inn Express Airport 3★ (+1 Hotels)',
+    groupSize: 'Private / Couple / Family (2-4 Guests)',
+    featured: false,
+    cardFeatures: [
+      'Holiday Inn Express Airport',
+      'SIM & Travel Insurance',
+      'Transfers (Private)',
+      'Yas Island & Dubai Stays',
+    ],
+  },
+  {
+    slug: '4n-dubai-deira-deal',
+    title: '4N Dubai Deira Deal',
+    tagline: '5 Days / 4 Nights at Majestic Cove with Burj Khalifa 124th Floor Access',
+    destinationSlug: 'dubai',
+    destinationName: 'Dubai',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 96752,
+    originalPriceINR: 109999,
+    priceValidUntil: 'Year-round',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Stay 4 nights at Majestic Cove in historic Deira. Includes an insightful Dubai city tour followed by admission to At The Top Burj Khalifa 124th Floor, and dedicated private airport transfers.',
+    highlights: [
+      '4 Nights accommodation at Majestic Cove 4★',
+      'At The Top Burj Khalifa 124th Floor observatory admission ticket',
+      'Dubai Guided City Tour with photo stops at top landmarks',
+      'Dedicated Round-trip Private Airport Transfers',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Dubai & Private Transfer',
+        location: 'Deira, Dubai',
+        description: 'Chauffeured arrival transfer from DXB to Majestic Cove.',
+        meals: 'Room only',
+        stay: 'Majestic Cove 4★',
+        activities: ['Airport Meet & Transfer'],
+      },
+      {
+        day: 2,
+        title: 'Dubai City Tour & Burj Khalifa 124th Floor',
+        location: 'Downtown Dubai',
+        description: 'Panoramic city tour of Dubai followed by high-speed ascent to Burj Khalifa At The Top 124th Floor.',
+        meals: 'Breakfast Included',
+        stay: 'Majestic Cove 4★',
+        activities: ['City Tour', 'Burj Khalifa 124th Floor Observatory'],
+      },
+      {
+        day: 3,
+        title: 'Dubai Marina & Palm Jumeirah Stroll',
+        location: 'Marina & The Palm',
+        description: 'Explore the boardwalks of Dubai Marina and scenic Palm Jumeirah viewpoints.',
+        meals: 'Breakfast Included',
+        stay: 'Majestic Cove 4★',
+        activities: ['Marina Boardwalk Leisure'],
+      },
+      {
+        day: 4,
+        title: 'Souks & Cultural Heritage',
+        location: 'Old Dubai',
+        description: 'Cross the creek on an abra boat and explore Dubai’s historic Al Fahidi district.',
+        meals: 'Breakfast Included',
+        stay: 'Majestic Cove 4★',
+        activities: ['Historic Souk Walk'],
+      },
+      {
+        day: 5,
+        title: 'Private Airport Departure Transfer',
+        location: 'DXB Airport',
+        description: 'Private transfer to Dubai airport for your return flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights stay at Majestic Cove 4★ with breakfast',
+      'Burj Khalifa 124th Floor (Non-Prime Time)',
+      'Dubai Guided City Tour',
+      'Private Airport Transfers',
+    ],
+    exclusions: ['Airfare', 'Visa fees', 'Tourism Dirham Fee'],
+    hotelStandard: 'Majestic Cove 4★',
+    groupSize: 'Private / Couple (2-4 Guests)',
+    featured: false,
+    cardFeatures: [
+      'Majestic Cove 4★ stay',
+      'Burj Khalifa 124th Floor',
+      'Dubai Guided City Tour',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: '4n-dubai-safari-explorer',
+    title: '4N Dubai Safari Explorer',
+    tagline: '5 Days / 4 Nights at Savoy Park Bur Dubai with Burj Khalifa & City Tour',
+    destinationSlug: 'dubai',
+    destinationName: 'Dubai',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 50464,
+    originalPriceINR: 58999,
+    priceValidUntil: 'Year-round',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Stay 4 nights at Savoy Park in the heart of Bur Dubai. Includes an extensive Dubai city tour, At The Top Burj Khalifa 124th Floor access, and private transfers.',
+    highlights: [
+      '4 Nights stay at Savoy Park 4★ in Bur Dubai',
+      'Burj Khalifa At The Top 124th Floor admission ticket',
+      'Dubai Guided City Tour covering major landmarks',
+      'Private round-trip airport transfers',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival & Bur Dubai Check-in',
+        location: 'Bur Dubai',
+        description: 'Private transfer from airport to Savoy Park Hotel.',
+        meals: 'Room only',
+        stay: 'Savoy Park 4★',
+        activities: ['Private Airport Transfer'],
+      },
+      {
+        day: 2,
+        title: 'Dubai City Tour & Burj Khalifa',
+        location: 'Downtown Dubai',
+        description: 'City tour covering Dubai Frame, Zabeel Palace, and At The Top Burj Khalifa 124th Floor.',
+        meals: 'Breakfast Included',
+        stay: 'Savoy Park 4★',
+        activities: ['City Tour', 'Burj Khalifa Observation Deck'],
+      },
+      {
+        day: 3,
+        title: 'Desert Dune Sunset & Safari Option',
+        location: 'Dubai Desert',
+        description: 'Spend your day relaxing or exploring Meena Bazaar souks before evening desert adventures.',
+        meals: 'Breakfast Included',
+        stay: 'Savoy Park 4★',
+        activities: ['Souk Exploration'],
+      },
+      {
+        day: 4,
+        title: 'Bur Dubai Heritage & Creek Walk',
+        location: 'Dubai Creek',
+        description: 'Experience authentic street food and traditional wooden boats along Dubai Creek.',
+        meals: 'Breakfast Included',
+        stay: 'Savoy Park 4★',
+        activities: ['Creek Heritage Stroll'],
+      },
+      {
+        day: 5,
+        title: 'Private Airport Departure',
+        location: 'DXB Airport',
+        description: 'Private transfer to the airport for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights stay at Savoy Park 4★ with breakfast',
+      'Burj Khalifa 124th Floor ticket',
+      'Dubai Guided City Tour',
+      'Private Airport Transfers',
+    ],
+    exclusions: ['Airfare', 'Visa fees', 'Tourism Dirham Fee'],
+    hotelStandard: 'Savoy Park 4★ Bur Dubai',
+    groupSize: 'Private / Couple / Family (2-4 Guests)',
+    featured: true,
+    cardFeatures: [
+      'Savoy Park 4★ stay',
+      'Burj Khalifa 124th Floor',
+      'Dubai Guided City Tour',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: '5n-emirates-on-a-budget',
+    title: '5N Emirates on a Budget',
+    tagline: '6 Days / 5 Nights across Deira & Yas Island with BAPS Hindu Temple',
+    destinationSlug: 'dubai',
+    destinationName: 'Dubai',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 119280,
+    originalPriceINR: 135999,
+    priceValidUntil: 'Year-round',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Stay 3 nights at Crowne Plaza Deira (+1 Hotels) and 2 nights on Yas Island. Includes an Abu Dhabi city tour with a visit to the newly inaugurated BAPS Hindu Temple and private transfers.',
+    highlights: [
+      '3 Nights in Deira (Crowne Plaza) & 2 Nights on Yas Island',
+      'Abu Dhabi City Tour featuring BAPS Hindu Temple & Grand Mosque',
+      'Inter-emirate private road transfers',
+      'Daily international buffet breakfast',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Dubai & Transfer to Crowne Plaza',
+        location: 'Deira, Dubai',
+        description: 'Private transfer from DXB to Crowne Plaza Deira.',
+        meals: 'Room only',
+        stay: 'Crowne Plaza Deira 4★',
+        activities: ['Airport Meet & Transfer'],
+      },
+      {
+        day: 2,
+        title: 'Dubai Modern City Tour',
+        location: 'Dubai Landmarks',
+        description: 'Explore Marina, JBR, and Dubai Frame photo stops.',
+        meals: 'Breakfast Included',
+        stay: 'Crowne Plaza Deira 4★',
+        activities: ['Dubai City Tour'],
+      },
+      {
+        day: 3,
+        title: 'Transfer to Abu Dhabi & BAPS Hindu Temple',
+        location: 'Abu Dhabi',
+        description: 'Transfer to Abu Dhabi with a visit to the hand-carved stone BAPS Hindu Mandir.',
+        meals: 'Breakfast Included',
+        stay: 'Yas Island Hotel 4★',
+        activities: ['BAPS Hindu Temple Visit', 'Abu Dhabi Transfer'],
+      },
+      {
+        day: 4,
+        title: 'Abu Dhabi City Tour & Yas Island',
+        location: 'Abu Dhabi',
+        description: 'Visit Sheikh Zayed Mosque, Emirates Palace, and Yas Island attractions.',
+        meals: 'Breakfast Included',
+        stay: 'Yas Island Hotel 4★',
+        activities: ['Abu Dhabi Sightseeing'],
+      },
+      {
+        day: 5,
+        title: 'Yas Island Leisure & Mall',
+        location: 'Yas Island',
+        description: 'Enjoy shopping at Yas Mall or visiting theme parks.',
+        meals: 'Breakfast Included',
+        stay: 'Yas Island Hotel 4★',
+        activities: ['Yas Island Leisure'],
+      },
+      {
+        day: 6,
+        title: 'Private Airport Departure Transfer',
+        location: 'DXB / AUH',
+        description: 'Chauffeured transfer to the airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights Crowne Plaza Deira 4★ (+1 Hotels), 2 Nights Yas Island 4★',
+      'Daily breakfast',
+      'Abu Dhabi City Tour with BAPS Hindu Temple entry',
+      'Private inter-emirate transfers throughout',
+    ],
+    exclusions: ['Airfare', 'Visa fees', 'Tourism Dirham Fee'],
+    hotelStandard: 'Crowne Plaza Deira 4★ (+1 Hotels)',
+    groupSize: 'Private / Family (2-4 Guests)',
+    featured: false,
+    cardFeatures: [
+      'Crowne Plaza Deira 4★',
+      'BAPS Hindu Temple Visit',
+      'Abu Dhabi City Tour',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: '4n-best-of-dubai',
+    title: '4N Best of Dubai',
+    tagline: '5 Days / 4 Nights at Majestic Cove with Dubai Trio & Burj Khalifa',
+    destinationSlug: 'dubai',
+    destinationName: 'Dubai',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 111624,
+    originalPriceINR: 126999,
+    priceValidUntil: 'Year-round',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'The complete Dubai experience at Majestic Cove: includes the classic Dubai Trio (Guided City Tour, Desert Safari with BBQ Dinner, Marina Dhow Cruise) plus At The Top Burj Khalifa 124th Floor.',
+    highlights: [
+      '4 Nights stay at Majestic Cove 4★ with breakfast',
+      'Desert Safari with 4x4 dune bashing, camel ride & BBQ dinner',
+      'Dubai Marina Dhow Cruise with international buffet dining',
+      'At The Top Burj Khalifa 124th Floor admission ticket',
+      'Private Airport Transfers',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Dubai & Marina Dhow Cruise Dinner',
+        location: 'Dubai Marina',
+        description: 'Private airport transfer to hotel. In the evening, sail on a traditional luxury dhow through the illuminated canal of Dubai Marina with buffet dining.',
+        meals: 'Dinner on Cruise',
+        stay: 'Majestic Cove 4★',
+        activities: ['Airport Transfer', 'Marina Dhow Cruise Dinner'],
+      },
+      {
+        day: 2,
+        title: 'Dubai City Tour & Burj Khalifa 124th Floor',
+        location: 'Downtown Dubai',
+        description: 'Morning city tour of iconic landmarks, followed by sunset views from Burj Khalifa 124th Floor.',
+        meals: 'Breakfast Included',
+        stay: 'Majestic Cove 4★',
+        activities: ['City Tour', 'Burj Khalifa Observation Deck'],
+      },
+      {
+        day: 3,
+        title: 'Desert Safari with Dune Bashing & BBQ',
+        location: 'Arabian Desert',
+        description: 'Afternoon 4x4 desert safari over high red dunes, sandboarding, falcon photography, and a starlit BBQ buffet with live belly dance.',
+        meals: 'Breakfast & BBQ Dinner',
+        stay: 'Majestic Cove 4★',
+        activities: ['4x4 Dune Bashing', 'Bedouin Camp BBQ Dinner & Fire Show'],
+      },
+      {
+        day: 4,
+        title: 'Day at Leisure & Tax-Free Shopping',
+        location: 'Mall of the Emirates / Gold Souk',
+        description: 'Full day at leisure for shopping, beach clubs, or visiting Museum of the Future.',
+        meals: 'Breakfast Included',
+        stay: 'Majestic Cove 4★',
+        activities: ['Leisure & Shopping'],
+      },
+      {
+        day: 5,
+        title: 'Private Airport Departure',
+        location: 'DXB Airport',
+        description: 'Private airport transfer for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights at Majestic Cove 4★ with breakfast',
+      'Dubai Trio: City Tour, Desert Safari with BBQ Dinner, Marina Dhow Cruise',
+      'Burj Khalifa 124th Floor (Non-Prime Time)',
+      'Private Airport Transfers',
+    ],
+    exclusions: ['Airfare', 'Visa fees', 'Tourism Dirham Fee'],
+    hotelStandard: 'Majestic Cove 4★',
+    groupSize: 'Private / Couple / Family (2-4 Guests)',
+    featured: false,
+    cardFeatures: [
+      'Majestic Cove 4★ stay',
+      'Desert Safari with BBQ',
+      'Marina Dhow Cruise Dinner',
+      'Burj Khalifa 124th Floor',
+    ],
+  },
+  {
+    slug: '4n-dubai-dhamaka-mgallery',
+    title: '4N Dubai Dhamaka (MGallery 5★)',
+    tagline: '5 Days / 4 Nights at The Canvas Dubai MGallery 5★ with Complete Dubai Trio',
+    destinationSlug: 'dubai',
+    destinationName: 'Dubai',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 83112,
+    originalPriceINR: 94999,
+    priceValidUntil: 'Year-round',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Indulge in 5-star luxury at The Canvas Dubai MGallery in Bur Dubai. Includes the full Dubai Trio (City Tour, Desert Safari with BBQ Dinner, Marina Dhow Cruise Dinner), Burj Khalifa 124th Floor, and private transfers.',
+    highlights: [
+      '4 Nights in 5-star luxury at The Canvas Dubai MGallery',
+      'Dubai Trio: City Tour, Desert Safari with BBQ Dinner, Marina Dhow Cruise',
+      'At The Top Burj Khalifa 124th Floor admission ticket',
+      'Private airport transfers',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Dubai & Marina Dhow Cruise',
+        location: 'Dubai Marina',
+        description: 'Private transfer to The Canvas Dubai MGallery 5★. Evening dinner cruise along Dubai Marina.',
+        meals: 'Dinner on Cruise',
+        stay: 'The Canvas Dubai MGallery 5★',
+        activities: ['Airport Transfer', 'Marina Dhow Cruise'],
+      },
+      {
+        day: 2,
+        title: 'Dubai City Tour & Burj Khalifa 124th Floor',
+        location: 'Downtown Dubai',
+        description: 'Guided city landmarks tour followed by At The Top Burj Khalifa 124th Floor.',
+        meals: 'Breakfast Included',
+        stay: 'The Canvas Dubai MGallery 5★',
+        activities: ['City Tour', 'Burj Khalifa Observation Deck'],
+      },
+      {
+        day: 3,
+        title: 'Red Dune Desert Safari & BBQ Dinner',
+        location: 'Dubai Desert',
+        description: '4x4 desert dune bashing, camel ride, sandboarding, and Bedouin BBQ buffet with live shows.',
+        meals: 'Breakfast & BBQ Dinner',
+        stay: 'The Canvas Dubai MGallery 5★',
+        activities: ['Desert Safari with BBQ'],
+      },
+      {
+        day: 4,
+        title: 'Day at Leisure in 5★ MGallery Comfort',
+        location: 'Bur Dubai',
+        description: 'Enjoy the hotel rooftop pool, spa, or explore nearby traditional gold souks.',
+        meals: 'Breakfast Included',
+        stay: 'The Canvas Dubai MGallery 5★',
+        activities: ['Leisure & Spa Day'],
+      },
+      {
+        day: 5,
+        title: 'Private Airport Departure',
+        location: 'DXB Airport',
+        description: 'Private transfer to the airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights stay at The Canvas Dubai MGallery 5★ with breakfast',
+      'Dubai Trio: City Tour, Desert Safari BBQ, Marina Dhow Cruise',
+      'Burj Khalifa 124th Floor ticket',
+      'Private Airport Transfers',
+    ],
+    exclusions: ['Airfare', 'Visa fees', 'Tourism Dirham Fee'],
+    hotelStandard: 'The Canvas Dubai MGallery 5★',
+    groupSize: 'Private / Couple / Family (2-4 Guests)',
+    featured: true,
+    cardFeatures: [
+      'The Canvas MGallery 5★',
+      'Desert Safari with BBQ',
+      'Marina Dhow Cruise Dinner',
+      'Burj Khalifa 124th Floor',
+    ],
+  },
+  {
+    slug: '4n-golden-dunes-residences',
+    title: '4N Golden Dunes Residences',
+    tagline: '5 Days / 4 Nights at Majestic Cove with Abu Dhabi Tour & BAPS Hindu Temple',
+    destinationSlug: 'dubai',
+    destinationName: 'Dubai',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 97984,
+    originalPriceINR: 111999,
+    priceValidUntil: 'Year-round',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Stay 4 nights at Majestic Cove in Deira with a day excursion to Abu Dhabi featuring the iconic BAPS Hindu Temple and Sheikh Zayed Grand Mosque, alongside private transfers.',
+    highlights: [
+      '4 Nights stay at Majestic Cove 4★ with breakfast',
+      'Full-day Abu Dhabi City Tour with BAPS Hindu Temple & Grand Mosque',
+      'Private vehicle transfers throughout',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Dubai & Hotel Check-in',
+        location: 'Deira, Dubai',
+        description: 'Private transfer from DXB to Majestic Cove.',
+        meals: 'Room only',
+        stay: 'Majestic Cove 4★',
+        activities: ['Private Airport Transfer'],
+      },
+      {
+        day: 2,
+        title: 'Dubai City Tour & Old Souks',
+        location: 'Dubai Landmarks',
+        description: 'Explore Dubai Creek, Gold Souk, and modern photo stops.',
+        meals: 'Breakfast Included',
+        stay: 'Majestic Cove 4★',
+        activities: ['Dubai City Tour'],
+      },
+      {
+        day: 3,
+        title: 'Abu Dhabi Tour & BAPS Hindu Temple',
+        location: 'Abu Dhabi',
+        description: 'Day trip to Abu Dhabi visiting BAPS Hindu Temple and Sheikh Zayed Mosque.',
+        meals: 'Breakfast Included',
+        stay: 'Majestic Cove 4★',
+        activities: ['BAPS Hindu Temple Visit', 'Grand Mosque Tour'],
+      },
+      {
+        day: 4,
+        title: 'Dubai Mall & Fountain Evening',
+        location: 'Downtown Dubai',
+        description: 'Free day for shopping at Dubai Mall and viewing the fountain spectacle.',
+        meals: 'Breakfast Included',
+        stay: 'Majestic Cove 4★',
+        activities: ['Dubai Mall Leisure'],
+      },
+      {
+        day: 5,
+        title: 'Private Airport Departure Transfer',
+        location: 'DXB Airport',
+        description: 'Private transfer to the airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights stay at Majestic Cove 4★ with breakfast',
+      'Abu Dhabi City Tour with BAPS Hindu Temple',
+      'Private transfers throughout',
+    ],
+    exclusions: ['Airfare', 'Visa fees', 'Tourism Dirham Fee'],
+    hotelStandard: 'Majestic Cove 4★',
+    groupSize: 'Private / Couple (2-4 Guests)',
+    featured: false,
+    cardFeatures: [
+      'Majestic Cove 4★ stay',
+      'BAPS Hindu Temple Visit',
+      'Abu Dhabi City Tour',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: '4n-dubai-highlights-holiday',
+    title: '4N Dubai Highlights Holiday',
+    tagline: '5 Days / 4 Nights with City Tour, Burj Khalifa & Marina Cruise',
+    destinationSlug: 'dubai',
+    destinationName: 'Dubai',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 92440,
+    originalPriceINR: 105999,
+    priceValidUntil: 'Year-round',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Stay 4 nights at Majestic Cove in Deira with Dubai guided city tour followed by At The Top Burj Khalifa 124th Floor, and private airport transfers.',
+    highlights: [
+      '4 Nights stay at Majestic Cove 4★ with breakfast',
+      'Dubai Guided City Tour',
+      'At The Top Burj Khalifa 124th Floor admission ticket',
+      'Round-trip Private Airport Transfers',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Dubai & Private Transfer',
+        location: 'Deira, Dubai',
+        description: 'Chauffeured arrival transfer to Majestic Cove.',
+        meals: 'Room only',
+        stay: 'Majestic Cove 4★',
+        activities: ['Airport Meet & Transfer'],
+      },
+      {
+        day: 2,
+        title: 'Dubai City Tour & Burj Khalifa',
+        location: 'Downtown Dubai',
+        description: 'Half-day city tour followed by observation deck at Burj Khalifa 124th Floor.',
+        meals: 'Breakfast Included',
+        stay: 'Majestic Cove 4★',
+        activities: ['City Tour', 'Burj Khalifa Observation Deck'],
+      },
+      {
+        day: 3,
+        title: 'Dubai Marina & JBR Beach Day',
+        location: 'Dubai Marina',
+        description: 'Stroll along the JBR Walk and experience Dubai Marina.',
+        meals: 'Breakfast Included',
+        stay: 'Majestic Cove 4★',
+        activities: ['Marina & Beach Walk'],
+      },
+      {
+        day: 4,
+        title: 'Traditional Souks & Leisure',
+        location: 'Old Dubai',
+        description: 'Visit Deira Gold & Spice souks and take an abra ride.',
+        meals: 'Breakfast Included',
+        stay: 'Majestic Cove 4★',
+        activities: ['Souk Shopping'],
+      },
+      {
+        day: 5,
+        title: 'Private Airport Departure',
+        location: 'DXB Airport',
+        description: 'Private transfer to the airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights at Majestic Cove 4★ with breakfast',
+      'Burj Khalifa 124th Floor ticket',
+      'Dubai City Tour',
+      'Private Airport Transfers',
+    ],
+    exclusions: ['Airfare', 'Visa fees', 'Tourism Dirham Fee'],
+    hotelStandard: 'Majestic Cove 4★',
+    groupSize: 'Private / Couple (2-4 Guests)',
+    featured: false,
+    cardFeatures: [
+      'Majestic Cove 4★ stay',
+      'Burj Khalifa 124th Floor',
+      'Dubai City Sightseeing',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: '3n-affordable-dubai',
+    title: '3N Affordable Dubai',
+    tagline: '4 Days / 3 Nights at Citymax Bur Dubai with Trio Standard & Burj Khalifa',
+    destinationSlug: 'dubai',
+    destinationName: 'Dubai',
+    durationDays: 4,
+    durationNights: 3,
+    priceINR: 46328,
+    originalPriceINR: 53999,
+    priceValidUntil: 'Year-round',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'The most popular short escape: 3 nights at Citymax Bur Dubai with the complete Dubai Trio (City Tour, Desert Safari with BBQ Dinner, Creek Dhow Cruise) plus At The Top Burj Khalifa 124th Floor.',
+    highlights: [
+      '3 Nights stay at Citymax Bur Dubai 3★ with breakfast',
+      'Dubai Trio: City Tour, Desert Safari with BBQ Dinner, Creek Dhow Cruise',
+      'Burj Khalifa At The Top 124th Floor admission ticket',
+      'Round-trip Private Airport Transfers',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival & Creek Dhow Cruise Dinner',
+        location: 'Dubai Creek',
+        description: 'Private transfer from airport to Citymax Bur Dubai. Evening dinner cruise on Dubai Creek.',
+        meals: 'Dinner on Cruise',
+        stay: 'Citymax Bur Dubai 3★',
+        activities: ['Airport Transfer', 'Creek Dhow Cruise Dinner'],
+      },
+      {
+        day: 2,
+        title: 'Dubai City Tour & Burj Khalifa',
+        location: 'Downtown Dubai',
+        description: 'Morning guided city tour followed by sunset at Burj Khalifa 124th Floor.',
+        meals: 'Breakfast Included',
+        stay: 'Citymax Bur Dubai 3★',
+        activities: ['City Tour', 'Burj Khalifa Observation Deck'],
+      },
+      {
+        day: 3,
+        title: 'Desert Safari with Dune Bashing & BBQ',
+        location: 'Dubai Desert',
+        description: 'Afternoon 4x4 dune bashing safari with camel ride, sandboarding, and Bedouin BBQ buffet with live fire dance.',
+        meals: 'Breakfast & BBQ Dinner',
+        stay: 'Citymax Bur Dubai 3★',
+        activities: ['Desert Safari with BBQ'],
+      },
+      {
+        day: 4,
+        title: 'Private Airport Departure',
+        location: 'DXB Airport',
+        description: 'Private transfer to the airport for your flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights at Citymax Bur Dubai 3★ with breakfast',
+      'Dubai Trio: City Tour, Desert Safari with BBQ, Creek Dhow Cruise',
+      'Burj Khalifa 124th Floor ticket',
+      'Private Airport Transfers',
+    ],
+    exclusions: ['Airfare', 'Visa fees', 'Tourism Dirham Fee'],
+    hotelStandard: 'Citymax Bur Dubai 3★',
+    groupSize: 'Private / Couple / Family (2-4 Guests)',
+    featured: true,
+    cardFeatures: [
+      'Citymax Bur Dubai 3★',
+      'Burj Khalifa 124th Floor',
+      'Desert Safari with BBQ',
+      'Creek Dhow Cruise Dinner',
+    ],
+  },
+  {
+    slug: '4n-dubai-budget-friendly',
+    title: '4N Dubai Budget Friendly',
+    tagline: '5 Days / 4 Nights at Holiday Inn Express Airport with SIM & Insurance',
+    destinationSlug: 'dubai',
+    destinationName: 'Dubai',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 49760,
+    originalPriceINR: 57999,
+    priceValidUntil: 'Year-round',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1506645728556-ac574e628eca?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1634007626524-f47fa37810a7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1667592441284-b590021411e3?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'A smart 4-night escape staying at Holiday Inn Express Airport in Deira. Includes complimentary SIM card, travel insurance, city tour, and private airport transfers.',
+    highlights: [
+      '4 Nights at Holiday Inn Express Airport with daily hot breakfast',
+      'Tourist SIM Card and Travel Insurance included',
+      'Dubai Guided City Tour',
+      'Round-trip Private Airport Transfers',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Dubai & Private Transfer',
+        location: 'Deira, Dubai',
+        description: 'Private airport transfer to Holiday Inn Express Airport.',
+        meals: 'Room only',
+        stay: 'Holiday Inn Express Airport 3★',
+        activities: ['Airport Meet & Transfer'],
+      },
+      {
+        day: 2,
+        title: 'Dubai City Tour',
+        location: 'Dubai Landmarks',
+        description: 'Explore the highlights of Dubai on a half-day guided tour.',
+        meals: 'Breakfast Included',
+        stay: 'Holiday Inn Express Airport 3★',
+        activities: ['Dubai City Tour'],
+      },
+      {
+        day: 3,
+        title: 'Dubai Mall & Burj Khalifa Fountain Stroll',
+        location: 'Downtown Dubai',
+        description: 'Free day for shopping and downtown sightseeing.',
+        meals: 'Breakfast Included',
+        stay: 'Holiday Inn Express Airport 3★',
+        activities: ['Downtown Leisure'],
+      },
+      {
+        day: 4,
+        title: 'Old Souks & Abra Ride',
+        location: 'Deira & Bur Dubai',
+        description: 'Experience traditional souks and creek crossings.',
+        meals: 'Breakfast Included',
+        stay: 'Holiday Inn Express Airport 3★',
+        activities: ['Souk Walk'],
+      },
+      {
+        day: 5,
+        title: 'Private Airport Departure',
+        location: 'DXB Airport',
+        description: 'Private transfer to the airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights at Holiday Inn Express Airport 3★ with breakfast',
+      'Tourist SIM Card & Travel Insurance',
+      'Dubai City Tour',
+      'Private Airport Transfers',
+    ],
+    exclusions: ['Airfare', 'Visa fees', 'Tourism Dirham Fee'],
+    hotelStandard: 'Holiday Inn Express Airport 3★',
+    groupSize: 'Private / Couple / Family (2-4 Guests)',
+    featured: false,
+    cardFeatures: [
+      'Holiday Inn Express Airport',
+      'SIM & Travel Insurance',
+      'Dubai City Tour',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'egypt-journey-through-time-oct-nov',
+    title: 'Egypt: Journey Through Time',
+    tagline: '9 Days / 8 Nights across Cairo, Aswan, Luxor & Hurghada',
+    destinationSlug: 'egypt',
+    destinationName: 'Egypt',
+    durationDays: 9,
+    durationNights: 8,
+    priceINR: 119000,
+    originalPriceINR: 135000,
+    priceValidUntil: 'Year-round',
+    hasStarMark: true,
+    type: 'fixed-departure',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1680603276970-3823498aaa2f?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1680603276970-3823498aaa2f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1562679299-266edbefd6d7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1665643956022-ee053e925743?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1625232279628-0195f7f0fae5?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'A timeless odyssey through ancient Egypt: Stand before the Great Pyramids of Giza, sail the serene Nile aboard a luxury 5-star cruise from Aswan to Luxor, unravel the subterranean tombs in the Valley of the Kings, and unwind on the crystal shores of Hurghada on the Red Sea.',
+    highlights: [
+      'Great Pyramids of Giza & Great Sphinx with Egyptologist guide',
+      '3 Nights sailing on a 5-Star Nile Cruise with all meals',
+      'Valley of the Kings, Karnak Temple & Luxor Temple explorations',
+      'Hurghada Red Sea coastal stay with beach leisure',
+      'All airport, inter-city, and cruise transfers included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Cairo — Land of the Pharaohs',
+        location: 'Cairo',
+        description: 'Arrive at Cairo International Airport (CAI). Meet our representative and transfer to your hotel. Evening welcome briefing and orientation.',
+        meals: 'Room only',
+        stay: 'Cairo 4★ Heritage Hotel',
+        activities: ['Airport Meet & Greet', 'Hotel Transfer & Welcome Briefing'],
+      },
+      {
+        day: 2,
+        title: 'Giza Pyramids, Sphinx & Egyptian Museum',
+        location: 'Giza & Downtown Cairo',
+        description: 'Marvel at the Great Pyramid of Khufu, Khafre, and Menkaure. Pose with the enigmatic Sphinx, then explore thousands of pharaonic treasures at the Egyptian Museum.',
+        meals: 'Breakfast Included',
+        stay: 'Cairo 4★ Heritage Hotel',
+        activities: ['Giza Plateau Pyramids Tour', 'Sphinx Exploration', 'Egyptian Museum Visit'],
+      },
+      {
+        day: 3,
+        title: 'Flight to Aswan & Nile Cruise Embarkation',
+        location: 'Aswan',
+        description: 'Morning flight to Aswan. Visit Philae Temple on Agilkia Island dedicated to Goddess Isis, then embark on your 5-star Nile cruise ship for lunch.',
+        meals: 'Breakfast, Lunch & Dinner',
+        stay: '5-Star Nile Cruise Ship',
+        activities: ['Flight to Aswan', 'Philae Temple Tour', 'Cruise Check-in & Felucca Ride'],
+      },
+      {
+        day: 4,
+        title: 'Kom Ombo Temple & Sailing to Edfu',
+        location: 'Kom Ombo & Edfu',
+        description: 'Sail down the Nile to the unique dual temple of Kom Ombo dedicated to Sobek the crocodile god. Continue cruising past palm groves toward Edfu.',
+        meals: 'Breakfast, Lunch & Dinner',
+        stay: '5-Star Nile Cruise Ship',
+        activities: ['Kom Ombo Temple Visit', 'Scenic Nile River Sailing'],
+      },
+      {
+        day: 5,
+        title: 'Edfu Temple of Horus & Arrival in Luxor',
+        location: 'Edfu & Luxor',
+        description: 'Visit the remarkably preserved Temple of Horus by traditional horse carriage. Sail through the Esna Lock into historic Luxor.',
+        meals: 'Breakfast, Lunch & Dinner',
+        stay: '5-Star Nile Cruise Ship',
+        activities: ['Temple of Horus Visit', 'Esna Lock Crossing', 'Luxor Temple by Night'],
+      },
+      {
+        day: 6,
+        title: 'Valley of the Kings, Karnak & Transfer to Hurghada',
+        location: 'West Bank Luxor & Hurghada',
+        description: 'Explore the royal underground crypts in the Valley of the Kings and Queen Hatshepsut Temple. Walk through Karnak’s hypostyle hall before driving across the Eastern Desert to Hurghada.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Hurghada Red Sea Resort 4★',
+        activities: ['Valley of the Kings', 'Karnak Temple', 'Desert Drive to Hurghada'],
+      },
+      {
+        day: 7,
+        title: 'Hurghada Red Sea Relaxation & Watersports',
+        location: 'Hurghada',
+        description: 'Full day at leisure on the shores of the Red Sea. Option for coral reef snorkeling, scuba diving, or relaxing by the private beach.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Hurghada Red Sea Resort 4★',
+        activities: ['Beach Leisure', 'Optional Red Sea Snorkeling'],
+      },
+      {
+        day: 8,
+        title: 'Return Drive to Cairo & Khan el-Khalili Bazaar',
+        location: 'Cairo',
+        description: 'Morning transfer back to Cairo. Spend the evening wandering through the bustling medieval lanes of Khan el-Khalili bazaar for spices and lanterns.',
+        meals: 'Breakfast Included',
+        stay: 'Cairo 4★ Heritage Hotel',
+        activities: ['Transfer to Cairo', 'Khan el-Khalili Bazaar Walk'],
+      },
+      {
+        day: 9,
+        title: 'Farewell Egypt & International Departure',
+        location: 'Cairo Airport (CAI)',
+        description: 'Leisurely breakfast before private transfer to Cairo International Airport for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights in Cairo at 4★ Heritage Hotel with breakfast',
+      '3 Nights on 5-Star Nile Cruise Ship with full board (Breakfast, Lunch, Dinner)',
+      '2 Nights in Hurghada Red Sea Resort with half board',
+      'Guided sightseeing: Giza Pyramids, Sphinx, Egyptian Museum, Valley of the Kings & Karnak',
+      'All airport, inter-city, and cruise transfers included (Land Only)',
+      'English-speaking licensed Egyptologist guides throughout',
+    ],
+    exclusions: [
+      'International flights to/from Cairo',
+      'Domestic flights (Cairo - Aswan)',
+      'Egypt Tourist Visa',
+      'Entry inside the Great Pyramid chambers (optional ticket)',
+      'Gratuities and personal expenses',
+    ],
+    hotelStandard: '4★ & 5★ Heritage Hotels & 5★ Nile Cruise',
+    groupSize: 'Fixed Group Departure (15-25 Guests)',
+    featured: true,
+    departureDates: ['17 Oct 2026', '31 Oct 2026', '14 Nov 2026'],
+    cardFeatures: [
+      'Cairo, Aswan, Luxor & Hurghada',
+      'Giza Pyramids & Sphinx Tour',
+      '5★ Nile Cruise with Meals',
+      'Transfers included',
+    ],
+  },
+  {
+    slug: 'egypt-journey-through-time-december',
+    title: 'Egypt: Journey Through Time — December Departure',
+    tagline: '9 Days / 8 Nights across Cairo, Aswan, Luxor & Hurghada in Prime Winter Weather',
+    destinationSlug: 'egypt',
+    destinationName: 'Egypt',
+    durationDays: 9,
+    durationNights: 8,
+    priceINR: 134000,
+    originalPriceINR: 152000,
+    priceValidUntil: 'Year-round',
+    hasStarMark: true,
+    type: 'fixed-departure',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1562679299-266edbefd6d7?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1665643956022-ee053e925743?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1680603276970-3823498aaa2f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1562679299-266edbefd6d7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1665643956022-ee053e925743?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1625232279628-0195f7f0fae5?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Experience Egypt in its most pleasant winter climate. A premium 9-day group departure taking you from the iconic Pyramids of Giza to a 5-star Nile cruise connecting Aswan and Luxor, concluding with seaside relaxation at Hurghada.',
+    highlights: [
+      'Prime winter departures with mild 22°C desert temperatures',
+      '3 Nights sailing on a 5-Star Nile Cruise with full board',
+      'Pyramids of Giza, Sphinx, Egyptian Museum & Valley of the Kings',
+      'Hurghada Red Sea coastal stay',
+      'All transfers included across land and waterways',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Cairo',
+        location: 'Cairo',
+        description: 'Chauffeured arrival transfer to your Cairo hotel.',
+        meals: 'Room only',
+        stay: 'Cairo 4★ Heritage Hotel',
+        activities: ['Airport Meet & Transfer'],
+      },
+      {
+        day: 2,
+        title: 'Pyramids of Giza & Egyptian Antiquities',
+        location: 'Giza',
+        description: 'Full-day tour with Egyptologist guide covering Giza Pyramids, Sphinx, and the Egyptian Museum.',
+        meals: 'Breakfast Included',
+        stay: 'Cairo 4★ Heritage Hotel',
+        activities: ['Pyramids Tour', 'Egyptian Museum'],
+      },
+      {
+        day: 3,
+        title: 'Aswan & Embark 5-Star Nile Cruise',
+        location: 'Aswan',
+        description: 'Fly to Aswan, visit Philae Temple, and check in to your Nile cruise ship.',
+        meals: 'Breakfast, Lunch & Dinner',
+        stay: '5-Star Nile Cruise Ship',
+        activities: ['Philae Temple Visit', 'Nile Cruise Embarkation'],
+      },
+      {
+        day: 4,
+        title: 'Kom Ombo & Edfu River Sailing',
+        location: 'Nile River',
+        description: 'Explore Kom Ombo Temple and sail leisurely toward Edfu.',
+        meals: 'Breakfast, Lunch & Dinner',
+        stay: '5-Star Nile Cruise Ship',
+        activities: ['Kom Ombo Temple', 'River Sailing'],
+      },
+      {
+        day: 5,
+        title: 'Edfu Temple of Horus & Luxor Arrival',
+        location: 'Luxor',
+        description: 'Carriage ride to Edfu Temple, then sail to Luxor for sunset temple visits.',
+        meals: 'Breakfast, Lunch & Dinner',
+        stay: '5-Star Nile Cruise Ship',
+        activities: ['Horus Temple', 'Luxor Temple'],
+      },
+      {
+        day: 6,
+        title: 'Valley of the Kings & Drive to Hurghada',
+        location: 'Luxor & Red Sea',
+        description: 'Explore the tombs of the Pharaohs and Karnak Temple before driving to Hurghada.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Hurghada Red Sea Resort 4★',
+        activities: ['Valley of the Kings', 'Karnak Temple', 'Transfer to Hurghada'],
+      },
+      {
+        day: 7,
+        title: 'Hurghada Red Sea Beach Day',
+        location: 'Hurghada',
+        description: 'Relax on sandy beaches or join optional snorkeling excursions.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Hurghada Red Sea Resort 4★',
+        activities: ['Beach Relaxation'],
+      },
+      {
+        day: 8,
+        title: 'Cairo Return & Khan el-Khalili',
+        location: 'Cairo',
+        description: 'Drive back to Cairo and explore historic souks.',
+        meals: 'Breakfast Included',
+        stay: 'Cairo 4★ Heritage Hotel',
+        activities: ['Old Cairo Souk Walk'],
+      },
+      {
+        day: 9,
+        title: 'Cairo Airport Departure',
+        location: 'CAI Airport',
+        description: 'Airport departure transfer.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights Cairo 4★, 3 Nights 5-Star Nile Cruise (Full Board), 2 Nights Hurghada Resort',
+      'All guided entrance fees as per itinerary',
+      'All ground transfers included (Land Only)',
+      'Certified Egyptologist tour leader',
+    ],
+    exclusions: ['International and domestic airfares', 'Visa fees', 'Tips'],
+    hotelStandard: '4★ & 5★ Heritage Hotels & 5★ Nile Cruise',
+    groupSize: 'Fixed Group Departure (15-25 Guests)',
+    featured: true,
+    departureDates: ['05 Dec 2026', '12 Dec 2026'],
+    cardFeatures: [
+      'Cairo, Aswan, Luxor & Hurghada',
+      'Giza Pyramids & Sphinx Tour',
+      '5★ Nile Cruise with Meals',
+      'Transfers included',
+    ],
+  },
+  {
+    slug: 'egypt-journey-through-time-christmas-special',
+    title: 'Egypt: Journey Through Time — Christmas & New Year Special',
+    tagline: '10 Days / 9 Nights across Cairo, Aswan, Luxor & Hurghada with Gala Celebrations',
+    destinationSlug: 'egypt',
+    destinationName: 'Egypt',
+    durationDays: 10,
+    durationNights: 9,
+    priceINR: 144000,
+    originalPriceINR: 165000,
+    priceValidUntil: 'Year-round',
+    hasStarMark: true,
+    type: 'fixed-departure',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1625232279628-0195f7f0fae5?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1680603276970-3823498aaa2f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1562679299-266edbefd6d7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1665643956022-ee053e925743?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1625232279628-0195f7f0fae5?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Celebrate the festive season in legendary fashion: An extended 10-day holiday covering the wonders of Egypt during Christmas & New Year. Includes an upgraded stay, festive celebration dinner, luxury 5-star Nile cruise, and Red Sea tranquility.',
+    highlights: [
+      'Festive Christmas & New Year special departures with Gala Dinner',
+      '4 Nights in Cairo, 3 Nights on 5-Star Nile Cruise & 2 Nights in Hurghada',
+      'Private Egyptologist guidance through the Giza Pyramids and ancient tombs',
+      'Complete private and group transfers throughout',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Festive Arrival in Cairo',
+        location: 'Cairo',
+        description: 'Chauffeured arrival transfer to your luxury Cairo hotel.',
+        meals: 'Room only',
+        stay: 'Cairo 5★ Hotel',
+        activities: ['Airport Meet & Transfer'],
+      },
+      {
+        day: 2,
+        title: 'Pyramids of Giza & Grand Egyptian Museum',
+        location: 'Giza',
+        description: 'Marvel at Khufu’s Pyramids and the Sphinx with festive seasonal touches.',
+        meals: 'Breakfast Included',
+        stay: 'Cairo 5★ Hotel',
+        activities: ['Pyramids Tour', 'Sphinx Exploration'],
+      },
+      {
+        day: 3,
+        title: 'Fly to Aswan & Board Luxury Nile Cruise',
+        location: 'Aswan',
+        description: 'Flight to Aswan, visit Philae Temple, and check in to your Nile cruise.',
+        meals: 'Breakfast, Lunch & Dinner',
+        stay: '5-Star Nile Cruise Ship',
+        activities: ['Philae Island Temple', 'Nile Cruise Check-in'],
+      },
+      {
+        day: 4,
+        title: 'Kom Ombo & River Cruising to Edfu',
+        location: 'Nile River',
+        description: 'Visit Kom Ombo Temple and enjoy river breezes on the sun deck.',
+        meals: 'Breakfast, Lunch & Dinner',
+        stay: '5-Star Nile Cruise Ship',
+        activities: ['Kom Ombo Temple', 'Sailing'],
+      },
+      {
+        day: 5,
+        title: 'Horus Temple & Arrival in Luxor',
+        location: 'Luxor',
+        description: 'Edfu Temple visit and nighttime Karnak Temple light show.',
+        meals: 'Breakfast, Lunch & Dinner',
+        stay: '5-Star Nile Cruise Ship',
+        activities: ['Temple of Horus', 'Karnak Light Show'],
+      },
+      {
+        day: 6,
+        title: 'Valley of the Kings & Drive to Hurghada',
+        location: 'Luxor & Hurghada',
+        description: 'Tour King Tut’s royal burial grounds before driving to the Red Sea.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Hurghada 5★ Beach Resort',
+        activities: ['Valley of the Kings', 'Transfer to Hurghada'],
+      },
+      {
+        day: 7,
+        title: 'Red Sea Festive Leisure',
+        location: 'Hurghada',
+        description: 'Christmas / New Year seaside celebrations by the Red Sea.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Hurghada 5★ Beach Resort',
+        activities: ['Festive Beach Day'],
+      },
+      {
+        day: 8,
+        title: 'Hurghada Watersports & Coral Reefs',
+        location: 'Hurghada',
+        description: 'Optional private yacht charter or dolphin watching safari.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Hurghada 5★ Beach Resort',
+        activities: ['Red Sea Watersports'],
+      },
+      {
+        day: 9,
+        title: 'Return to Cairo & Gala Dinner',
+        location: 'Cairo',
+        description: 'Transfer back to Cairo with special festive dinner celebration.',
+        meals: 'Breakfast & Gala Dinner',
+        stay: 'Cairo 5★ Hotel',
+        activities: ['Festive Gala Dinner'],
+      },
+      {
+        day: 10,
+        title: 'Cairo Departure',
+        location: 'CAI Airport',
+        description: 'Private airport departure transfer.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights Cairo 5★ Hotel, 3 Nights 5-Star Nile Cruise (Full Board), 2 Nights Hurghada 5★ Resort',
+      'Festive Gala Dinner celebration',
+      'All guided temple and pyramid entrance tickets',
+      'All ground transfers included (Land Only)',
+    ],
+    exclusions: ['International and domestic airfares', 'Egypt Visa fees', 'Tips'],
+    hotelStandard: '5★ Luxury City Hotels & 5★ Nile Cruise',
+    groupSize: 'Fixed Group Departure (15-25 Guests)',
+    featured: true,
+    departureDates: ['19 Dec 2026', '26 Dec 2026'],
+    cardFeatures: [
+      'Cairo, Aswan, Luxor & Hurghada',
+      'Christmas & New Year Gala Dinner',
+      'Giza Pyramids & 5★ Nile Cruise',
+      'Transfers included',
+    ],
+  },
+  {
+    slug: 'europe-twin-escape-5n',
+    title: '5N Europe Twin Escape',
+    tagline: '3N Paris & 2N Amsterdam with Louvre Museum, Seine Cruise & Private Transfers',
+    destinationSlug: 'europe',
+    destinationName: 'Europe',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 107170,
+    originalPriceINR: 103170,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Experience the magic of two of Europe’s most enchanting cultural capitals. Begin in Paris exploring world-class art collections at the Louvre and gliding past illuminated landmarks on the River Seine. Then board a scenic train to Amsterdam to stroll past 17th-century canal rings, vibrant flower markets, and historic town squares.',
+    highlights: [
+      '3 Nights Paris 3★ Hotel + 2 Nights Amsterdam 3★ Hotel',
+      'Louvre Museum skip-the-line entrance ticket',
+      '1-Hour scenic Seine River sightseeing cruise in Paris',
+      'Amsterdam canal cruise and historic city exploration',
+      'Private airport & intercity transfers throughout',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Paris — The City of Light',
+        location: 'Paris',
+        description: 'Arrive at Paris Charles de Gaulle Airport (CDG). Meet your private driver at the arrivals hall and transfer to your centrally located hotel. Settle in and enjoy an evening stroll along the Champs-Élysées.',
+        meals: 'Room only',
+        stay: 'Paris 3★ City Hotel',
+        activities: ['Airport Meet & Greet', 'Private Hotel Transfer', 'Evening Stroll'],
+      },
+      {
+        day: 2,
+        title: 'Louvre Museum Masterpieces & Seine River Cruise',
+        location: 'Paris',
+        description: 'Spend your morning exploring the world’s greatest art treasures at the Louvre Museum, including the Mona Lisa and Venus de Milo. In the afternoon, board an open-air cruise along the River Seine admiring Notre-Dame and the Eiffel Tower.',
+        meals: 'Breakfast Included',
+        stay: 'Paris 3★ City Hotel',
+        activities: ['Louvre Museum Tour', 'Seine River Sightseeing Cruise', 'Tuileries Gardens Walk'],
+      },
+      {
+        day: 3,
+        title: 'Montmartre & Parisian Architectural Splendour',
+        location: 'Paris',
+        description: 'Explore the hilltop artists’ quarter of Montmartre and the white-domed Sacré-Cœur basilica with panoramic views over Paris. Afternoon at leisure for boutique shopping or visiting the Arc de Triomphe.',
+        meals: 'Breakfast Included',
+        stay: 'Paris 3★ City Hotel',
+        activities: ['Montmartre & Sacré-Cœur Walk', 'Leisure Shopping', 'Café Culture'],
+      },
+      {
+        day: 4,
+        title: 'High-Speed Rail to Amsterdam & Canal Stroll',
+        location: 'Amsterdam',
+        description: 'Private transfer to Gare du Nord for your high-speed Eurostar train to Amsterdam Centraal. Upon arrival, transfer to your hotel. Spend your late afternoon wandering through the UNESCO-listed Jordaan canal district.',
+        meals: 'Breakfast Included',
+        stay: 'Amsterdam 3★ City Hotel',
+        activities: ['Eurostar Rail Crossing', 'Amsterdam Hotel Transfer', 'Jordaan Canal Exploration'],
+      },
+      {
+        day: 5,
+        title: 'Amsterdam Canals, Dam Square & Flower Market',
+        location: 'Amsterdam',
+        description: 'Take a classic glass-roof canal boat tour through Amsterdam’s historic waterways. Visit Dam Square, the Royal Palace, and the Bloemenmarkt floating flower market, followed by free time in the Museum Quarter.',
+        meals: 'Breakfast Included',
+        stay: 'Amsterdam 3★ City Hotel',
+        activities: ['Canal Boat Tour', 'Dam Square & Royal Palace', 'Bloemenmarkt Visit'],
+      },
+      {
+        day: 6,
+        title: 'Farewell Europe & Airport Departure',
+        location: 'Amsterdam Schiphol (AMS)',
+        description: 'Enjoy breakfast before your private transfer to Amsterdam Schiphol Airport (AMS) for your onward flight home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights in Paris 3★ Hotel & 2 Nights in Amsterdam 3★ Hotel',
+      'Daily buffet breakfast at all hotels',
+      'Louvre Museum entrance ticket & 1-hour Seine River cruise',
+      'All private airport and intercity transfers',
+    ],
+    exclusions: ['International and inter-city rail airfares', 'Schengen Visa fee', 'City Tourist Tax payable directly to hotels', 'Personal expenses & travel insurance'],
+    hotelStandard: 'Paris 3 Star Hotel (+1 Hotel)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N Paris, 2N Amsterdam',
+      'Paris 3 Star Hotel (+1 Hotel)',
+      'Louvre Museum and Seine Cruise (+1 Sightseeing)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'grand-european-escape-7n',
+    title: '7N Grand European Escape',
+    tagline: '3N London, 2N Paris & 2N Amsterdam with Buckingham Palace, Louvre & Canal Cruises',
+    destinationSlug: 'europe',
+    destinationName: 'Europe',
+    durationDays: 8,
+    durationNights: 7,
+    priceINR: 210720,
+    originalPriceINR: 206720,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'The quintessential grand European tour uniting three iconic western capitals. Walk the royal thoroughfares of London with entry to The King’s Gallery at Buckingham Palace. Cross the English Channel to Paris for Parisian glamour, then journey onward to Amsterdam’s storybook waterways.',
+    highlights: [
+      '3 Nights London, 2 Nights Paris & 2 Nights Amsterdam in handpicked 3★ hotels',
+      "The King's Gallery entry at Buckingham Palace (+6 total included sightseeings)",
+      'Scenic Eurostar rail transitions across the UK, France & Netherlands',
+      'Eiffel Tower panoramic photo stops and River Seine boat cruise',
+      'Full private transfers throughout for effortless comfort',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Royal London',
+        location: 'London',
+        description: 'Arrive at London Heathrow Airport (LHR). Private transfer to your central London hotel. Evening stroll along Westminster Bridge taking in views of the illuminated Houses of Parliament and Big Ben.',
+        meals: 'Room only',
+        stay: 'London 3★ City Hotel',
+        activities: ['Private Airport Transfer', 'Westminster Evening Walk'],
+      },
+      {
+        day: 2,
+        title: "The King's Gallery at Buckingham Palace & Royal Landmarks",
+        location: 'London',
+        description: "Visit The King’s Gallery at Buckingham Palace to view changing exhibitions from the Royal Collection. Continue along St James's Park, Trafalgar Square, and Covent Garden.",
+        meals: 'Breakfast Included',
+        stay: 'London 3★ City Hotel',
+        activities: ["The King's Gallery Entry", 'Buckingham Palace Area Walk', 'Covent Garden'],
+      },
+      {
+        day: 3,
+        title: 'Tower of London, Tower Bridge & Thames Walk',
+        location: 'London',
+        description: 'Explore the historic Tower of London and cross the landmark glass walkways of Tower Bridge. Spend the afternoon browsing Borough Market or Harrods in Knightsbridge.',
+        meals: 'Breakfast Included',
+        stay: 'London 3★ City Hotel',
+        activities: ['Tower Bridge Stroll', 'Borough Market Food Walk', 'London Leisure'],
+      },
+      {
+        day: 4,
+        title: 'Eurostar High-Speed Train to Paris',
+        location: 'London to Paris',
+        description: 'Private transfer to London St Pancras station. Board the high-speed Eurostar train through the Channel Tunnel to Paris Gare du Nord. Private transfer to your Paris hotel and an evening Seine River Cruise.',
+        meals: 'Breakfast Included',
+        stay: 'Paris 3★ City Hotel',
+        activities: ['Eurostar Cross-Channel Rail', 'Paris Hotel Check-in', 'Seine River Cruise'],
+      },
+      {
+        day: 5,
+        title: 'Eiffel Tower, Louvre Museum & Champs-Élysées',
+        location: 'Paris',
+        description: 'Morning guided orientation past the Eiffel Tower, Place de la Concorde, and Arc de Triomphe. Afternoon visit to the Louvre Museum or bohemian Latin Quarter.',
+        meals: 'Breakfast Included',
+        stay: 'Paris 3★ City Hotel',
+        activities: ['Eiffel Tower Photo Stop', 'Louvre Museum Exterior & Grounds', 'Champs-Élysées Walk'],
+      },
+      {
+        day: 6,
+        title: 'High-Speed Train to Amsterdam & Canal Discovery',
+        location: 'Paris to Amsterdam',
+        description: 'Board your morning express train across northern Europe to Amsterdam Centraal. Private transfer to hotel. Enjoy an evening cruise through Amsterdam’s Golden Age canals.',
+        meals: 'Breakfast Included',
+        stay: 'Amsterdam 3★ City Hotel',
+        activities: ['Express Train to Amsterdam', 'Amsterdam Canal Cruise', 'Dam Square Stroll'],
+      },
+      {
+        day: 7,
+        title: 'Amsterdam Cultural Heritage & Jordaan Quarter',
+        location: 'Amsterdam',
+        description: 'Discover Amsterdam’s cultural quarter around the Rijksmuseum and Van Gogh Museum. Afternoon walk through nine streets (De Negen Straatjes) with historic bridges and artisanal boutiques.',
+        meals: 'Breakfast Included',
+        stay: 'Amsterdam 3★ City Hotel',
+        activities: ['Museum Quarter Walk', 'De Negen Straatjes Shopping', 'Canal Sunset View'],
+      },
+      {
+        day: 8,
+        title: 'Amsterdam Departure',
+        location: 'Amsterdam Schiphol (AMS)',
+        description: 'Leisurely breakfast before private departure transfer to Amsterdam Schiphol Airport for your return flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights London 3★ Hotel, 2 Nights Paris 3★ Hotel, 2 Nights Amsterdam 3★ Hotel',
+      'Daily breakfast at all hotels',
+      "The King's Gallery admission ticket at Buckingham Palace",
+      'All private airport and intercity transfers',
+    ],
+    exclusions: ['International and Eurostar train tickets', 'Visa processing fees', 'City taxes', 'Meals not specified'],
+    hotelStandard: 'London 3 Star Hotel (+2 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N London, 2N Paris, 2N Amsterdam',
+      'London 3 Star Hotel (+2 Hotels)',
+      "The King's Gallery by Buckingham Palace (+6 Sightseeings)",
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'art-culture-getaway-rome-florence-5n',
+    title: '5N Art & Culture Getaway',
+    tagline: "3N Rome & 2N Florence with Accademia Gallery & Michelangelo's David",
+    destinationSlug: 'europe',
+    destinationName: 'Europe',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 59860,
+    originalPriceINR: 55860,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Immerse yourself in the cradle of the Renaissance and the glory of the Roman Empire. Wander through the Colosseum, Roman Forum, and Trevi Fountain in Rome, then take the high-speed Frecciarossa to Florence to marvel at Michelangelo’s David inside the renowned Accademia Gallery.',
+    highlights: [
+      '3 Nights Rome 4★ Hotel + 2 Nights Florence 4★ Hotel',
+      "Accademia Gallery Tour with Michelangelo's Statue of David admission",
+      'Colosseum, Trevi Fountain & Spanish Steps orientation',
+      'Piazza del Duomo & Ponte Vecchio in Renaissance Florence',
+      'Private transfers and seamless high-speed intercity connections',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Benvenuti a Roma — Arrival in the Eternal City',
+        location: 'Rome',
+        description: 'Arrive at Rome Fiumicino Airport (FCO). Private transfer to your centrally located 4-star hotel. Evening walk past the illuminated Piazza Navona and Trevi Fountain.',
+        meals: 'Room only',
+        stay: 'Rome 4★ Central Hotel',
+        activities: ['Private Airport Transfer', 'Trevi Fountain Evening Walk'],
+      },
+      {
+        day: 2,
+        title: 'Ancient Rome: Colosseum & Roman Forum',
+        location: 'Rome',
+        description: 'Explore the monumental Colosseum, the Arch of Constantine, and the ancient ruins of the Roman Forum and Palatine Hill. Afternoon at leisure on the Spanish Steps.',
+        meals: 'Breakfast Included',
+        stay: 'Rome 4★ Central Hotel',
+        activities: ['Colosseum & Forum Exploration', 'Spanish Steps Stroll', 'Gelato Tasting'],
+      },
+      {
+        day: 3,
+        title: 'Vatican City & St. Peter’s Basilica',
+        location: 'Rome & Vatican',
+        description: 'Visit Vatican City, wander through St. Peter’s Square, and marvel at Michelangelo’s dome. Afternoon free to explore Trastevere’s cobblestone lanes and osterias.',
+        meals: 'Breakfast Included',
+        stay: 'Rome 4★ Central Hotel',
+        activities: ['St. Peter’s Square Tour', 'Trastevere Culinary Walk'],
+      },
+      {
+        day: 4,
+        title: 'High-Speed Train to Florence & Duomo Sunset',
+        location: 'Rome to Florence',
+        description: 'Private transfer to Roma Termini station. Board the high-speed Frecciarossa to Florence Santa Maria Novella. Private transfer to hotel. Walk to Piazza del Duomo and view Brunelleschi’s terracotta dome at sunset.',
+        meals: 'Breakfast Included',
+        stay: 'Florence 4★ Heritage Hotel',
+        activities: ['Frecciarossa High-Speed Rail', 'Piazza del Duomo Walk', 'Sunset at Ponte Vecchio'],
+      },
+      {
+        day: 5,
+        title: "Accademia Gallery & Michelangelo's Statue of David",
+        location: 'Florence',
+        description: "Official tour of the Accademia Gallery to view Michelangelo’s masterpiece David and unfinished Slaves sculptures. Afternoon walk across the goldsmith bridges of Ponte Vecchio.",
+        meals: 'Breakfast Included',
+        stay: 'Florence 4★ Heritage Hotel',
+        activities: ["Accademia Gallery David Tour", 'Ponte Vecchio & Arno River Walk'],
+      },
+      {
+        day: 6,
+        title: 'Florence Farewell & Departure',
+        location: 'Florence / Rome Airport',
+        description: 'Enjoy a Tuscan breakfast before your private transfer to Florence Airport (FLR) or rail connection to Rome FCO for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights Rome 4★ Hotel & 2 Nights Florence 4★ Hotel',
+      'Daily breakfast at 4-star properties',
+      "Accademia Gallery Tour with Michelangelo's David entrance ticket",
+      'All private airport and station transfers',
+    ],
+    exclusions: ['International and high-speed rail tickets', 'Italian city tourist tax', 'Schengen Visa fees', 'Meals not stated'],
+    hotelStandard: 'Rome 4 Star Hotel (+1 Hotel)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N Rome, 2N Florence',
+      'Rome 4 Star Hotel (+1 Hotel)',
+      "Accademia Gallery Tour with Michelangelo's Statue of David (+1 Sightseeing)",
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'timeless-cities-escape-london-paris-5n',
+    title: '5N Timeless Cities Escape',
+    tagline: '3N London & 2N Paris with 5★ Luxury Accommodations & Warner Bros Harry Potter Studio Tour',
+    destinationSlug: 'europe',
+    destinationName: 'Europe',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 123985,
+    originalPriceINR: 119985,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'A luxury duo escape bringing together high society London and timeless Parisian chic in five-star luxury. Step behind the scenes at the Warner Bros. Studio Tour London to uncover the magic of Harry Potter, then glide on the Eurostar to Paris for high fashion, cuisine, and river views.',
+    highlights: [
+      '3 Nights London 5★ Hotel + 2 Nights Paris 5★ Hotel',
+      'Warner Bros. Studio Tour - The Making of Harry Potter experience (+2 Sightseeings)',
+      'Eurostar high-speed rail crossing between London and Paris',
+      'Private chauffeured airport and intercity transfers',
+      'Curated recommendations for Michelin dining and West End theatre',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in London in 5★ Luxury',
+        location: 'London',
+        description: 'Arrive at London Heathrow Airport. Private chauffeured transfer to your luxury 5-star Mayfair or Kensington hotel. Evening welcome afternoon tea or cocktails.',
+        meals: 'Room only',
+        stay: 'London 5★ Luxury Hotel',
+        activities: ['Private Chauffeured Transfer', 'Luxury Hotel Check-in'],
+      },
+      {
+        day: 2,
+        title: 'Warner Bros. Studio Tour London — The Making of Harry Potter',
+        location: 'London & Leavesden',
+        description: 'Full excursion to Warner Bros. Studio Tour London. Step into the Great Hall, wander Diagon Alley, board the Hogwarts Express on Platform 9 ¾, and discover authentic props and costumes.',
+        meals: 'Breakfast Included',
+        stay: 'London 5★ Luxury Hotel',
+        activities: ['Warner Bros Studio Tour Harry Potter', 'Diagon Alley Walk', 'Butterbeer Tasting'],
+      },
+      {
+        day: 3,
+        title: 'Hyde Park, Knightsbridge & West End Strolls',
+        location: 'London',
+        description: 'Morning walk through Kensington Gardens and Hyde Park. Afternoon browsing iconic department stores Harrods and Selfridges, followed by an evening in Soho or the West End.',
+        meals: 'Breakfast Included',
+        stay: 'London 5★ Luxury Hotel',
+        activities: ['Hyde Park Stroll', 'Knightsbridge Luxury Shopping', 'West End Evening'],
+      },
+      {
+        day: 4,
+        title: 'Eurostar Rail to Paris & River Seine Views',
+        location: 'London to Paris',
+        description: 'Chauffeured transfer to St Pancras International. Board the Eurostar Premier class to Paris Gare du Nord. Private transfer to your 5-star Paris hotel with evening views of the sparkling Eiffel Tower.',
+        meals: 'Breakfast Included',
+        stay: 'Paris 5★ Luxury Hotel',
+        activities: ['Eurostar Cross-Border Rail', 'Private Paris Transfer', 'Eiffel Tower Night View'],
+      },
+      {
+        day: 5,
+        title: 'Parisian Elegance: Champs-Élysées & Place Vendôme',
+        location: 'Paris',
+        description: 'Spend your day soaking up the elegance of Paris: Place Vendôme jewellers, the Palais Garnier opera house, and luxury boutiques along Rue du Faubourg Saint-Honoré.',
+        meals: 'Breakfast Included',
+        stay: 'Paris 5★ Luxury Hotel',
+        activities: ['Place Vendôme & Opera Walk', 'High-Fashion District Stroll', 'Seine Evening Dinner Cruise'],
+      },
+      {
+        day: 6,
+        title: 'Paris Departure',
+        location: 'Paris Charles de Gaulle (CDG)',
+        description: 'Gourmet Parisian breakfast before your private chauffeured transfer to CDG Airport for your return journey.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Chauffeured Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights London 5★ Hotel & 2 Nights Paris 5★ Hotel',
+      'Daily gourmet breakfast',
+      'Warner Bros. Studio Tour London - The Making of Harry Potter tickets',
+      'All private chauffeured transfers',
+    ],
+    exclusions: ['International flights & Eurostar train tickets', 'Visas', 'City taxes', 'Personal expenditures'],
+    hotelStandard: 'London 5 Star Hotel (+1 Hotel)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N London, 2N Paris',
+      'London 5 Star Hotel (+1 Hotel)',
+      'Warner Bros. Studio Tour - The Making of Harry Potter (+2 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'continental-charms-amsterdam-brussels-5n',
+    title: '5N Continental Charms Journey',
+    tagline: '3N Amsterdam & 2N Brussels with Zaanse Schans Windmills, Edam, Volendam & Private Transfers',
+    destinationSlug: 'europe',
+    destinationName: 'Europe',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 99665,
+    originalPriceINR: 95665,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Discover the heart of the Low Countries across the Netherlands and Belgium. Witness working historic windmills and cheese dairies in Zaanse Schans, Edam and Volendam, then take a short train to Brussels to admire the gilded Grand Place, comic-strip murals, and artisanal chocolatiers.',
+    highlights: [
+      '3 Nights Amsterdam 3★ Hotel + 2 Nights Brussels 3★ Hotel',
+      'Full Day Excursion: Zaanse Schans, Edam, Volendam & Marken (+4 Sightseeings)',
+      'Amsterdam classic canal cruise with audio guide',
+      'Grand Place & Atomium architectural highlights in Brussels',
+      'Private airport and city transfer logistics',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Amsterdam',
+        location: 'Amsterdam',
+        description: 'Arrive at Amsterdam Schiphol Airport (AMS). Private transfer to your comfortable 3-star hotel. Evening orientation along the Singel and Herengracht canals.',
+        meals: 'Room only',
+        stay: 'Amsterdam 3★ City Hotel',
+        activities: ['Private Airport Transfer', 'Evening Canal Walk'],
+      },
+      {
+        day: 2,
+        title: 'Zaanse Schans Windmills, Edam, Volendam & Marken',
+        location: 'Dutch Countryside',
+        description: 'Full-day tour into the classic Dutch countryside. Visit working wooden windmills in Zaanse Schans, taste authentic cheeses in Edam, walk the traditional fishing port of Volendam, and visit the historic island peninsula of Marken.',
+        meals: 'Breakfast Included',
+        stay: 'Amsterdam 3★ City Hotel',
+        activities: ['Zaanse Schans Windmills', 'Edam Cheese Tasting', 'Volendam Harbor Walk', 'Marken Wooden Houses'],
+      },
+      {
+        day: 3,
+        title: 'Amsterdam Canals, Rijksmuseum & Flower Markets',
+        location: 'Amsterdam',
+        description: 'Board a 1-hour cruise through Amsterdam’s central canal rings. Visit the Museumplein and walk through the colourful stalls of the Bloemenmarkt.',
+        meals: 'Breakfast Included',
+        stay: 'Amsterdam 3★ City Hotel',
+        activities: ['Canal Cruise', 'Museumplein Photo Walk', 'Bloemenmarkt Shopping'],
+      },
+      {
+        day: 4,
+        title: 'Scenic Train to Brussels & Grand Place Exploration',
+        location: 'Amsterdam to Brussels',
+        description: 'Intercity train transfer from Amsterdam to Brussels Midi. Private transfer to your hotel. Walk to the opulent Grand Place, crowned as one of the world’s most beautiful city squares, and see Manneken Pis.',
+        meals: 'Breakfast Included',
+        stay: 'Brussels 3★ Central Hotel',
+        activities: ['Intercity Train Transfer', 'Grand Place Walking Tour', 'Belgian Waffle Tasting'],
+      },
+      {
+        day: 5,
+        title: 'Atomium, Royal Palace & Belgian Chocolatiers',
+        location: 'Brussels',
+        description: 'Visit the futuristic Atomium structure and Mini-Europe park. Afternoon stroll past the Royal Palace of Brussels and indulge in praline tastings at historic chocolatiers in Galeries Royales Saint-Hubert.',
+        meals: 'Breakfast Included',
+        stay: 'Brussels 3★ Central Hotel',
+        activities: ['Atomium Exterior & Photo Tour', 'Galeries Royales Chocolatier Walk', 'Royal Palace Grounds'],
+      },
+      {
+        day: 6,
+        title: 'Brussels Departure',
+        location: 'Brussels Airport (BRU)',
+        description: 'Breakfast at hotel before your private transfer to Brussels Airport (BRU) for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Departure Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights Amsterdam 3★ Hotel & 2 Nights Brussels 3★ Hotel',
+      'Daily breakfast',
+      'Full-day Dutch countryside excursion (Zaanse Schans, Edam, Volendam & Marken)',
+      'All private airport and city transfers',
+    ],
+    exclusions: ['International and train tickets', 'Schengen Visa fees', 'City taxes', 'Personal expenses'],
+    hotelStandard: 'Amsterdam 3 Star Hotel (+1 Hotel)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N Amsterdam, 2N Brussels',
+      'Amsterdam 3 Star Hotel (+1 Hotel)',
+      'Discover Zaanse Schans, Edam, Volendam and Marken (+4 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'glimpse-of-europe-paris-amsterdam-4n',
+    title: '4N Glimpse of Europe',
+    tagline: '2N Paris & 2N Amsterdam with Big Bus 24h Hop-On Hop-Off, River Cruise & Private Transfers',
+    destinationSlug: 'europe',
+    destinationName: 'Europe',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 102040,
+    originalPriceINR: 98040,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'A fast-paced, high-impact mini European escape tailored for travellers wanting to experience Paris and Amsterdam in 5 unforgettable days. Enjoy a 24-hour Big Bus Hop-On Hop-Off pass in Paris with Seine River Cruise, cross into the Netherlands by high-speed rail, and cruise through Amsterdam’s iconic waterways.',
+    highlights: [
+      '2 Nights Paris 3★ Hotel + 2 Nights Amsterdam 3★ Hotel',
+      'Big Bus Paris Hop On Hop Off Tour (24 Hours Ticket with River Cruise) (+2 Sightseeings)',
+      'High-speed rail connection between Paris and Amsterdam',
+      'Amsterdam canal cruise and central historic exploration',
+      'Private airport and transfer logistics included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Paris & First Glimpses',
+        location: 'Paris',
+        description: 'Arrive at Paris CDG Airport. Private transfer to your hotel. Evening walk past the illuminated Eiffel Tower and Trocadéro gardens.',
+        meals: 'Room only',
+        stay: 'Paris 3★ City Hotel',
+        activities: ['Private Airport Transfer', 'Trocadéro Eiffel View'],
+      },
+      {
+        day: 2,
+        title: 'Big Bus Hop-On Hop-Off & Seine River Cruise',
+        location: 'Paris',
+        description: 'Board the Big Bus open-top double-decker with your 24-hour pass. Hop on and off at the Louvre, Notre-Dame, Arc de Triomphe, and Champs-Élysées. Includes a 1-hour relaxing cruise down the Seine.',
+        meals: 'Breakfast Included',
+        stay: 'Paris 3★ City Hotel',
+        activities: ['Big Bus 24h Hop-On Hop-Off', 'Seine River Cruise', 'Latin Quarter Walk'],
+      },
+      {
+        day: 3,
+        title: 'High-Speed Train to Amsterdam & Canal Cruise',
+        location: 'Paris to Amsterdam',
+        description: 'Board your morning express train from Paris to Amsterdam Centraal. Private transfer to your hotel. In the afternoon, enjoy a 1-hour cruise through Amsterdam’s famous canals.',
+        meals: 'Breakfast Included',
+        stay: 'Amsterdam 3★ City Hotel',
+        activities: ['High-Speed Train Transfer', 'Amsterdam Canal Cruise', 'Dam Square Stroll'],
+      },
+      {
+        day: 4,
+        title: 'Amsterdam City Exploration & Jordaan Alleys',
+        location: 'Amsterdam',
+        description: 'Full day exploring Amsterdam’s picturesque Jordaan quarter, Anne Frank House exterior, and floating flower markets. Option for renting a bicycle or visiting the Van Gogh Museum.',
+        meals: 'Breakfast Included',
+        stay: 'Amsterdam 3★ City Hotel',
+        activities: ['Jordaan Quarter Walk', 'Bloemenmarkt Shopping', 'Evening Rembrandtplein Stroll'],
+      },
+      {
+        day: 5,
+        title: 'Amsterdam Departure',
+        location: 'Amsterdam Schiphol (AMS)',
+        description: 'Breakfast before your private transfer to Amsterdam Schiphol Airport for your flight home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '2 Nights Paris 3★ Hotel & 2 Nights Amsterdam 3★ Hotel',
+      'Daily breakfast',
+      'Big Bus Paris Hop-On Hop-Off 24h ticket with River Cruise included',
+      'Private airport transfers',
+    ],
+    exclusions: ['Airfare and train tickets', 'Schengen Visa fees', 'City taxes', 'Personal expenses'],
+    hotelStandard: 'Paris 3 Star Hotel (+1 Hotel)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '2N Paris, 2N Amsterdam',
+      'Paris 3 Star Hotel (+1 Hotel)',
+      'Big Bus Paris Hop On Hop Off Tour (24 Hours Ticket with River Cruise) (+2 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'euro-odyssey-barcelona-madrid-5n',
+    title: '5N Euro Odyssey',
+    tagline: '3N Barcelona & 2N Madrid with Montserrat Cogwheel Train & La Morenita Access',
+    destinationSlug: 'europe',
+    destinationName: 'Europe',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 83325,
+    originalPriceINR: 79325,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Experience the passion and architectural wonder of Spain’s two premier cities. Wander Gaudí’s surreal masterpieces in Barcelona and ascend the sacred multi-peaked mountain of Montserrat via cogwheel train to see the venerated Black Madonna. Then take the high-speed AVE to imperial Madrid.',
+    highlights: [
+      '3 Nights Barcelona 4★ Hotel + 2 Nights Madrid 4★ Hotel',
+      'Montserrat Mountain Excursion with Cogwheel Train & La Morenita access (+3 Sightseeings)',
+      'High-speed AVE train between Barcelona and Madrid',
+      'Sagrada Família exterior, Gothic Quarter & Royal Palace of Madrid',
+      'Private transfers and English-speaking guided tours',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Mediterranean Barcelona',
+        location: 'Barcelona',
+        description: 'Arrive at Barcelona El Prat Airport (BCN). Private transfer to your stylish 4-star hotel. Evening stroll along lively Las Ramblas and through the medieval Gothic Quarter.',
+        meals: 'Room only',
+        stay: 'Barcelona 4★ City Hotel',
+        activities: ['Private Airport Transfer', 'Las Ramblas Evening Walk', 'Tapas Tasting'],
+      },
+      {
+        day: 2,
+        title: 'Montserrat Excursion by Cogwheel Train & La Morenita',
+        location: 'Montserrat & Barcelona',
+        description: 'Journey to the dramatic multi-peaked mountain of Montserrat. Ascend via scenic mountain cogwheel railway to the thousand-year-old Benedictine Abbey. Gain access to the venerated Black Madonna (La Morenita).',
+        meals: 'Breakfast Included',
+        stay: 'Barcelona 4★ City Hotel',
+        activities: ['Montserrat Cogwheel Rail Ascent', 'Benedictine Monastery Visit', 'La Morenita Access'],
+      },
+      {
+        day: 3,
+        title: 'Gaudí’s Architectural Wonders & Park Güell',
+        location: 'Barcelona',
+        description: 'Discover Antoni Gaudí’s legendary architecture: the awe-inspiring Basilica de la Sagrada Família and the mosaic terraces of Park Güell. Stroll along Passeig de Gràcia to view Casa Batlló.',
+        meals: 'Breakfast Included',
+        stay: 'Barcelona 4★ City Hotel',
+        activities: ['Sagrada Família Exterior Tour', 'Park Güell Terraces', 'Passeig de Gràcia Stroll'],
+      },
+      {
+        day: 4,
+        title: 'AVE High-Speed Train to Madrid & Gran Vía Stroll',
+        location: 'Barcelona to Madrid',
+        description: 'Private transfer to Barcelona Sants. Board the AVE bullet train to Madrid Puerta de Atocha. Transfer to your 4-star hotel. Evening exploration of Madrid’s grand Gran Vía and Puerta del Sol.',
+        meals: 'Breakfast Included',
+        stay: 'Madrid 4★ Central Hotel',
+        activities: ['AVE High-Speed Rail Transfer', 'Gran Vía Evening Walk', 'Puerta del Sol Orientation'],
+      },
+      {
+        day: 5,
+        title: 'Royal Palace of Madrid & Retiro Park',
+        location: 'Madrid',
+        description: 'Tour the grand Royal Palace of Madrid and Almudena Cathedral. Spend your afternoon relaxing in the UNESCO-listed El Retiro Park and boating on the tranquil central lake.',
+        meals: 'Breakfast Included',
+        stay: 'Madrid 4★ Central Hotel',
+        activities: ['Royal Palace Madrid Tour', 'El Retiro Park Walk', 'Crystal Palace Photo Stop'],
+      },
+      {
+        day: 6,
+        title: 'Madrid Departure',
+        location: 'Madrid Barajas (MAD)',
+        description: 'Enjoy a Spanish breakfast before your private transfer to Madrid Barajas Airport for your onward journey.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights Barcelona 4★ Hotel & 2 Nights Madrid 4★ Hotel',
+      'Daily buffet breakfast',
+      'Montserrat excursion with Cogwheel Train ascent & La Morenita access',
+      'Private airport and station transfers',
+    ],
+    exclusions: ['Flights and AVE train tickets', 'Schengen Visa fees', 'City tourist tax', 'Meals not mentioned'],
+    hotelStandard: 'Barcelona 4 Star Hotel (+1 Hotel)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N Barcelona, 2N Madrid',
+      'Barcelona 4 Star Hotel (+1 Hotel)',
+      'Montserrat Visit with Ascent by Cogwheel Train and La Morenita Access (+3 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'central-europe-charm-vienna-prague-5n',
+    title: '5N Central Europe Charm',
+    tagline: '3N Vienna & 2N Prague with Belvedere Palace, Gardens & Private Transfers',
+    destinationSlug: 'europe',
+    destinationName: 'Europe',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 69740,
+    originalPriceINR: 65740,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Uncover the imperial splendor and gothic romance of Central Europe. In Vienna, delve into Habsburg history with visits to the Baroque Belvedere Palace and gardens, home to Gustav Klimt’s "The Kiss". Then journey across the Bohemian countryside to fairytale Prague with its castle courtyards and Charles Bridge.',
+    highlights: [
+      '3 Nights Vienna 4★ Hotel + 2 Nights Prague 4★ Hotel',
+      'Belvedere Palace and Garden admission & guided exploration (+3 Sightseeings)',
+      'Scenic Railjet express train connecting Vienna to Prague',
+      'Prague Old Town Square, Astronomical Clock & Charles Bridge',
+      'Full private airport and intercity station transfers',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Imperial Vienna',
+        location: 'Vienna',
+        description: 'Arrive at Vienna International Airport (VIE). Private transfer to your centrally located 4-star hotel. Evening stroll past St. Stephen’s Cathedral and traditional Viennese coffee houses.',
+        meals: 'Room only',
+        stay: 'Vienna 4★ Central Hotel',
+        activities: ['Private Airport Transfer', "St. Stephen's Cathedral Walk", 'Café Central Experience'],
+      },
+      {
+        day: 2,
+        title: 'Belvedere Palace, Baroque Gardens & Hofburg',
+        location: 'Vienna',
+        description: 'Visit the magnificent Baroque Belvedere Palace and manicured terraced gardens. Admire the world-renowned masterpieces of Gustav Klimt and Egon Schiele. Afternoon walk through the Imperial Hofburg Palace grounds.',
+        meals: 'Breakfast Included',
+        stay: 'Vienna 4★ Central Hotel',
+        activities: ['Belvedere Palace & Gardens Tour', 'Klimt Collection Viewing', 'Hofburg Palace Walk'],
+      },
+      {
+        day: 3,
+        title: 'Schönbrunn Palace Grounds & Ringstraße Boulevard',
+        location: 'Vienna',
+        description: 'Discover the grand Ringstraße boulevard, the Vienna State Opera, and the summer imperial estate of Schönbrunn Palace with its sweeping Gloriette views.',
+        meals: 'Breakfast Included',
+        stay: 'Vienna 4★ Central Hotel',
+        activities: ['Ringstraße Boulevard Tour', 'Schönbrunn Gardens Stroll', 'State Opera Photo Stop'],
+      },
+      {
+        day: 4,
+        title: 'Scenic Rail to Prague & Charles Bridge at Dusk',
+        location: 'Vienna to Prague',
+        description: 'Private transfer to Vienna Hauptbahnhof. Board the scenic Railjet train across the Austrian-Czech border to Prague Main Station. Private transfer to hotel. Walk across Charles Bridge under gothic lamps.',
+        meals: 'Breakfast Included',
+        stay: 'Prague 4★ Heritage Hotel',
+        activities: ['Railjet Scenic Rail Crossing', 'Charles Bridge Sunset Stroll', 'Old Town Square Orientation'],
+      },
+      {
+        day: 5,
+        title: 'Prague Castle Complex & Astronomical Clock',
+        location: 'Prague',
+        description: 'Explore the sprawling Prague Castle complex, St. Vitus Cathedral, and Golden Lane. Afternoon in the Old Town Square watching the hourly show of the 600-year-old medieval Astronomical Clock.',
+        meals: 'Breakfast Included',
+        stay: 'Prague 4★ Heritage Hotel',
+        activities: ['Prague Castle & St. Vitus Tour', 'Astronomical Clock Show', 'Vltava Riverside Walk'],
+      },
+      {
+        day: 6,
+        title: 'Prague Departure',
+        location: 'Prague Václav Havel (PRG)',
+        description: 'Enjoy a Bohemian breakfast before your private transfer to Prague Airport for your return flight home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights Vienna 4★ Hotel & 2 Nights Prague 4★ Hotel',
+      'Daily breakfast',
+      'Belvedere Palace and Baroque Gardens entrance ticket',
+      'All private airport and rail transfers',
+    ],
+    exclusions: ['International and train tickets', 'Schengen Visa fees', 'City taxes', 'Personal expenses'],
+    hotelStandard: 'Vienna 4 Star Hotel (+1 Hotel)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N Vienna, 2N Prague',
+      'Vienna 4 Star Hotel (+1 Hotel)',
+      'Belvedere Palace and Garden (+3 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'alpine-heritage-adventure-munich-salzburg-5n',
+    title: '5N Alpine Heritage Adventure',
+    tagline: '3N Munich & 2N Salzburg with Bavarian Alpine Excursion & Private Transfers',
+    destinationSlug: 'europe',
+    destinationName: 'Europe',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 38010,
+    originalPriceINR: 34010,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Cross from the grand Bavarian capital of Munich to Mozart’s baroque birthplace in Salzburg, framed by dramatic alpine peaks. Savor Munich’s Marienplatz and English Garden beer gardens, journey through postcard alpine valleys, and explore Salzburg’s fortress-crowned skyline.',
+    highlights: [
+      '3 Nights Munich 4★ Hotel + 2 Nights Salzburg 4★ Hotel',
+      'Munich city tour featuring Marienplatz, Glockenspiel & Residenz',
+      'Salzburg Sound of Music & Mozart heritage walking tour',
+      'Scenic rail journey through the Bavarian Alps',
+      'All private airport and intercity transfers',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Bavarian Munich',
+        location: 'Munich',
+        description: 'Arrive at Munich Airport (MUC). Private transfer to your 4-star city hotel. Settle in and enjoy an evening stroll around Marienplatz to see the illuminated New Town Hall.',
+        meals: 'Room only',
+        stay: 'Munich 4★ City Hotel',
+        activities: ['Private Airport Transfer', 'Marienplatz Evening Walk'],
+      },
+      {
+        day: 2,
+        title: 'Munich Historic Old Town & English Garden',
+        location: 'Munich',
+        description: 'Watch the historic Glockenspiel chime in Marienplatz. Tour the Frauenkirche cathedral, Viktualienmarkt gourmet market, and watch river surfers on the Eisbach wave in the English Garden.',
+        meals: 'Breakfast Included',
+        stay: 'Munich 4★ City Hotel',
+        activities: ['Glockenspiel Show', 'Viktualienmarkt Stroll', 'English Garden Eisbach Wave'],
+      },
+      {
+        day: 3,
+        title: 'Bavarian Alpine Castle Country / Nymphenburg',
+        location: 'Munich & Bavaria',
+        description: 'Visit the summer royal residence of Nymphenburg Palace and gardens, or take an optional scenic excursion towards fairytale Neuschwanstein Castle nestled in the Bavarian foothills.',
+        meals: 'Breakfast Included',
+        stay: 'Munich 4★ City Hotel',
+        activities: ['Nymphenburg Palace Gardens', 'BMW Welt & Museum Option', 'Bavarian Dining'],
+      },
+      {
+        day: 4,
+        title: 'Scenic Train to Salzburg & Mirabell Gardens',
+        location: 'Munich to Salzburg',
+        description: 'Private transfer to Munich Hauptbahnhof. Take the scenic train through the Chiemgau Alps to Salzburg. Transfer to your hotel. Visit Mirabell Gardens, where scenes from "The Sound of Music" were filmed.',
+        meals: 'Breakfast Included',
+        stay: 'Salzburg 4★ Heritage Hotel',
+        activities: ['Scenic Alpine Rail Crossing', 'Mirabell Gardens Tour', 'Salzach River Promenade'],
+      },
+      {
+        day: 5,
+        title: 'Mozart’s Birthplace & Hohensalzburg Fortress',
+        location: 'Salzburg',
+        description: 'Walk through Getreidegasse to Mozart’s birthplace. Take the funicular up to the 900-year-old Hohensalzburg Fortress for panoramic 360-degree views across Salzburg and the surrounding Alps.',
+        meals: 'Breakfast Included',
+        stay: 'Salzburg 4★ Heritage Hotel',
+        activities: ["Mozart's Birthplace Walk", 'Hohensalzburg Fortress Funicular', 'Salzburg Cathedral'],
+      },
+      {
+        day: 6,
+        title: 'Salzburg Departure',
+        location: 'Salzburg / Munich Airport',
+        description: 'Breakfast before your private departure transfer to Salzburg Airport (SZG) or train connection back to Munich MUC for your flight home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights Munich 4★ Hotel & 2 Nights Salzburg 4★ Hotel',
+      'Daily buffet breakfast',
+      'Munich city & alpine orientation sightseeing',
+      'Private airport and rail station transfers',
+    ],
+    exclusions: ['Flights and train tickets', 'Schengen Visa fees', 'City taxes', 'Meals not specified'],
+    hotelStandard: 'Munich 4 Star Hotel (+1 Hotel)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N Munich, 2N Salzburg',
+      'Munich 4 Star Hotel (+1 Hotel)',
+      'Munich City & Alpine Bavarian Tour',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'swiss-alps-exploration-zurich-lucerne-5n',
+    title: '5N Swiss Alps Exploration',
+    tagline: '3N Zurich & 2N Lucerne with Mount Pilatus Cruise, Cable Car & Cogwheel Rail Ride',
+    destinationSlug: 'europe',
+    destinationName: 'Europe',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 190960,
+    originalPriceINR: 186960,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1546610072-90a8cdd6aa4d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570097703229-b195d6dd291f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1647764303780-6f5b5d44130c?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Soak in the pure mountain tranquility of Switzerland across crystal lake waters and dramatic alpine peaks. Base yourself in refined Zurich along Lake Zurich and the Limmat River, then explore fairytale Lucerne and embark on the world-famous Mount Pilatus Golden Round Trip featuring a lake steamer, steepest cogwheel rail, and aerial dragon ride cable car.',
+    highlights: [
+      '3 Nights Zurich 4★ Hotel + 2 Nights Lucerne 4★ Hotel',
+      'Lucerne & Mount Pilatus with Lake Cruise, Cable Car & Cogwheel Rail Ride (+3 Sightseeings)',
+      'Lake Zurich promenade & historic Old Town (Altstadt) discovery',
+      'Lucerne Chapel Bridge, Lion Monument & Water Tower',
+      'All private airport, intercity and alpine transfers included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Zurich — Lakeside Cosmopolitan',
+        location: 'Zurich',
+        description: 'Arrive at Zurich Airport (ZRH). Private chauffeured transfer to your luxury 4-star hotel. Afternoon stroll along the Bahnhofstrasse luxury shopping boulevard to Lake Zurich.',
+        meals: 'Room only',
+        stay: 'Zurich 4★ Alpine Hotel',
+        activities: ['Private Airport Transfer', 'Lake Zurich Promenade Walk', 'Bahnhofstrasse Window Shopping'],
+      },
+      {
+        day: 2,
+        title: 'Zurich Altstadt, Lindenhof & Lake Cruise',
+        location: 'Zurich',
+        description: 'Explore Zurich’s medieval Altstadt, visit Fraumünster Church to view Chagall’s stained-glass windows, and enjoy panoramic views from Lindenhof hill over the Limmat River.',
+        meals: 'Breakfast Included',
+        stay: 'Zurich 4★ Alpine Hotel',
+        activities: ['Altstadt Walking Tour', 'Lindenhof Panoramic View', 'Chagall Windows at Fraumünster'],
+      },
+      {
+        day: 3,
+        title: 'Rhine Falls / Swiss Chocolate Experience',
+        location: 'Zurich & Northern Switzerland',
+        description: 'Visit Europe’s largest plain waterfall, the roaring Rhine Falls at Schaffhausen, followed by an indulgent tour at the Lindt Home of Chocolate with its 9-meter chocolate fountain.',
+        meals: 'Breakfast Included',
+        stay: 'Zurich 4★ Alpine Hotel',
+        activities: ['Rhine Falls Excursion', 'Lindt Home of Chocolate Tour', 'Swiss Tasting'],
+      },
+      {
+        day: 4,
+        title: 'Scenic Transit to Lucerne & Historic Chapel Bridge',
+        location: 'Zurich to Lucerne',
+        description: 'Private transfer through green alpine meadows to postcard-perfect Lucerne. Check into your hotel. Walk across the 14th-century wooden Chapel Bridge and see the poignant Lion Monument.',
+        meals: 'Breakfast Included',
+        stay: 'Lucerne 4★ Lakeside Hotel',
+        activities: ['Scenic Drive to Lucerne', 'Chapel Bridge & Water Tower Walk', 'Lion Monument Visit'],
+      },
+      {
+        day: 5,
+        title: 'Mount Pilatus Golden Round Trip (Cruise, Cogwheel & Cable Car)',
+        location: 'Mount Pilatus & Lake Lucerne',
+        description: 'Embark on the legendary Mount Pilatus Golden Round Trip: glide on a historic Lake Lucerne cruise steamer to Alpnachstad, ascend via the world’s steepest 48-degree cogwheel railway to Pilatus Kulm (2,132 m), and descend on the panoramic aerial "Dragon Ride" cable car.',
+        meals: 'Breakfast Included',
+        stay: 'Lucerne 4★ Lakeside Hotel',
+        activities: ['Lake Lucerne Steamer Cruise', 'World’s Steepest Cogwheel Railway', 'Aerial Dragon Ride Cable Car', 'Summit Alpine Panorama'],
+      },
+      {
+        day: 6,
+        title: 'Swiss Alps Farewell & Departure',
+        location: 'Zurich Airport (ZRH)',
+        description: 'Hearty Swiss alpine breakfast before your private transfer to Zurich Airport for your flight back home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights Zurich 4★ Hotel & 2 Nights Lucerne 4★ Hotel',
+      'Daily Swiss buffet breakfast',
+      'Mount Pilatus Golden Round Trip excursion (Lake cruise, cogwheel rail & cable car)',
+      'All private airport and intercity transfers',
+    ],
+    exclusions: ['International flights', 'Schengen Visa fees', 'Swiss city taxes', 'Personal expenses'],
+    hotelStandard: 'Zurich 4 Star Hotel (+1 Hotel)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N Zurich, 2N Lucerne',
+      'Zurich 4 Star Hotel (+1 Hotel)',
+      'Lucerne and Mount Pilatus with a Lake Cruise, Cable Car and Cogwheel Rail Ride (+3 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'japan-cherry-blossom-special-with-flights-7n',
+    title: '7N Japan: Cherry Blossom Special | With Flights',
+    tagline: 'Tokyo, Mount Fuji, Hakone, Osaka, Kyoto, Nara & Amanohashidate with Flights Included',
+    destinationSlug: 'japan',
+    destinationName: 'Japan',
+    durationDays: 8,
+    durationNights: 7,
+    priceINR: 254000,
+    originalPriceINR: 250000,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'fixed-departure',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570459027562-4a916cc6113f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1554797589-7241bb691973?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1708656376421-8db46939bcfe?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Witness Japan at its most poetic during the legendary Cherry Blossom (Sakura) season. From the bustling neon avenues of Tokyo and the snowy majesty of Mount Fuji to the tranquil bamboo paths of Kyoto, bowing sika deer in Nara, and the breathtaking pine-covered sandbar of Amanohashidate. Includes round-trip international flights from Delhi, Mumbai, and Bangalore.',
+    highlights: [
+      'Round-trip international flights included (Ex-Delhi, Mumbai & Bangalore)',
+      'Peak Cherry Blossom (Sakura) season departure on 22 March 2027',
+      'Tokyo, Mount Fuji, Hakone, Osaka, Kyoto, Nara & Amanohashidate',
+      'Lake Ashi cruise & Owakudani Hakone ropeway experience',
+      'Shinkansen Bullet Train experience across Honshu',
+      'All 4-star stays, luxury coach transfers, and English-speaking guide',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Departure from India & Arrival in Tokyo',
+        location: 'Tokyo',
+        description: 'Board your international flight from Delhi, Mumbai, or Bangalore to Tokyo Haneda / Narita. Meet our tour representative upon arrival and transfer to your 4-star hotel. Evening at leisure to absorb the electric lights of Shinjuku.',
+        meals: 'In-flight meals',
+        stay: 'Tokyo 4★ City Hotel',
+        activities: ['International Flight to Tokyo', 'Airport Meet & Greet', 'Hotel Transfer & Check-in'],
+      },
+      {
+        day: 2,
+        title: 'Tokyo Cherry Blossoms: Senso-ji, Ueno Park & Shibuya',
+        location: 'Tokyo',
+        description: 'Immerse yourself in Tokyo’s spring blooms. Walk under canopies of pink sakura blossoms in Ueno Park. Visit historic Senso-ji Temple in Asakusa, stroll Nakamise shopping street, and cross the legendary Shibuya Scramble Crossing.',
+        meals: 'Breakfast Included',
+        stay: 'Tokyo 4★ City Hotel',
+        activities: ['Senso-ji Temple Visit', 'Ueno Park Sakura Walk', 'Shibuya Scramble & Hachiko Statue'],
+      },
+      {
+        day: 3,
+        title: 'Mount Fuji 5th Station & Hakone Lake Ashi Cruise',
+        location: 'Mount Fuji & Hakone',
+        description: 'Drive towards iconic Mount Fuji and ascend to the 5th Station (weather permitting) for panoramic vistas. Continue to Hakone for a pirate ship cruise on Lake Ashi and take the Hakone Ropeway over volcanic steam vents at Owakudani.',
+        meals: 'Breakfast Included',
+        stay: 'Hakone / Fuji 4★ Onsen Resort',
+        activities: ['Mount Fuji 5th Station', 'Lake Ashi Sightseeing Cruise', 'Hakone Ropeway to Owakudani'],
+      },
+      {
+        day: 4,
+        title: 'Shinkansen Bullet Train to Kyoto & Fushimi Inari',
+        location: 'Kyoto',
+        description: 'Board the world-famous Shinkansen bullet train reaching speeds up to 300 km/h to Kyoto. Visit Fushimi Inari Taisha and hike through thousands of vivid vermilion torii gates winding up the sacred mountain.',
+        meals: 'Breakfast Included',
+        stay: 'Kyoto 4★ Central Hotel',
+        activities: ['Shinkansen Bullet Train Ride', 'Fushimi Inari Shrine Hike', 'Gion Geisha District Walk'],
+      },
+      {
+        day: 5,
+        title: 'Kyoto Golden Pavilion & Arashiyama Bamboo Grove',
+        location: 'Kyoto',
+        description: 'Marvel at the glittering gold leaf exterior of Kinkaku-ji (Golden Pavilion) mirrored on its zen pond. In the afternoon, walk through the whispering Arashiyama Bamboo Grove and cross Togetsukyo Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'Kyoto 4★ Central Hotel',
+        activities: ['Kinkaku-ji Golden Pavilion', 'Arashiyama Bamboo Forest', 'Togetsukyo Bridge Stroll'],
+      },
+      {
+        day: 6,
+        title: 'Amanohashidate "Bridge to Heaven" Coastal Excursion',
+        location: 'Kyoto Prefecture Coast',
+        description: 'Full-day excursion north to Amanohashidate on the Sea of Japan, renowned as one of Japan’s "Three Scenic Views". Take the chairlift to Kasamatsu Park to view the 3-kilometer pine-covered sandbar resembling a dragon ascending to heaven.',
+        meals: 'Breakfast Included',
+        stay: 'Kyoto 4★ Central Hotel',
+        activities: ['Amanohashidate Sandbar Tour', 'Kasamatsu Park Chairlift View', 'Coastal Sightseeing'],
+      },
+      {
+        day: 7,
+        title: 'Nara Deer Park & Osaka Castle & Dotonbori',
+        location: 'Nara & Osaka',
+        description: 'Travel to historic Nara. Feed friendly sika deer roaming freely in Nara Park and visit Todai-ji Temple housing the Daibutsu colossal bronze Buddha. Continue to Osaka to photograph Osaka Castle and immerse in Dotonbori’s neon food haven.',
+        meals: 'Breakfast Included',
+        stay: 'Osaka 4★ City Hotel',
+        activities: ['Nara Deer Park & Todai-ji', 'Osaka Castle Grounds Photo Stop', 'Dotonbori Street Food Exploration'],
+      },
+      {
+        day: 8,
+        title: 'Osaka Departure & Return Flight to India',
+        location: 'Kansai Airport (KIX)',
+        description: 'Enjoy breakfast before your transfer to Kansai International Airport (KIX) for your return flight back to Delhi, Mumbai, or Bangalore, carrying unforgettable memories of Sakura in Japan.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer', 'Return Flight to India'],
+      },
+    ],
+    inclusions: [
+      'Round-trip international airfares (Ex-Delhi, Mumbai & Bangalore)',
+      '7 Nights in premium 4-star hotels & Onsen resort',
+      'Daily breakfast at all hotels',
+      'Shinkansen bullet train ticket (Tokyo to Kyoto)',
+      'Mount Fuji 5th Station, Lake Ashi cruise & Hakone ropeway',
+      'Amanohashidate chairlift & Todai-ji Temple entrance',
+      'All luxury coach transfers with English-speaking tour manager',
+    ],
+    exclusions: ['Japan Tourist Visa fee', 'Meals other than specified', 'Travel insurance & tips', 'Personal porterage'],
+    hotelStandard: '4★ Handpicked Japanese Hotels & Onsen Resort',
+    groupSize: 'Fixed Group Departure (15-25 Guests)',
+    featured: true,
+    departureDates: ['22 Mar 2027'],
+    cardFeatures: [
+      'Cherry Blossom Special With Flights',
+      'Tokyo, Mt Fuji, Hakone, Osaka & Kyoto',
+      'From Delhi, Mumbai & Bangalore',
+      'Transfers included',
+    ],
+  },
+  {
+    slug: 'japan-grand-explorer-7n8d',
+    title: 'Japan – Grand Explorer – 7N/8D',
+    tagline: 'Tokyo, Mount Fuji, Hakone, Osaka, Kyoto & Nara (Land Package)',
+    destinationSlug: 'japan',
+    destinationName: 'Japan',
+    durationDays: 8,
+    durationNights: 7,
+    priceINR: 154000,
+    originalPriceINR: 150000,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'fixed-departure',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1554797589-7241bb691973?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570459027562-4a916cc6113f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1554797589-7241bb691973?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1708656376421-8db46939bcfe?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Embark on a grand expedition across Japan’s Golden Route. Experience Tokyo’s high-tech skyline, gaze at the volcanic silhouette of Mount Fuji, ride the Shinkansen bullet train, and immerse in the imperial heritage of Kyoto, bowing sika deer of Nara, and neon food culture of Osaka. Perfect for autumn foliage and winter holiday getaways.',
+    highlights: [
+      'Comprehensive 7 Nights / 8 Days across Tokyo, Hakone, Kyoto & Osaka',
+      'Mount Fuji 5th Station & scenic Lake Ashi cruise',
+      'Shinkansen Bullet Train experience from Tokyo to Kyoto',
+      'Kyoto Golden Pavilion (Kinkaku-ji) & Arashiyama Bamboo Grove',
+      'Friendly bowing deer encounters in Nara Park',
+      'All luxury coach transfers and guided excursions (Land Only)',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Tokyo — Land of the Rising Sun',
+        location: 'Tokyo',
+        description: 'Arrive at Tokyo Haneda or Narita Airport. Meet our representative and transfer to your 4-star city hotel. Settle in and enjoy an orientation walk through vibrant Shinjuku.',
+        meals: 'Room only',
+        stay: 'Tokyo 4★ City Hotel',
+        activities: ['Airport Meet & Greet', 'Hotel Transfer', 'Evening Shinjuku Stroll'],
+      },
+      {
+        day: 2,
+        title: 'Tokyo City Highlights: Asakusa, Akihabara & Shibuya',
+        location: 'Tokyo',
+        description: 'Visit Senso-ji Temple in historic Asakusa, Tokyo’s oldest Buddhist temple. Explore the tech and anime haven of Akihabara, and witness the energy of the world’s busiest pedestrian intersection at Shibuya Crossing.',
+        meals: 'Breakfast Included',
+        stay: 'Tokyo 4★ City Hotel',
+        activities: ['Senso-ji Temple & Nakamise', 'Akihabara Tech District', 'Shibuya Crossing & Hachiko'],
+      },
+      {
+        day: 3,
+        title: 'Mount Fuji 5th Station & Lake Ashi Cruise',
+        location: 'Mount Fuji & Hakone',
+        description: 'Scenic journey to Mount Fuji. Ascend to the 5th Station at 2,300 meters above sea level for breathtaking vistas. Continue to Hakone for a cruise across Lake Ashi on a pirate ship and take the Hakone Ropeway.',
+        meals: 'Breakfast Included',
+        stay: 'Hakone / Fuji 4★ Resort',
+        activities: ['Mount Fuji 5th Station', 'Lake Ashi Pirate Ship Cruise', 'Hakone Ropeway & Owakudani'],
+      },
+      {
+        day: 4,
+        title: 'Shinkansen Bullet Train to Kyoto & Gion District',
+        location: 'Kyoto',
+        description: 'Board the ultra-sleek Shinkansen bullet train to Kyoto. Check in to your hotel and spend the evening wandering through the atmospheric lantern-lit alleys of Gion, famous for traditional teahouses and geisha culture.',
+        meals: 'Breakfast Included',
+        stay: 'Kyoto 4★ Heritage Hotel',
+        activities: ['Shinkansen Bullet Train Ride', 'Gion Historic District Stroll', 'Yasaka Shrine Visit'],
+      },
+      {
+        day: 5,
+        title: 'Kyoto Kinkaku-ji & Arashiyama Bamboo Forest',
+        location: 'Kyoto',
+        description: 'Tour the celebrated Kinkaku-ji (Golden Pavilion) covered in gold leaf. Walk through the serene Arashiyama Bamboo Grove and visit the historic Togetsukyo Bridge spanning the Katsura River.',
+        meals: 'Breakfast Included',
+        stay: 'Kyoto 4★ Heritage Hotel',
+        activities: ['Kinkaku-ji Golden Pavilion', 'Arashiyama Bamboo Forest', 'Togetsukyo Bridge Walk'],
+      },
+      {
+        day: 6,
+        title: 'Fushimi Inari Torii Gates & Nara Deer Park',
+        location: 'Kyoto & Nara',
+        description: 'Walk through thousands of vermilion torii gates at Fushimi Inari Taisha shrine. Continue to Nara Park to interact with free-roaming sacred deer and tour Todai-ji Temple housing the 15-meter bronze Buddha.',
+        meals: 'Breakfast Included',
+        stay: 'Osaka 4★ City Hotel',
+        activities: ['Fushimi Inari Taisha Walk', 'Nara Deer Park Encounter', 'Todai-ji Great Buddha Temple'],
+      },
+      {
+        day: 7,
+        title: 'Osaka Castle & Dotonbori Neon Street Food',
+        location: 'Osaka',
+        description: 'Explore the grand ramparts and moats of Osaka Castle. Spend your evening in the vibrant Dotonbori entertainment district, famous for giant illuminated crab signboards and delicious takoyaki.',
+        meals: 'Breakfast Included',
+        stay: 'Osaka 4★ City Hotel',
+        activities: ['Osaka Castle Grounds Tour', 'Dotonbori Neon Walk', 'Takoyaki & Street Food Tasting'],
+      },
+      {
+        day: 8,
+        title: 'Osaka Kansai Departure',
+        location: 'Kansai Airport (KIX)',
+        description: 'Breakfast at hotel before your private coach transfer to Kansai International Airport (KIX) for your onward flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '7 Nights in handpicked 4-star hotels across Tokyo, Hakone, Kyoto & Osaka',
+      'Daily breakfast at all hotels',
+      'Shinkansen bullet train ticket (Tokyo to Kyoto)',
+      'Mount Fuji 5th Station, Lake Ashi cruise & Hakone ropeway',
+      'Kinkaku-ji, Fushimi Inari, Todai-ji Temple & Nara Park admissions',
+      'All luxury coach transfers with English-speaking tour manager (Land Only)',
+    ],
+    exclusions: ['International airfares', 'Japan Tourist Visa fee', 'Meals not stated', 'Travel insurance & tips'],
+    hotelStandard: '4★ Handpicked Japanese Hotels',
+    groupSize: 'Fixed Group Departure (15-25 Guests)',
+    featured: true,
+    departureDates: ['22 Nov 2026', '11 Dec 2026', '24 Dec 2026', '20 Feb 2027'],
+    cardFeatures: [
+      'Tokyo, Mt Fuji, Hakone, Osaka & Kyoto',
+      'Autumn Foliage & Winter Holiday Departures',
+      '4★ City Stays & Shinkansen Bullet Train',
+      'Transfers included',
+    ],
+  },
+  {
+    slug: 'japan-land-package-7n8d',
+    title: 'Japan – Land Package – 7N/8D',
+    tagline: 'Osaka, Kyoto, Nara, Mount Fuji, Hakone & Tokyo (Land Package)',
+    destinationSlug: 'japan',
+    destinationName: 'Japan',
+    durationDays: 8,
+    durationNights: 7,
+    priceINR: 139000,
+    originalPriceINR: 135000,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'fixed-departure',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1570459027562-4a916cc6113f?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570459027562-4a916cc6113f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1554797589-7241bb691973?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1708656376421-8db46939bcfe?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Discover the quintessential wonders of Japan on this high-value autumn land journey starting in Osaka and concluding in Tokyo. Journey past ancient pagodas in Kyoto, bow to gentle sika deer in Nara, gaze at majestic Mount Fuji, cruise crater Lake Ashi in Hakone, and explore the futuristic metropolis of Tokyo.',
+    highlights: [
+      'Value-packed 7 Nights / 8 Days Golden Route journey starting in Osaka to Tokyo',
+      'Osaka Castle, Dotonbori, Kyoto Kinkaku-ji & Fushimi Inari Taisha',
+      'Nara Park sacred deer feeding & Todai-ji Great Buddha',
+      'Mount Fuji 5th Station & Lake Ashi cruise in Hakone',
+      'Tokyo Shibuya crossing, Senso-ji Temple & Akihabara',
+      'All luxury coach transfers and sightseeing inclusions (Land Only)',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Osaka — Culinary Capital of Japan',
+        location: 'Osaka',
+        description: 'Arrive at Kansai International Airport (KIX). Meet our representative and transfer to your 4-star hotel in Osaka. Evening orientation walk around the neon-lit Dotonbori district.',
+        meals: 'Room only',
+        stay: 'Osaka 4★ City Hotel',
+        activities: ['Airport Meet & Greet', 'Hotel Transfer', 'Dotonbori Evening Walk'],
+      },
+      {
+        day: 2,
+        title: 'Osaka Castle & Historic Nara Deer Park',
+        location: 'Osaka & Nara',
+        description: 'Tour the grand ramparts of Osaka Castle. Drive to ancient Nara to visit Todai-ji Temple, one of the world’s largest wooden buildings housing the Great Bronze Buddha, and feed friendly sika deer in Nara Park.',
+        meals: 'Breakfast Included',
+        stay: 'Osaka 4★ City Hotel',
+        activities: ['Osaka Castle Grounds', 'Todai-ji Great Buddha', 'Nara Deer Park Feeding'],
+      },
+      {
+        day: 3,
+        title: 'Kyoto Imperial Splendour: Kinkaku-ji & Fushimi Inari',
+        location: 'Kyoto',
+        description: 'Full day exploring Kyoto: Visit the sparkling Golden Pavilion (Kinkaku-ji) and walk through the iconic tunnel of red torii gates at Fushimi Inari Taisha. Free evening in Kyoto’s Gion quarter.',
+        meals: 'Breakfast Included',
+        stay: 'Kyoto 4★ Central Hotel',
+        activities: ['Kinkaku-ji Golden Pavilion', 'Fushimi Inari Torii Gates', 'Gion Historic Walk'],
+      },
+      {
+        day: 4,
+        title: 'Arashiyama Bamboo Grove & Scenic Transit to Central Honshu',
+        location: 'Kyoto to Chubu',
+        description: 'Morning walk through the towering green bamboo forest in Arashiyama. Board your coach for a scenic drive past Lake Biwa and Japanese countryside towards the Mount Fuji foothills.',
+        meals: 'Breakfast Included',
+        stay: 'Nagoya / Hamamatsu 4★ Transit Hotel',
+        activities: ['Arashiyama Bamboo Forest', 'Scenic Countryside Drive'],
+      },
+      {
+        day: 5,
+        title: 'Mount Fuji 5th Station & Lake Ashi Cruise in Hakone',
+        location: 'Mount Fuji & Hakone',
+        description: 'Travel to Mount Fuji and ascend to the 5th Station for panoramic views. Head to Hakone for a cruise across crater Lake Ashi and ride the Hakone ropeway.',
+        meals: 'Breakfast Included',
+        stay: 'Hakone / Fuji 4★ Resort',
+        activities: ['Mount Fuji 5th Station', 'Lake Ashi Sightseeing Cruise', 'Hakone Ropeway'],
+      },
+      {
+        day: 6,
+        title: 'Arrival in Tokyo: Asakusa & Akihabara',
+        location: 'Tokyo',
+        description: 'Drive into Tokyo. Visit ancient Senso-ji Temple in Asakusa, browse traditional Nakamise street stalls, and experience the anime, gaming and electronic heartland of Akihabara.',
+        meals: 'Breakfast Included',
+        stay: 'Tokyo 4★ City Hotel',
+        activities: ['Senso-ji Temple Tour', 'Nakamise Shopping', 'Akihabara Electronics Town'],
+      },
+      {
+        day: 7,
+        title: 'Tokyo Modern Metropolis: Shibuya & Shinjuku',
+        location: 'Tokyo',
+        description: 'Cross the world-famous Shibuya Scramble Crossing, take photos with the loyal Hachiko dog statue, and enjoy panoramic views from Tokyo Metropolitan Government Building in Shinjuku.',
+        meals: 'Breakfast Included',
+        stay: 'Tokyo 4★ City Hotel',
+        activities: ['Shibuya Crossing Walk', 'Hachiko Statue Photo Stop', 'Tokyo Panoramic Observatory'],
+      },
+      {
+        day: 8,
+        title: 'Tokyo Departure',
+        location: 'Tokyo Haneda / Narita Airport (HND / NRT)',
+        description: 'Breakfast at hotel followed by transfer to Tokyo Haneda or Narita Airport for your flight back home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '7 Nights in 4-star hotels across Osaka, Kyoto, Central Honshu & Tokyo',
+      'Daily breakfast at all hotels',
+      'Mount Fuji 5th Station & Lake Ashi cruise in Hakone',
+      'Todai-ji Temple, Nara Park & Kinkaku-ji entrance tickets',
+      'All luxury coach transfers with English-speaking tour manager (Land Only)',
+    ],
+    exclusions: ['International airfares', 'Japan Tourist Visa fee', 'Meals not stated', 'Travel insurance & tips'],
+    hotelStandard: '4★ Handpicked Japanese Hotels',
+    groupSize: 'Fixed Group Departure (15-25 Guests)',
+    featured: true,
+    departureDates: ['12 Sep 2026', '17 Oct 2026'],
+    cardFeatures: [
+      'Osaka, Kyoto, Nara, Mt Fuji & Tokyo',
+      'Autumn Season Early-Bird Departures',
+      'Kinkaku-ji, Fushimi Inari & Hakone Cruise',
+      'Transfers included',
+    ],
+  },
+  {
+    slug: 'korean-highlights-escape-4n',
+    title: '4N Korean Highlights Escape',
+    tagline: '2N Seoul, 1N Busan & 1N Jeju Island with Paju DMZ Tour & Private Transfers',
+    destinationSlug: 'korea',
+    destinationName: 'South Korea',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 282080,
+    originalPriceINR: 278080,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1551249506-d8e2c5536f8a?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1637070906584-d791e62c21b8?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1551249506-d8e2c5536f8a?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1670735398242-cfb3fdebf7d5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1603852452515-2dc92bd9c6f1?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1637070906584-d791e62c21b8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1664523561450-e66ef2ffeecc?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Experience the electric contrasts of South Korea in 5 unforgettable days. Walk the historic Demilitarized Zone (DMZ) at Paju and Majang suspension bridge, explore Seoul’s Joseon palaces, ride the high-speed KTX train to coastal Busan, and fly to the volcanic paradise of Jeju Island.',
+    highlights: [
+      '2 Nights Seoul 4★ Hotel, 1 Night Busan 4★ Hotel, 1 Night Jeju 4★ Resort',
+      'Paju DMZ Tour (3rd Infiltration Tunnel, Dora Observatory, Majang Lake Suspension Bridge)',
+      'KTX high-speed bullet train crossing between Seoul and Busan',
+      'Busan Gamcheon Culture Village & Haeundae Beach',
+      'Jeju Island volcanic crater & coastal highlights',
+      'All private airport and intercity transfers included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Seoul & Myeongdong Night Market',
+        location: 'Seoul',
+        description: 'Arrive at Incheon International Airport (ICN). Meet your private driver and transfer to your 4-star hotel in central Seoul. Evening stroll through bustling Myeongdong for Korean skincare shopping and street food.',
+        meals: 'Room only',
+        stay: 'Seoul 4★ City Hotel',
+        activities: ['Private Airport Transfer', 'Myeongdong Street Food Walk'],
+      },
+      {
+        day: 2,
+        title: 'Paju DMZ Tour & Majang Lake Suspension Bridge',
+        location: 'Paju & Seoul',
+        description: 'Embark on a guided DMZ excursion to the Paju border: explore the 3rd Infiltration Tunnel, look across North Korea from Dora Observatory, and cross the scenic Majang Lake Suspension Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'Seoul 4★ City Hotel',
+        activities: ['DMZ 3rd Tunnel Tour', 'Dora Observatory', 'Majang Lake Suspension Bridge Walk'],
+      },
+      {
+        day: 3,
+        title: 'KTX Bullet Train to Busan & Gamcheon Village',
+        location: 'Seoul to Busan',
+        description: 'Private transfer to Seoul Station. Board the high-speed KTX bullet train to coastal Busan. Visit the colourful hillside houses of Gamcheon Culture Village and walk along Haeundae Beach.',
+        meals: 'Breakfast Included',
+        stay: 'Busan 4★ Beachfront Hotel',
+        activities: ['KTX High-Speed Rail', 'Gamcheon Culture Village', 'Haeundae Beach Promenade'],
+      },
+      {
+        day: 4,
+        title: 'Flight to Jeju Island & Volcanic Wonders',
+        location: 'Busan to Jeju Island',
+        description: 'Transfer to Gimhae Airport for your short flight to Jeju Island. Visit Seongsan Ilchulbong (Sunrise Peak), Manjanggul lava tube, and scenic Seopjikoji coastal cliffs.',
+        meals: 'Breakfast Included',
+        stay: 'Jeju 4★ Island Resort',
+        activities: ['Flight to Jeju', 'Seongsan Ilchulbong Sunrise Peak', 'Seopjikoji Coastal Walk'],
+      },
+      {
+        day: 5,
+        title: 'Jeju Departure',
+        location: 'Jeju Airport (CJU) / Incheon (ICN)',
+        description: 'Breakfast at hotel before your private transfer to Jeju International Airport (CJU) for your connecting flight home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '2 Nights Seoul 4★ Hotel, 1 Night Busan 4★ Hotel, 1 Night Jeju 4★ Resort',
+      'Daily breakfast at all hotels',
+      'Paju DMZ Tour with Majang Lake Suspension Bridge admission',
+      'KTX bullet train ticket from Seoul to Busan',
+      'All private airport and intercity transfers',
+    ],
+    exclusions: ['International and domestic airfares', 'South Korea Visa / K-ETA fees', 'Meals not stated', 'Personal expenses'],
+    hotelStandard: 'Seoul 4 Star Hotel (+2 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '2N Seoul, 1N Busan, 1N Jeju Island',
+      'Seoul 4 Star Hotel (+2 Hotels)',
+      'DMZ Tour (Paju DMZ, Majang Lake and Suspension Bridge) (+3 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+
+  // --- MALAYSIA ---
+  {
+    slug: 'malaysia-short-escape-2n',
+    title: '2N Malaysia Short Escape',
+    tagline: '2N Kuala Lumpur with Central Market Stay, SIM & Travel Insurance',
+    destinationSlug: 'malaysia',
+    destinationName: 'Malaysia',
+    durationDays: 3,
+    durationNights: 2,
+    priceINR: 35152,
+    originalPriceINR: 31152,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'A convenient 3-day short break in the heart of Kuala Lumpur. Stay steps away from Central Market (Pasar Seni) and Chinatown, enjoy hassle-free private airport transfers, a complimentary tourist SIM card, travel insurance, and guided orientation.',
+    highlights: [
+      '2 Nights in Pacific Express Hotel Central Market',
+      'Complimentary Malaysia Tourist SIM card & travel insurance (+2 Sightseeings)',
+      'Chinatown Petaling Street & Central Market heritage shopping',
+      'Petronas Twin Towers & Merdeka Square evening views',
+      'Private airport round-trip transfers included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Kuala Lumpur & Chinatown',
+        location: 'Kuala Lumpur',
+        description: 'Arrive at Kuala Lumpur International Airport (KLIA/KLIA2). Meet your private driver and receive your tourist SIM card. Transfer to Pacific Express Hotel Central Market. Evening stroll through Petaling Street night market.',
+        meals: 'Room only',
+        stay: 'Pacific Express Hotel Central Market',
+        activities: ['Private Airport Transfer', 'SIM Card Activation', 'Petaling Street Stroll'],
+      },
+      {
+        day: 2,
+        title: 'KL City Icons: Petronas Towers & Batu Caves',
+        location: 'Kuala Lumpur',
+        description: 'Discover the best of KL: explore the 272 steps of Batu Caves, take photos at the foot of the Petronas Twin Towers, and visit the historic Sultan Abdul Samad Building on Merdeka Square.',
+        meals: 'Breakfast Included',
+        stay: 'Pacific Express Hotel Central Market',
+        activities: ['Batu Caves Excursion', 'Petronas Twin Towers Photo Stop', 'Merdeka Square'],
+      },
+      {
+        day: 3,
+        title: 'KL Departure',
+        location: 'Kuala Lumpur Airport (KUL)',
+        description: 'Breakfast at hotel before your private transfer to KLIA for your departure flight back home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '2 Nights in Pacific Express Hotel Central Market',
+      'Daily breakfast',
+      'Tourist SIM card and basic travel insurance',
+      'Private airport round-trip transfers',
+    ],
+    exclusions: ['Airfares', 'Malaysia Tourism Tax (MYR 10/night payable at hotel)', 'Personal expenses'],
+    hotelStandard: 'Pacific Express Hotel Central Market',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '2N Kuala Lumpur',
+      'Pacific Express Hotel Central Market',
+      'SIM and Insurance (+2 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'malaysia-super-adventure-3n',
+    title: '3N Malaysia Super Adventure',
+    tagline: '3N Kuala Lumpur with Chow Kit Stay & Evening Half-Day City Tour',
+    destinationSlug: 'malaysia',
+    destinationName: 'Malaysia',
+    durationDays: 4,
+    durationNights: 3,
+    priceINR: 26088,
+    originalPriceINR: 22088,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'An unbeatable value adventure in Kuala Lumpur. Stay 3 nights at Kingston Hotel 05 Chow Kit, embark on an evening half-day city tour past illuminated city monuments, and enjoy private airport transfers.',
+    highlights: [
+      '3 Nights in Kingston Hotel 05 Chow Kit',
+      'Evening Half-Day Kuala Lumpur City Tour (3 Hours) (+1 Sightseeing)',
+      'King Palace, National Mosque & Independence Square orientation',
+      'Petronas Twin Towers illuminated night photography',
+      'Private airport transfers included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Kuala Lumpur',
+        location: 'Kuala Lumpur',
+        description: 'Arrive at KLIA. Private transfer to Kingston Hotel 05 Chow Kit. Evening free to explore local markets and Malay street food in the Chow Kit district.',
+        meals: 'Room only',
+        stay: 'Kingston Hotel 05 Chow Kit',
+        activities: ['Private Airport Transfer', 'Chow Kit Evening Walk'],
+      },
+      {
+        day: 2,
+        title: 'Evening Half-Day Kuala Lumpur City Tour',
+        location: 'Kuala Lumpur',
+        description: 'Spend your morning at leisure. In the late afternoon, enjoy an evening 3-hour city tour past King’s Palace (Istana Negara), National Monument, National Mosque, and the glowing Petronas Twin Towers.',
+        meals: 'Breakfast Included',
+        stay: 'Kingston Hotel 05 Chow Kit',
+        activities: ['Evening KL City Tour (3 Hours)', 'King’s Palace Exterior', 'Petronas Towers Evening View'],
+      },
+      {
+        day: 3,
+        title: 'Bukit Bintang Shopping & Street Cuisine',
+        location: 'Kuala Lumpur',
+        description: 'Day at leisure to explore Bukit Bintang’s premier shopping malls like Pavilion KL and sample street delicacies along Jalan Alor food street.',
+        meals: 'Breakfast Included',
+        stay: 'Kingston Hotel 05 Chow Kit',
+        activities: ['Pavilion KL Shopping', 'Jalan Alor Street Food Stroll'],
+      },
+      {
+        day: 4,
+        title: 'Kuala Lumpur Departure',
+        location: 'Kuala Lumpur Airport (KUL)',
+        description: 'Breakfast at hotel before your private transfer to KLIA for your onward journey.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights in Kingston Hotel 05 Chow Kit',
+      'Daily breakfast',
+      'Evening Half-Day Kuala Lumpur City Tour (3 Hours)',
+      'Private airport round-trip transfers',
+    ],
+    exclusions: ['Airfares', 'Malaysia Tourism Tax', 'Personal expenses'],
+    hotelStandard: 'Kingston Hotel 05 Chow Kit',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '3N Kuala Lumpur',
+      'Kingston Hotel 05 Chow Kit',
+      'Evening Half Day Kuala Lumpur City Tour (+1 Sightseeing)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'malaysian-mosaic-experience-3n',
+    title: '3N Malaysian Mosaic Experience',
+    tagline: '3N Langkawi Island Luxury at Berjaya Langkawi Resort with Private Transfers',
+    destinationSlug: 'malaysia',
+    destinationName: 'Malaysia',
+    durationDays: 4,
+    durationNights: 3,
+    priceINR: 64280,
+    originalPriceINR: 60280,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Unwind amidst the lush prehistoric rainforest and turquoise waters of Burau Bay at the 5-star Berjaya Langkawi Resort. Stay in luxury chalets on stilts over water or nestled in rainforest greenery, with private transfers, SIM card, and travel insurance.',
+    highlights: [
+      '3 Nights in 5★ Berjaya Langkawi Resort',
+      'SIM card and travel insurance package (+2 Sightseeings)',
+      'Private beach sanctuary & rainforest nature trails',
+      'Langkawi SkyBridge and cable car access nearby',
+      'Private Langkawi airport transfers included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Tropical Langkawi',
+        location: 'Langkawi',
+        description: 'Arrive at Langkawi International Airport (LGK). Meet your private driver and transfer to Berjaya Langkawi Resort set between ancient rainforest and Burau Bay. Evening sunset cocktails by the private beach.',
+        meals: 'Room only',
+        stay: 'Berjaya Langkawi Resort 5★',
+        activities: ['Private Airport Transfer', 'Resort Orientation', 'Beach Sunset'],
+      },
+      {
+        day: 2,
+        title: 'Langkawi SkyCab, SkyBridge & Seven Wells',
+        location: 'Langkawi',
+        description: 'Ride the Langkawi SkyCab up Mount Machinchang for panoramic views of the Andaman Sea and Thailand in the distance. Walk across the curved suspension SkyBridge and visit Telaga Tujuh waterfalls.',
+        meals: 'Breakfast Included',
+        stay: 'Berjaya Langkawi Resort 5★',
+        activities: ['Langkawi SkyCab Cable Car', 'SkyBridge Walk', 'Seven Wells Waterfalls'],
+      },
+      {
+        day: 3,
+        title: 'Island Hopping Safari or Rainforest Spa',
+        location: 'Langkawi Archipelago',
+        description: 'Spend your morning on an island hopping speedboat tour visiting the Lake of the Pregnant Maiden (Dayang Bunting) and watching wild Brahminy kites feeding, or indulge in a signature spa session.',
+        meals: 'Breakfast Included',
+        stay: 'Berjaya Langkawi Resort 5★',
+        activities: ['Island Hopping Speedboat Tour', 'Eagle Feeding Watch', 'Rainforest Spa Treatment'],
+      },
+      {
+        day: 4,
+        title: 'Langkawi Departure',
+        location: 'Langkawi Airport (LGK)',
+        description: 'Breakfast at the resort before your private transfer to Langkawi Airport for your onward flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights in 5★ Berjaya Langkawi Resort',
+      'Daily breakfast',
+      'Tourist SIM card and travel insurance',
+      'Private Langkawi airport transfers',
+    ],
+    exclusions: ['Airfares', 'Langkawi Tourism Promotion fee', 'Personal expenses'],
+    hotelStandard: 'Berjaya Langkawi Resort (5★)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N Langkawi',
+      'Berjaya Langkawi Resort',
+      'SIM and Insurance (+2 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'mystical-malaysia-escape-4n',
+    title: '4N Mystical Malaysia Escape',
+    tagline: '2N Kuala Lumpur & 2N Langkawi with 4★ Verdant Hill Hotel & Island Paradise',
+    destinationSlug: 'malaysia',
+    destinationName: 'Malaysia',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 56712,
+    originalPriceINR: 52712,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'The quintessential Malaysia combo combining the urban excitement of Kuala Lumpur with the idyllic beaches of Langkawi. Stay 2 nights at 4-star Verdant Hill Kuala Lumpur and 2 nights at an upscale Langkawi beach resort with all private transfers, SIM card, and travel insurance.',
+    highlights: [
+      '2 Nights Kuala Lumpur 4★ Hotel + 2 Nights Langkawi 4★ Beach Resort',
+      'SIM card and travel insurance (+3 Sightseeings included)',
+      'Kuala Lumpur city tour & Batu Caves visit',
+      'Langkawi island hopping & white sand beach relaxation',
+      'Private airport transfers in both cities',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Kuala Lumpur & Bukit Bintang',
+        location: 'Kuala Lumpur',
+        description: 'Arrive at KLIA. Private transfer to 4-star Verdant Hill Hotel in Bukit Bintang. Evening walk to Pavilion KL and Jalan Alor street food.',
+        meals: 'Room only',
+        stay: 'Verdant Hill Hotel Kuala Lumpur 4★',
+        activities: ['Private Airport Transfer', 'Bukit Bintang Evening Stroll'],
+      },
+      {
+        day: 2,
+        title: 'Batu Caves & Petronas Twin Towers',
+        location: 'Kuala Lumpur',
+        description: 'Visit the limestone caves and rainbow staircase at Batu Caves. Photo stop at the Petronas Twin Towers, King’s Palace, and National Monument.',
+        meals: 'Breakfast Included',
+        stay: 'Verdant Hill Hotel Kuala Lumpur 4★',
+        activities: ['Batu Caves Tour', 'Petronas Towers Photo Stop', 'National Mosque'],
+      },
+      {
+        day: 3,
+        title: 'Flight to Langkawi & Beach Leisure',
+        location: 'KL to Langkawi',
+        description: 'Private transfer to airport for your flight to Langkawi. Transfer to your beach resort in Pantai Cenang or Burau Bay. Relax with sunset beach cocktails.',
+        meals: 'Breakfast Included',
+        stay: 'Langkawi 4★ Beach Resort',
+        activities: ['Flight to Langkawi', 'Resort Check-in', 'Beachside Sunset'],
+      },
+      {
+        day: 4,
+        title: 'Langkawi Island Hopping & Cable Car',
+        location: 'Langkawi',
+        description: 'Morning speedboat island hopping tour to Dayang Bunting and Beras Basah Island. Afternoon excursion to the Langkawi SkyCab and SkyBridge.',
+        meals: 'Breakfast Included',
+        stay: 'Langkawi 4★ Beach Resort',
+        activities: ['Island Hopping Speedboat Tour', 'Langkawi SkyCab & SkyBridge'],
+      },
+      {
+        day: 5,
+        title: 'Langkawi Departure',
+        location: 'Langkawi Airport (LGK)',
+        description: 'Breakfast at hotel followed by private transfer to Langkawi Airport for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '2 Nights Kuala Lumpur 4★ Hotel & 2 Nights Langkawi 4★ Resort',
+      'Daily breakfast',
+      'Tourist SIM card & travel insurance',
+      'Private airport transfers in both cities',
+    ],
+    exclusions: ['Airfares', 'City and tourism taxes', 'Personal expenditures'],
+    hotelStandard: 'Verdant Hill Kuala Lumpur (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '2N Kuala Lumpur, 2N Langkawi',
+      'Verdant Hill Kuala Lumpur (+1 Hotels)',
+      'SIM and Insurance (+3 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'serene-malaysia-sojourn-3n',
+    title: '3N Serene Malaysia Sojourn',
+    tagline: '3N Kuala Lumpur at Furama Bukit Bintang with SIM, Insurance & Private Transfers',
+    destinationSlug: 'malaysia',
+    destinationName: 'Malaysia',
+    durationDays: 4,
+    durationNights: 3,
+    priceINR: 45624,
+    originalPriceINR: 41624,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Enjoy an upscale city stay at the 4-star Furama Bukit Bintang, situated near Kuala Lumpur’s trendiest shopping, entertainment, and culinary precincts. Includes round-trip private airport transfers, tourist SIM card, and travel insurance.',
+    highlights: [
+      '3 Nights in Furama Bukit Bintang (4★)',
+      'SIM card and travel insurance (+2 Sightseeings)',
+      'Central location near Berjaya Times Square and Pavilion KL',
+      'Batu Caves & city orientation exploration',
+      'Private airport transfers included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Kuala Lumpur & Bukit Bintang',
+        location: 'Kuala Lumpur',
+        description: 'Arrive at KLIA. Private transfer to Furama Bukit Bintang. Unpack and explore the nearby shopping plazas and rooftop bars.',
+        meals: 'Room only',
+        stay: 'Furama Bukit Bintang 4★',
+        activities: ['Private Airport Transfer', 'Bukit Bintang Evening Walk'],
+      },
+      {
+        day: 2,
+        title: 'Kuala Lumpur City Highlights & Batu Caves',
+        location: 'Kuala Lumpur',
+        description: 'Discover the 272 steps at Batu Caves, take photos at the Petronas Twin Towers, and wander through Merdeka Square and the River of Life.',
+        meals: 'Breakfast Included',
+        stay: 'Furama Bukit Bintang 4★',
+        activities: ['Batu Caves Visit', 'Petronas Towers Photo Stop', 'River of Life Walk'],
+      },
+      {
+        day: 3,
+        title: 'Genting Highlands Day Trip / City Leisure',
+        location: 'Genting & KL',
+        description: 'Day at leisure or optional day excursion to Genting Highlands via the Awana SkyWay cable car for theme parks and shopping outlets.',
+        meals: 'Breakfast Included',
+        stay: 'Furama Bukit Bintang 4★',
+        activities: ['Leisure Day / Optional Genting Tour', 'Shopping & Dining'],
+      },
+      {
+        day: 4,
+        title: 'Departure',
+        location: 'Kuala Lumpur Airport (KUL)',
+        description: 'Breakfast at hotel before your private transfer to KLIA for your onward flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights in Furama Bukit Bintang 4★ Hotel',
+      'Daily breakfast',
+      'Tourist SIM card & travel insurance',
+      'Private airport round-trip transfers',
+    ],
+    exclusions: ['Airfares', 'Tourism Tax', 'Personal expenses'],
+    hotelStandard: 'Furama Bukit Bintang (4★)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '3N Kuala Lumpur',
+      'Furama Bukit Bintang',
+      'SIM and Insurance (+2 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'explore-malaysia-4n',
+    title: '4N Explore Malaysia',
+    tagline: '2N Kuala Lumpur & 2N Langkawi with Kingston Hotel 08 Bukit Bintang & Island Tour',
+    destinationSlug: 'malaysia',
+    destinationName: 'Malaysia',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 58472,
+    originalPriceINR: 54472,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'An action-packed exploration across Malaysia’s glittering capital and emerald island jewel. Stay 2 nights at Kingston Hotel 08 Bukit Bintang in KL and 2 nights in Langkawi with private transfers, SIM card, and insurance included.',
+    highlights: [
+      '2 Nights Kuala Lumpur 3★ Hotel + 2 Nights Langkawi 3★ Resort',
+      'SIM card and travel insurance (+4 Sightseeings included)',
+      'KL City tour, Batu Caves & Petronas Twin Towers',
+      'Langkawi island hopping & cable car excursions',
+      'All private airport transfers included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Kuala Lumpur',
+        location: 'Kuala Lumpur',
+        description: 'Arrive at KLIA. Private transfer to Kingston Hotel 08 Bukit Bintang. Evening stroll to the Jalan Alor food street.',
+        meals: 'Room only',
+        stay: 'Kingston Hotel 08 Bukit Bintang 3★',
+        activities: ['Private Airport Transfer', 'Jalan Alor Evening Walk'],
+      },
+      {
+        day: 2,
+        title: 'KL Landmarks & Batu Caves',
+        location: 'Kuala Lumpur',
+        description: 'Explore Batu Caves, Petronas Twin Towers, King’s Palace, and National Monument with your English-speaking driver.',
+        meals: 'Breakfast Included',
+        stay: 'Kingston Hotel 08 Bukit Bintang 3★',
+        activities: ['Batu Caves Visit', 'Petronas Towers Photo Stop', 'City Orientation'],
+      },
+      {
+        day: 3,
+        title: 'Flight to Langkawi & Beachside Sunset',
+        location: 'KL to Langkawi',
+        description: 'Transfer to airport for flight to Langkawi. Private transfer to your island hotel. Relax by the sandy shores of Pantai Cenang.',
+        meals: 'Breakfast Included',
+        stay: 'Langkawi 3★ Beach Hotel',
+        activities: ['Flight to Langkawi', 'Pantai Cenang Beach Sunset'],
+      },
+      {
+        day: 4,
+        title: 'Langkawi Island Hopping Tour',
+        location: 'Langkawi',
+        description: 'Half-day island hopping tour by speedboat: visit Dayang Bunting lake, watch eagles feeding, and swim at Beras Basah beach.',
+        meals: 'Breakfast Included',
+        stay: 'Langkawi 3★ Beach Hotel',
+        activities: ['Speedboat Island Hopping', 'Lake of the Pregnant Maiden', 'Beras Basah Beach'],
+      },
+      {
+        day: 5,
+        title: 'Langkawi Departure',
+        location: 'Langkawi Airport (LGK)',
+        description: 'Breakfast before your private transfer to Langkawi Airport for your onward journey.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '2 Nights KL 3★ Hotel & 2 Nights Langkawi 3★ Resort',
+      'Daily breakfast',
+      'Tourist SIM card & travel insurance',
+      'Private airport transfers in both destinations',
+    ],
+    exclusions: ['Airfares', 'Local tourism taxes', 'Personal expenses'],
+    hotelStandard: 'Kingston Hotel 08 Bukit Bintang (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '2N Kuala Lumpur, 2N Langkawi',
+      'Kingston Hotel 08 Bukit Bintang (+1 Hotels)',
+      'SIM and Insurance (+4 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'enchanting-malaysia-2n',
+    title: '2N Enchanting Malaysia',
+    tagline: '2N Kuala Lumpur with KL Tower Observation Deck Ticket & Private Transfers',
+    destinationSlug: 'malaysia',
+    destinationName: 'Malaysia',
+    durationDays: 3,
+    durationNights: 2,
+    priceINR: 26968,
+    originalPriceINR: 22968,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'A budget-friendly 3-day getaway to Kuala Lumpur. Stay at Pacific Express Hotel Central Market, take in 360-degree skyline views from the KL Tower Observation Deck during a 4-hour city tour, and enjoy private transfers.',
+    highlights: [
+      '2 Nights in Pacific Express Hotel Central Market (3★)',
+      'Half Day City Tour with KL Tower Observation Deck admission ticket (4 Hours)',
+      'Central Market & Petaling Street cultural exploration',
+      'Merdeka Square and King’s Palace photo stops',
+      'Private airport transfers included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Kuala Lumpur & Chinatown',
+        location: 'Kuala Lumpur',
+        description: 'Arrive at KLIA. Private transfer to Pacific Express Hotel Central Market. Evening free to wander through Chinatown and Petaling Street night market.',
+        meals: 'Room only',
+        stay: 'Pacific Express Hotel Central Market 3★',
+        activities: ['Private Airport Transfer', 'Chinatown Evening Walk'],
+      },
+      {
+        day: 2,
+        title: 'KL City Tour with KL Tower Observation Deck',
+        location: 'Kuala Lumpur',
+        description: '4-hour city tour including an admission ticket to the KL Tower Observation Deck for panoramic city vistas. Stop at Merdeka Square, King’s Palace, and National Mosque.',
+        meals: 'Breakfast Included',
+        stay: 'Pacific Express Hotel Central Market 3★',
+        activities: ['KL Tower Observation Deck Visit', 'KL City Tour (4 Hours)', 'Merdeka Square'],
+      },
+      {
+        day: 3,
+        title: 'Kuala Lumpur Departure',
+        location: 'Kuala Lumpur Airport (KUL)',
+        description: 'Breakfast at hotel before your private departure transfer to KLIA.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '2 Nights in Pacific Express Hotel Central Market',
+      'Daily breakfast',
+      'Half Day City Tour with KL Tower Observation Deck ticket (4 Hours)',
+      'Private airport round-trip transfers',
+    ],
+    exclusions: ['Airfares', 'Tourism Tax', 'Personal expenses'],
+    hotelStandard: 'Pacific Express Hotel Central Market',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '2N Kuala Lumpur',
+      'Pacific Express Hotel Central Market',
+      'Half Day City Tour with KL Tower (Observation Deck) (4 Hours)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'luxurious-malaysia-escape-3n',
+    title: '3N Luxurious Malaysia Escape',
+    tagline: '3N Kuala Lumpur 5★ Luxury at Berjaya Times Square with Private Transfers',
+    destinationSlug: 'malaysia',
+    destinationName: 'Malaysia',
+    durationDays: 4,
+    durationNights: 3,
+    priceINR: 52136,
+    originalPriceINR: 48136,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Experience 5-star city sophistication at Berjaya Times Square, boasting direct access to Malaysia’s largest indoor theme park and mega shopping mall. Enjoy rooftop pool views, tourist SIM card, travel insurance, and private chauffeured transfers.',
+    highlights: [
+      '3 Nights in 5★ Berjaya Times Square Hotel',
+      'SIM card and travel insurance (+2 Sightseeings)',
+      'Direct monorail connection and shopping mall integration',
+      'Batu Caves & Petronas Twin Towers orientation',
+      'Private airport round-trip transfers included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in 5★ Luxury in Kuala Lumpur',
+        location: 'Kuala Lumpur',
+        description: 'Arrive at KLIA. Private chauffeured transfer to the 5-star Berjaya Times Square Hotel. Settle into your suite and explore the indoor entertainment complex.',
+        meals: 'Room only',
+        stay: 'Berjaya Times Square Hotel 5★',
+        activities: ['Private Airport Transfer', 'Hotel Orientation & Pool Leisure'],
+      },
+      {
+        day: 2,
+        title: 'Batu Caves & Petronas Twin Towers',
+        location: 'Kuala Lumpur',
+        description: 'Discover the iconic rainbow steps at Batu Caves and capture photos at the base of the Petronas Twin Towers. Spend the afternoon shopping at Pavilion KL.',
+        meals: 'Breakfast Included',
+        stay: 'Berjaya Times Square Hotel 5★',
+        activities: ['Batu Caves Visit', 'Petronas Towers Photo Stop', 'Pavilion KL Shopping'],
+      },
+      {
+        day: 3,
+        title: 'City Leisure & Rooftop Dining',
+        location: 'Kuala Lumpur',
+        description: 'Full day at leisure to unwind by the Olympic-sized swimming pool or take a private tour to Putrajaya’s pink mosque. Evening rooftop dining overlooking the skyline.',
+        meals: 'Breakfast Included',
+        stay: 'Berjaya Times Square Hotel 5★',
+        activities: ['Rooftop Pool Leisure', 'Evening Skyline Dining'],
+      },
+      {
+        day: 4,
+        title: 'Departure',
+        location: 'Kuala Lumpur Airport (KUL)',
+        description: 'Breakfast at hotel before your private transfer to KLIA for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Departure Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights in 5★ Berjaya Times Square Hotel',
+      'Daily breakfast',
+      'Tourist SIM card & travel insurance',
+      'Private airport round-trip transfers',
+    ],
+    exclusions: ['Airfares', 'Tourism Tax', 'Personal expenses'],
+    hotelStandard: 'Berjaya Times Square (5★)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N Kuala Lumpur',
+      'Berjaya Times Square',
+      'SIM and Insurance (+2 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+
+  // --- MALDIVES ---
+  {
+    slug: 'sheraton-full-moon-resort-spa-maldives-4n',
+    title: 'Sheraton Full Moon Resort & Spa',
+    tagline: '4 Nights of 5★ Barefoot Luxury on Furanafushi Island with Speedboat Transfers',
+    destinationSlug: 'maldives',
+    destinationName: 'Maldives',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 330480,
+    originalPriceINR: 326480,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1574226780565-388f10f8121e?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1574226780565-388f10f8121e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1698726654908-834d3a5330d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616524629947-967525666467?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Nestled on the private island of Furanafushi in North Malé Atoll, Sheraton Maldives Full Moon Resort & Spa is a tropical paradise surrounded by white beaches, turquoise lagoons, and lush greenery. Enjoy beachfront living, gourmet dining, and a 15-minute scenic speedboat ride from Malé.',
+    highlights: [
+      '4 Nights in 5★ Sheraton Maldives Full Moon Resort & Spa',
+      'Daily breakfast and gourmet dining',
+      'Complimentary non-motorized water sports & snorkeling equipment',
+      'Shine Spa for Sheraton on a private island retreat',
+      'Round-trip speedboat transfers (SIC) included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Malé & Scenic Speedboat Ride',
+        location: 'North Malé Atoll',
+        description: 'Arrive at Velana International Airport (MLE). Board your shared speedboat for a breezy 15-minute ride to Furanafushi Island. Welcome tropical drink and check-in to your 5-star villa.',
+        meals: 'Dinner Included',
+        stay: 'Sheraton Full Moon Resort & Spa 5★',
+        activities: ['Airport Meet & Greet', 'Speedboat Transfer', 'Resort Orientation'],
+      },
+      {
+        day: 2,
+        title: 'Turquoise Lagoon Swimming & Water Sports',
+        location: 'North Malé Atoll',
+        description: 'Wake up to the sound of gentle waves. Enjoy complimentary paddleboarding, kayaking, or snorkel across the house reef teeming with colourful marine life.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Sheraton Full Moon Resort & Spa 5★',
+        activities: ['House Reef Snorkeling', 'Paddleboarding & Kayaking'],
+      },
+      {
+        day: 3,
+        title: 'Private Island Shine Spa & Sunset Relaxation',
+        location: 'North Malé Atoll',
+        description: 'Indulge in a relaxing treatment at Shine Spa, connected via a wooden footbridge to its own private islet. In the evening, watch the golden Maldivian sunset with beachfront cocktails.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Sheraton Full Moon Resort & Spa 5★',
+        activities: ['Shine Spa Treatment Option', 'Sunset Beach Walk'],
+      },
+      {
+        day: 4,
+        title: 'Dolphin Cruise or Sandbank Picnic',
+        location: 'North Malé Atoll',
+        description: 'Spend your day soaking in the sun or embark on an optional sunset dolphin cruise to watch spinner dolphins leap in the golden evening glow.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Sheraton Full Moon Resort & Spa 5★',
+        activities: ['Leisure Sunbathing', 'Optional Dolphin Safari'],
+      },
+      {
+        day: 5,
+        title: 'Speedboat Transfer & Malé Departure',
+        location: 'Velana Airport (MLE)',
+        description: 'Leisurely breakfast before your shared speedboat transfer to Velana International Airport for your flight back home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Speedboat Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights in Sheraton Maldives Full Moon Resort & Spa 5★',
+      'Daily breakfast and dinner (Half Board)',
+      'Complimentary snorkel gear and non-motorized water sports',
+      'Round-trip speedboat airport transfers (SIC)',
+    ],
+    exclusions: ['International airfares', 'Green Tax ($6/person/night included or direct)', 'Personal expenses'],
+    hotelStandard: 'Sheraton Full Moon Resort & Spa (5★)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '4N Maldives',
+      'Sheraton Full Moon Resort & Spa',
+      'Transfers (SIC)',
+      'Daily Gourmet Breakfast & Dinner',
+    ],
+  },
+  {
+    slug: 'villa-nautica-paradise-island-resort-maldives-4n',
+    title: 'Villa Nautica Paradise Island Resort',
+    tagline: '4 Nights of 5★ Marine Glamour on Lankanfinolhu Island with Speedboat Transfers',
+    destinationSlug: 'maldives',
+    destinationName: 'Maldives',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 266240,
+    originalPriceINR: 262240,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1698726654908-834d3a5330d8?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1616524629947-967525666467?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1698726654908-834d3a5330d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616524629947-967525666467?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1574226780565-388f10f8121e?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Villa Nautica Paradise Island celebrates glamorous nautical living in North Malé Atoll. Surrounded by crystalline lagoons, overwater wooden jetties, and world-class scuba dive sites, this 5-star haven offers contemporary luxury just 20 minutes by speedboat from Malé.',
+    highlights: [
+      '4 Nights in 5★ Villa Nautica Paradise Island Resort',
+      'Daily breakfast and international buffet dinner',
+      'Stingray feeding & baby shark watching from resort jetties',
+      'Araamu Spa wellness sanctuary amidst tropical gardens',
+      'Round-trip speedboat transfers (SIC) included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Paradise & Speedboat Crossing',
+        location: 'North Malé Atoll',
+        description: 'Arrive at Velana Airport (MLE). Board your shared speedboat for a 20-minute ride to Lankanfinolhu Island. Check into your luxury villa and enjoy the turquoise ocean breeze.',
+        meals: 'Dinner Included',
+        stay: 'Villa Nautica Paradise Island Resort 5★',
+        activities: ['Airport Meet & Greet', 'Speedboat Transfer', 'Villa Check-in'],
+      },
+      {
+        day: 2,
+        title: 'Lagoon Swimming & Stingray Feeding Experience',
+        location: 'North Malé Atoll',
+        description: 'Swim in the shallow sapphire lagoon. In the evening, gather at the main jetty for the famous daily stingray and harmless reef shark feeding session.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Villa Nautica Paradise Island Resort 5★',
+        activities: ['Lagoon Snorkeling', 'Evening Stingray Feeding Session'],
+      },
+      {
+        day: 3,
+        title: 'Araamu Spa & Water Sports Fun',
+        location: 'North Malé Atoll',
+        description: 'Relax at Araamu Spa nestled in tranquil gardens, or try water sports like windsurfing, jet skiing, or glass-bottom kayaking.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Villa Nautica Paradise Island Resort 5★',
+        activities: ['Araamu Spa Relaxation', 'Water Sports Activities'],
+      },
+      {
+        day: 4,
+        title: 'Private Sandbank Sunbathing & Candlelit Dinner',
+        location: 'North Malé Atoll',
+        description: 'Enjoy a leisurely day reading by the infinity pool or booking an optional sunset catamaran cruise, followed by dinner under the stars.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Villa Nautica Paradise Island Resort 5★',
+        activities: ['Infinity Pool Leisure', 'Sunset Beach Stroll'],
+      },
+      {
+        day: 5,
+        title: 'Speedboat Departure to Malé',
+        location: 'Velana Airport (MLE)',
+        description: 'Breakfast before your shared speedboat transfer back to Velana International Airport for your return flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Speedboat Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights in 5★ Villa Nautica Paradise Island Resort',
+      'Daily breakfast and dinner (Half Board)',
+      'Complimentary resort activities & stingray watching',
+      'Round-trip speedboat airport transfers (SIC)',
+    ],
+    exclusions: ['Airfares', 'Personal expenses', 'Spa treatments'],
+    hotelStandard: 'Villa Nautica Paradise Island Resort (5★)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '4N Maldives',
+      'Villa Nautica Paradise Island Resort',
+      'Transfers (SIC)',
+      'Beach & Overwater Villa Stays',
+    ],
+  },
+  {
+    slug: 'centara-grand-lagoon-maldives-3n',
+    title: 'Centara Grand Lagoon',
+    tagline: '3 Nights of 5★ All-Inclusive Thai-Maldivian Luxury with Speedboat Transfers',
+    destinationSlug: 'maldives',
+    destinationName: 'Maldives',
+    durationDays: 4,
+    durationNights: 3,
+    priceINR: 254272,
+    originalPriceINR: 250272,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1574226780565-388f10f8121e?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1574226780565-388f10f8121e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1698726654908-834d3a5330d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616524629947-967525666467?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Experience the warm hospitality of Centara Grand Lagoon in the Maldives. Featuring overwater boardwalks, an expansive lagoon, multiple international restaurants, and rejuvenating Thai spa treatments, this 5-star sanctuary is the ultimate quick luxury getaway.',
+    highlights: [
+      '3 Nights in 5★ Centara Grand Lagoon Maldives',
+      'All-inclusive dining: daily breakfast, lunch, dinner & premium beverages',
+      'Overwater villa or beachfront suite living',
+      'SPA Cenvaree signature wellness experiences',
+      'Round-trip speedboat transfers (SIC) included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Malé & Speedboat Crossing',
+        location: 'Maldives Lagoon',
+        description: 'Touchdown at Velana International Airport. Escort to the shared speedboat transfer to Centara Grand Lagoon. Check into your villa with uninterrupted azure lagoon views.',
+        meals: 'Dinner & Drinks Included',
+        stay: 'Centara Grand Lagoon 5★',
+        activities: ['Airport Speedboat Transfer', 'Villa Check-in', 'Welcome Cocktail'],
+      },
+      {
+        day: 2,
+        title: 'All-Inclusive Dining & House Reef Snorkel',
+        location: 'Maldives Lagoon',
+        description: 'Savor gourmet breakfast followed by a guided snorkel session across the coral garden. Enjoy three-course lunch, afternoon tea, and a sunset dinner.',
+        meals: 'Breakfast, Lunch & Dinner',
+        stay: 'Centara Grand Lagoon 5★',
+        activities: ['Coral Reef Snorkeling', 'All-Inclusive Culinary Experience'],
+      },
+      {
+        day: 3,
+        title: 'SPA Cenvaree & Sunset Leisure',
+        location: 'Maldives Lagoon',
+        description: 'Rejuvenate with authentic Thai massage therapy at SPA Cenvaree. Spend your afternoon paddleboarding or lounging in an overwater hammock over the lagoon.',
+        meals: 'Breakfast, Lunch & Dinner',
+        stay: 'Centara Grand Lagoon 5★',
+        activities: ['SPA Cenvaree Wellness', 'Overwater Hammock Relaxation'],
+      },
+      {
+        day: 4,
+        title: 'Speedboat Departure to Malé',
+        location: 'Velana Airport (MLE)',
+        description: 'Breakfast before your speedboat transfer to Velana Airport for your return flight home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Speedboat Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights in 5★ Centara Grand Lagoon',
+      'All-Inclusive meal plan (Breakfast, Lunch, Dinner & Drinks)',
+      'Snorkeling gear & non-motorized water sports',
+      'Round-trip speedboat airport transfers (SIC)',
+    ],
+    exclusions: ['Airfares', 'Personal excursions', 'Premium spa packages'],
+    hotelStandard: 'Centara Grand Lagoon (5★)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N Maldives',
+      'Centara Grand Lagoon',
+      'Transfers (SIC)',
+      'All-Inclusive Meal Plan & Spa Credits',
+    ],
+  },
+  {
+    slug: 'park-hyatt-maldives-hadahaa-4n',
+    title: 'Park Hyatt Maldives',
+    tagline: '4 Nights of Ultra-Luxury on Pristine Hadahaa Island in Huvadhoo Atoll',
+    destinationSlug: 'maldives',
+    destinationName: 'Maldives',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 439952,
+    originalPriceINR: 435952,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1574226780565-388f10f8121e?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1574226780565-388f10f8121e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1698726654908-834d3a5330d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616524629947-967525666467?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Located just 55 km north of the Equator in one of the world’s largest and deepest atolls, Park Hyatt Maldives Hadahaa is an intimate 5-star ultra-luxury retreat. Famed for having the healthiest 360-degree house reef in the Maldives, unpolluted starry night skies, and bespoke architectural villas.',
+    highlights: [
+      '4 Nights in 5★ Ultra-Luxury Park Hyatt Maldives Hadahaa',
+      '360-degree untouched living house reef just steps from your villa',
+      'The Vidhun Spa holistic indigenous Maldivian healing',
+      'Bespoke multi-course culinary experiences and sommelier pairings',
+      'Domestic flight + speedboat transfers (SIC) included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Equatorial Journey to Hadahaa Island',
+        location: 'Huvadhoo Atoll',
+        description: 'Arrive at Velana Airport (MLE). Board a domestic scenic flight over the atolls to Kooddoo Airport, followed by a luxury speedboat transfer to Hadahaa. Check into your architecturally designed villa.',
+        meals: 'Dinner Included',
+        stay: 'Park Hyatt Maldives Hadahaa 5★',
+        activities: ['Domestic Flight & Speedboat Transfer', 'Villa Check-in', 'Stargazing Walk'],
+      },
+      {
+        day: 2,
+        title: '360° Living House Reef Snorkeling',
+        location: 'Huvadhoo Atoll',
+        description: 'Guided snorkel along the outer drop-off of the pristine house reef with the resident marine biologist, spotting sea turtles, blacktip reef sharks, and eagle rays.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Park Hyatt Maldives Hadahaa 5★',
+        activities: ['Guided Coral Drop-Off Snorkel', 'Marine Biologist Briefing'],
+      },
+      {
+        day: 3,
+        title: 'The Vidhun Spa & Private Sandbank Castaway',
+        location: 'Huvadhoo Atoll',
+        description: 'Unwind at The Vidhun Spa with treatments based on traditional Maldivian medicine (Dhivehi beys). Afternoon castaway experience on a deserted emergent sandbank.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Park Hyatt Maldives Hadahaa 5★',
+        activities: ['The Vidhun Spa Treatment', 'Sandbank Relaxation'],
+      },
+      {
+        day: 4,
+        title: 'Sunset Dolphin Cruise Across the Equator',
+        location: 'Huvadhoo Atoll',
+        description: 'Board a traditional wooden Dhoni boat into the open channel to cruise near the Equator and watch pods of spinner dolphins jumping in the sunset glow.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Park Hyatt Maldives Hadahaa 5★',
+        activities: ['Equatorial Dolphin Cruise', 'Canapés at Sea'],
+      },
+      {
+        day: 5,
+        title: 'Return Transfer to Malé & International Departure',
+        location: 'Velana Airport (MLE)',
+        description: 'Gourmet breakfast before your speedboat and domestic flight transfer back to Velana International Airport for your onward journey.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Speedboat & Domestic Flight Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights in Park Hyatt Maldives Hadahaa 5★',
+      'Daily gourmet breakfast and dinner',
+      'Guided house reef snorkeling tour with marine biologist',
+      'Round-trip domestic flight and speedboat transfers (SIC)',
+    ],
+    exclusions: ['International airfares', 'Diving certifications', 'Personal expenses'],
+    hotelStandard: 'Park Hyatt Maldives (5★ Ultra Luxury)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '4N Maldives',
+      'Park Hyatt Maldives',
+      'Transfers (SIC)',
+      'Private Coral Atoll Reef Snorkeling',
+    ],
+  },
+  {
+    slug: 'centara-mirage-lagoon-maldives-4n',
+    title: 'Centara Mirage Lagoon',
+    tagline: '4 Nights of 4★ Family & Fun Luxury in North Malé Atoll with Waterpark Access',
+    destinationSlug: 'maldives',
+    destinationName: 'Maldives',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 229984,
+    originalPriceINR: 225984,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1698726654908-834d3a5330d8?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1616524629947-967525666467?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1698726654908-834d3a5330d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616524629947-967525666467?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1574226780565-388f10f8121e?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Centara Mirage Lagoon Maldives offers a vibrant underwater-world themed resort concept designed for fun-seeking families and couples. Featuring water attractions, sprawling lazy river, kids club, overwater villas, and multiple dining options in North Malé Atoll.',
+    highlights: [
+      '4 Nights in Centara Mirage Lagoon Maldives (4★)',
+      'Water attraction complex with lazy river and slides',
+      'Kids Safari Club & Teen E-Zone entertainment',
+      'Daily breakfast and international dinner buffets',
+      'Round-trip speedboat transfers (SIC) included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Malé & Speedboat Crossing',
+        location: 'North Malé Atoll',
+        description: 'Arrive at Velana Airport (MLE). Board your shared speedboat transfer to Centara Mirage Lagoon. Check into your fun-themed villa and explore the resort waterpark.',
+        meals: 'Dinner Included',
+        stay: 'Centara Mirage Lagoon 4★',
+        activities: ['Speedboat Transfer', 'Resort Check-in', 'Waterpark Orientation'],
+      },
+      {
+        day: 2,
+        title: 'Waterpark Fun & Lazy River',
+        location: 'North Malé Atoll',
+        description: 'Spend your day floating down the lagoon lazy river, gliding down waterslides, and swimming in the multi-tiered swimming pools.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Centara Mirage Lagoon 4★',
+        activities: ['Lazy River Floating', 'Water Attractions', 'Beachside Games'],
+      },
+      {
+        day: 3,
+        title: 'Lagoon Snorkeling & Spa Cenvaree',
+        location: 'North Malé Atoll',
+        description: 'Snorkel in the calm lagoon to spot tropical fish and rays, followed by an afternoon relaxation session at Spa Cenvaree for parents.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Centara Mirage Lagoon 4★',
+        activities: ['Lagoon Snorkeling', 'Spa Cenvaree Session Option'],
+      },
+      {
+        day: 4,
+        title: 'Family Beach Games & Sunset Dining',
+        location: 'North Malé Atoll',
+        description: 'Enjoy beach volleyball, kayaking, and an evening themed international buffet dinner with live music.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Centara Mirage Lagoon 4★',
+        activities: ['Beach Volleyball & Kayaking', 'Themed Buffet Dinner'],
+      },
+      {
+        day: 5,
+        title: 'Departure to Malé',
+        location: 'Velana Airport (MLE)',
+        description: 'Breakfast before your shared speedboat transfer to Velana International Airport for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Speedboat Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights in Centara Mirage Lagoon 4★',
+      'Daily breakfast and dinner (Half Board)',
+      'Complimentary access to waterpark attractions & lazy river',
+      'Round-trip speedboat airport transfers (SIC)',
+    ],
+    exclusions: ['Airfares', 'Personal expenses', 'Premium motorized water sports'],
+    hotelStandard: 'Centara Mirage Lagoon (4★)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '4N Maldives',
+      'Centara Mirage Lagoon',
+      'Transfers (SIC)',
+      'Waterpark Access & Kids Club',
+    ],
+  },
+  {
+    slug: 'oblu-xperience-ailafushi-maldives-4n',
+    title: 'Oblu Xperience Ailafushi',
+    tagline: '4 Nights of 4★ All-Inclusive Fushi Plan with Speedboat Transfers',
+    destinationSlug: 'maldives',
+    destinationName: 'Maldives',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 169440,
+    originalPriceINR: 165440,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1574226780565-388f10f8121e?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1574226780565-388f10f8121e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1698726654908-834d3a5330d8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616524629947-967525666467?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Oblu Xperience Ailafushi translates to "Family Island" in Dhivehi. This 4-star all-inclusive paradise in North Malé Atoll features the comprehensive Fushi Plan™ covering all meals, unlimited beverages, non-motorized water sports, and entertainment just 15 minutes by speedboat from Malé.',
+    highlights: [
+      '4 Nights in 4★ Oblu Xperience Ailafushi',
+      'Comprehensive Fushi Plan™: all meals, cocktails, wine & beer included',
+      'Direct beach access or overwater villa accommodations',
+      '15-minute quick speedboat ride from Malé airport',
+      'Round-trip speedboat transfers (SIC) included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Malé & 15-Minute Speedboat Ride',
+        location: 'North Malé Atoll',
+        description: 'Arrive at Velana International Airport. Meet the Oblu representative and board a 15-minute speedboat to Ailafushi Island. Check into your villa and begin your all-inclusive Fushi Plan.',
+        meals: 'All-Inclusive Dining & Drinks',
+        stay: 'Oblu Xperience Ailafushi 4★',
+        activities: ['Airport Meet & Greet', 'Quick Speedboat Transfer', 'Fushi Plan Activation'],
+      },
+      {
+        day: 2,
+        title: 'All-Inclusive Beach & Lagoon Snorkel',
+        location: 'North Malé Atoll',
+        description: 'Snorkel in the crystal-clear waters of the house lagoon with complimentary equipment, followed by international buffet lunch and refreshing tropical beverages at the pool bar.',
+        meals: 'All-Inclusive (Breakfast, Lunch & Dinner)',
+        stay: 'Oblu Xperience Ailafushi 4★',
+        activities: ['House Lagoon Snorkeling', 'Poolside Cocktails & Entertainment'],
+      },
+      {
+        day: 3,
+        title: 'Non-Motorized Water Sports & Ocean View',
+        location: 'North Malé Atoll',
+        description: 'Glide on stand-up paddleboards and kayaks around the tranquil island perimeter. In the evening, enjoy live music and Maldivian cultural performances.',
+        meals: 'All-Inclusive (Breakfast, Lunch & Dinner)',
+        stay: 'Oblu Xperience Ailafushi 4★',
+        activities: ['Stand-Up Paddleboarding & Kayaking', 'Live Music & Nightly Shows'],
+      },
+      {
+        day: 4,
+        title: 'Underwater Dining Option & Sunset Leisure',
+        location: 'North Malé Atoll',
+        description: 'Spend your day sunbathing on pristine white sands or experience the unique Only BLU underwater restaurant nearby. Conclude with sunset cocktails.',
+        meals: 'All-Inclusive (Breakfast, Lunch & Dinner)',
+        stay: 'Oblu Xperience Ailafushi 4★',
+        activities: ['Beach Relaxation', 'Sunset Cocktail Hour'],
+      },
+      {
+        day: 5,
+        title: 'Speedboat Transfer & Departure',
+        location: 'Velana Airport (MLE)',
+        description: 'Breakfast before your short 15-minute speedboat ride to Velana Airport for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Speedboat Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights in 4★ Oblu Xperience Ailafushi',
+      'All-Inclusive Fushi Plan™ (All meals, unlimited cocktails, beer, wine & soft drinks)',
+      'Complimentary snorkeling gear & non-motorized water sports',
+      'Round-trip speedboat transfers (SIC)',
+    ],
+    exclusions: ['Airfares', 'Personal shopping', 'Only BLU underwater dining surcharge'],
+    hotelStandard: 'Oblu Xperience Ailafushi (4★)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '4N Maldives',
+      'Oblu Xperience Ailafushi',
+      'Transfers (SIC)',
+      'Fushi Plan: Unlimited Dining & Drinks',
+    ],
+  },
+  {
+    slug: 'tropical-bliss-in-mauritius-4n',
+    title: '4N Tropical Bliss in Mauritius',
+    tagline: '4 Nights at Oceans Creek Beach Hotel with Speedboat Transfers',
+    destinationSlug: 'mauritius',
+    destinationName: 'Mauritius',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 91208,
+    originalPriceINR: 87208,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1507187632231-5beb21a654a2?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1513415431848-a433b3de449f?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1507187632231-5beb21a654a2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1513415431848-a433b3de449f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1586853211885-d69f5be5ce9f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1581859814481-bfd944e3122f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1650928367430-254e3e672dd9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1560939798-41e3459d797c?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Escape to Oceans Creek Beach Hotel in peaceful Balaclava on the northwest coast of Mauritius. Framed by turquoise waters and a protected marine park, enjoy relaxed beachfront living, complimentary water sports, and shared airport transfers.',
+    highlights: [
+      '4 Nights in Oceans Creek Beach Hotel 4★',
+      'Daily breakfast and dinner included',
+      'Complimentary non-motorized water sports and lagoon snorkeling',
+      'Easy access to Grand Baie and Port Louis waterfront',
+      'Round-trip airport transfers (SIC) included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Mauritius & Coastal Check-in',
+        location: 'Northwest Coast',
+        description: 'Arrive at Sir Seewoosagur Ramgoolam International Airport (MRU). Shared transfer to Oceans Creek Beach Hotel. Settle in and enjoy sunset cocktails by the beach.',
+        meals: 'Dinner Included',
+        stay: 'Oceans Creek Beach Hotel 4★',
+        activities: ['Airport Meet & Greet', 'Shared Transfer', 'Beachside Sunset'],
+      },
+      {
+        day: 2,
+        title: 'North Island Highlights & Port Louis',
+        location: 'Port Louis & Grand Baie',
+        description: 'Full-day excursion to Port Louis: explore the historic Caudan Waterfront, Aapravasi Ghat, and browse the colourful craft markets in Grand Baie.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Oceans Creek Beach Hotel 4★',
+        activities: ['Port Louis Waterfront', 'Grand Baie Exploration'],
+      },
+      {
+        day: 3,
+        title: 'Chamarel Seven Coloured Earths & South Tour',
+        location: 'Chamarel',
+        description: 'Journey south to Chamarel Seven Coloured Earths volcanic dunes, Chamarel Waterfall, and the panoramic Black River Gorges viewpoint.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Oceans Creek Beach Hotel 4★',
+        activities: ['Chamarel Coloured Earths', 'Chamarel Waterfall', 'Gorges Viewpoint'],
+      },
+      {
+        day: 4,
+        title: 'Île aux Cerfs Catamaran Cruise & Lagoon Leisure',
+        location: 'East Coast & Île aux Cerfs',
+        description: 'Optional full-day catamaran cruise across the turquoise lagoon to Île aux Cerfs for swimming, parasailing, and a barbecue lunch on the sandbar.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Oceans Creek Beach Hotel 4★',
+        activities: ['Catamaran Sailing', 'Lagoon Snorkeling', 'Beachfront Dining'],
+      },
+      {
+        day: 5,
+        title: 'Mauritius Departure',
+        location: 'MRU Airport',
+        description: 'Breakfast at hotel before your shared transfer to the airport for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Shared Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights in Oceans Creek Beach Hotel 4★',
+      'Daily breakfast and dinner (Half Board)',
+      'Complimentary lagoon non-motorized water sports',
+      'Round-trip airport transfers (SIC)',
+    ],
+    exclusions: ['Airfares', 'Optional catamaran excursions', 'Personal expenses'],
+    hotelStandard: 'Oceans Creek Beach Hotel (4★)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '4N Mauritius',
+      'Oceans Creek Beach Hotel',
+      'Transfers (SIC)',
+      'Half Board: Daily Breakfast & Dinner',
+    ],
+  },
+  {
+    slug: 'paradise-found-properties-so-sofitel-mauritius-4n',
+    title: '4N Paradise Found Properties',
+    tagline: '4 Nights of 5★ Designer Luxury at SO Sofitel Mauritius in Bel Ombre',
+    destinationSlug: 'mauritius',
+    destinationName: 'Mauritius',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 141896,
+    originalPriceINR: 137896,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1560939798-41e3459d797c?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1507187632231-5beb21a654a2?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1560939798-41e3459d797c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1507187632231-5beb21a654a2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1513415431848-a433b3de449f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1586853211885-d69f5be5ce9f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1581859814481-bfd944e3122f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1650928367430-254e3e672dd9?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Designed by Thai architect Lek Bunnag with Kenzo Takada accents, SO Sofitel Mauritius is a stylish 5-star haven on the wild south coast in Bel Ombre. Surrounded by sugarcane fields and turquoise sea, immerse in signature spa treatments, French-Mauritian fine dining, and private lagoon shores.',
+    highlights: [
+      '4 Nights in 5★ SO Sofitel Mauritius',
+      'Kenzo Takada couture design and open-concept architecture',
+      'So SPA holistic wellness and private plunge pool options',
+      'Bel Ombre nature reserve and Le Morne basalt cliffs nearby',
+      'Round-trip airport transfers (SIC) included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Bel Ombre & SO Sofitel Check-in',
+        location: 'Bel Ombre',
+        description: 'Arrive at MRU Airport. Shared transfer to SO Sofitel Mauritius. Welcome tropical elixirs and check into your designer suite nestled in tropical gardens.',
+        meals: 'Dinner Included',
+        stay: 'SO Sofitel Mauritius 5★',
+        activities: ['Airport Meet & Greet', 'Shared Transfer', 'Resort Orientation'],
+      },
+      {
+        day: 2,
+        title: 'So SPA & Lagoon Water Sports',
+        location: 'Bel Ombre',
+        description: 'Unwind at So SPA with indigenous botanical therapies. Spend your afternoon paddleboarding or sailing across the protected lagoon reef.',
+        meals: 'Breakfast & Dinner',
+        stay: 'SO Sofitel Mauritius 5★',
+        activities: ['So SPA Treatment Option', 'Lagoon Paddleboarding'],
+      },
+      {
+        day: 3,
+        title: 'Le Morne Brabant & Chamarel Gorges',
+        location: 'South Coast',
+        description: 'Tour the UNESCO World Heritage site of Le Morne Brabant mountain, Chamarel Coloured Earths, and enjoy a rum tasting at Rhumerie de Chamarel.',
+        meals: 'Breakfast & Dinner',
+        stay: 'SO Sofitel Mauritius 5★',
+        activities: ['Le Morne Scenic Drive', 'Chamarel Rum Tasting'],
+      },
+      {
+        day: 4,
+        title: 'Bel Ombre Nature Reserve & Sunset Beach Cocktails',
+        location: 'Bel Ombre',
+        description: 'Explore the endemic biodiversity of Frederica Nature Reserve or relax on the sunbeds of La Plage beach bar with signature French-infused cocktails.',
+        meals: 'Breakfast & Dinner',
+        stay: 'SO Sofitel Mauritius 5★',
+        activities: ['Nature Walk', 'Sunset Beachfront Dinner'],
+      },
+      {
+        day: 5,
+        title: 'Departure to Airport',
+        location: 'MRU Airport',
+        description: 'Gourmet breakfast before your shared transfer to the airport for your return flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Shared Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights in 5★ SO Sofitel Mauritius',
+      'Daily breakfast and dinner (Half Board)',
+      'Complimentary non-motorized water sports',
+      'Round-trip airport transfers (SIC)',
+    ],
+    exclusions: ['Airfares', 'Personal expenses', 'Spa treatments'],
+    hotelStandard: 'SO Sofitel Mauritius (5★)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '4N Mauritius',
+      'SO Sofitel Mauritius',
+      'Transfers (SIC)',
+      '5★ Kenzo Takada Designer Resort',
+    ],
+  },
+  {
+    slug: 'mauritius-magic-rentals-outrigger-beach-resort-4n',
+    title: '4N Mauritius Magic Rentals',
+    tagline: '4 Nights of 5★ Coastal Serenity at Outrigger Mauritius Beach Resort in Bel Ombre',
+    destinationSlug: 'mauritius',
+    destinationName: 'Mauritius',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 86368,
+    originalPriceINR: 82368,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1513415431848-a433b3de449f?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1586853211885-d69f5be5ce9f?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1513415431848-a433b3de449f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1586853211885-d69f5be5ce9f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1507187632231-5beb21a654a2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1581859814481-bfd944e3122f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1650928367430-254e3e672dd9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1560939798-41e3459d797c?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Experience casual island luxury at the 5-star Outrigger Mauritius Beach Resort on the breathtaking nature reserve coast of Bel Ombre. Featuring sea-facing rooms, four outdoor swimming pools, Navasana Spa, and exceptional international and Creole dining.',
+    highlights: [
+      '4 Nights in 5★ Outrigger Mauritius Beach Resort',
+      'All sea-facing rooms with private balconies or terraces',
+      'Navasana Spa relaxation with Moroccan hammam',
+      'Four outdoor swimming pools and beachfront dining',
+      'Round-trip airport transfers (SIC) included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Mauritius & Check-in at Outrigger',
+        location: 'Bel Ombre',
+        description: 'Arrive at MRU Airport. Shared transfer to Outrigger Mauritius Beach Resort. Enjoy ocean breeze and a welcome tropical drink at the beachfront bar.',
+        meals: 'Dinner Included',
+        stay: 'Outrigger Mauritius Beach Resort 5★',
+        activities: ['Airport Meet & Greet', 'Shared Transfer', 'Oceanfront Sunset'],
+      },
+      {
+        day: 2,
+        title: 'Coral Reef Snorkel & Navasana Spa',
+        location: 'Bel Ombre',
+        description: 'Snorkel across the Bel Ombre coral barrier with complimentary gear. Spend your afternoon unwinding at Navasana Spa or lounging by the beachfront pool.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Outrigger Mauritius Beach Resort 5★',
+        activities: ['Coral Reef Snorkeling', 'Navasana Spa Session Option'],
+      },
+      {
+        day: 3,
+        title: 'Chamarel Coloured Earths & Grand Bassin Sacred Lake',
+        location: 'South Mauritius',
+        description: 'Full-day tour to the sacred volcanic crater lake of Grand Bassin (Ganga Talao), Black River Gorges, and the seven-coloured sands of Chamarel.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Outrigger Mauritius Beach Resort 5★',
+        activities: ['Grand Bassin Sacred Lake', 'Chamarel Dunes Tour', 'Black River Gorges'],
+      },
+      {
+        day: 4,
+        title: 'Water Sports & Beachfront Creole Feast',
+        location: 'Bel Ombre',
+        description: 'Complimentary windsurfing, glass-bottom boat excursions, and kayaking. In the evening, enjoy a beachfront Creole seafood dinner with Sega dancing.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Outrigger Mauritius Beach Resort 5★',
+        activities: ['Glass-Bottom Boat Ride', 'Sega Dance Show & Creole Dinner'],
+      },
+      {
+        day: 5,
+        title: 'Departure',
+        location: 'MRU Airport',
+        description: 'Breakfast before your shared transfer to the airport for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Shared Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights in 5★ Outrigger Mauritius Beach Resort',
+      'Daily breakfast and dinner (Half Board)',
+      'Complimentary glass-bottom boat tours & non-motorized water sports',
+      'Round-trip airport transfers (SIC)',
+    ],
+    exclusions: ['Airfares', 'Personal shopping', 'Motorized water sports'],
+    hotelStandard: 'Outrigger Mauritius Beach Resort (5★)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '4N Mauritius',
+      'Outrigger Mauritius Beach Resort',
+      'Transfers (SIC)',
+      '5★ Sea-Facing Rooms & Creole Dining',
+    ],
+  },
+  {
+    slug: 'seaside-tranquility-long-beach-mauritius-6n',
+    title: '6N Seaside Tranquility',
+    tagline: '6 Nights of 5★ Lifestyle Luxury on Belle Mare Beach at Long Beach Mauritius',
+    destinationSlug: 'mauritius',
+    destinationName: 'Mauritius',
+    durationDays: 7,
+    durationNights: 6,
+    priceINR: 295720,
+    originalPriceINR: 291720,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1650928367430-254e3e672dd9?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1560939798-41e3459d797c?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1650928367430-254e3e672dd9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1560939798-41e3459d797c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1513415431848-a433b3de449f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1586853211885-d69f5be5ce9f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1507187632231-5beb21a654a2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1581859814481-bfd944e3122f?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Stretching along one of the longest and widest natural white sand beaches in Mauritius on Belle Mare, 5-star Long Beach Mauritius combines chic piazza living, contemporary architecture, five signature restaurants, and championship golf access at Anahita and Île aux Cerfs.',
+    highlights: [
+      '6 Nights in 5★ Long Beach Mauritius on Belle Mare beach',
+      'Cinq Mondes Spa sanctuary amidst tropical gardens',
+      'Complimentary green fees at Île aux Cerfs Golf Club',
+      'Five gourmet restaurants with Italian, Asian, and beach grill concepts',
+      'Round-trip airport transfers (SIC) included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Mauritius & Belle Mare Beachfront Check-in',
+        location: 'Belle Mare',
+        description: 'Arrive at MRU Airport. Shared transfer across sugarcane fields to Long Beach on the eastern coast. Welcome cocktail and check-in to your contemporary suite.',
+        meals: 'Dinner Included',
+        stay: 'Long Beach Mauritius 5★',
+        activities: ['Airport Meet & Greet', 'Shared Transfer', 'Belle Mare Sunset Walk'],
+      },
+      {
+        day: 2,
+        title: 'Lagoon Water Sports & Cinq Mondes Spa',
+        location: 'Belle Mare',
+        description: 'Morning paddleboarding and windsurfing on Belle Mare’s calm coral lagoon. In the afternoon, indulge in a signature treatment at Cinq Mondes Spa.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Long Beach Mauritius 5★',
+        activities: ['Lagoon Water Sports', 'Cinq Mondes Spa Session Option'],
+      },
+      {
+        day: 3,
+        title: 'Île aux Cerfs Catamaran Cruise & Parasailing',
+        location: 'East Coast & Île aux Cerfs',
+        description: 'Full-day catamaran cruise to the legendary sands of Île aux Cerfs. Swim in transparent waters, enjoy an onboard barbecue lunch, and try parasailing.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Long Beach Mauritius 5★',
+        activities: ['Catamaran Sailing', 'Île aux Cerfs Beach Day', 'Parasailing Option'],
+      },
+      {
+        day: 4,
+        title: 'Championship Golf or Deep Sea Diving',
+        location: 'Belle Mare',
+        description: 'Play a round of golf at the Bernhard Langer-designed Île aux Cerfs Golf Club with complimentary green fees, or dive the rich coral walls of the east coast.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Long Beach Mauritius 5★',
+        activities: ['Golf Round Option', 'Scuba Diving Excursion Option'],
+      },
+      {
+        day: 5,
+        title: 'Chamarel Volcanic Dunes & Black River Gorges',
+        location: 'South Mauritius',
+        description: 'Scenic island tour to Chamarel Seven Coloured Earths, Alexandra Falls, and the Grand Bassin sacred lake.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Long Beach Mauritius 5★',
+        activities: ['Chamarel Seven Coloured Earths', 'Alexandra Falls', 'Grand Bassin'],
+      },
+      {
+        day: 6,
+        title: 'Piazza Leisure & Candlelit Gala Dinner',
+        location: 'Belle Mare',
+        description: 'Spend your final day relaxing by the infinity pool, shopping in the resort piazza, and enjoying a farewell multi-course gourmet dinner.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Long Beach Mauritius 5★',
+        activities: ['Infinity Pool Relaxation', 'Farewell Gala Dinner'],
+      },
+      {
+        day: 7,
+        title: 'Departure to Airport',
+        location: 'MRU Airport',
+        description: 'Breakfast before your shared transfer to MRU Airport for your flight back home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Shared Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '6 Nights in 5★ Long Beach Mauritius',
+      'Daily breakfast and dinner (Half Board)',
+      'Complimentary golf green fees at Île aux Cerfs Golf Club',
+      'Round-trip airport transfers (SIC)',
+    ],
+    exclusions: ['Airfares', 'Golf cart rentals', 'Personal expenses'],
+    hotelStandard: 'Long Beach Mauritius (5★)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '6N Mauritius',
+      'Long Beach Mauritius',
+      'Transfers (SIC)',
+      '5★ Belle Mare Beachfront & Golf Access',
+    ],
+  },
+  {
+    slug: 'mauritius-marvel-beaches-luxury-fun-4n',
+    title: '4N Mauritius Marvel: Beaches, Luxury, and Fun',
+    tagline: '4 Nights of 5★ Lifestyle Luxury on Belle Mare Beach at Long Beach Mauritius',
+    destinationSlug: 'mauritius',
+    destinationName: 'Mauritius',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 165128,
+    originalPriceINR: 161128,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1586853211885-d69f5be5ce9f?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1650928367430-254e3e672dd9?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1586853211885-d69f5be5ce9f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1650928367430-254e3e672dd9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1513415431848-a433b3de449f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1507187632231-5beb21a654a2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1581859814481-bfd944e3122f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1560939798-41e3459d797c?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'A vibrant 5-day escape at the 5-star Long Beach Mauritius. Enjoy expansive beachfront activities, fine dining across 5 restaurants, lagoon water sports, and shared airport transfers.',
+    highlights: [
+      '4 Nights in 5★ Long Beach Mauritius on Belle Mare Beach',
+      'Daily breakfast and gourmet dinner included',
+      'Complimentary water sports and beach fitness classes',
+      'Chic social piazza and lively evening entertainment',
+      'Round-trip airport transfers (SIC) included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Mauritius & Long Beach Check-in',
+        location: 'Belle Mare',
+        description: 'Arrive at MRU Airport. Shared transfer to Long Beach Mauritius. Check into your stylish suite and unwind by the beach.',
+        meals: 'Dinner Included',
+        stay: 'Long Beach Mauritius 5★',
+        activities: ['Airport Meet & Greet', 'Shared Transfer', 'Beach Walk'],
+      },
+      {
+        day: 2,
+        title: 'Belle Mare Lagoon Snorkel & Kayak',
+        location: 'Belle Mare',
+        description: 'Spend your morning snorkeling over living coral formations and kayaking through turquoise waters.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Long Beach Mauritius 5★',
+        activities: ['Lagoon Snorkeling', 'Kayaking', 'Piazza Dining'],
+      },
+      {
+        day: 3,
+        title: 'Île aux Cerfs Day Excursion',
+        location: 'Île aux Cerfs',
+        description: 'Short boat ride to Île aux Cerfs for swimming, parasailing, and relaxation on powder-soft sands.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Long Beach Mauritius 5★',
+        activities: ['Île aux Cerfs Boat Trip', 'Beach Relaxation'],
+      },
+      {
+        day: 4,
+        title: 'Chamarel Seven Coloured Earths Tour',
+        location: 'Chamarel',
+        description: 'Discover the volcanic rainbow dunes at Chamarel and take photos at the Chamarel Waterfall viewpoint.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Long Beach Mauritius 5★',
+        activities: ['Chamarel Coloured Earths Tour', 'Waterfall Photo Stop'],
+      },
+      {
+        day: 5,
+        title: 'Departure',
+        location: 'MRU Airport',
+        description: 'Breakfast before your shared transfer to the airport for your onward journey.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Shared Airport Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights in 5★ Long Beach Mauritius',
+      'Daily breakfast and dinner (Half Board)',
+      'Complimentary non-motorized water sports',
+      'Round-trip airport transfers (SIC)',
+    ],
+    exclusions: ['Airfares', 'Personal shopping', 'Motorized water sports'],
+    hotelStandard: 'Long Beach Mauritius (5★)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '4N Mauritius',
+      'Long Beach Mauritius',
+      'Transfers (SIC)',
+      '5★ Belle Mare Beachfront & Water Sports',
+    ],
+  },
+  {
+    slug: 'exotic-mauritius-perfect-island-escape-4n',
+    title: '4N Exotic Mauritius: Your Perfect Island Escape',
+    tagline: '4 Nights of 4★ Adults-Only All-Inclusive Bliss at Ambre Mauritius in Palmar',
+    destinationSlug: 'mauritius',
+    destinationName: 'Mauritius',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 125528,
+    originalPriceINR: 121528,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1581859814481-bfd944e3122f?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1513415431848-a433b3de449f?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1581859814481-bfd944e3122f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1513415431848-a433b3de449f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1586853211885-d69f5be5ce9f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1507187632231-5beb21a654a2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1650928367430-254e3e672dd9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1560939798-41e3459d797c?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Ambre Mauritius is an intimate 4-star adults-only resort set on a 700-meter natural white sand beach in Palmar on the east coast. Offering an all-inclusive tropical escape with complimentary golf access at Île aux Cerfs, crystal lagoon swimming, and shared transfers.',
+    highlights: [
+      '4 Nights in 4★ Adults-Only Ambre Mauritius Resort',
+      'All-inclusive dining and unlimited drinks',
+      '700-meter protected private white sand beach',
+      'Complimentary golf green fees at Île aux Cerfs Golf Club',
+      'Round-trip airport transfers (SIC) included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Palmar & Ambre Check-in',
+        location: 'Palmar',
+        description: 'Arrive at MRU Airport. Shared transfer to Ambre Mauritius. Settle into your adults-only beach resort and begin your all-inclusive dining with ocean views.',
+        meals: 'All-Inclusive Dinner & Drinks',
+        stay: 'Ambre Mauritius 4★',
+        activities: ['Airport Meet & Greet', 'Shared Transfer', 'Beachside Sunset'],
+      },
+      {
+        day: 2,
+        title: 'All-Inclusive Beach & Lagoon Snorkel',
+        location: 'Palmar',
+        description: 'Snorkel in the calm lagoon, enjoy sailing on lasers and hobi-cats, and sip cocktails by the infinity pool.',
+        meals: 'All-Inclusive (Breakfast, Lunch & Dinner)',
+        stay: 'Ambre Mauritius 4★',
+        activities: ['Lagoon Snorkeling', 'Hobi-Cat Sailing', 'Poolside Cocktails'],
+      },
+      {
+        day: 3,
+        title: 'Île aux Cerfs Catamaran Cruise',
+        location: 'Île aux Cerfs',
+        description: 'Complimentary boat transit to Île aux Cerfs. Spend your day swimming in turquoise waters or playing a round of championship golf.',
+        meals: 'All-Inclusive (Breakfast, Lunch & Dinner)',
+        stay: 'Ambre Mauritius 4★',
+        activities: ['Île aux Cerfs Excursion', 'Beach Leisure & Golf Option'],
+      },
+      {
+        day: 4,
+        title: 'Spa Relaxation & Sunset Gala',
+        location: 'Palmar',
+        description: 'Pamper yourself at the tropical spa and enjoy a romantic dinner on the sand with live acoustic music.',
+        meals: 'All-Inclusive (Breakfast, Lunch & Dinner)',
+        stay: 'Ambre Mauritius 4★',
+        activities: ['Spa Relaxation Option', 'Sunset Beachfront Dinner'],
+      },
+      {
+        day: 5,
+        title: 'Departure to Airport',
+        location: 'MRU Airport',
+        description: 'Breakfast before your shared transfer to MRU Airport for your return flight home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Shared Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights in 4★ Adults-Only Ambre Mauritius',
+      'All-Inclusive meal plan (Breakfast, Lunch, Dinner & Unlimited Drinks)',
+      'Complimentary golf green fees at Île aux Cerfs Golf Club',
+      'Round-trip airport transfers (SIC)',
+    ],
+    exclusions: ['Airfares', 'Personal shopping', 'Motorized water sports'],
+    hotelStandard: 'Ambre Mauritius (4★ Adults-Only)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '4N Mauritius',
+      'Ambre Mauritius',
+      'Transfers (SIC)',
+      '4★ Adults-Only All-Inclusive Resort',
+    ],
+  },
+
+  // --- MOROCCO ---
+  {
+    slug: 'moroccan-imperial-cities-desert-wonders-9n',
+    title: '9N Moroccan Imperial Cities & Desert Wonders',
+    tagline: 'Rabat, Fes, Erg Chebbi Sahara, Ouarzazate & Marrakech with Camel Trek & Private Transfers',
+    destinationSlug: 'morocco',
+    destinationName: 'Morocco',
+    durationDays: 10,
+    durationNights: 9,
+    priceINR: 77304,
+    originalPriceINR: 73304,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1528657249085-c569d3c869e4?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1528657249085-c569d3c869e4?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1662304087729-def43a9f5264?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'A breathtaking 10-day grand tour traversing Morocco’s imperial capitals and the golden dunes of the Sahara. From coastal Rabat to the medieval medina of Fes, camel trekking across Erg Chebbi at sunset, the film sets of Ouarzazate, and the bustling souks of Marrakech.',
+    highlights: [
+      '8 Nights in 4★ Hotels & Riads + 1 Night in Sahara Desert Camp in Merzouga',
+      'Sunset Camel Ride in Merzouga dunes & Berber drumming circle (+6 Sightseeings)',
+      'Rabat, Fes el-Bali & Marrakech comprehensive guided tours',
+      'Todra Gorges & UNESCO Ksar Aït Benhaddou exploration',
+      'All private airport and intercity transfers throughout',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Casablanca / Rabat',
+        location: 'Casablanca & Rabat',
+        description: 'Arrive at Casablanca (CMN) or Rabat Airport. Private transfer to Rabat. View the grand Hassan Tower and Mohammed V Mausoleum.',
+        meals: 'Room only',
+        stay: 'Rabat 4★ Heritage Hotel',
+        activities: ['Private Airport Transfer', 'Hassan Tower & Mausoleum Walk'],
+      },
+      {
+        day: 2,
+        title: 'Meknes, Roman Volubilis & Arrival in Fes',
+        location: 'Rabat to Fes',
+        description: 'Drive via imperial Meknes with its grand Bab el-Mansour gate and explore the UNESCO Roman ruins of Volubilis before reaching Fes.',
+        meals: 'Breakfast Included',
+        stay: 'Fes 4★ Traditional Riad',
+        activities: ['Volubilis Roman Ruins', 'Meknes Bab el-Mansour', 'Fes Riad Check-in'],
+      },
+      {
+        day: 3,
+        title: 'Fes el-Bali Medina & Ancient Tanneries',
+        location: 'Fes',
+        description: 'Guided tour of Fes el-Bali: wander through the 9,000 alleys of the medina, visit Al-Qarawiyyin University, and view the iconic Chouara Tanneries.',
+        meals: 'Breakfast Included',
+        stay: 'Fes 4★ Traditional Riad',
+        activities: ['Fes el-Bali Medina Walk', 'Chouara Tanneries Viewpoint', 'Attarine Madrasa'],
+      },
+      {
+        day: 4,
+        title: 'Atlas Mountains & Merzouga Sahara Dunes',
+        location: 'Middle Atlas to Merzouga',
+        description: 'Cross the cedar forests of Ifrane and the Ziz Valley to Merzouga. Mount camels for a sunset trek across the red dunes of Erg Chebbi to your desert camp.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Erg Chebbi Luxury Desert Camp',
+        activities: ['Sunset Camel Trek', 'Sahara Desert Camp Check-in', 'Berber Music & Stargazing'],
+      },
+      {
+        day: 5,
+        title: 'Todra Gorges & Dades Valley',
+        location: 'Merzouga to Dades',
+        description: 'Watch the sunrise over the Sahara dunes. Drive through the towering limestone cliffs of Todra Gorges towards the lush palm groves of Dades Valley.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Dades / Ouarzazate 4★ Hotel',
+        activities: ['Sahara Sunrise Watch', 'Todra Gorges Walk', 'Dades Valley Scenic Drive'],
+      },
+      {
+        day: 6,
+        title: 'Ouarzazate Atlas Studios & Aït Benhaddou',
+        location: 'Ouarzazate to Marrakech',
+        description: 'Visit the UNESCO fortified clay village of Aït Benhaddou (filming site of Gladiator and Game of Thrones), then cross the Tizi n’Tichka Atlas pass to Marrakech.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 4★ Riad',
+        activities: ['Aït Benhaddou UNESCO Ksar', 'High Atlas Mountain Pass Drive', 'Marrakech Check-in'],
+      },
+      {
+        day: 7,
+        title: 'Marrakech Palaces & Jemaa el-Fnaa',
+        location: 'Marrakech',
+        description: 'Explore the Bahia Palace, Koutoubia Mosque, and the Majorelle Garden. Evening spectacle of snake charmers and food stalls at Jemaa el-Fnaa square.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 4★ Riad',
+        activities: ['Bahia Palace Tour', 'Majorelle Garden Visit', 'Jemaa el-Fnaa Night Walk'],
+      },
+      {
+        day: 8,
+        title: 'Marrakech Souks & Free Exploration',
+        location: 'Marrakech',
+        description: 'Full day at leisure to shop for spices, leather babouches, and argan oil in the vibrant covered souks of Marrakech, or indulge in a traditional hammam.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 4★ Riad',
+        activities: ['Medina Souk Shopping', 'Traditional Moroccan Hammam Option'],
+      },
+      {
+        day: 9,
+        title: 'Casablanca Coastal Highlights & Hassan II Mosque',
+        location: 'Casablanca',
+        description: 'Transfer to Casablanca. Tour the breathtaking Hassan II Mosque with its minaret rising over the Atlantic Ocean, and walk the Corniche promenade.',
+        meals: 'Breakfast Included',
+        stay: 'Casablanca 4★ Hotel',
+        activities: ['Hassan II Mosque Tour', 'Corniche Coastal Stroll'],
+      },
+      {
+        day: 10,
+        title: 'Casablanca Departure',
+        location: 'Casablanca Airport (CMN)',
+        description: 'Breakfast before your private transfer to Casablanca Mohammed V Airport for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '8 Nights in 4★ Hotels & Riads + 1 Night in Sahara Luxury Desert Camp',
+      'Daily breakfast, plus dinners in Merzouga & Ouarzazate',
+      'Sunset camel ride in Merzouga & desert camp experience',
+      'Guided city tours in Rabat, Fes, and Marrakech with entrance fees',
+      'All private airport and intercity transfers',
+    ],
+    exclusions: ['International airfares', 'Morocco Visa fee', 'Meals not stated', 'Tips & personal expenses'],
+    hotelStandard: '4★ Handpicked Moroccan Riads & Desert Camp',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      'Rabat, Fes, Sahara, Ouarzazate & Marrakech',
+      'Camel Ride in Merzouga (+6 Sightseeings)',
+      'Desert Camp Stay with Dinner & Music',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'moroccan-imperial-cities-sahara-escape-10n',
+    title: '10N Moroccan Imperial Cities & Sahara Escape',
+    tagline: 'Rabat, Chefchaouen Blue City, Fes, Sahara & Marrakech with 4x4 Desert Experience',
+    destinationSlug: 'morocco',
+    destinationName: 'Morocco',
+    durationDays: 11,
+    durationNights: 10,
+    priceINR: 159408,
+    originalPriceINR: 155408,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1528657249085-c569d3c869e4?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1528657249085-c569d3c869e4?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1662304087729-def43a9f5264?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'The ultimate Moroccan journey featuring the fairytale blue mountain town of Chefchaouen, ancient imperial medinas, a thrilling 4x4 desert safari across the golden dunes of Erg Chebbi, and the high-energy souks of Marrakech with private English-speaking guide.',
+    highlights: [
+      '9 Nights in boutique 4★ Riads & 1 Night in Sahara Luxury Desert Camp',
+      'Chefchaouen Blue City Walking Tour (+8 Sightseeings included)',
+      '4x4 Desert Safari & Camel Trek across Erg Chebbi dunes',
+      'Volubilis Roman ruins, Fes tanneries & Marrakech palaces',
+      'Private chauffeur and dedicated English-speaking guide',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Casablanca & Coastal Rabat',
+        location: 'Casablanca & Rabat',
+        description: 'Arrive at Casablanca CMN Airport. Private transfer to Rabat. Visit Hassan Tower and Kasbah of the Udayas overlooking the Atlantic.',
+        meals: 'Room only',
+        stay: 'Rabat 4★ Boutique Hotel',
+        activities: ['Private Airport Transfer', 'Kasbah of the Udayas Walk'],
+      },
+      {
+        day: 2,
+        title: 'Rif Mountains to Chefchaouen "The Blue Pearl"',
+        location: 'Rabat to Chefchaouen',
+        description: 'Scenic drive through the Rif Mountains to the dreamlike blue-washed town of Chefchaouen. Check into your riad and take an evening blue alley stroll.',
+        meals: 'Breakfast Included',
+        stay: 'Chefchaouen 4★ Riad',
+        activities: ['Rif Mountains Scenic Drive', 'Chefchaouen Blue Alleys Stroll'],
+      },
+      {
+        day: 3,
+        title: 'Chefchaouen Exploration, Volubilis & Fes',
+        location: 'Chefchaouen to Fes',
+        description: 'Morning guided walk through Chefchaouen medina. Drive south to tour the Roman mosaics at Volubilis and imperial Meknes, arriving in Fes.',
+        meals: 'Breakfast Included',
+        stay: 'Fes 4★ Traditional Riad',
+        activities: ['Chefchaouen Guided Tour', 'Volubilis Roman Mosaics', 'Fes Arrival'],
+      },
+      {
+        day: 4,
+        title: 'Fes el-Bali Medieval Heritage',
+        location: 'Fes',
+        description: 'Explore Fes el-Bali’s historic craft quarters, Al-Qarawiyyin mosque, Bou Inania Madrasa, and view the iconic leather tanneries.',
+        meals: 'Breakfast Included',
+        stay: 'Fes 4★ Traditional Riad',
+        activities: ['Fes el-Bali Guided Tour', 'Chouara Tanneries', 'Medina Craft Guilds'],
+      },
+      {
+        day: 5,
+        title: 'Atlas Cedar Forests & Merzouga Dunes',
+        location: 'Fes to Merzouga',
+        description: 'Drive past Ifrane and the cedar forests of Azrou. Descend into the Ziz Valley and arrive in Merzouga for a sunset camel trek to your luxury Sahara camp.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Erg Chebbi Luxury Desert Camp',
+        activities: ['Atlas Drive', 'Sunset Camel Trek', 'Sahara Berber Camp Dinner & Music'],
+      },
+      {
+        day: 6,
+        title: '4x4 Sahara Desert Dune Safari',
+        location: 'Erg Chebbi Dunes',
+        description: 'Thrilling 4x4 dune bashing adventure across Erg Chebbi. Visit nomadic Berber families and the desert village of Khamlia for Gnawa music.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Erg Chebbi Luxury Desert Camp',
+        activities: ['4x4 Desert Dune Safari', 'Khamlia Gnawa Music', 'Nomadic Camp Visit'],
+      },
+      {
+        day: 7,
+        title: 'Todra Gorges & Dades Valley',
+        location: 'Merzouga to Dades',
+        description: 'Travel through the 300-meter sheer cliffs of Todra Gorges and through the Valley of the Roses to Dades Valley.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Dades 4★ Kasbah Hotel',
+        activities: ['Todra Gorges Walk', 'Valley of Roses Drive'],
+      },
+      {
+        day: 8,
+        title: 'Aït Benhaddou & High Atlas to Marrakech',
+        location: 'Dades to Marrakech',
+        description: 'Tour the UNESCO fortified ksar of Aït Benhaddou. Drive over the panoramic Tizi n’Tichka mountain pass into Marrakech.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 4★ Riad',
+        activities: ['Aït Benhaddou Tour', 'Tizi n’Tichka Pass', 'Marrakech Check-in'],
+      },
+      {
+        day: 9,
+        title: 'Marrakech Palaces, Majorelle & Jemaa el-Fnaa',
+        location: 'Marrakech',
+        description: 'Visit Bahia Palace, Saadian Tombs, and Yves Saint Laurent’s Majorelle Garden. Sunset at Jemaa el-Fnaa square.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 4★ Riad',
+        activities: ['Bahia Palace Tour', 'Majorelle Garden', 'Jemaa el-Fnaa Square'],
+      },
+      {
+        day: 10,
+        title: 'Casablanca Hassan II Mosque',
+        location: 'Marrakech to Casablanca',
+        description: 'Transfer to Casablanca. Guided tour inside the monumental Hassan II Mosque perched above the waves.',
+        meals: 'Breakfast Included',
+        stay: 'Casablanca 4★ Hotel',
+        activities: ['Hassan II Mosque Interior Tour', 'Casablanca Corniche'],
+      },
+      {
+        day: 11,
+        title: 'Casablanca Departure',
+        location: 'Casablanca Airport (CMN)',
+        description: 'Breakfast before your private transfer to Casablanca Mohammed V Airport for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '9 Nights in boutique 4★ Riads & 1 Night in Sahara Luxury Desert Camp',
+      'Daily breakfast, plus dinners in Sahara & Dades',
+      'Chefchaouen Blue City guided tour with entrance fees',
+      '4x4 Desert Safari & sunset camel ride in Merzouga',
+      'Private vehicle, fuel, and dedicated English-speaking guide',
+    ],
+    exclusions: ['International airfares', 'Visa fee', 'Personal expenses'],
+    hotelStandard: '4★ Boutique Riads & Sahara Luxury Camp',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      'Chefchaouen, Fes, Sahara & Marrakech',
+      'Chefchaouen Blue City Tour (+8 Sightseeings)',
+      '4x4 Desert Experience & Camel Ride',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'moroccan-essence-7n8d',
+    title: '7N Moroccan Essence',
+    tagline: '7N / 8D Rabat, Fes, Marrakech & Casablanca with Hassan II Mosque & Private Guide',
+    destinationSlug: 'morocco',
+    destinationName: 'Morocco',
+    durationDays: 8,
+    durationNights: 7,
+    priceINR: 64544,
+    originalPriceINR: 60544,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1662304087729-def43a9f5264?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1662304087729-def43a9f5264?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1528657249085-c569d3c869e4?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'A classic 8-day cultural circuit uniting Morocco’s imperial capitals: Rabat, Fes, Marrakech, and Casablanca. Marvel at the grand Hassan II Mosque, wander the 9,000 alleys of Fes el-Bali, discover Roman Volubilis, and absorb the enchanting evening atmosphere of Marrakech.',
+    highlights: [
+      '7 Nights in 4★ Hotels & Traditional Moroccan Riads',
+      'Hassan II Mosque & Habbous Quarter tour (+6 Sightseeings)',
+      'Rabat Hassan Tower, Volubilis Roman ruins & Meknes highlights',
+      'Comprehensive Fes Medina & Marrakech Cultural Tours',
+      'Private transfers and English-speaking guided tours',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Casablanca & Coastal Rabat',
+        location: 'Casablanca & Rabat',
+        description: 'Arrive at Casablanca Airport. Private transfer to Rabat. Tour the Hassan Tower and Mohammed V Mausoleum.',
+        meals: 'Room only',
+        stay: 'Rabat 4★ Heritage Hotel',
+        activities: ['Private Airport Transfer', 'Hassan Tower Visit'],
+      },
+      {
+        day: 2,
+        title: 'Volubilis Roman Ruins, Meknes & Fes',
+        location: 'Rabat to Fes',
+        description: 'Explore the UNESCO Roman city of Volubilis and Bab Mansour in Meknes before checking into your traditional riad in Fes.',
+        meals: 'Breakfast Included',
+        stay: 'Fes 4★ Traditional Riad',
+        activities: ['Volubilis Ruins Tour', 'Meknes Orientation', 'Fes Riad Check-in'],
+      },
+      {
+        day: 3,
+        title: 'Fes el-Bali Cultural Medina Tour',
+        location: 'Fes',
+        description: 'Full-day tour of Fes: visit Al-Qarawiyyin, Bou Inania Madrasa, and watch artisans at the historic leather tanneries.',
+        meals: 'Breakfast Included',
+        stay: 'Fes 4★ Traditional Riad',
+        activities: ['Fes Medina Tour', 'Chouara Tanneries', 'Artisan Quarters'],
+      },
+      {
+        day: 4,
+        title: 'Scenic Drive to Marrakech',
+        location: 'Fes to Marrakech',
+        description: 'Drive through the Middle Atlas foothills past Beni Mellal to Marrakech. Evening at leisure near Jemaa el-Fnaa square.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 4★ Riad',
+        activities: ['Atlas Foothills Drive', 'Marrakech Evening Walk'],
+      },
+      {
+        day: 5,
+        title: 'Marrakech Palaces & Medina Souks',
+        location: 'Marrakech',
+        description: 'Tour the Bahia Palace, Saadian Tombs, and the bustling souks of the Medina. Sunset drinks overlooking Jemaa el-Fnaa.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 4★ Riad',
+        activities: ['Bahia Palace Visit', 'Souk Walking Tour', 'Jemaa el-Fnaa Sunset View'],
+      },
+      {
+        day: 6,
+        title: 'Majorelle Garden & Menara Gardens',
+        location: 'Marrakech',
+        description: 'Visit Yves Saint Laurent’s Majorelle Garden, the Berber Museum, and the tranquil reflecting pools of Menara Gardens.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 4★ Riad',
+        activities: ['Majorelle Garden Tour', 'Menara Gardens Stroll'],
+      },
+      {
+        day: 7,
+        title: 'Casablanca Hassan II Mosque & Corniche',
+        location: 'Casablanca',
+        description: 'Transfer to Casablanca. Tour the monumental Hassan II Mosque and the Art Deco French colonial quarter of Habbous.',
+        meals: 'Breakfast Included',
+        stay: 'Casablanca 4★ Hotel',
+        activities: ['Hassan II Mosque Tour', 'Habbous Quarter Walk'],
+      },
+      {
+        day: 8,
+        title: 'Casablanca Departure',
+        location: 'Casablanca Airport (CMN)',
+        description: 'Breakfast before your private transfer to Casablanca Airport for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '7 Nights in 4★ Hotels and traditional Riads',
+      'Daily breakfast',
+      'Hassan II Mosque, Volubilis, and Bahia Palace entrance fees',
+      'Private air-conditioned vehicle and English-speaking tour guides',
+    ],
+    exclusions: ['Airfares', 'Visa fees', 'Meals not stated', 'Tips'],
+    hotelStandard: '4★ Handpicked Moroccan Riads & Hotels',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      'Rabat, Fes, Marrakech & Casablanca',
+      'Hassan II Mosque & Habbous Quarter (+6 Sightseeings)',
+      'Volubilis, Meknes & Fes Medina Tours',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'moroccan-coast-to-mountains-7n8d',
+    title: '7N Moroccan Coast to Mountains',
+    tagline: '7N / 8D Rabat, Chefchaouen Blue City, Fes & Marrakech with Private Transfers',
+    destinationSlug: 'morocco',
+    destinationName: 'Morocco',
+    durationDays: 8,
+    durationNights: 7,
+    priceINR: 121656,
+    originalPriceINR: 117656,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1528657249085-c569d3c869e4?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1528657249085-c569d3c869e4?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1662304087729-def43a9f5264?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'A journey linking Morocco’s Atlantic shores, the blue-painted mountain alleys of Chefchaouen in the Rif, the medieval labyrinth of Fes, and the imperial splendor of Marrakech with private vehicle and English-speaking guide.',
+    highlights: [
+      '7 Nights in 4★ Riads across Rabat, Chefchaouen, Fes & Marrakech',
+      'Volubilis Roman ruins & Meknes highlights (+6 Sightseeings)',
+      'Chefchaouen Blue Pearl guided walking tour',
+      'Fes el-Bali UNESCO Medina & Marrakech Palaces',
+      'Private transfers and dedicated English-speaking guide',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Rabat',
+        location: 'Rabat',
+        description: 'Arrive in Rabat. Private transfer to hotel. View Hassan Tower and Kasbah of the Udayas.',
+        meals: 'Room only',
+        stay: 'Rabat 4★ Hotel',
+        activities: ['Private Airport Transfer', 'Rabat Sightseeing'],
+      },
+      {
+        day: 2,
+        title: 'Rif Mountains to Chefchaouen',
+        location: 'Chefchaouen',
+        description: 'Drive through scenic mountain passes to Chefchaouen. Afternoon walking tour through iconic blue alleys and Outa el-Hammam square.',
+        meals: 'Breakfast Included',
+        stay: 'Chefchaouen 4★ Riad',
+        activities: ['Chefchaouen Blue City Tour', 'Outa el-Hammam Square Walk'],
+      },
+      {
+        day: 3,
+        title: 'Roman Volubilis, Meknes & Fes',
+        location: 'Meknes & Fes',
+        description: 'Visit the Roman ruins of Volubilis and the monumental gate of Bab Mansour in Meknes, then continue to Fes.',
+        meals: 'Breakfast Included',
+        stay: 'Fes 4★ Traditional Riad',
+        activities: ['Volubilis Roman Ruins', 'Meknes Gate Tour', 'Fes Check-in'],
+      },
+      {
+        day: 4,
+        title: 'Fes Medina & Craft Quarters',
+        location: 'Fes',
+        description: 'Guided tour of Fes el-Bali, visiting Chouara Tanneries, ceramic workshops, and historic madrasas.',
+        meals: 'Breakfast Included',
+        stay: 'Fes 4★ Traditional Riad',
+        activities: ['Fes Medina Tour', 'Chouara Tanneries', 'Ceramic Workshop'],
+      },
+      {
+        day: 5,
+        title: 'Scenic Drive to Marrakech',
+        location: 'Fes to Marrakech',
+        description: 'Travel through the foothills of the Atlas mountains to Marrakech. Evening at leisure near Jemaa el-Fnaa.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 4★ Riad',
+        activities: ['Scenic Countryside Drive', 'Marrakech Evening Walk'],
+      },
+      {
+        day: 6,
+        title: 'Marrakech Palaces & Majorelle Garden',
+        location: 'Marrakech',
+        description: 'Tour Bahia Palace, Saadian Tombs, and the cobalt blue villa of Majorelle Garden.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 4★ Riad',
+        activities: ['Bahia Palace Tour', 'Majorelle Garden', 'Koutoubia Mosque'],
+      },
+      {
+        day: 7,
+        title: 'Marrakech Souks & Leisure',
+        location: 'Marrakech',
+        description: 'Full day exploring the covered souks of Marrakech or relaxing with a traditional hammam.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 4★ Riad',
+        activities: ['Souk Exploration', 'Hammam Relaxation Option'],
+      },
+      {
+        day: 8,
+        title: 'Departure',
+        location: 'Marrakech / Casablanca Airport',
+        description: 'Breakfast before your private transfer to Marrakech (RAK) or Casablanca (CMN) for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '7 Nights in 4★ boutique Riads and hotels',
+      'Daily breakfast',
+      'Chefchaouen, Volubilis, Fes, and Marrakech guided tours with admissions',
+      'All private chauffeured transfers throughout',
+    ],
+    exclusions: ['Airfares', 'Visa fee', 'Personal expenses'],
+    hotelStandard: '4★ Handpicked Riads & Hotels',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      'Rabat, Chefchaouen, Fes & Marrakech',
+      'Chefchaouen Blue City Guided Tour',
+      'Volubilis & Meknes Highlights (+6 Sightseeings)',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'moroccan-4-seasons-collection-6n7d',
+    title: '6N Moroccan 4 Seasons Collection',
+    tagline: '6N / 7D Ultra-Luxury 5★ Escape Across Casablanca & Marrakech with Private Chauffeur',
+    destinationSlug: 'morocco',
+    destinationName: 'Morocco',
+    durationDays: 7,
+    durationNights: 6,
+    priceINR: 180000,
+    originalPriceINR: 176000,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1662304087729-def43a9f5264?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1662304087729-def43a9f5264?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1528657249085-c569d3c869e4?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'An ultra-luxury 7-day escape pairing the seaside glamour of Casablanca with the exotic palace courtyards of Marrakech. Stay in premier 5-star palatial properties with private chauffeured Mercedes transfers, private guided tours, and VIP access.',
+    highlights: [
+      '6 Nights in premier 5★ Luxury Palace Hotels',
+      'VIP private guided tour of Hassan II Mosque & Casablanca Corniche',
+      'Private horse carriage tour through Marrakech historic gardens',
+      'Exclusive access to Majorelle Garden & Yves Saint Laurent Museum',
+      'Private chauffeured Mercedes transfers throughout',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Casablanca in 5★ Luxury',
+        location: 'Casablanca',
+        description: 'Arrive at Casablanca Airport. Private chauffeured transfer to your 5-star oceanfront hotel. Evening cocktail overlooking the Atlantic.',
+        meals: 'Room only',
+        stay: 'Casablanca 5★ Luxury Hotel',
+        activities: ['Chauffeured Airport Transfer', 'Oceanfront Welcome Cocktail'],
+      },
+      {
+        day: 2,
+        title: 'Hassan II Mosque VIP Tour & Chauffeur to Marrakech',
+        location: 'Casablanca to Marrakech',
+        description: 'Private guided exploration inside Hassan II Mosque. Chauffeured transfer to your 5-star palace hotel in Marrakech with lush palm courtyards.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 5★ Palace Hotel',
+        activities: ['Hassan II Mosque VIP Tour', 'Chauffeured Drive to Marrakech'],
+      },
+      {
+        day: 3,
+        title: 'Marrakech Palatial Heritage & Majorelle',
+        location: 'Marrakech',
+        description: 'Tour Bahia Palace, Saadian Tombs, and enjoy skip-the-line access to Majorelle Garden and the Yves Saint Laurent Museum.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 5★ Palace Hotel',
+        activities: ['Bahia Palace VIP Tour', 'Majorelle & YSL Museum'],
+      },
+      {
+        day: 4,
+        title: 'High Atlas Mountain Retreat Excursion',
+        location: 'Atlas Mountains',
+        description: 'Day excursion into the scenic Ourika Valley and High Atlas mountains, visiting luxury mountain kasbahs and walnut groves.',
+        meals: 'Breakfast & Lunch',
+        stay: 'Marrakech 5★ Palace Hotel',
+        activities: ['High Atlas Mountain Excursion', 'Luxury Kasbah Lunch'],
+      },
+      {
+        day: 5,
+        title: 'Private Carriage Tour & Spa Wellness',
+        location: 'Marrakech',
+        description: 'Private horse-drawn calèche tour around the historic city walls and Agdal gardens. Afternoon hammam and royal spa treatment.',
+        meals: 'Breakfast Included',
+        stay: 'Marrakech 5★ Palace Hotel',
+        activities: ['Private Calèche Carriage Tour', 'Palace Spa Hammam Treatment'],
+      },
+      {
+        day: 6,
+        title: 'Gourmet Souk Experience & Candlelit Dinner',
+        location: 'Marrakech',
+        description: 'Private guided shopping through antique souks for carpets and lanterns, followed by a multi-course Moroccan feast with live Andalusian lute music.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Marrakech 5★ Palace Hotel',
+        activities: ['VIP Souk Shopping Walk', 'Palatial Gala Dinner'],
+      },
+      {
+        day: 7,
+        title: 'Marrakech Departure',
+        location: 'Marrakech Airport (RAK)',
+        description: 'Gourmet breakfast before your private chauffeured transfer to Marrakech Menara Airport for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Chauffeured Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '6 Nights in premier 5★ Luxury Palace Hotels',
+      'Daily gourmet breakfast and selected multi-course dinners',
+      'All private tours with certified English-speaking historians',
+      'Private chauffeured Mercedes-Benz transfers throughout',
+    ],
+    exclusions: ['International airfares', 'Visa fees', 'Personal expenditures'],
+    hotelStandard: 'Premier 5★ Luxury Palace Hotels',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      'Casablanca & Marrakech 5★ Luxury',
+      'Premier Palace Hotels & Private Chauffeur',
+      'Hassan II Mosque & Majorelle VIP Access',
+      'Transfers (Private)',
+    ],
+  },
+
+  // --- PHILIPPINES ---
+  {
+    slug: 'philippines-city-duo-4n',
+    title: '4N Philippines City Duo',
+    tagline: '4 Nights in Manila with 4★ City Hotel & Private Airport Transfers',
+    destinationSlug: 'philippines',
+    destinationName: 'Philippines',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 9104,
+    originalPriceINR: 5104,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1601000234047-d9308ea1ed51?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1601000234047-d9308ea1ed51?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1584640161267-869f0aa03af6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1632307644226-a3d85fde46a5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1605538108568-7f0d77a214c1?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Explore the vibrant historical and contemporary layers of the Philippine capital. Stay at a 4-star city hotel in Manila, walk the Spanish colonial walls of Intramuros and Fort Santiago, and browse world-class mega malls along Manila Bay.',
+    highlights: [
+      '4 Nights in Manila 4★ City Hotel',
+      'Intramuros walled city & Fort Santiago historical discovery',
+      'Manila Bay sunset boardwalk and Mall of Asia',
+      'Bonifacio Global City (BGC) modern dining precinct',
+      'Private airport round-trip transfers included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Manila',
+        location: 'Manila',
+        description: 'Arrive at Ninoy Aquino International Airport (MNL). Meet your private driver and transfer to your 4-star hotel in Makati or Manila Bay. Evening at leisure.',
+        meals: 'Room only',
+        stay: 'Manila 4★ City Hotel',
+        activities: ['Private Airport Transfer', 'Hotel Check-in'],
+      },
+      {
+        day: 2,
+        title: 'Intramuros Colonial Heritage Tour',
+        location: 'Manila',
+        description: 'Discover Manila’s oldest district: walk the stone ramparts of Fort Santiago, visit San Agustin Church (UNESCO World Heritage), and Casa Manila museum.',
+        meals: 'Breakfast Included',
+        stay: 'Manila 4★ City Hotel',
+        activities: ['Fort Santiago Tour', 'San Agustin Church Visit', 'Intramuros Heritage Walk'],
+      },
+      {
+        day: 3,
+        title: 'Manila Bay Sunset & Mall of Asia',
+        location: 'Manila Bay',
+        description: 'Afternoon at the massive SM Mall of Asia complex and seaside amusement park, followed by catching the famous golden sunset over Manila Bay.',
+        meals: 'Breakfast Included',
+        stay: 'Manila 4★ City Hotel',
+        activities: ['Mall of Asia Shopping', 'Manila Bay Sunset Walk'],
+      },
+      {
+        day: 4,
+        title: 'BGC Modern Skyline & Gastronomy',
+        location: 'Bonifacio Global City',
+        description: 'Spend your day in high-tech BGC exploring street art, High Street open-air promenades, and vibrant international restaurants.',
+        meals: 'Breakfast Included',
+        stay: 'Manila 4★ City Hotel',
+        activities: ['BGC Street Art Walk', 'High Street Promenade Leisure'],
+      },
+      {
+        day: 5,
+        title: 'Manila Departure',
+        location: 'MNL Airport',
+        description: 'Breakfast at hotel before your private transfer to Ninoy Aquino Airport for your departure flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '4 Nights in Manila 4★ City Hotel',
+      'Daily breakfast',
+      'Private airport round-trip transfers',
+      'City orientation logistics',
+    ],
+    exclusions: ['Airfares', 'Personal expenses', 'City tour admissions'],
+    hotelStandard: 'Manila 4 Star Hotel',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '4N Manila',
+      'Manila 4 Star Hotel',
+      'Intramuros & Manila Bay Sunset',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'filipino-island-explorer-6n',
+    title: '6N Filipino Island Explorer',
+    tagline: '3N El Nido & 3N Coron with 4★ Stays & Private Island Transfers',
+    destinationSlug: 'philippines',
+    destinationName: 'Philippines',
+    durationDays: 7,
+    durationNights: 6,
+    priceINR: 14208,
+    originalPriceINR: 10208,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1584640161267-869f0aa03af6?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1632307644226-a3d85fde46a5?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1584640161267-869f0aa03af6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1632307644226-a3d85fde46a5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1601000234047-d9308ea1ed51?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1605538108568-7f0d77a214c1?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'The dream Palawan duo uniting the dramatic limestone towers of El Nido with the crystal-clear volcanic lakes of Coron. Kayak through secret karst lagoons, swim into Kayangan Lake, snorkel over WWII shipwrecks, and relax on pristine coral beaches with private transfers.',
+    highlights: [
+      '3 Nights El Nido 4★ Hotel + 3 Nights Coron 4★ Hotel',
+      'El Nido Bacuit Bay island hopping (Big Lagoon, Secret Beach)',
+      'Coron Island Tour: Kayangan Lake, Twin Lagoon & coral gardens',
+      'Speedboat / ferry crossing across Palawan archipelago',
+      'All private airport and island transfers included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in El Nido & Bacuit Bay Sunset',
+        location: 'El Nido',
+        description: 'Arrive at El Nido Lio Airport (ENI). Private transfer to your 4-star hotel. Evening sunset walk along Corong-Corong beach.',
+        meals: 'Room only',
+        stay: 'El Nido 4★ Hotel',
+        activities: ['Private Airport Transfer', 'Corong-Corong Sunset View'],
+      },
+      {
+        day: 2,
+        title: 'El Nido Island Hopping Tour A',
+        location: 'El Nido Bacuit Bay',
+        description: 'Full-day banca boat tour: kayak through the towering emerald walls of Big Lagoon, swim at Shimizu Island, and relax on Seven Commandos Beach.',
+        meals: 'Breakfast & Picnic Lunch',
+        stay: 'El Nido 4★ Hotel',
+        activities: ['Big Lagoon Kayaking', 'Shimizu Island Snorkel', 'Seven Commandos Beach'],
+      },
+      {
+        day: 3,
+        title: 'Secret Lagoons & Hidden Coves',
+        location: 'El Nido',
+        description: 'Explore Secret Lagoon entered through a small limestone crevice, visit Snake Island sandbar, and relax at Las Cabañas beach.',
+        meals: 'Breakfast Included',
+        stay: 'El Nido 4★ Hotel',
+        activities: ['Secret Lagoon Exploration', 'Las Cabañas Sunset Drinks'],
+      },
+      {
+        day: 4,
+        title: 'Scenic Ferry Transit to Coron',
+        location: 'El Nido to Coron',
+        description: 'Transfer to port. Fast ferry crossing across the Linapacan Strait to Coron. Transfer to your 4-star Coron hotel and evening soak at Maquinit Hot Springs.',
+        meals: 'Breakfast Included',
+        stay: 'Coron 4★ Hotel',
+        activities: ['Ferry to Coron', 'Coron Hotel Check-in', 'Maquinit Saltwater Hot Springs'],
+      },
+      {
+        day: 5,
+        title: 'Coron Ultimate Island Tour: Kayangan Lake & Twin Lagoon',
+        location: 'Coron Island',
+        description: 'Climb to the iconic postcard viewpoint over Kayangan Lake and swim in its clear waters. Swim through the underwater passage into Twin Lagoon.',
+        meals: 'Breakfast & Island Lunch',
+        stay: 'Coron 4★ Hotel',
+        activities: ['Kayangan Lake Viewpoint & Swim', 'Twin Lagoon Exploration', 'Siete Pecados Coral Snorkel'],
+      },
+      {
+        day: 6,
+        title: 'Coron Shipwreck Snorkel & Beach Day',
+        location: 'Coron',
+        description: 'Snorkel over shallow WWII Japanese shipwrecks covered in vibrant soft corals, and relax on the white sands of Malcapuya Island.',
+        meals: 'Breakfast & Island Lunch',
+        stay: 'Coron 4★ Hotel',
+        activities: ['Shipwreck Snorkeling', 'Malcapuya Beach Relaxation'],
+      },
+      {
+        day: 7,
+        title: 'Coron Departure',
+        location: 'Coron Airport (USU)',
+        description: 'Breakfast before your private transfer to Francisco B. Reyes Airport (USU) for your return flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '3 Nights El Nido 4★ Hotel & 3 Nights Coron 4★ Hotel',
+      'Daily breakfast plus island hopping picnic lunches',
+      'El Nido Big Lagoon & Coron Kayangan Lake boat excursions',
+      'All private airport and island transfers',
+    ],
+    exclusions: ['Airfares and ferry tickets', 'Environmental eco-tourism fees', 'Personal gear rental'],
+    hotelStandard: 'El Nido 4 Star Hotel (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N El Nido, 3N Coron',
+      'El Nido 4 Star Hotel (+1 Hotels)',
+      'Big Lagoon & Kayangan Lake Tours',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'tropical-paradise-cebu-5n',
+    title: '5N Tropical Paradise',
+    tagline: '5 Nights in Cebu with 4★ Hotel, Whale Shark Snorkeling & Kawasan Falls',
+    destinationSlug: 'philippines',
+    destinationName: 'Philippines',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 9104,
+    originalPriceINR: 5104,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1632307644226-a3d85fde46a5?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1605538108568-7f0d77a214c1?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1632307644226-a3d85fde46a5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1605538108568-7f0d77a214c1?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1584640161267-869f0aa03af6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1601000234047-d9308ea1ed51?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Immerse in the adventure capital of the Philippines. Stay at a 4-star hotel in Cebu, experience the thrill of swimming with gentle whale sharks in Oslob, canyoneer through the turquoise multi-tiered cascades of Kawasan Falls, and relax on Mactan island beaches.',
+    highlights: [
+      '5 Nights in Cebu 4★ Hotel / Beach Resort',
+      'Oslob whale shark swimming & coral snorkeling experience',
+      'Kawasan Falls multi-tiered turquoise waterfalls excursion',
+      'Cebu City Heritage: Magellan’s Cross & Basilica del Santo Niño',
+      'Private airport round-trip transfers included',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Cebu',
+        location: 'Cebu & Mactan',
+        description: 'Arrive at Mactan-Cebu International Airport (CEB). Meet your private driver and transfer to your 4-star hotel. Evening free to explore local night markets.',
+        meals: 'Room only',
+        stay: 'Cebu 4★ Hotel',
+        activities: ['Private Airport Transfer', 'Hotel Check-in'],
+      },
+      {
+        day: 2,
+        title: 'Cebu Historic Heritage Tour',
+        location: 'Cebu City',
+        description: 'Visit the historic Magellan’s Cross planted in 1521, the Basilica Minore del Santo Niño, and Fort San Pedro fortress.',
+        meals: 'Breakfast Included',
+        stay: 'Cebu 4★ Hotel',
+        activities: ['Magellan’s Cross Visit', 'Basilica del Santo Niño', 'Fort San Pedro'],
+      },
+      {
+        day: 3,
+        title: 'Oslob Whale Shark Snorkel & Tumalog Falls',
+        location: 'South Cebu (Oslob)',
+        description: 'Early morning drive to Oslob to snorkel alongside the world’s largest fish, the gentle whale sharks. Continue to the misty curtain of Tumalog Falls.',
+        meals: 'Breakfast Included',
+        stay: 'Cebu 4★ Hotel',
+        activities: ['Oslob Whale Shark Swimming', 'Tumalog Falls Visit'],
+      },
+      {
+        day: 4,
+        title: 'Kawasan Falls Turquoise Pools',
+        location: 'Badian',
+        description: 'Excursion to Kawasan Falls in Badian. Swim in the vibrant Gatorade-blue natural pools beneath natural jungle waterfalls.',
+        meals: 'Breakfast Included',
+        stay: 'Cebu 4★ Hotel',
+        activities: ['Kawasan Falls Swimming', 'Jungle Nature Walk'],
+      },
+      {
+        day: 5,
+        title: 'Mactan Island Beach Leisure',
+        location: 'Mactan Island',
+        description: 'Full day at leisure to relax on the white sands of Mactan, indulge in fresh seafood dining, or try jet-skiing and parasailing.',
+        meals: 'Breakfast Included',
+        stay: 'Cebu 4★ Hotel',
+        activities: ['Beach Relaxation', 'Seafood Feast Leisure'],
+      },
+      {
+        day: 6,
+        title: 'Cebu Departure',
+        location: 'CEB Airport',
+        description: 'Breakfast before your private transfer to Mactan-Cebu International Airport for your flight back home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: ['Private Airport Departure Transfer'],
+      },
+    ],
+    inclusions: [
+      '5 Nights in Cebu 4★ Hotel',
+      'Daily breakfast',
+      'Private airport round-trip transfers',
+      'City and island logistics support',
+    ],
+    exclusions: ['Airfares', 'Oslob conservation & boat fees', 'Personal expenses'],
+    hotelStandard: 'Cebu 4 Star Hotel',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '5N Cebu',
+      'Cebu 4 Star Hotel',
+      'Whale Shark & Kawasan Falls Access',
+      'Transfers (Private)',
+    ],
+  },
+  {
+    slug: 'singapore-explorers-delight-3n',
+    title: '3N Singapore Explorers Delight',
+    tagline: '3 Nights at Furama Riverfront with Universal Studios & SIC Transfers',
+    destinationSlug: 'singapore',
+    destinationName: 'Singapore',
+    durationDays: 4,
+    durationNights: 3,
+    priceINR: 69670,
+    originalPriceINR: 65670,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1775306963755-8897be3967bb?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1569669568752-da18da0cef0e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1485257231869-6ddd116bc294?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Experience Singapore’s dynamic urban pulse staying at the premier Furama Riverfront. Immerse in blockbuster movie rides and attractions at Universal Studios Singapore, explore vibrant neighborhoods, and enjoy hassle-free airport transfers.',
+    highlights: [
+      '3 Nights accommodation at Furama Riverfront',
+      'Full-day pass to Universal Studios Singapore on Sentosa Island',
+      'Convenient shared airport transfers (SIC)',
+      'Close proximity to Clarke Quay dining and Chinatown heritage'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Singapore & Riverside Check-in',
+        location: 'Singapore',
+        description: 'Arrive at Singapore Changi Airport (SIN). Enjoy a comfortable shared transfer to Furama Riverfront. Spend your evening strolling along the scenic Singapore River and vibrant Clarke Quay.',
+        meals: 'Room only',
+        stay: 'Furama Riverfront 4★',
+        activities: [
+          'Changi Airport Arrival',
+          'Hotel Check-in',
+          'Clarke Quay Leisure'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Universal Studios Singapore Adventure',
+        location: 'Sentosa Island',
+        description: 'Spend an exhilarating day at Universal Studios Singapore. Experience adrenaline-pumping rollercoasters, immersive themed zones from Battlestar Galactica to Ancient Egypt, and thrilling live entertainment.',
+        meals: 'Breakfast Included',
+        stay: 'Furama Riverfront 4★',
+        activities: [
+          'Universal Studios Singapore Rides & Shows',
+          'Sentosa Exploration'
+        ]
+      },
+      {
+        day: 3,
+        title: 'City Exploration & Marina Bay Leisure',
+        location: 'Singapore City',
+        description: 'Spend your day discovering the iconic Merlion Park, wandering through futuristic Gardens by the Bay, or shopping along famous Orchard Road.',
+        meals: 'Breakfast Included',
+        stay: 'Furama Riverfront 4★',
+        activities: [
+          'Gardens by the Bay Stroll',
+          'Marina Bay Sands Viewpoint',
+          'Orchard Road Shopping'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Singapore Departure',
+        location: 'Singapore',
+        description: 'Enjoy breakfast before your shared airport transfer to Changi Airport. Discover Jewel Changi and the Rain Vortex before boarding your flight home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Jewel Changi Rain Vortex',
+          'Changi Airport Departure'
+        ]
+      }
+    ],
+    inclusions: [
+      '3 Nights at Furama Riverfront',
+      'Daily breakfast',
+      'Universal Studios Singapore 1-Day Ticket',
+      'Round-trip airport transfers (SIC)'
+    ],
+    exclusions: [
+      'Airfares',
+      'Personal expenses',
+      'Visa fees'
+    ],
+    hotelStandard: 'Furama Riverfront',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '3N Singapore',
+      'Furama Riverfront',
+      'Universal Studios Included',
+      'Transfers (SIC)'
+    ]
+  },
+  {
+    slug: 'mandai-magic-nature-adventure-4n',
+    title: '4N Mandai Magic: A Retreat into Nature and Adventure',
+    tagline: '4 Nights at Furama Riverfront with Universal Studios & Private Transfers',
+    destinationSlug: 'singapore',
+    destinationName: 'Singapore',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 143458,
+    originalPriceINR: 139458,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Family Journey',
+    heroImage: 'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1775306963755-8897be3967bb?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1775306963755-8897be3967bb?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1569669568752-da18da0cef0e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1485257231869-6ddd116bc294?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Immerse in the magic of Singapore with a luxurious 4-night stay at Furama Riverfront. Featuring private vehicle transfers, Universal Studios thrills, and opportunities to discover Mandai Wildlife Reserve parks.',
+    highlights: [
+      '4 Nights luxury stay at Furama Riverfront',
+      'Dedicated private vehicle transfers throughout',
+      'Universal Studios Singapore full-day admission ticket',
+      'Exploration of Singapore’s world-class Mandai wildlife ecosystems'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Private Changi Arrival & Furama Riverfront Check-in',
+        location: 'Singapore',
+        description: 'Arrive at Changi Airport and meet your private chauffeur. Transfer comfortably to Furama Riverfront and relax after your journey.',
+        meals: 'Room only',
+        stay: 'Furama Riverfront 4★',
+        activities: [
+          'Private Changi Airport Transfer',
+          'Hotel Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Universal Studios Adventure',
+        location: 'Sentosa Island',
+        description: 'Enjoy a full day of cinematic excitement at Universal Studios Singapore, hopping from Hollywood to Sci-Fi City and Ancient Egypt.',
+        meals: 'Breakfast Included',
+        stay: 'Furama Riverfront 4★',
+        activities: [
+          'Universal Studios Singapore',
+          'Sentosa Boardwalk'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Mandai Wildlife Reserve Exploration',
+        location: 'Mandai Reserve',
+        description: 'Discover the world-renowned Mandai Wildlife Reserve including the Singapore Zoo, Night Safari, and River Wonders.',
+        meals: 'Breakfast Included',
+        stay: 'Furama Riverfront 4★',
+        activities: [
+          'Mandai Wildlife Reserve Visit',
+          'Singapore Zoo Tram'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Gardens by the Bay & Marina Bay Sands',
+        location: 'Marina Bay',
+        description: 'Explore the Flower Dome, Cloud Forest waterfall, and the Supertree Grove at Gardens by the Bay, followed by Marina Bay Sands sky views.',
+        meals: 'Breakfast Included',
+        stay: 'Furama Riverfront 4★',
+        activities: [
+          'Gardens by the Bay Conservatories',
+          'Supertree Light Show'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Singapore Departure',
+        location: 'Singapore',
+        description: 'Enjoy breakfast at your hotel before your private departure transfer to Changi Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '4 Nights at Furama Riverfront',
+      'Daily breakfast',
+      'Universal Studios Singapore full day ticket',
+      'All airport and designated tour transfers in private vehicle'
+    ],
+    exclusions: [
+      'Airfares',
+      'Mandai park admissions',
+      'Personal shopping'
+    ],
+    hotelStandard: 'Furama Riverfront',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '4N Singapore',
+      'Furama Riverfront',
+      'Universal Studios Included',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'singapore-elite-experience-6n',
+    title: '6N Singapore Elite Experience',
+    tagline: '6 Nights at Furama Riverfront with City Tour & Guided Sightseeing',
+    destinationSlug: 'singapore',
+    destinationName: 'Singapore',
+    durationDays: 7,
+    durationNights: 6,
+    priceINR: 153226,
+    originalPriceINR: 149226,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1485257231869-6ddd116bc294?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1775306963755-8897be3967bb?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1569669568752-da18da0cef0e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1485257231869-6ddd116bc294?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'An extensive 6-night journey across the Lion City. Stay at Furama Riverfront and immerse in comprehensive guided city tours, colonial landmarks, heritage enclaves, and futuristic biodomes.',
+    highlights: [
+      '6 Nights stay at Furama Riverfront',
+      'Comprehensive Singapore City Tour with licensed English-speaking guide',
+      'Merlion Park, Civic District, and Chinatown guided walking insights',
+      'Round-trip airport transfers (SIC)'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Singapore',
+        location: 'Singapore',
+        description: 'Arrive at Changi Airport and transfer via SIC to Furama Riverfront. Unpack and enjoy a peaceful walk along the riverside.',
+        meals: 'Room only',
+        stay: 'Furama Riverfront 4★',
+        activities: [
+          'Changi Airport Arrival Transfer',
+          'Hotel Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Guided Singapore City Tour',
+        location: 'Singapore City',
+        description: 'Join a professional guide discovering the Civic District, Padang, Cricket Club, Historic Parliament House, Merlion Park, and Thian Hock Keng Temple.',
+        meals: 'Breakfast Included',
+        stay: 'Furama Riverfront 4★',
+        activities: [
+          'Guided City Sightseeing Tour',
+          'Merlion Park Photo Stop',
+          'Chinatown Temple Visit'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Sentosa Island Exploration',
+        location: 'Sentosa Island',
+        description: 'Spend the day on Sentosa Island exploring Siloso Beach, S.E.A. Aquarium, and taking the scenic Singapore Cable Car.',
+        meals: 'Breakfast Included',
+        stay: 'Furama Riverfront 4★',
+        activities: [
+          'Sentosa Beach Stroll',
+          'Cable Car Ride'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Gardens by the Bay & Marina Bay Sands',
+        location: 'Marina Bay',
+        description: 'Visit the mist-covered Cloud Forest and Flower Dome biodomes. In the evening, watch the Garden Rhapsody light and sound show.',
+        meals: 'Breakfast Included',
+        stay: 'Furama Riverfront 4★',
+        activities: [
+          'Cloud Forest & Flower Dome',
+          'Garden Rhapsody Light Show'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Little India & Kampong Glam Heritage',
+        location: 'Kampong Glam & Little India',
+        description: 'Discover the colorful street art of Haji Lane, the golden dome of Sultan Mosque, and the fragrant spice alleys of Little India.',
+        meals: 'Breakfast Included',
+        stay: 'Furama Riverfront 4★',
+        activities: [
+          'Haji Lane Boutique Walk',
+          'Sultan Mosque Viewing',
+          'Little India Market'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Orchard Road Shopping & Leisure',
+        location: 'Orchard Road',
+        description: 'Enjoy a leisurely shopping day along Orchard Road’s mega malls, followed by rooftop dining overlooking the sparkling city skyline.',
+        meals: 'Breakfast Included',
+        stay: 'Furama Riverfront 4★',
+        activities: [
+          'Orchard Road Shopping',
+          'Rooftop Cocktail Leisure'
+        ]
+      },
+      {
+        day: 7,
+        title: 'Singapore Departure',
+        location: 'Singapore',
+        description: 'Breakfast at hotel and check-out before your shared transfer to Changi Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '6 Nights at Furama Riverfront',
+      'Daily breakfast',
+      'City Tour with English-speaking Guide',
+      'Round-trip airport transfers (SIC)'
+    ],
+    exclusions: [
+      'Airfares',
+      'Optional theme park admissions',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Furama Riverfront',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '6N Singapore',
+      'Furama Riverfront',
+      'City Tour with Guide Included',
+      'Transfers (SIC)'
+    ]
+  },
+  {
+    slug: 'sentosa-sky-sea-retreat-2n',
+    title: '2N Sentosa Sky & Sea Retreat',
+    tagline: '2 Nights at Village Hotel Albert Court with Cable Car, Luge & Wings of Time',
+    destinationSlug: 'singapore',
+    destinationName: 'Singapore',
+    durationDays: 3,
+    durationNights: 2,
+    priceINR: 79042,
+    originalPriceINR: 75042,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1569669568752-da18da0cef0e?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1775306963755-8897be3967bb?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1569669568752-da18da0cef0e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1485257231869-6ddd116bc294?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'A high-energy 2-night getaway based at heritage-inspired Village Hotel Albert Court. Includes Singapore Cable Car sky ride, Skyline Luge gravity coaster, and the dazzling Wings of Time ocean night show.',
+    highlights: [
+      '2 Nights stay at Village Hotel Albert Court',
+      'Singapore Cable Car Sky Pass round-trip ride',
+      'Skyline Luge & Skyride gravity coaster adventure',
+      'Wings of Time multi-sensory outdoor night show with pyrotechnics',
+      'Private vehicle airport transfers'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Changi Arrival & Sentosa Sky & Sea Spectacle',
+        location: 'Singapore & Sentosa',
+        description: 'Arrive at Changi and transfer in a private vehicle to Village Hotel Albert Court. In the afternoon, ride the scenic Singapore Cable Car into Sentosa, race down the Skyline Luge tracks, and watch the magical Wings of Time laser and water show.',
+        meals: 'Room only',
+        stay: 'Village Hotel Albert Court 4★',
+        activities: [
+          'Private Airport Transfer',
+          'Cable Car Sky Pass',
+          'Skyline Luge 2 Rides',
+          'Wings of Time Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'City Exploration & Marina Bay',
+        location: 'Singapore City',
+        description: 'Spend the day discovering Merlion Park, Gardens by the Bay, and the heritage shops of Bugis and Little India located right beside your hotel.',
+        meals: 'Breakfast Included',
+        stay: 'Village Hotel Albert Court 4★',
+        activities: [
+          'Gardens by the Bay Stroll',
+          'Bugis Street Shopping'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Singapore Departure',
+        location: 'Singapore',
+        description: 'Breakfast at hotel and check-out before your private transfer to Changi Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '2 Nights at Village Hotel Albert Court',
+      'Daily breakfast',
+      'Cable Car Sky Pass + Skyline Luge (2 Rides) + Wings of Time (Standard)',
+      'Private airport round-trip transfers'
+    ],
+    exclusions: [
+      'Airfares',
+      'Personal shopping',
+      'Additional meals'
+    ],
+    hotelStandard: 'Village Hotel Albert Court',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '2N Singapore',
+      'Village Hotel Albert Court',
+      'Cable Car + Luge + Wings of Time',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'sentosa-escape-village-hotel-3n',
+    title: '3N Sentosa Escape',
+    tagline: '3 Nights at Village Hotel Albert Court with SIM & Insurance Included',
+    destinationSlug: 'singapore',
+    destinationName: 'Singapore',
+    durationDays: 4,
+    durationNights: 3,
+    priceINR: 85378,
+    originalPriceINR: 81378,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1569669568752-da18da0cef0e?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1775306963755-8897be3967bb?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1569669568752-da18da0cef0e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1485257231869-6ddd116bc294?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'A seamless 3-night urban getaway at Village Hotel Albert Court. Includes complimentary tourist SIM card, comprehensive travel insurance, private airport transfers, and full days to explore Sentosa Island.',
+    highlights: [
+      '3 Nights at Village Hotel Albert Court',
+      'Complimentary local Tourist SIM Card & Travel Insurance',
+      'Private round-trip airport transfers',
+      'Central location near Rochor and Little India MRT stations'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Singapore & Private Transfer',
+        location: 'Singapore',
+        description: 'Arrive at Changi Airport. Meet your private driver, receive your tourist SIM card, and transfer to Village Hotel Albert Court. Spend your evening exploring nearby Bugis Junction.',
+        meals: 'Room only',
+        stay: 'Village Hotel Albert Court 4★',
+        activities: [
+          'Private Airport Meet & Transfer',
+          'SIM Card Handover',
+          'Bugis Night Stroll'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Sentosa Island Day Out',
+        location: 'Sentosa Island',
+        description: 'Head to Sentosa Island to enjoy beach clubs, cable car rides, Madame Tussauds, or beachfront relaxation at Palawan and Siloso beaches.',
+        meals: 'Breakfast Included',
+        stay: 'Village Hotel Albert Court 4★',
+        activities: [
+          'Sentosa Beaches',
+          'Island Exploration'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Marina Bay & Civic District Discovery',
+        location: 'Marina Bay',
+        description: 'Discover Marina Bay Sands SkyPark, Merlion Park, and Gardens by the Bay’s futuristic Supertrees and Flower Dome.',
+        meals: 'Breakfast Included',
+        stay: 'Village Hotel Albert Court 4★',
+        activities: [
+          'Merlion Park',
+          'Gardens by the Bay',
+          'Marina Bay Sands View'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Singapore Departure',
+        location: 'Singapore',
+        description: 'Breakfast at hotel before your private transfer to Changi Airport for your return flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '3 Nights at Village Hotel Albert Court',
+      'Daily breakfast',
+      'Tourist SIM Card & Overseas Travel Insurance',
+      'Private airport round-trip transfers'
+    ],
+    exclusions: [
+      'Airfares',
+      'Attraction entry tickets',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Village Hotel Albert Court',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '3N Singapore',
+      'Village Hotel Albert Court',
+      'SIM & Insurance Included',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'beyond-the-merlion-singapores-hidden-gems-4n',
+    title: '4N Beyond the Merlion: Singapore’s Hidden Gems',
+    tagline: '4 Nights at Village Hotel Albert Court with Universal Studios & Private Transfers',
+    destinationSlug: 'singapore',
+    destinationName: 'Singapore',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 161872,
+    originalPriceINR: 157872,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1569669568752-da18da0cef0e?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1775306963755-8897be3967bb?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1775306963755-8897be3967bb?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1569669568752-da18da0cef0e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1485257231869-6ddd116bc294?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Uncover the vibrant soul of Singapore beyond the iconic Merlion. Stay 4 nights at the boutique Village Hotel Albert Court, experience thrilling Universal Studios rides, and enjoy private chauffeured transfers throughout.',
+    highlights: [
+      '4 Nights stay at Village Hotel Albert Court',
+      'Full-day pass to Universal Studios Singapore',
+      'Private vehicle airport transfers',
+      'Heritage exploration through Katong, Tiong Bahru, and Kampong Glam'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Singapore & Private Check-in',
+        location: 'Singapore',
+        description: 'Arrive at Changi Airport and transfer in your private vehicle to Village Hotel Albert Court. Spend your evening discovering local dining at nearby Albert Centre.',
+        meals: 'Room only',
+        stay: 'Village Hotel Albert Court 4★',
+        activities: [
+          'Private Changi Airport Transfer',
+          'Hotel Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Universal Studios Singapore Full Day',
+        location: 'Sentosa Island',
+        description: 'Enjoy a full day of blockbuster rides, shows, and attractions at Universal Studios Singapore, including Transformers The Ride and Jurassic Park Rapids Adventure.',
+        meals: 'Breakfast Included',
+        stay: 'Village Hotel Albert Court 4★',
+        activities: [
+          'Universal Studios Singapore Pass',
+          'Sentosa Exploration'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Hidden Gems: Katong & Tiong Bahru',
+        location: 'Heritage Enclaves',
+        description: 'Explore the pastel Peranakan shophouses in Joo Chiat and Katong, followed by art deco cafes and indie bookstores in Tiong Bahru.',
+        meals: 'Breakfast Included',
+        stay: 'Village Hotel Albert Court 4★',
+        activities: [
+          'Joo Chiat Shophouses Walk',
+          'Tiong Bahru Cafe Trail'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Gardens by the Bay & Marina Skyline',
+        location: 'Marina Bay',
+        description: 'Visit the world-famous Cloud Forest waterfall dome and Flower Dome, followed by spectacular twilight views from the Marina Bay Sands observation deck.',
+        meals: 'Breakfast Included',
+        stay: 'Village Hotel Albert Court 4★',
+        activities: [
+          'Gardens by the Bay Conservatories',
+          'Marina Bay Twilight Stroll'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Singapore Departure',
+        location: 'Singapore',
+        description: 'Breakfast at hotel and check-out before your private transfer to Changi Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '4 Nights at Village Hotel Albert Court',
+      'Daily breakfast',
+      'Universal Studios Singapore 1-Day Ticket',
+      'Private airport round-trip transfers'
+    ],
+    exclusions: [
+      'Airfares',
+      'Personal shopping',
+      'Additional meals'
+    ],
+    hotelStandard: 'Village Hotel Albert Court',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '4N Singapore',
+      'Village Hotel Albert Court',
+      'Universal Studios Included',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'joyful-jewelius-escape-singapore-3n',
+    title: '3N Joyful Jewelius Escape',
+    tagline: '3 Nights at The Boss Hotel with Universal Studios & Private Transfers',
+    destinationSlug: 'singapore',
+    destinationName: 'Singapore',
+    durationDays: 4,
+    durationNights: 3,
+    priceINR: 94750,
+    originalPriceINR: 90750,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1775306963755-8897be3967bb?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1775306963755-8897be3967bb?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1569669568752-da18da0cef0e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1485257231869-6ddd116bc294?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Stay in the bustling heart of Singapore at The Boss Hotel. Enjoy a hassle-free vacation with private airport transfers and an action-packed full day at Universal Studios Singapore.',
+    highlights: [
+      '3 Nights stay at The Boss Hotel',
+      'Universal Studios Singapore full-day admission ticket',
+      'Private round-trip airport transfers',
+      'Steps away from Lavender MRT and vibrant local eateries'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Singapore & Private Transfer',
+        location: 'Singapore',
+        description: 'Arrive at Changi Airport and meet your private chauffeur for transfer to The Boss Hotel. Enjoy an evening walk through the vibrant Kampong Glam district.',
+        meals: 'Room only',
+        stay: 'The Boss Hotel',
+        activities: [
+          'Private Changi Transfer',
+          'Hotel Check-in',
+          'Kampong Glam Walk'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Universal Studios Singapore Adventure',
+        location: 'Sentosa Island',
+        description: 'Spend an exhilarating day enjoying world-class rollercoasters, 3D simulation rides, and entertainment shows at Universal Studios Singapore.',
+        meals: 'Breakfast Included',
+        stay: 'The Boss Hotel',
+        activities: [
+          'Universal Studios Singapore Rides & Shows'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Jewel Changi & City Leisure',
+        location: 'Singapore City',
+        description: 'Discover the indoor rainforest and HSBC Rain Vortex at Jewel Changi, followed by shopping on Orchard Road or Marina Bay waterfront views.',
+        meals: 'Breakfast Included',
+        stay: 'The Boss Hotel',
+        activities: [
+          'Jewel Changi Canopy Park',
+          'Marina Bay Waterfront Walk'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Singapore Departure',
+        location: 'Singapore',
+        description: 'Breakfast at hotel before your private transfer to Changi Airport for your homeward journey.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '3 Nights at The Boss Hotel',
+      'Daily breakfast',
+      'Universal Studios Singapore full day ticket',
+      'Private airport round-trip transfers'
+    ],
+    exclusions: [
+      'Airfares',
+      'Personal shopping',
+      'Additional meals'
+    ],
+    hotelStandard: 'The Boss Hotel',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '3N Singapore',
+      'The Boss Hotel',
+      'Universal Studios Included',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'singapore-skyline-sojourn-4n',
+    title: '4N Singapore Skyline Sojourn',
+    tagline: '4 Nights at The Boss Hotel with City Tour & Licensed Guide',
+    destinationSlug: 'singapore',
+    destinationName: 'Singapore',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 105310,
+    originalPriceINR: 101310,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1485257231869-6ddd116bc294?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1775306963755-8897be3967bb?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1569669568752-da18da0cef0e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1485257231869-6ddd116bc294?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Witness Singapore’s dazzling skyline and historic cultural roots over 4 unforgettable nights at The Boss Hotel. Featuring a professional guided city tour and private vehicle transfers throughout.',
+    highlights: [
+      '4 Nights stay at The Boss Hotel',
+      'Comprehensive Singapore City Tour with licensed English guide',
+      'Private airport round-trip transfers',
+      'Merlion Park, Marina Bay waterfront, and Chinatown heritage stops'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Singapore & Private Check-in',
+        location: 'Singapore',
+        description: 'Arrive at Changi Airport and transfer in a private vehicle to The Boss Hotel. Spend your evening soaking up the sights and scents of Bugis night market.',
+        meals: 'Room only',
+        stay: 'The Boss Hotel',
+        activities: [
+          'Private Changi Airport Transfer',
+          'Hotel Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Guided Singapore City Sightseeing',
+        location: 'Singapore City',
+        description: 'Embark on a half-day city tour with a professional guide covering Merlion Park, Padang, the Civic District, Chinatown, and Mount Faber panoramic views.',
+        meals: 'Breakfast Included',
+        stay: 'The Boss Hotel',
+        activities: [
+          'Guided City Tour',
+          'Merlion Park Photo Stop',
+          'Chinatown Temple Visit'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Gardens by the Bay & Marina Bay Sands',
+        location: 'Marina Bay',
+        description: 'Visit Gardens by the Bay’s world-renowned Flower Dome and Supertrees, followed by dinner overlooking the dazzling Marina Bay light show.',
+        meals: 'Breakfast Included',
+        stay: 'The Boss Hotel',
+        activities: [
+          'Gardens by the Bay Conservatories',
+          'Marina Bay Light & Water Show'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Sentosa Island Leisure',
+        location: 'Sentosa Island',
+        description: 'Enjoy a leisurely day on Sentosa Island relaxing at beach clubs, visiting the S.E.A. Aquarium, or riding the Singapore Cable Car.',
+        meals: 'Breakfast Included',
+        stay: 'The Boss Hotel',
+        activities: [
+          'Sentosa Island Beach Leisure',
+          'Cable Car Views'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Singapore Departure',
+        location: 'Singapore',
+        description: 'Breakfast at hotel before your private transfer to Changi Airport for your return flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '4 Nights at The Boss Hotel',
+      'Daily breakfast',
+      'City Tour with English-speaking Guide',
+      'Private airport round-trip transfers'
+    ],
+    exclusions: [
+      'Airfares',
+      'Attraction entry tickets',
+      'Personal expenses'
+    ],
+    hotelStandard: 'The Boss Hotel',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '4N Singapore',
+      'The Boss Hotel',
+      'City Tour with Guide Included',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'serene-sri-lanka-escapes-6n',
+    title: '6N Serene Sri Lanka Escapes',
+    tagline: '2N Kandy, 1N Nuwara Eliya, 2N Bentota & 1N Colombo with Private Car & Guide',
+    destinationSlug: 'sri-lanka',
+    destinationName: 'Sri Lanka',
+    durationDays: 7,
+    durationNights: 6,
+    priceINR: 108720,
+    originalPriceINR: 104720,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1654561773591-57b9413c45c0?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1707316325186-8a426d0ef2d4?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Discover the complete beauty of Sri Lanka across 6 nights: sacred Buddhist temples in Kandy, mist-shrouded Ceylon tea plantations in Nuwara Eliya, golden beaches and river safaris in Bentota, and colonial heritage in Colombo.',
+    highlights: [
+      '2N Kandy, 1N Nuwara Eliya, 2N Bentota, 1N Colombo',
+      'Temple of the Sacred Tooth Relic & Royal Botanical Gardens in Kandy',
+      'Ceylon Tea Factory estate tour & Gregory Lake in Nuwara Eliya',
+      'Madu River boat safari & Turtle Hatchery in Bentota',
+      'Dedicated private air-conditioned vehicle with English-speaking chauffeur guide'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Colombo & Transfer to Kandy',
+        location: 'Kandy',
+        description: 'Arrive at Bandaranaike International Airport (CMB). Meet your private chauffeur guide and journey to the hill capital of Kandy, stopping en route at a traditional spice garden.',
+        meals: 'Dinner Included',
+        stay: 'Earls Regent (+3 Hotels)',
+        activities: [
+          'Airport Meet & Greet',
+          'Scenic Drive to Kandy',
+          'Spice Garden Visit'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Kandy Temple of the Tooth & Cultural Show',
+        location: 'Kandy',
+        description: 'Visit the venerated Temple of the Sacred Tooth Relic, stroll around Kandy Lake, explore Peradeniya Royal Botanical Gardens, and witness an evening Kandyan cultural dance performance.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+3 Hotels)',
+        activities: [
+          'Temple of the Tooth Relic',
+          'Peradeniya Gardens',
+          'Kandyan Cultural Dance'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Scenic Highlands & Nuwara Eliya Tea Country',
+        location: 'Nuwara Eliya',
+        description: 'Drive through verdant hill country past cascading waterfalls like Ramboda Falls. Tour a working Ceylon tea plantation and factory before exploring Little England and Gregory Lake.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+3 Hotels)',
+        activities: [
+          'Ramboda Waterfalls',
+          'Tea Factory & Tasting',
+          'Gregory Lake Stroll'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Descent to Bentota Golden Beach Coast',
+        location: 'Bentota',
+        description: 'Descend from the misty mountains towards the tropical southwest coast. Check into your beach resort in Bentota and unwind with an ocean sunset.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+3 Hotels)',
+        activities: [
+          'Scenic Mountain Descent',
+          'Bentota Beach Relaxation'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Madu River Boat Safari & Turtle Hatchery',
+        location: 'Bentota & Balapitiya',
+        description: 'Take a boat safari through the mangrove tunnels of the Madu River, visit Cinnamon Island, and learn about marine conservation at the Kosgoda Turtle Hatchery.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+3 Hotels)',
+        activities: [
+          'Madu River Mangrove Safari',
+          'Kosgoda Turtle Conservation Centre'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Colombo City Tour & Shopping',
+        location: 'Colombo',
+        description: 'Drive north to commercial capital Colombo. Enjoy a comprehensive city tour covering Gangaramaya Temple, Independence Memorial Hall, Galle Face Green, and Dutch Hospital dining precinct.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+3 Hotels)',
+        activities: [
+          'Colombo City Tour',
+          'Gangaramaya Temple',
+          'Galle Face Green Sunset'
+        ]
+      },
+      {
+        day: 7,
+        title: 'Colombo Departure',
+        location: 'Colombo',
+        description: 'Breakfast at hotel before your private transfer to CMB Airport for your flight back home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '6 Nights accommodation in handpicked 4★ hotels',
+      'Daily breakfast and dinner (Half Board)',
+      'All sightseeing tours including Colombo City Tour',
+      'All transfers and tours in private air-conditioned vehicle with chauffeur guide'
+    ],
+    exclusions: [
+      'Airfares',
+      'Entry monuments fees',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Earls Regent (+3 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '2N Kandy, 1N Nuwara Eliya, 2N Bentota, 1N Colombo',
+      'Earls Regent (+3 Hotels)',
+      'Colombo City Tour (+2 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'sri-lanka-discovery-tour-4n',
+    title: '4N Sri Lanka Discovery Tour',
+    tagline: '1N Kandy, 1N Nuwara Eliya, 1N Bentota & 1N Colombo with Private Vehicle',
+    destinationSlug: 'sri-lanka',
+    destinationName: 'Sri Lanka',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 81176,
+    originalPriceINR: 77176,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1654561773591-57b9413c45c0?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1707316325186-8a426d0ef2d4?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'A whirlwind 4-night tour discovering Sri Lanka’s greatest hits: the cultural crown of Kandy, misty tea slopes of Nuwara Eliya, palm-fringed coast of Bentota, and cosmopolitan Colombo.',
+    highlights: [
+      '1N Kandy, 1N Nuwara Eliya, 1N Bentota, 1N Colombo',
+      'Temple of the Tooth Relic in sacred Kandy',
+      'Highland tea factory visit in Nuwara Eliya',
+      'Bentota coastal retreat & Colombo city tour',
+      'Private air-conditioned vehicle transfers throughout'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival & Journey to Kandy',
+        location: 'Kandy',
+        description: 'Arrive at CMB Airport and meet your private chauffeur. Transfer to Kandy with an en route stop at a spice garden. Visit the Temple of the Sacred Tooth Relic.',
+        meals: 'Dinner Included',
+        stay: 'Earls Regent (+3 Hotels)',
+        activities: [
+          'Private Airport Meet & Transfer',
+          'Temple of the Tooth Visit'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Kandy to Nuwara Eliya Tea Country',
+        location: 'Nuwara Eliya',
+        description: 'Drive through emerald hills to Nuwara Eliya. Visit Ramboda Falls and a Ceylon tea factory to taste world-class highland tea.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+3 Hotels)',
+        activities: [
+          'Ramboda Falls',
+          'Ceylon Tea Tasting',
+          'Gregory Lake Stroll'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Nuwara Eliya to Bentota Beach',
+        location: 'Bentota',
+        description: 'Descend to Bentota along the scenic coastal belt. Relax on the golden sands or indulge in water sports along Bentota beach.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+3 Hotels)',
+        activities: [
+          'Scenic Drive',
+          'Bentota Beach Leisure'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Bentota to Colombo City Tour',
+        location: 'Colombo',
+        description: 'Morning Madu River boat safari before driving to Colombo. Tour Independence Square, Galle Face Green, and Gangaramaya Temple.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+3 Hotels)',
+        activities: [
+          'Madu River Safari',
+          'Colombo City Tour',
+          'Galle Face Green'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Colombo Departure',
+        location: 'Colombo',
+        description: 'Breakfast at hotel and private transfer to CMB Airport for your flight back home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '4 Nights accommodation in quality 4★ hotels',
+      'Daily breakfast and dinner (Half Board)',
+      'Colombo City Tour & sightseeing',
+      'Private vehicle transfers throughout'
+    ],
+    exclusions: [
+      'Airfares',
+      'Monument entrance tickets',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Earls Regent (+3 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '1N Kandy, 1N Nuwara Eliya, 1N Bentota, 1N Colombo',
+      'Earls Regent (+3 Hotels)',
+      'Colombo City Tour (+2 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'best-of-sri-lanka-golden-crown-4n',
+    title: '4N Best of Sri Lanka',
+    tagline: '2N Kandy & 2N Bentota at 5★ The Golden Crown with Private Transfers',
+    destinationSlug: 'sri-lanka',
+    destinationName: 'Sri Lanka',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 88920,
+    originalPriceINR: 84920,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1654561773591-57b9413c45c0?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1654561773591-57b9413c45c0?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1707316325186-8a426d0ef2d4?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Indulge in 5-star luxury staying at the prestigious The Golden Crown Hotel in Kandy combined with beachfront bliss in Bentota. Includes private transfers, cultural tours, and Colombo sightseeing.',
+    highlights: [
+      '2 Nights in Kandy & 2 Nights in Bentota',
+      'Luxury stay at 5★ The Golden Crown Hotel (+1 Hotels)',
+      'Sacred Temple of the Tooth & Peradeniya Gardens in Kandy',
+      'Madu River mangrove cruise & Bentota beach leisure',
+      'Colombo City Tour & private vehicle transfers'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Colombo & Transfer to Kandy',
+        location: 'Kandy',
+        description: 'Meet your chauffeur guide at CMB Airport and transfer to 5★ The Golden Crown Hotel in Kandy. Enjoy an evening scenic lake stroll.',
+        meals: 'Dinner Included',
+        stay: 'The Golden Crown (+1 Hotels)',
+        activities: [
+          'Private Airport Transfer',
+          'Check-in The Golden Crown'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Kandy Temples & Royal Botanical Gardens',
+        location: 'Kandy',
+        description: 'Visit the sacred Temple of the Tooth Relic and stroll through the royal palm avenues of Peradeniya Botanical Gardens.',
+        meals: 'Breakfast & Dinner',
+        stay: 'The Golden Crown (+1 Hotels)',
+        activities: [
+          'Temple of the Tooth Relic',
+          'Peradeniya Gardens Walk'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Kandy to Bentota Beach Haven',
+        location: 'Bentota',
+        description: 'Drive down to the idyllic shores of Bentota. Relax by the pool or enjoy water sports on the golden sandy beach.',
+        meals: 'Breakfast & Dinner',
+        stay: 'The Golden Crown (+1 Hotels)',
+        activities: [
+          'Scenic Coastal Drive',
+          'Bentota Beachfront Leisure'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Bentota River Safari & Turtle Conservation',
+        location: 'Bentota',
+        description: 'Embark on a Madu River boat safari through dense mangrove tunnels and visit the Kosgoda Sea Turtle Conservation project.',
+        meals: 'Breakfast & Dinner',
+        stay: 'The Golden Crown (+1 Hotels)',
+        activities: [
+          'Madu River Mangrove Safari',
+          'Kosgoda Turtle Sanctuary'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Colombo City Tour & Departure',
+        location: 'Colombo',
+        description: 'Drive to Colombo for a guided city tour visiting Galle Face Green and Independence Square before your private airport departure transfer.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Colombo City Tour',
+          'Private Airport Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '4 Nights in 5★ The Golden Crown (+1 Hotels)',
+      'Daily breakfast and dinner (Half Board)',
+      'Colombo City Tour & Kandy sightseeing',
+      'Private vehicle transfers throughout'
+    ],
+    exclusions: [
+      'Airfares',
+      'Monument entrance tickets',
+      'Personal expenses'
+    ],
+    hotelStandard: 'The Golden Crown (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '2N Kandy, 2N Bentota',
+      'The Golden Crown (+1 Hotels)',
+      'Colombo City Tour (+1 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'spice-island-odyssey-earls-regent-4n',
+    title: '4N Spice Island Odyssey',
+    tagline: '2N Kandy & 2N Bentota at Earls Regent with Private Transfers',
+    destinationSlug: 'sri-lanka',
+    destinationName: 'Sri Lanka',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 69560,
+    originalPriceINR: 65560,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1707316325186-8a426d0ef2d4?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1707316325186-8a426d0ef2d4?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1654561773591-57b9413c45c0?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Experience the spice, spirit, and beaches of Sri Lanka staying at the tranquil Earls Regent in Kandy and a coastal resort in Bentota. Includes private chauffeur service and Colombo city highlights.',
+    highlights: [
+      '2 Nights in Kandy & 2 Nights in Bentota',
+      'Quality stay at Earls Regent (+1 Hotels)',
+      'Temple of the Tooth Relic & Spice Garden visits',
+      'Bentota beach bliss & Colombo city tour',
+      'Private air-conditioned car transfers throughout'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Colombo & Transfer to Kandy',
+        location: 'Kandy',
+        description: 'Arrive at CMB Airport and travel with your private chauffeur to Earls Regent in Kandy. Visit a spice garden en route.',
+        meals: 'Dinner Included',
+        stay: 'Earls Regent (+1 Hotels)',
+        activities: [
+          'Chauffeur Meet & Greet',
+          'Spice Garden Tour'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Kandy Heritage & Cultural Discovery',
+        location: 'Kandy',
+        description: 'Visit the revered Temple of the Tooth Relic, stroll through Peradeniya Royal Botanical Gardens, and enjoy a cultural dance show.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+1 Hotels)',
+        activities: [
+          'Temple of the Tooth',
+          'Botanical Gardens Walk'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Kandy to Bentota Beach Haven',
+        location: 'Bentota',
+        description: 'Drive towards the Indian Ocean coast and check into your beachside resort in Bentota. Sunset at leisure on the beach.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+1 Hotels)',
+        activities: [
+          'Scenic Drive',
+          'Bentota Beach Sunset'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Bentota Waterways & Relaxation',
+        location: 'Bentota',
+        description: 'Enjoy a Madu River boat cruise, learn about baby turtle conservation at Kosgoda, and unwind by the pool.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+1 Hotels)',
+        activities: [
+          'Madu River Cruise',
+          'Turtle Conservation Visit'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Colombo City Highlights & Departure',
+        location: 'Colombo',
+        description: 'Take a guided orientation tour of Colombo visiting Independence Square and Galle Face before transferring to CMB Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Colombo City Tour',
+          'Private Airport Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '4 Nights in Earls Regent (+1 Hotels)',
+      'Daily breakfast and dinner (Half Board)',
+      'Colombo City Tour & Kandy sightseeing',
+      'Private air-conditioned vehicle with chauffeur'
+    ],
+    exclusions: [
+      'Airfares',
+      'Entry monuments fees',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Earls Regent (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '2N Kandy, 2N Bentota',
+      'Earls Regent (+1 Hotels)',
+      'Colombo City Tour (+1 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'sri-lanka-getaway-club-bentota-3n',
+    title: '3N Sri Lanka Getaway',
+    tagline: '1N Bentota, 1N Kandy & 1N Colombo at Club Bentota with Private Transfers',
+    destinationSlug: 'sri-lanka',
+    destinationName: 'Sri Lanka',
+    durationDays: 4,
+    durationNights: 3,
+    priceINR: 50288,
+    originalPriceINR: 46288,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1654561773591-57b9413c45c0?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1654561773591-57b9413c45c0?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1707316325186-8a426d0ef2d4?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'A high-value 3-night Sri Lankan escapade: beachside relaxation at Club Bentota on the Bentota peninsula, royal heritage in Kandy, and urban exploration in Colombo.',
+    highlights: [
+      '1N Bentota, 1N Kandy, 1N Colombo',
+      'Island resort stay at Club Bentota (+2 Hotels)',
+      'Temple of the Tooth Relic in historic Kandy',
+      'Colombo City Tour covering Galle Face and shopping hubs',
+      'Dedicated private vehicle transfers throughout'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Colombo & Transfer to Bentota',
+        location: 'Bentota',
+        description: 'Arrive at CMB Airport and meet your private chauffeur. Journey south to Club Bentota, situated on a scenic river peninsula. Evening sunset by the beach.',
+        meals: 'Dinner Included',
+        stay: 'Club Bentota (+2 Hotels)',
+        activities: [
+          'Private Airport Meet & Transfer',
+          'Bentota Beach Leisure'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Bentota to Hill Capital Kandy',
+        location: 'Kandy',
+        description: 'Drive inland to the sacred city of Kandy. Visit a spice garden and the iconic Temple of the Sacred Tooth Relic.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Club Bentota (+2 Hotels)',
+        activities: [
+          'Scenic Hill Drive',
+          'Temple of the Tooth Relic'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Kandy to Cosmopolitan Colombo',
+        location: 'Colombo',
+        description: 'Drive to Colombo. Enjoy a comprehensive city tour visiting Independence Square, Old Parliament, Galle Face Green, and Gangaramaya Temple.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Club Bentota (+2 Hotels)',
+        activities: [
+          'Colombo City Sightseeing Tour',
+          'Galle Face Stroll'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Colombo Departure',
+        location: 'Colombo',
+        description: 'Breakfast at hotel before your private transfer to CMB Airport for your flight back home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '3 Nights accommodation in Club Bentota (+2 Hotels)',
+      'Daily breakfast and dinner (Half Board)',
+      'Colombo City Tour & Kandy sightseeing',
+      'Private air-conditioned vehicle transfers'
+    ],
+    exclusions: [
+      'Airfares',
+      'Entry monuments fees',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Club Bentota (+2 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '1N Bentota, 1N Kandy, 1N Colombo',
+      'Club Bentota (+2 Hotels)',
+      'Colombo City Tour (+2 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'sri-lankan-safari-sojourn-radisson-4n',
+    title: '4N Sri Lankan Safari Sojourn',
+    tagline: '2N Galle & 2N Colombo at 5★ Radisson Blu Resort Galle with Private Transfers',
+    destinationSlug: 'sri-lanka',
+    destinationName: 'Sri Lanka',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 90944,
+    originalPriceINR: 86944,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1707316325186-8a426d0ef2d4?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1707316325186-8a426d0ef2d4?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1654561773591-57b9413c45c0?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Experience the coastal elegance of southern Sri Lanka with 2 nights at the 5-star Radisson Blu Resort Galle and 2 nights in Colombo. Explore the UNESCO-listed Galle Dutch Fort, indulge in beachside luxury, and discover Colombo’s cultural landmarks.',
+    highlights: [
+      '2 Nights in Galle & 2 Nights in Colombo',
+      '5★ Radisson Blu Resort Galle (+1 Hotels)',
+      'UNESCO World Heritage Galle Dutch Fort exploration',
+      'Colombo City Tour & oceanfront Galle Face dining',
+      'Private air-conditioned car transfers'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Colombo & Transfer to Galle',
+        location: 'Galle',
+        description: 'Arrive at CMB Airport and take the southern expressway with your private chauffeur to 5★ Radisson Blu Resort Galle. Enjoy cocktails overlooking the Indian Ocean.',
+        meals: 'Dinner Included',
+        stay: 'Radisson Blu Resort Galle (+1 Hotels)',
+        activities: [
+          'Chauffeur Meet & Greet',
+          'Check-in Radisson Blu Galle'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Galle Dutch Fort & Coastal Safari',
+        location: 'Galle',
+        description: 'Discover the 17th-century ramparts, cobblestone lanes, artisan boutiques, and lighthouse of UNESCO-listed Galle Fort.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Radisson Blu Resort Galle (+1 Hotels)',
+        activities: [
+          'Galle Fort Walking Tour',
+          'Lighthouse Photo Stop',
+          'Beachfront Leisure'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Galle to Colombo Capital',
+        location: 'Colombo',
+        description: 'Drive to Colombo. Visit the Gangaramaya Buddhist Temple, Independence Memorial Hall, and the vibrant Pettah Market.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Radisson Blu Resort Galle (+1 Hotels)',
+        activities: [
+          'Colombo City Tour',
+          'Gangaramaya Temple Visit'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Colombo Culture & Sunset at Galle Face',
+        location: 'Colombo',
+        description: 'Spend the day browsing Ceylon tea boutiques and luxury shopping at Colombo City Centre, followed by a seaside stroll at Galle Face Green.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Radisson Blu Resort Galle (+1 Hotels)',
+        activities: [
+          'Colombo Shopping',
+          'Galle Face Green Sunset'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Colombo Departure',
+        location: 'Colombo',
+        description: 'Breakfast at hotel and private departure transfer to CMB Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '4 Nights accommodation in 5★ Radisson Blu Resort Galle (+1 Hotels)',
+      'Daily breakfast and dinner (Half Board)',
+      'Colombo City Tour & Galle Fort excursion',
+      'Private air-conditioned car transfers throughout'
+    ],
+    exclusions: [
+      'Airfares',
+      'Entry monuments fees',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Radisson Blu Resort Galle (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '2N Galle, 2N Colombo',
+      'Radisson Blu Resort Galle (+1 Hotels)',
+      'Colombo City Tour (+1 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'exotic-sri-lanka-experience-radisson-4n',
+    title: '4N Exotic Sri Lanka Experience',
+    tagline: '2N Galle & 2N Colombo at 5★ Radisson Blu with 2 Added Sightseeings',
+    destinationSlug: 'sri-lanka',
+    destinationName: 'Sri Lanka',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 90944,
+    originalPriceINR: 86944,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1654561773591-57b9413c45c0?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1707316325186-8a426d0ef2d4?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1654561773591-57b9413c45c0?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1707316325186-8a426d0ef2d4?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'An exotic combination of southern colonial coastal charm and metropolitan sophistication. Featuring 5-star oceanfront accommodation at Radisson Blu Galle, 2 nights in Colombo, and curated private sightseeing excursions.',
+    highlights: [
+      '2 Nights in Galle & 2 Nights in Colombo',
+      '5★ Radisson Blu Resort Galle (+1 Hotels)',
+      'Galle Dutch Fort & Turtle Hatchery excursions',
+      'Colombo City Tour with private guide',
+      'Private air-conditioned vehicle transfers'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Colombo & Transfer to Galle',
+        location: 'Galle',
+        description: 'Arrive at CMB Airport and transfer in a private vehicle along the expressway to Radisson Blu Resort Galle. Settle in and enjoy sunset ocean views.',
+        meals: 'Dinner Included',
+        stay: 'Radisson Blu Resort Galle (+1 Hotels)',
+        activities: [
+          'Private Airport Meet & Transfer',
+          'Radisson Blu Galle Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Galle Fort Ramparts & Southern Coast',
+        location: 'Galle',
+        description: 'Explore the historic Galle Fort, its lighthouse, Dutch reformed churches, and nearby stilt fishermen along the coastline.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Radisson Blu Resort Galle (+1 Hotels)',
+        activities: [
+          'Galle Fort Guided Walk',
+          'Stilt Fishermen Observation'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Galle to Colombo Capital',
+        location: 'Colombo',
+        description: 'Travel north to Colombo. Tour Independence Square, Town Hall, BMICH, and the buzzing Dutch Hospital dining complex.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Radisson Blu Resort Galle (+1 Hotels)',
+        activities: [
+          'Colombo City Tour',
+          'Dutch Hospital Precinct'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Colombo Heritage & Oceanside Leisure',
+        location: 'Colombo',
+        description: 'Visit Gangaramaya Temple and Seema Malaka on Beira Lake, followed by an evening sunset stroll along Galle Face Green.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Radisson Blu Resort Galle (+1 Hotels)',
+        activities: [
+          'Gangaramaya Temple',
+          'Galle Face Green Leisure'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Colombo Departure',
+        location: 'Colombo',
+        description: 'Breakfast at hotel and private departure transfer to CMB Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '4 Nights accommodation in 5★ Radisson Blu Resort Galle (+1 Hotels)',
+      'Daily breakfast and dinner (Half Board)',
+      'Colombo City Tour & 2 additional curated sightseeings',
+      'Private air-conditioned car transfers'
+    ],
+    exclusions: [
+      'Airfares',
+      'Entry monuments fees',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Radisson Blu Resort Galle (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '2N Galle, 2N Colombo',
+      'Radisson Blu Resort Galle (+1 Hotels)',
+      'Colombo City Tour (+2 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'sri-lankan-splendor-retreat-5n',
+    title: '5N Sri Lankan Splendor Retreat',
+    tagline: '2N Kandy, 1N Nuwara Eliya & 2N Colombo with Private Car & Chauffeur',
+    destinationSlug: 'sri-lanka',
+    destinationName: 'Sri Lanka',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 92000,
+    originalPriceINR: 88000,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1654561773591-57b9413c45c0?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1654561773591-57b9413c45c0?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1519566335946-e6f65f0f4fdf?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1707316325186-8a426d0ef2d4?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Experience the royal grandeur, highland tea estates, and colonial history of Sri Lanka over 5 nights. Stay in Kandy, Nuwara Eliya, and Colombo with private chauffeured transfers and extensive guided sightseeings.',
+    highlights: [
+      '2N Kandy, 1N Nuwara Eliya, 2N Colombo',
+      'Quality stay at Earls Regent (+2 Hotels)',
+      'Temple of the Tooth Relic & Royal Botanical Gardens',
+      'Ceylon Tea Factory estate tour in misty Nuwara Eliya',
+      'Comprehensive Colombo City Tour (+3 Sightseeings) in private vehicle'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Colombo & Transfer to Kandy',
+        location: 'Kandy',
+        description: 'Arrive at CMB Airport and meet your chauffeur. Drive to the hill fortress city of Kandy, stopping at a traditional spice garden.',
+        meals: 'Dinner Included',
+        stay: 'Earls Regent (+2 Hotels)',
+        activities: [
+          'Chauffeur Meet & Greet',
+          'Spice Garden Tour'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Kandy Temple & Royal Botanical Gardens',
+        location: 'Kandy',
+        description: 'Visit the sacred Temple of the Sacred Tooth Relic, stroll through Peradeniya Royal Botanical Gardens, and enjoy a cultural dance show.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+2 Hotels)',
+        activities: [
+          'Temple of the Tooth',
+          'Peradeniya Gardens',
+          'Cultural Dance'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Kandy to Highland Nuwara Eliya',
+        location: 'Nuwara Eliya',
+        description: 'Ascend past waterfalls to Little England Nuwara Eliya. Tour a working tea factory, sample fresh Ceylon tea, and walk around Gregory Lake.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+2 Hotels)',
+        activities: [
+          'Ramboda Falls',
+          'Tea Factory Tour',
+          'Gregory Lake Stroll'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Nuwara Eliya to Capital Colombo',
+        location: 'Colombo',
+        description: 'Descend to Colombo. Enjoy an orientation tour covering Gangaramaya Temple and the Dutch Hospital heritage shopping area.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+2 Hotels)',
+        activities: [
+          'Colombo City Highlights',
+          'Dutch Hospital Precinct'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Colombo City Tour & Heritage Stops',
+        location: 'Colombo',
+        description: 'Complete your Colombo discovery visiting Independence Memorial Hall, Old Galle Buck Lighthouse, and sunset street food at Galle Face Green.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Earls Regent (+2 Hotels)',
+        activities: [
+          'Colombo Guided City Tour',
+          'Galle Face Green Sunset'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Colombo Departure',
+        location: 'Colombo',
+        description: 'Breakfast at hotel and private departure transfer to CMB Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '5 Nights accommodation in Earls Regent (+2 Hotels)',
+      'Daily breakfast and dinner (Half Board)',
+      'Colombo City Tour & 3 additional curated sightseeings',
+      'Private air-conditioned car transfers throughout'
+    ],
+    exclusions: [
+      'Airfares',
+      'Entry monuments fees',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Earls Regent (+2 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '2N Kandy, 1N Nuwara Eliya, 2N Colombo',
+      'Earls Regent (+2 Hotels)',
+      'Colombo City Tour (+3 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'land-of-smiles-escape-bangkok-pattaya-4n',
+    title: '4N Land of Smiles Escape',
+    tagline: '2N Bangkok & 2N Pattaya with Chao Phraya Dinner Cruise & Private Transfers',
+    destinationSlug: 'thailand',
+    destinationName: 'Thailand',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 39469,
+    originalPriceINR: 35469,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1582468546235-9bf31e5bc4a1?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1582468546235-9bf31e5bc4a1?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1712335870501-b70177ef645f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1493863438658-3e7743ac61cd?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'The quintessential Thailand vacation combining the lively coastal beaches of Pattaya with the bustling nightlife and iconic waterways of Bangkok. Includes Princess Chao Phraya luxury dinner cruise with Indian buffet and private transfers.',
+    highlights: [
+      '2 Nights Bangkok & 2 Nights Pattaya',
+      'Season Siam Hotel (+1 Hotels)',
+      'Princess Chao Phraya River Dinner Cruise with Indian cuisine',
+      'Private air-conditioned vehicle transfers throughout'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Bangkok & Private Transfer to Pattaya',
+        location: 'Pattaya',
+        description: 'Arrive at Suvarnabhumi Airport (BKK) or Don Mueang (DMK). Meet your private driver and transfer to your hotel in vibrant Pattaya. Evening free to explore Walking Street or beachfront cafes.',
+        meals: 'Room only',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Private Airport Meet & Transfer',
+          'Pattaya Beach Leisure'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Coral Island Speedboat Excursion',
+        location: 'Koh Larn (Coral Island)',
+        description: 'Speedboat cruise to Coral Island (Koh Larn) for swimming, parasailing, jet-skiing, and relaxing on white tropical sands.',
+        meals: 'Breakfast Included',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Speedboat to Coral Island',
+          'Tropical Beach Relaxation'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Pattaya to Bangkok & Chao Phraya Dinner Cruise',
+        location: 'Bangkok',
+        description: 'Private transfer from Pattaya to Bangkok. Check into Season Siam Hotel. In the evening, board the Princess Chao Phraya Cruise for a luxury dinner cruise past illuminated Wat Arun and the Grand Palace.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Pattaya to Bangkok Transfer',
+          'Princess Chao Phraya Dinner Cruise'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Bangkok Temple Tour & Shopping',
+        location: 'Bangkok',
+        description: 'Discover Bangkok’s iconic temples including Wat Traimit (Golden Buddha) and Wat Pho (Reclining Buddha), followed by shopping at MBK or Pratunam markets.',
+        meals: 'Breakfast Included',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Bangkok City & Temple Tour',
+          'Pratunam Market Shopping'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Bangkok Departure',
+        location: 'Bangkok',
+        description: 'Breakfast at hotel and private departure transfer to Bangkok Airport for your return flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '2 Nights Bangkok & 2 Nights Pattaya in Season Siam Hotel (+1 Hotels)',
+      'Daily breakfast',
+      'Princess Chao Phraya Cruise ticket with Indian Dinner',
+      'Private vehicle airport and inter-city transfers'
+    ],
+    exclusions: [
+      'Airfares',
+      'Coral Island water sports rentals',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Season Siam Hotel (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '2N Bangkok, 2N Pattaya',
+      'Season Siam Hotel (+1 Hotels)',
+      'Princess Chao Phraya Cruise - With Indian Dinner',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'thai-island-odyssey-jurassic-world-5n',
+    title: '5N Thai Island Odyssey',
+    tagline: '2N Bangkok & 3N Pattaya with Jurassic World Exhibition & Private Transfers',
+    destinationSlug: 'thailand',
+    destinationName: 'Thailand',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 47945,
+    originalPriceINR: 43945,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1582468546235-9bf31e5bc4a1?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1712335870501-b70177ef645f?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1582468546235-9bf31e5bc4a1?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1712335870501-b70177ef645f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1493863438658-3e7743ac61cd?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'A thrilling 5-night adventure across Bangkok and Pattaya. Stay at Season Siam Hotel and enjoy private car transfers, a full day at the Jurassic World immersive exhibition, and Pattaya beach leisure.',
+    highlights: [
+      '2 Nights Bangkok & 3 Nights Pattaya',
+      'Season Siam Hotel (+1 Hotels)',
+      'Jurassic World: The Exhibition admission pass (+1 Sightseeing)',
+      'Private air-conditioned car transfers throughout'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Bangkok & Transfer to Pattaya',
+        location: 'Pattaya',
+        description: 'Arrive at Bangkok Airport and meet your private chauffeur for transfer to Pattaya. Relax at your hotel or explore the Pattaya waterfront.',
+        meals: 'Room only',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Private Airport Transfer',
+          'Hotel Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Coral Island Speedboat Tour',
+        location: 'Koh Larn',
+        description: 'Speedboat transfer to Coral Island for parasailing, swimming in turquoise waters, and relaxing on sandy shores.',
+        meals: 'Breakfast Included',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Coral Island Speedboat Excursion',
+          'Beach Leisure'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Pattaya Leisure & Attractions',
+        location: 'Pattaya',
+        description: 'Spend your day discovering Nong Nooch Tropical Botanical Garden or the magnificent wooden Sanctuary of Truth temple.',
+        meals: 'Breakfast Included',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Sanctuary of Truth Viewing',
+          'Pattaya Night Market'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Pattaya to Bangkok & Jurassic World: The Exhibition',
+        location: 'Bangkok',
+        description: 'Private transfer from Pattaya to Bangkok. Experience Jurassic World: The Exhibition, walking among life-sized animatronic dinosaurs.',
+        meals: 'Breakfast Included',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Transfer to Bangkok',
+          'Jurassic World: The Exhibition Entry'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Bangkok City Temples & River Cruise',
+        location: 'Bangkok',
+        description: 'Discover Bangkok’s Golden Buddha and Marble Temple, followed by riverfront shopping at Asiatique The Riverfront.',
+        meals: 'Breakfast Included',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Bangkok City Tour',
+          'Asiatique Riverfront Walk'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Bangkok Departure',
+        location: 'Bangkok',
+        description: 'Breakfast at hotel and private departure transfer to Bangkok Airport for your return flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '2 Nights Bangkok & 3 Nights Pattaya in Season Siam Hotel (+1 Hotels)',
+      'Daily breakfast',
+      'Jurassic World: The Exhibition admission ticket (+1 Sightseeing)',
+      'Private air-conditioned vehicle transfers throughout'
+    ],
+    exclusions: [
+      'Airfares',
+      'Coral Island activity fees',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Season Siam Hotel (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '2N Bangkok, 3N Pattaya',
+      'Season Siam Hotel (+1 Hotels)',
+      'Jurassic World: The Exhibition (+1 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'unveiling-thailands-essence-krabi-phuket-5n',
+    title: "5N Unveiling Thailand's Essence",
+    tagline: '2N Krabi & 3N Phuket with 7 Island BBQ Long Tail Boat Tour & Plankton Swim',
+    destinationSlug: 'thailand',
+    destinationName: 'Thailand',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 60846,
+    originalPriceINR: 56846,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1493863438658-3e7743ac61cd?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1712335870501-b70177ef645f?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1582468546235-9bf31e5bc4a1?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1712335870501-b70177ef645f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1493863438658-3e7743ac61cd?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Explore the jewel islands of the Andaman Sea across Krabi and Phuket. Stay at Golden Beach Resort in Krabi, embark on the legendary 7-Island Sunset BBQ long-tail boat tour with bioluminescent plankton swimming, and unwind in Phuket.',
+    highlights: [
+      '2 Nights Krabi & 3 Nights Phuket',
+      'Golden Beach Resort (+1 Hotels)',
+      'Krabi: 7 Island BBQ Long Tail Boat Tour with Sunset & Bioluminescent Plankton swim',
+      'Private air-conditioned car transfers throughout'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Krabi & Coastal Check-in',
+        location: 'Krabi (Ao Nang)',
+        description: 'Arrive at Krabi International Airport (KBV). Meet your private driver and transfer to Golden Beach Resort along Ao Nang Beach. Sunset walk along the coastal promenade.',
+        meals: 'Room only',
+        stay: 'Golden Beach Resort (+1 Hotels)',
+        activities: [
+          'Private Airport Transfer',
+          'Ao Nang Beachfront Walk'
+        ]
+      },
+      {
+        day: 2,
+        title: '7 Island Sunset BBQ & Bioluminescent Plankton Tour',
+        location: 'Krabi Islands',
+        description: 'Board a traditional long-tail boat exploring Tup Island sandbar, Chicken Island, and Poda Island. Enjoy a sunset beach barbecue and night swim amidst glowing bioluminescent plankton.',
+        meals: 'Breakfast & BBQ Dinner',
+        stay: 'Golden Beach Resort (+1 Hotels)',
+        activities: [
+          '7 Island Long Tail Boat Tour',
+          'Sunset Beach BBQ',
+          'Bioluminescent Plankton Swim'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Krabi to Phuket Scenic Transfer',
+        location: 'Phuket',
+        description: 'Private transfer from Krabi across Phang Nga bay country to Phuket. Check into your hotel and enjoy the sunset over Patong or Kata Beach.',
+        meals: 'Breakfast Included',
+        stay: 'Golden Beach Resort (+1 Hotels)',
+        activities: [
+          'Scenic Inter-Province Transfer',
+          'Phuket Beach Sunset'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Phi Phi Islands Speedboat Day Excursion',
+        location: 'Phi Phi Islands',
+        description: 'Optional speedboat tour to Phi Phi Don and Phi Phi Leh, snorkeling in emerald waters at Maya Bay and Pileh Lagoon.',
+        meals: 'Breakfast Included',
+        stay: 'Golden Beach Resort (+1 Hotels)',
+        activities: [
+          'Phi Phi Speedboat Excursion',
+          'Maya Bay Snorkeling'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Phuket City Tour & Big Buddha',
+        location: 'Phuket',
+        description: 'Discover Phuket’s Big Buddha perched on Nakkerd Hills, historic Wat Chalong, and the Sino-Portuguese heritage shophouses in Old Phuket Town.',
+        meals: 'Breakfast Included',
+        stay: 'Golden Beach Resort (+1 Hotels)',
+        activities: [
+          'Big Buddha Viewpoint',
+          'Wat Chalong Visit',
+          'Old Phuket Town Walk'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Phuket Departure',
+        location: 'Phuket',
+        description: 'Breakfast at hotel before your private transfer to Phuket International Airport (HKT).',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '2 Nights Krabi & 3 Nights Phuket in Golden Beach Resort (+1 Hotels)',
+      'Daily breakfast plus 1 Sunset BBQ Dinner',
+      'Krabi: 7 Island BBQ Long Tail Boat Tour with Sunset & Bioluminescent Plankton',
+      'Private vehicle transfers throughout'
+    ],
+    exclusions: [
+      'Airfares',
+      'National Park entry cash fees',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Golden Beach Resort (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '2N Krabi, 3N Phuket',
+      'Golden Beach Resort (+1 Hotels)',
+      '7 Island BBQ Boat Tour with Plankton Swim',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'thailand-escape-bangkok-pattaya-6n',
+    title: '6N Thailand Escape',
+    tagline: '3N Bangkok & 3N Pattaya with Princess Chao Phraya Dinner Cruise & Private Transfers',
+    destinationSlug: 'thailand',
+    destinationName: 'Thailand',
+    durationDays: 7,
+    durationNights: 6,
+    priceINR: 49609,
+    originalPriceINR: 45609,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1712335870501-b70177ef645f?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1582468546235-9bf31e5bc4a1?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1712335870501-b70177ef645f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1493863438658-3e7743ac61cd?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'An unhurried 6-night journey through Bangkok and Pattaya. Stay at Season Siam Hotel and enjoy private car transfers, a romantic Princess Chao Phraya River dinner cruise, and ample time for shopping and beach relaxation.',
+    highlights: [
+      '3 Nights Bangkok & 3 Nights Pattaya',
+      'Season Siam Hotel (+1 Hotels)',
+      'Princess Chao Phraya Dinner Cruise (+1 Sightseeings)',
+      'Private air-conditioned car transfers throughout'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Bangkok & Transfer to Pattaya',
+        location: 'Pattaya',
+        description: 'Arrive at Bangkok Airport and meet your private chauffeur for transfer to Pattaya. Evening at leisure along the beach.',
+        meals: 'Room only',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Private Airport Meet & Transfer',
+          'Hotel Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Coral Island Speedboat Excursion',
+        location: 'Koh Larn',
+        description: 'Speedboat cruise to Coral Island for sunbathing, parasailing, and swimming in crystal-clear waters.',
+        meals: 'Breakfast Included',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Coral Island Excursion',
+          'Beach Leisure'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Pattaya Highlights & Alcazar Show',
+        location: 'Pattaya',
+        description: 'Explore Pattaya viewpoints and the Sanctuary of Truth, with an optional evening ticket to the famous Alcazar cabaret show.',
+        meals: 'Breakfast Included',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Pattaya Viewpoint Stroll',
+          'Pattaya Nightlife'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Pattaya to Bangkok & Chao Phraya Dinner Cruise',
+        location: 'Bangkok',
+        description: 'Transfer in your private vehicle to Bangkok. Settle into Season Siam Hotel and embark on the Princess Chao Phraya luxury dinner cruise.',
+        meals: 'Breakfast & Dinner',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Transfer to Bangkok',
+          'Princess Chao Phraya Dinner Cruise'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Bangkok City & Golden Buddha Tour',
+        location: 'Bangkok',
+        description: 'Discover Wat Traimit (Golden Buddha), Wat Benchamabophit (Marble Temple), and Bangkok’s renowned Gems Gallery.',
+        meals: 'Breakfast Included',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'City & Temple Sightseeing',
+          'Gems Gallery Visit'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Bangkok Shopping Extravaganza',
+        location: 'Bangkok',
+        description: 'Full day at leisure for bargain and luxury shopping at Pratunam, Platinum Mall, CentralWorld, and ICONSIAM.',
+        meals: 'Breakfast Included',
+        stay: 'Season Siam Hotel (+1 Hotels)',
+        activities: [
+          'Pratunam Market Shopping',
+          'ICONSIAM Waterfront'
+        ]
+      },
+      {
+        day: 7,
+        title: 'Bangkok Departure',
+        location: 'Bangkok',
+        description: 'Breakfast at hotel and private departure transfer to Bangkok Airport for your return flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '3 Nights Bangkok & 3 Nights Pattaya in Season Siam Hotel (+1 Hotels)',
+      'Daily breakfast plus 1 Princess Chao Phraya Dinner Cruise',
+      'Princess Chao Phraya Dinner Cruise ticket (+1 Sightseeings)',
+      'Private air-conditioned vehicle transfers throughout'
+    ],
+    exclusions: [
+      'Airfares',
+      'Coral Island water activities',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Season Siam Hotel (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '3N Bangkok, 3N Pattaya',
+      'Season Siam Hotel (+1 Hotels)',
+      'Princess Chao Phraya Dinner Cruise (+1 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'vietnam-value-travel-4n',
+    title: '4N Vietnam Value Travel',
+    tagline: '2N Hanoi & 2N Danang with Ninh Binh Sampan Boat Ride & Private Transfers',
+    destinationSlug: 'vietnam',
+    destinationName: 'Vietnam',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 46680,
+    originalPriceINR: 42680,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1643030595382-79273ae819d9?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1545172538-171a802bd867?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1643030595382-79273ae819d9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1545172538-171a802bd867?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Discover northern and central Vietnam with 2 nights in historic Hanoi (Hoan Kiem District) and 2 nights in coastal Danang. Highlights include a full-day excursion to ancient Hoa Lu and Tam Coc in Ninh Binh with a traditional sampan boat ride.',
+    highlights: [
+      '2N Hanoi (Hoan Kiem District), 2N Danang',
+      'Little Diamond Hotel (+1 Hotels)',
+      'Day Trip to Ninh Binh: Hoa Lu and Tam Coc with Sampan Boat Ride (+4 Sightseeings)',
+      'Private vehicle transfers throughout'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Hanoi & Hoan Kiem Check-in',
+        location: 'Hanoi',
+        description: 'Arrive at Noi Bai International Airport (HAN). Private transfer to Little Diamond Hotel in Hoan Kiem District. Spend your evening strolling around the scenic Hoan Kiem Lake and the bustling Old Quarter.',
+        meals: 'Room only',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Private Airport Transfer',
+          'Hoan Kiem Lake Stroll',
+          'Old Quarter Exploration'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Ninh Binh Day Trip: Hoa Lu & Tam Coc Sampan Ride',
+        location: 'Ninh Binh',
+        description: 'Excursion to Ninh Binh. Explore the ancient 10th-century royal capital of Hoa Lu and board a traditional hand-rowed sampan boat gliding down the Ngo Dong River through the 3 karst caves of Tam Coc.',
+        meals: 'Breakfast & Local Lunch',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Hoa Lu Ancient Capital',
+          'Tam Coc Sampan Boat Cruise',
+          'Karst Mountain Vistas'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Hanoi to Coastal Danang',
+        location: 'Danang',
+        description: 'Private transfer to airport for your flight to Danang. Arrive in Danang, meet your chauffeur, and check into your hotel. Spend your evening admiring the illuminated Dragon Bridge and My Khe Beach.',
+        meals: 'Breakfast Included',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Private Airport Transfers',
+          'My Khe Beach Walk',
+          'Dragon Bridge Viewing'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Danang & Ancient Town of Hoi An',
+        location: 'Hoi An & Danang',
+        description: 'Spend your day discovering the UNESCO-listed Hoi An Ancient Town with its colorful silk lanterns, Japanese Covered Bridge, and tailor shops along the Thu Bon River.',
+        meals: 'Breakfast Included',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Hoi An Ancient Quarter',
+          'Japanese Covered Bridge',
+          'Lantern Market'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Danang Departure',
+        location: 'Danang',
+        description: 'Breakfast at hotel and private departure transfer to Danang International Airport (DAD) for your homeward flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '2 Nights Hanoi & 2 Nights Danang at Little Diamond Hotel (+1 Hotels)',
+      'Daily breakfast and 1 local tour lunch',
+      'Day Trip to Ninh Binh (Hoa Lu and Tam Coc with Sampan Boat Ride + 4 Sightseeings)',
+      'Private air-conditioned vehicle transfers throughout'
+    ],
+    exclusions: [
+      'International & domestic airfares',
+      'Visa fees',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Little Diamond Hotel (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '2N Hanoi, 2N Danang',
+      'Little Diamond Hotel (+1 Hotels)',
+      'Ninh Binh: Hoa Lu & Tam Coc Boat Ride (+4 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'vietscape-curated-for-you-4n',
+    title: '4N VietScape: Curated for You',
+    tagline: '2N Hanoi & 2N Danang with Halong Bay Harmony Deluxe Cruise & Private Transfers',
+    destinationSlug: 'vietnam',
+    destinationName: 'Vietnam',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 54336,
+    originalPriceINR: 50336,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1643030595382-79273ae819d9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1545172538-171a802bd867?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'A hand-curated 4-night itinerary staying at The Q Hotel. Explore 2 nights in Hanoi and 2 nights in Danang, featuring a full-day luxury cruise through UNESCO World Heritage Halong Bay aboard Harmony Cruise with local buffet lunch, Sung Sot Cave, Titop Island, and kayaking.',
+    highlights: [
+      '2N Hanoi (Hoan Kiem District), 2N Danang',
+      'The Q Hotel (+1 Hotels)',
+      'Day Trip to Halong Bay (Harmony Cruise with Local Lunch, Surprising Cave, Titop Island & Kayaking via 35 Seater Bus) (+3 Sightseeings)',
+      'Private vehicle transfers throughout'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Hanoi & The Q Hotel Check-in',
+        location: 'Hanoi',
+        description: 'Arrive at Noi Bai International Airport and meet your private chauffeur for transfer to The Q Hotel. Evening at leisure enjoying Hanoi street food and railway cafe vibes.',
+        meals: 'Room only',
+        stay: 'The Q Hotel (+1 Hotels)',
+        activities: [
+          'Private Changi/Airport Transfer',
+          'The Q Hotel Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Halong Bay Deluxe Cruise: Caves, Kayaking & Titop Island',
+        location: 'Halong Bay',
+        description: 'Full-day excursion to Halong Bay aboard Harmony Deluxe Cruise. Marvel at limestone karst towers, explore Surprising Cave (Hang Sung Sot), hike to the viewpoint atop Titop Island, and kayak in emerald lagoons.',
+        meals: 'Breakfast & Seafood Buffet Lunch',
+        stay: 'The Q Hotel (+1 Hotels)',
+        activities: [
+          'Halong Bay Harmony Cruise',
+          'Surprising Cave Hike',
+          'Titop Island Beach & Viewpoint',
+          'Lagoon Kayaking'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Hanoi to Coastal Danang',
+        location: 'Danang',
+        description: 'Private transfer to airport for your flight to Danang. Arrive in Danang and transfer to your hotel. Evening walk along Han River waterfront and Dragon Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'The Q Hotel (+1 Hotels)',
+        activities: [
+          'Airport Transfers',
+          'Danang Waterfront Leisure'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Danang & Golden Bridge Ba Na Hills',
+        location: 'Danang',
+        description: 'Day at leisure to visit Ba Na Hills to walk across the iconic Golden Hands Bridge or explore the ancient UNESCO lantern streets of Hoi An.',
+        meals: 'Breakfast Included',
+        stay: 'The Q Hotel (+1 Hotels)',
+        activities: [
+          'Golden Bridge Exploration',
+          'Hoi An Ancient Town Walk'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Danang Departure',
+        location: 'Danang',
+        description: 'Breakfast at hotel and private departure transfer to Danang International Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '2 Nights Hanoi & 2 Nights Danang at The Q Hotel (+1 Hotels)',
+      'Daily breakfast and 1 Deluxe Halong Bay Cruise Lunch',
+      'Day Trip to Halong Bay (Harmony Cruise / Similar Deluxe Cruise covering Surprising Cave, Titop Island, Kayaking + 3 Sightseeings)',
+      'Private air-conditioned vehicle transfers'
+    ],
+    exclusions: [
+      'Airfares',
+      'Ba Na Hills cable car pass',
+      'Personal expenses'
+    ],
+    hotelStandard: 'The Q Hotel (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '2N Hanoi, 2N Danang',
+      'The Q Hotel (+1 Hotels)',
+      'Halong Bay Deluxe Cruise & Kayaking (+3 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'hanoi-danang-package-the-q-hotel-4n',
+    title: '4N Hanoi Danang package',
+    tagline: '2N Hanoi & 2N Danang with Halong Bay Harmony Deluxe Cruise (+4 Sightseeings)',
+    destinationSlug: 'vietnam',
+    destinationName: 'Vietnam',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 56624,
+    originalPriceINR: 52624,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1545172538-171a802bd867?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1643030595382-79273ae819d9?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545172538-171a802bd867?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1643030595382-79273ae819d9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Experience the best of North and Central Vietnam staying at The Q Hotel. Features 2 nights in Hanoi, 2 nights in Danang, a full-day Halong Bay Harmony Deluxe Cruise with local buffet lunch, Surprising Cave, Titop Island, kayaking, and 4 additional sightseeings.',
+    highlights: [
+      '2N Hanoi (Hoan Kiem District), 2N Danang',
+      'The Q Hotel (+1 Hotels)',
+      'Day Trip to Halong Bay (Harmony Cruise / Deluxe Cruise with Local Lunch, Surprising Cave, Titop Island, Kayaking) (+4 Sightseeings)',
+      'Private air-conditioned vehicle transfers'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Hanoi & Private Check-in',
+        location: 'Hanoi',
+        description: 'Arrive at Noi Bai International Airport and transfer in a private vehicle to The Q Hotel. Evening free to discover Hanoi Old Quarter and street markets.',
+        meals: 'Room only',
+        stay: 'The Q Hotel (+1 Hotels)',
+        activities: [
+          'Private Airport Transfer',
+          'Hotel Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Halong Bay Deluxe Cruise Excursion',
+        location: 'Halong Bay',
+        description: 'Full-day deluxe cruise on Halong Bay with buffet lunch. Visit the stalactites of Surprising Cave, climb Titop Island for 360-degree bay panoramas, and kayak along limestone cliffs.',
+        meals: 'Breakfast & Deluxe Cruise Lunch',
+        stay: 'The Q Hotel (+1 Hotels)',
+        activities: [
+          'Harmony Deluxe Cruise',
+          'Surprising Cave',
+          'Titop Island Panoramic Climb',
+          'Kayaking'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Hanoi to Coastal Danang',
+        location: 'Danang',
+        description: 'Private transfer to airport for flight to Danang. Arrive and transfer to your hotel. Visit the Marble Mountains and Non Nuoc stone carving village.',
+        meals: 'Breakfast Included',
+        stay: 'The Q Hotel (+1 Hotels)',
+        activities: [
+          'Airport Transfers',
+          'Marble Mountains Exploration'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Danang & Hoi An Ancient Town Sightseeing',
+        location: 'Hoi An',
+        description: 'Excursion to UNESCO-listed Hoi An. Admire the preserved shophouses, Japanese Covered Bridge, Chinese Assembly Halls, and lantern-lit Thu Bon river.',
+        meals: 'Breakfast Included',
+        stay: 'The Q Hotel (+1 Hotels)',
+        activities: [
+          'Hoi An Heritage Walk',
+          'Lantern Boat Ride'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Danang Departure',
+        location: 'Danang',
+        description: 'Breakfast at hotel and private departure transfer to Danang International Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '2 Nights Hanoi & 2 Nights Danang at The Q Hotel (+1 Hotels)',
+      'Daily breakfast and 1 Deluxe Cruise Lunch',
+      'Day Trip to Halong Bay (Harmony Cruise covering Surprising Cave, Titop Island & Kayaking + 4 Sightseeings)',
+      'Private vehicle transfers throughout'
+    ],
+    exclusions: [
+      'Airfares',
+      'Entry monuments personal purchases',
+      'Travel insurance'
+    ],
+    hotelStandard: 'The Q Hotel (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '2N Hanoi, 2N Danang',
+      'The Q Hotel (+1 Hotels)',
+      'Halong Bay Deluxe Cruise (+4 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'special-vietnam-getaway-5n',
+    title: '5N Special Vietnam Getaway',
+    tagline: '3N Hanoi & 2N Danang with Halong Bay Harmony Deluxe Cruise (+5 Sightseeings)',
+    destinationSlug: 'vietnam',
+    destinationName: 'Vietnam',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 60496,
+    originalPriceINR: 56496,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1643030595382-79273ae819d9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1545172538-171a802bd867?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'A special 5-night getaway featuring 3 nights in Hanoi (Hoan Kiem District) and 2 nights in coastal Danang. Highlights include a full-day Halong Bay Harmony Cruise, kayaking, Titop Island, Surprising Cave, and 5 curated sightseeings.',
+    highlights: [
+      '3N Hanoi (Hoan Kiem District), 2N Danang',
+      'Little Diamond Hotel (+1 Hotels)',
+      'Day Trip to Halong Bay (Harmony Cruise / Deluxe Cruise with Local Lunch, Surprising Cave, Titop Island & Kayaking) (+5 Sightseeings)',
+      'Private air-conditioned vehicle transfers'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Hanoi & Hoan Kiem Check-in',
+        location: 'Hanoi',
+        description: 'Arrive at Noi Bai International Airport and transfer in a private car to Little Diamond Hotel. Evening walk around Hoan Kiem Lake.',
+        meals: 'Room only',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Private Airport Transfer',
+          'Hoan Kiem Lake Walk'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Halong Bay Harmony Cruise & Kayaking',
+        location: 'Halong Bay',
+        description: 'Day trip to Halong Bay aboard Harmony Cruise. Marvel at emerald waters, explore Surprising Cave, climb Titop Island for views, and kayak.',
+        meals: 'Breakfast & Local Seafood Lunch',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Halong Bay Cruise',
+          'Surprising Cave',
+          'Titop Island Beach',
+          'Kayaking'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Hanoi City Highlights & Temple of Literature',
+        location: 'Hanoi',
+        description: 'Discover Hanoi’s Temple of Literature, Tran Quoc Pagoda on West Lake, Ho Chi Minh Mausoleum complex, and train street cafe culture.',
+        meals: 'Breakfast Included',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Temple of Literature',
+          'Tran Quoc Pagoda',
+          'Train Street Cafe'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Hanoi to Danang & My Khe Beach',
+        location: 'Danang',
+        description: 'Private transfer to airport for flight to Danang. Arrive in Danang, transfer to hotel, and spend your afternoon relaxing on white sandy My Khe Beach.',
+        meals: 'Breakfast Included',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Airport Transfers',
+          'My Khe Beach Relaxation'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Danang & Ancient Town of Hoi An',
+        location: 'Hoi An',
+        description: 'Visit the Marble Mountains and continue to Hoi An Ancient Town to admire lantern-lit wooden merchant houses and riverside dining.',
+        meals: 'Breakfast Included',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Marble Mountains',
+          'Hoi An Lantern Town Tour'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Danang Departure',
+        location: 'Danang',
+        description: 'Breakfast at hotel and private departure transfer to Danang International Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '3 Nights Hanoi & 2 Nights Danang at Little Diamond Hotel (+1 Hotels)',
+      'Daily breakfast and 1 Deluxe Cruise Lunch',
+      'Day Trip to Halong Bay (Harmony Cruise covering Surprising Cave, Titop Island, Kayaking + 5 Sightseeings)',
+      'Private air-conditioned vehicle transfers'
+    ],
+    exclusions: [
+      'Airfares',
+      'Personal shopping',
+      'Travel insurance'
+    ],
+    hotelStandard: 'Little Diamond Hotel (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '3N Hanoi, 2N Danang',
+      'Little Diamond Hotel (+1 Hotels)',
+      'Halong Bay Harmony Cruise (+5 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'vietnam-value-voyage-5n',
+    title: '5N Vietnam Value Voyage',
+    tagline: '2N Hanoi & 3N Danang with Halong Bay Deluxe Cruise & Private Transfers',
+    destinationSlug: 'vietnam',
+    destinationName: 'Vietnam',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 56800,
+    originalPriceINR: 52800,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1643030595382-79273ae819d9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1545172538-171a802bd867?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'An incredible value voyage spending 2 nights in historic Hanoi and 3 nights in coastal Danang. Stay at The Q Hotel and experience a deluxe Halong Bay cruise, Surprising Cave, Titop Island, kayaking, and coastal highlights.',
+    highlights: [
+      '2N Hanoi (Hoan Kiem District), 3N Danang',
+      'The Q Hotel (+1 Hotels)',
+      'Day Trip to Halong Bay (Harmony Cruise with Local Lunch, Surprising Cave, Titop Island & Kayaking) (+3 Sightseeings)',
+      'Private air-conditioned vehicle transfers'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Hanoi & Hoan Kiem Check-in',
+        location: 'Hanoi',
+        description: 'Arrive at Noi Bai International Airport and private transfer to The Q Hotel. Evening free to explore Hanoi Old Quarter.',
+        meals: 'Room only',
+        stay: 'The Q Hotel (+1 Hotels)',
+        activities: [
+          'Private Airport Transfer',
+          'Hotel Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Halong Bay Harmony Deluxe Cruise',
+        location: 'Halong Bay',
+        description: 'Deluxe full-day cruise across Halong Bay. Explore Surprising Cave, enjoy kayaking in sheltered lagoons, and hike to Titop Island panoramic summit.',
+        meals: 'Breakfast & Deluxe Cruise Lunch',
+        stay: 'The Q Hotel (+1 Hotels)',
+        activities: [
+          'Halong Bay Cruise',
+          'Surprising Cave Hike',
+          'Titop Island Viewpoint',
+          'Kayaking'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Hanoi to Coastal Danang',
+        location: 'Danang',
+        description: 'Private transfer to airport for flight to Danang. Arrive in Danang and transfer to hotel. Evening stroll along My Khe Beach.',
+        meals: 'Breakfast Included',
+        stay: 'The Q Hotel (+1 Hotels)',
+        activities: [
+          'Airport Transfers',
+          'My Khe Beach Stroll'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Ba Na Hills & Golden Bridge Experience',
+        location: 'Ba Na Hills',
+        description: 'Spend your day riding the world-record cable car to Ba Na Hills to stroll across the colossal stone Hands of God supporting the Golden Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'The Q Hotel (+1 Hotels)',
+        activities: [
+          'Golden Bridge Walk',
+          'French Village Exploration'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Hoi An Lantern Town Excursion',
+        location: 'Hoi An',
+        description: 'Visit the historic town of Hoi An. Cruise on the Thu Bon River, release floating candle lanterns, and browse artisan silk markets.',
+        meals: 'Breakfast Included',
+        stay: 'The Q Hotel (+1 Hotels)',
+        activities: [
+          'Hoi An Ancient Quarter',
+          'Lantern Boat Experience'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Danang Departure',
+        location: 'Danang',
+        description: 'Breakfast at hotel and private departure transfer to Danang International Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '2 Nights Hanoi & 3 Nights Danang at The Q Hotel (+1 Hotels)',
+      'Daily breakfast and 1 Deluxe Cruise Lunch',
+      'Day Trip to Halong Bay (Harmony Cruise covering Surprising Cave, Titop Island, Kayaking + 3 Sightseeings)',
+      'Private air-conditioned vehicle transfers'
+    ],
+    exclusions: [
+      'Airfares',
+      'Ba Na Hills ticket',
+      'Personal expenses'
+    ],
+    hotelStandard: 'The Q Hotel (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '2N Hanoi, 3N Danang',
+      'The Q Hotel (+1 Hotels)',
+      'Halong Bay Deluxe Cruise (+3 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'charming-vietnam-little-diamond-4n',
+    title: '4N Charming Vietnam',
+    tagline: '2N Hanoi & 2N Danang with Halong Bay Deluxe Cruise & Private Transfers',
+    destinationSlug: 'vietnam',
+    destinationName: 'Vietnam',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 58296,
+    originalPriceINR: 54296,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1643030595382-79273ae819d9?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1545172538-171a802bd867?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1643030595382-79273ae819d9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1545172538-171a802bd867?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Experience the charming culture of Vietnam with 2 nights in Hanoi (Hoan Kiem District) and 2 nights in Danang at Little Diamond Hotel. Includes a deluxe Halong Bay cruise, Surprising Cave, Titop Island, kayaking, and 4 additional sightseeings.',
+    highlights: [
+      '2N Hanoi (Hoan Kiem District), 2N Danang',
+      'Little Diamond Hotel (+1 Hotels)',
+      'Day Trip to Halong Bay (Harmony Cruise / Deluxe Cruise with Local Lunch, Surprising Cave, Titop Island & Kayaking) (+4 Sightseeings)',
+      'Private air-conditioned vehicle transfers'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Hanoi & Hoan Kiem Check-in',
+        location: 'Hanoi',
+        description: 'Arrive at Noi Bai International Airport and private transfer to Little Diamond Hotel. Settle in and enjoy an evening walking tour of Hoan Kiem Lake.',
+        meals: 'Room only',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Private Airport Transfer',
+          'Hoan Kiem Walking Tour'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Halong Bay Harmony Cruise & Surprising Cave',
+        location: 'Halong Bay',
+        description: 'Excursion to Halong Bay aboard Harmony Cruise. Savor a local buffet lunch, explore the grand chambers of Surprising Cave, climb Titop Island, and kayak.',
+        meals: 'Breakfast & Local Lunch',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Halong Bay Cruise',
+          'Surprising Cave Exploration',
+          'Titop Island Hike',
+          'Kayaking'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Hanoi to Coastal Danang',
+        location: 'Danang',
+        description: 'Private transfer to airport for your flight to Danang. Meet your chauffeur and transfer to your hotel. Visit the Marble Mountains and My Khe Beach.',
+        meals: 'Breakfast Included',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Airport Transfers',
+          'Marble Mountains Tour'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Danang & Hoi An Ancient Quarter',
+        location: 'Hoi An',
+        description: 'Discover the lantern-lit lanes of Hoi An, historic merchant houses, and the Japanese Bridge, followed by riverside dining.',
+        meals: 'Breakfast Included',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Hoi An Ancient Quarter',
+          'Japanese Bridge Viewing'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Danang Departure',
+        location: 'Danang',
+        description: 'Breakfast at hotel and private departure transfer to Danang International Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '2 Nights Hanoi & 2 Nights Danang at Little Diamond Hotel (+1 Hotels)',
+      'Daily breakfast and 1 Deluxe Cruise Lunch',
+      'Day Trip to Halong Bay (Harmony Cruise covering Surprising Cave, Titop Island, Kayaking + 4 Sightseeings)',
+      'Private air-conditioned vehicle transfers'
+    ],
+    exclusions: [
+      'Airfares',
+      'Personal shopping',
+      'Travel insurance'
+    ],
+    hotelStandard: 'Little Diamond Hotel (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: false,
+    cardFeatures: [
+      '2N Hanoi, 2N Danang',
+      'Little Diamond Hotel (+1 Hotels)',
+      'Halong Bay Deluxe Cruise (+4 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'journey-through-vietnam-hanoi-ho-chi-minh-4n',
+    title: '4N Journey Through Vietnam',
+    tagline: '2N Hanoi & 2N Ho Chi Minh City with Halong Bay Deluxe Cruise & Private Transfers',
+    destinationSlug: 'vietnam',
+    destinationName: 'Vietnam',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 57064,
+    originalPriceINR: 53064,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1726346234848-a6c0e78efd8c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1643030595382-79273ae819d9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1545172538-171a802bd867?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Experience the dynamic twin capitals of Vietnam: 2 nights in historic Hanoi (Hoan Kiem District) and 2 nights in bustling Ho Chi Minh City (Dist 1). Featuring a full-day Halong Bay Harmony Deluxe Cruise, Surprising Cave, Titop Island, and kayaking.',
+    highlights: [
+      '2N Hanoi (Hoan Kiem District), 2N Ho Chi Minh City (Dist 1)',
+      'Little Diamond Hotel (+1 Hotels)',
+      'Day Trip to Halong Bay (Harmony Cruise / Deluxe Cruise with Local Lunch, Surprising Cave, Titop Island & Kayaking) (+1 Sightseeings)',
+      'Private air-conditioned vehicle transfers'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Hanoi & Hoan Kiem Check-in',
+        location: 'Hanoi',
+        description: 'Arrive at Noi Bai International Airport and private transfer to Little Diamond Hotel in Hoan Kiem District. Spend your evening exploring Hanoi Old Quarter.',
+        meals: 'Room only',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Private Airport Transfer',
+          'Hanoi Old Quarter Walk'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Halong Bay Deluxe Cruise & Kayaking',
+        location: 'Halong Bay',
+        description: 'Full-day excursion to Halong Bay aboard Harmony Cruise. Explore Surprising Cave, kayak through limestone lagoons, and climb Titop Island for panoramic views.',
+        meals: 'Breakfast & Local Lunch',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Halong Bay Cruise',
+          'Surprising Cave',
+          'Titop Island',
+          'Kayaking'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Hanoi to Ho Chi Minh City (Saigon)',
+        location: 'Ho Chi Minh City',
+        description: 'Private transfer to airport for flight to Ho Chi Minh City. Arrive and transfer to your hotel in District 1. Explore Notre-Dame Cathedral Basilica and Ben Thanh Market.',
+        meals: 'Breakfast Included',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Airport Transfers',
+          'Ben Thanh Market',
+          'Saigon Central Post Office'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Cu Chi Tunnels & Saigon Heritage',
+        location: 'Cu Chi & Saigon',
+        description: 'Visit the historic Cu Chi Tunnels underground defense network, followed by the War Remnants Museum and evening rooftop dining in District 1.',
+        meals: 'Breakfast Included',
+        stay: 'Little Diamond Hotel (+1 Hotels)',
+        activities: [
+          'Cu Chi Tunnels Exploration',
+          'War Remnants Museum'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Ho Chi Minh City Departure',
+        location: 'Ho Chi Minh City',
+        description: 'Breakfast at hotel and private departure transfer to Tan Son Nhat International Airport (SGN).',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '2 Nights Hanoi & 2 Nights Ho Chi Minh City at Little Diamond Hotel (+1 Hotels)',
+      'Daily breakfast and 1 Deluxe Cruise Lunch',
+      'Day Trip to Halong Bay (Harmony Cruise covering Surprising Cave, Titop Island, Kayaking + 1 Sightseeings)',
+      'Private air-conditioned vehicle transfers'
+    ],
+    exclusions: [
+      'Airfares',
+      'Cu Chi tunnel entry fee',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Little Diamond Hotel (+1 Hotels)',
+    groupSize: 'Custom Private FIT Itinerary',
+    featured: true,
+    cardFeatures: [
+      '2N Hanoi, 2N Ho Chi Minh City (Dist 1)',
+      'Little Diamond Hotel (+1 Hotels)',
+      'Halong Bay Deluxe Cruise (+1 Sightseeings)',
+      'Transfers (Private)'
+    ]
+  },
+  {
+    slug: 'andaman-winter-gateway-standard-4n',
+    title: '4N Andaman Winter Gateway (Standard)',
+    tagline: '2N Port Blair, 1N Havelock & 1N Neil with Pvt Ferries & Cellular Jail',
+    destinationSlug: 'andaman',
+    destinationName: 'Andaman Islands',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 23413,
+    originalPriceINR: 19413,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Discover the tropical paradise of the Andaman Islands across 4 nights. Experience historic Port Blair with the Cellular Jail Light & Sound show, the powder-white sands of Radhanagar Beach on Havelock Island, and the Natural Coral Bridge of Neil Island.',
+    highlights: [
+      '2N Port Blair, 1N Havelock, 1N Neil',
+      '3★ Hotel Shompen (Deluxe Room), 3★ Ocean Blue (Deluxe), 3★ C S Empire (Premium)',
+      'High-speed Private AC Catamaran Ferry between islands',
+      'Cellular Jail Light & Sound Show & Corbyn’s Cove Beach',
+      'Radhanagar Beach & Neil Natural Coral Bridge'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival at Port Blair & Cellular Jail Light & Sound Show',
+        location: 'Port Blair',
+        description: 'Arrive at Veer Savarkar International Airport (IXZ), Port Blair. Meet your private representative and transfer to Hotel Shompen. Afternoon visit to Corbyn’s Cove Beach, followed by the historic Cellular Jail and its poignant evening Light & Sound Show.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Hotel Shompen 3★ (Deluxe Room)',
+        activities: [
+          'Airport Meet & Transfer',
+          'Corbyn’s Cove Beach',
+          'Cellular Jail & Museum',
+          'Light & Sound Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Port Blair to Havelock Island & Radhanagar Beach',
+        location: 'Havelock Island',
+        description: 'Early morning transfer to Phoenix Bay Jetty for high-speed private AC catamaran ferry to Havelock Island (Swaraj Dweep). Check in to Ocean Blue Resort and spend the afternoon swimming and watching the sunset at Asia’s celebrated Radhanagar Beach (Beach No. 7).',
+        meals: 'Breakfast Included',
+        stay: 'Ocean Blue 3★ (Deluxe)',
+        activities: [
+          'Private AC Ferry to Havelock',
+          'Radhanagar Beach Sunset Stroll'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Havelock to Neil Island & Natural Coral Bridge',
+        location: 'Neil Island',
+        description: 'Board the morning private ferry to Neil Island (Shaheed Dweep). Check in to C S Empire. In the afternoon, visit Bharatpur Beach, Laxmanpur Beach for sunset, and the iconic limestone Natural Coral Bridge (Howrah Bridge).',
+        meals: 'Breakfast Included',
+        stay: 'C S Empire 3★ (Premium Room)',
+        activities: [
+          'Private Ferry to Neil Island',
+          'Bharatpur Beach',
+          'Laxmanpur Sunset Beach',
+          'Natural Rock Formation'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Neil to Port Blair & Sagarika Shopping',
+        location: 'Port Blair',
+        description: 'Take the afternoon private ferry back to Port Blair. Visit Sagarika Government Cottage Industries Emporium for authentic sea-shell crafts, coconut artifacts, and local Andaman souvenirs.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Shompen 3★ (Deluxe Room)',
+        activities: [
+          'Private Ferry to Port Blair',
+          'Sagarika Emporium Shopping'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Departure from Port Blair',
+        location: 'Port Blair Airport (IXZ)',
+        description: 'Enjoy breakfast at your hotel before your private transfer to Port Blair Airport for your return flight home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '4 Nights accommodation (2N Port Blair, 1N Havelock, 1N Neil)',
+      'Daily breakfast (CP Plan)',
+      'All inter-island transfers via Private AC Ferry (Makruzz / Nautika / Green Ocean)',
+      'All private vehicle road transfers & sightseeing as per itinerary',
+      'Cellular Jail entry and Light & Sound show tickets'
+    ],
+    exclusions: [
+      'Airfares',
+      'Water sports charges at beaches',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Standard: 3★ Shompen, 3★ Ocean Blue, 3★ C S Empire',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: true,
+    cardFeatures: [
+      '2N Port Blair, 1N Havelock, 1N Neil',
+      '3★ Shompen, Ocean Blue & C S Empire',
+      'Pvt AC Ferries & Radhanagar Beach',
+      'Transfers (Private) & CP Meals'
+    ]
+  },
+  {
+    slug: 'andaman-coastal-escape-deluxe-4n',
+    title: '4N Andaman Coastal Escape (Deluxe)',
+    tagline: '2N Port Blair, 1N Havelock & 1N Neil at Aquays Resorts & Bay Leaf',
+    destinationSlug: 'andaman',
+    destinationName: 'Andaman Islands',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 25625,
+    originalPriceINR: 21625,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Upgrade your Andaman getaway with deluxe 4-star beachside properties. Stay at Bay Leaf in Port Blair and Aquays Hotel & Resort in both Havelock and Neil Island, featuring private AC catamaran ferry rides and comprehensive guided sightseeing.',
+    highlights: [
+      '2N Port Blair, 1N Havelock, 1N Neil',
+      '3★ Bay Leaf (Standard), 4★ Aquays Havelock Plaza, 4★ Aquays Neil Plaza',
+      'High-speed Private AC Catamaran Ferry crossings',
+      'Radhanagar Beach No. 7 & Natural Coral Bridge',
+      'Cellular Jail Light & Sound show'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Port Blair & Historic Cellular Jail',
+        location: 'Port Blair',
+        description: 'Arrive at Port Blair Airport and private transfer to Bay Leaf. Visit Corbyn’s Cove Beach and Cellular Jail with Light & Sound show.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Bay Leaf (Standard)',
+        activities: [
+          'Airport Meet & Greet',
+          'Corbyn’s Cove Beach',
+          'Cellular Jail Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Port Blair to Havelock Island & Radhanagar Beach',
+        location: 'Havelock Island',
+        description: 'Board the private AC catamaran to Havelock Island. Check in to 4★ Aquays Hotel & Resort Havelock Plaza. In the afternoon, explore the turquoise surf of Radhanagar Beach.',
+        meals: 'Breakfast Included',
+        stay: 'Aquays Hotel & Resort 4★ (Havelock Plaza)',
+        activities: [
+          'Pvt AC Ferry Crossing',
+          'Radhanagar Beach Sunset'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Havelock to Neil Island & Natural Bridge',
+        location: 'Neil Island',
+        description: 'Morning private ferry to Neil Island. Check in to 4★ Aquays Hotel & Resort Neil Plaza. Tour Bharatpur, Laxmanpur Beach, and the Natural Coral Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'Aquays Hotel & Resort 4★ (Neil Plaza)',
+        activities: [
+          'Pvt Ferry to Neil',
+          'Bharatpur & Laxmanpur',
+          'Natural Bridge'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Neil to Port Blair & Sagarika Shopping',
+        location: 'Port Blair',
+        description: 'Return by private ferry to Port Blair. Check in to Bay Leaf and browse handmade shell craft items at Sagarika Emporium.',
+        meals: 'Breakfast Included',
+        stay: 'Bay Leaf (Standard)',
+        activities: [
+          'Pvt Ferry to Port Blair',
+          'Sagarika Shopping'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Port Blair Departure',
+        location: 'Port Blair',
+        description: 'Breakfast at hotel and private departure transfer to Port Blair Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '4 Nights in Deluxe hotels (Bay Leaf & 4★ Aquays Resorts)',
+      'Daily breakfast (CP Plan)',
+      'All inter-island transfers by Private AC Catamaran Ferry',
+      'All private vehicle road transfers & sightseeing',
+      'Cellular Jail entry and Light & Sound show'
+    ],
+    exclusions: [
+      'Airfares',
+      'Water sports charges',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Deluxe: 3★ Bay Leaf, 4★ Aquays Havelock, 4★ Aquays Neil',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: false,
+    cardFeatures: [
+      '2N Port Blair, 1N Havelock, 1N Neil',
+      '4★ Aquays Resorts & Bay Leaf',
+      'Pvt AC Ferries & Radhanagar Beach',
+      'Transfers (Private) & CP Meals'
+    ]
+  },
+  {
+    slug: 'andaman-serenity-shores-premium-4n',
+    title: '4N Andaman Serenity & Shores (Premium)',
+    tagline: '2N Port Blair, 1N Havelock & 1N Neil at 4★ Lemon Tree & Sandyy Waves',
+    destinationSlug: 'andaman',
+    destinationName: 'Andaman Islands',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 32985,
+    originalPriceINR: 28985,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Experience premium island comfort staying at 4★ Lemon Tree Hotel in Port Blair, the luxury beachfront Sandyy Waves Beach Resort in Havelock, and sea-view rooms at 4★ TSG Aura in Neil Island.',
+    highlights: [
+      '2N Port Blair, 1N Havelock, 1N Neil',
+      '4★ Lemon Tree Hotel (Superior), 4★ Sandyy Waves Beach Resort (Premium), 4★ TSG Aura (Sea Side Room with Balcony)',
+      'High-speed Private AC Catamaran Ferry crossings',
+      'Radhanagar Beach sunset & Neil Natural Bridge',
+      'Cellular Jail Light & Sound show'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Port Blair & Lemon Tree Check-in',
+        location: 'Port Blair',
+        description: 'Arrive at Port Blair Airport and private transfer to 4★ Lemon Tree Hotel. Afternoon visit to Corbyn’s Cove Beach and the historic Cellular Jail Light & Sound show.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Lemon Tree Hotel 4★ (Superior)',
+        activities: [
+          'Airport Meet & Transfer',
+          'Corbyn’s Cove Beach',
+          'Cellular Jail Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Port Blair to Havelock & Sandyy Waves Beach Resort',
+        location: 'Havelock Island',
+        description: 'Private catamaran ferry to Havelock Island. Check in to the upscale Sandyy Waves Beach Resort. Spend your afternoon relaxing at Radhanagar Beach.',
+        meals: 'Breakfast Included',
+        stay: 'Sandyy Waves Beach Resort 4★ (Premium)',
+        activities: [
+          'Pvt AC Catamaran Ferry',
+          'Radhanagar Beach Relaxation'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Havelock to Neil Island & TSG Aura Sea View Balcony',
+        location: 'Neil Island',
+        description: 'Board private ferry to Neil Island. Check in to TSG Aura with balcony overlooking the sea. Tour Bharatpur Beach, Laxmanpur Beach, and the Natural Coral Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'TSG Aura 4★ (Sea Side Room with Balcony)',
+        activities: [
+          'Private Ferry to Neil',
+          'Bharatpur & Laxmanpur',
+          'Natural Coral Bridge'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Neil to Port Blair & Emporium Shopping',
+        location: 'Port Blair',
+        description: 'Afternoon private ferry back to Port Blair. Check in to Lemon Tree Hotel. Visit Sagarika Emporium for island souvenirs and pearls.',
+        meals: 'Breakfast Included',
+        stay: 'Lemon Tree Hotel 4★ (Superior)',
+        activities: [
+          'Private Ferry to Port Blair',
+          'Sagarika Shopping'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Port Blair Departure',
+        location: 'Port Blair',
+        description: 'Breakfast at Lemon Tree before your private departure transfer to Port Blair Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '4 Nights in Premium 4★ hotels (Lemon Tree, Sandyy Waves, TSG Aura)',
+      'Daily breakfast (CP Plan)',
+      'All inter-island transfers by Private AC Catamaran Ferry',
+      'All private vehicle road transfers & sightseeing',
+      'Cellular Jail entry and Light & Sound show tickets'
+    ],
+    exclusions: [
+      'Airfares',
+      'Water sports charges',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Premium: 4★ Lemon Tree, 4★ Sandyy Waves, 4★ TSG Aura',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: true,
+    cardFeatures: [
+      '2N Port Blair, 1N Havelock, 1N Neil',
+      '4★ Lemon Tree & Sandyy Waves Resort',
+      'Pvt AC Ferries & Radhanagar Beach',
+      'Transfers (Private) & CP Meals'
+    ]
+  },
+  {
+    slug: 'andaman-luxury-island-retreat-5star-4n',
+    title: '4N Andaman Luxury Island Retreat (Luxury)',
+    tagline: '2N Port Blair, 1N Havelock & 1N Neil at 5★ Symphony Samudra & De Foret',
+    destinationSlug: 'andaman',
+    destinationName: 'Andaman Islands',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 40075,
+    originalPriceINR: 36075,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'The pinnacle of luxury in the Andaman Islands: 5★ Symphony Samudra beachside jungle resort in Port Blair, the exquisite De Tropical Villa at 5★ De Foret Resort in Havelock, and 4★ Symphony Summer Sand Beach Resort in Neil Island.',
+    highlights: [
+      '2N Port Blair, 1N Havelock, 1N Neil',
+      '5★ Symphony Samudra (Casa Tropicana), 5★ De Foret Resort (De Tropical Villa), 4★ Symphony Summer Sand (Casa Earth)',
+      'High-speed Private AC Catamaran Ferry crossings',
+      'Sunset at Radhanagar Beach No. 7 & Neil Natural Bridge',
+      'Cellular Jail Light & Sound show'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Port Blair & 5★ Symphony Samudra Check-in',
+        location: 'Port Blair',
+        description: 'Arrive at Port Blair Airport and private transfer to 5★ Symphony Samudra Beachside Jungle Resort. Afternoon visit to Corbyn’s Cove Beach and Cellular Jail Light & Sound show.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Symphony Samudra 5★ (Casa Tropicana)',
+        activities: [
+          'Airport Meet & Transfer',
+          'Corbyn’s Cove Beach',
+          'Cellular Jail Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Port Blair to Havelock & 5★ De Foret Tropical Villa',
+        location: 'Havelock Island',
+        description: 'Private catamaran ferry to Havelock Island. Check in to 5★ De Foret Resort in your private Tropical Villa. Afternoon sunset at world-famous Radhanagar Beach.',
+        meals: 'Breakfast Included',
+        stay: 'De Foret Resort 5★ (De Tropical Villa)',
+        activities: [
+          'Pvt AC Catamaran Ferry',
+          'Radhanagar Beach Sunset'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Havelock to Neil Island & Symphony Summer Sand Resort',
+        location: 'Neil Island',
+        description: 'Private ferry to Neil Island. Check in to Symphony Summer Sand Beach Resort. Tour Bharatpur Beach, Laxmanpur Beach, and the Natural Coral Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'Symphony Summer Sand 4★ (Casa Earth)',
+        activities: [
+          'Private Ferry to Neil',
+          'Bharatpur & Laxmanpur',
+          'Natural Bridge'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Neil to Port Blair & Symphony Samudra Retreat',
+        location: 'Port Blair',
+        description: 'Private ferry back to Port Blair. Settle into 5★ Symphony Samudra. Visit Sagarika Emporium for island souvenirs and pearl jewelry.',
+        meals: 'Breakfast Included',
+        stay: 'Symphony Samudra 5★ (Casa Tropicana)',
+        activities: [
+          'Private Ferry to Port Blair',
+          'Sagarika Shopping'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Port Blair Departure',
+        location: 'Port Blair',
+        description: 'Breakfast at hotel and private departure transfer to Port Blair Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '4 Nights in 5★ & 4★ Luxury Resorts (Symphony Samudra, De Foret, Symphony Summer Sand)',
+      'Daily breakfast (CP Plan)',
+      'All inter-island transfers by Private AC Catamaran Ferry',
+      'All private vehicle road transfers & sightseeing',
+      'Cellular Jail entry and Light & Sound show tickets'
+    ],
+    exclusions: [
+      'Airfares',
+      'Water sports charges',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Luxury: 5★ Symphony Samudra, 5★ De Foret, 4★ Symphony Summer Sand',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: true,
+    cardFeatures: [
+      '2N Port Blair, 1N Havelock, 1N Neil',
+      '5★ Symphony Samudra & De Foret Villa',
+      'Pvt AC Ferries & Radhanagar Beach',
+      'Transfers (Private) & CP Meals'
+    ]
+  },
+  {
+    slug: 'andaman-island-odyssey-standard-5n',
+    title: '5N Andaman Island Odyssey (Standard)',
+    tagline: '2N Port Blair, 2N Havelock & 1N Neil with Elephant Beach Snorkeling',
+    destinationSlug: 'andaman',
+    destinationName: 'Andaman Islands',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 26813,
+    originalPriceINR: 22813,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'An unhurried 5-night journey across the Andaman Islands. Features 2 nights in Port Blair, 2 nights in Havelock with speed boat excursion to Elephant Beach with complimentary snorkeling, and 1 night on peaceful Neil Island.',
+    highlights: [
+      '2N Port Blair, 2N Havelock, 1N Neil',
+      '3★ Hotel Shompen (Deluxe Room), 3★ Ocean Blue (Deluxe), 3★ C S Empire (Premium)',
+      'Speed boat excursion to Elephant Beach with complimentary snorkeling',
+      'Sunset at Radhanagar Beach & Neil Natural Coral Bridge',
+      'Private AC Catamaran Ferries throughout'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Port Blair & Cellular Jail Show',
+        location: 'Port Blair',
+        description: 'Arrive at Port Blair Airport and private transfer to Hotel Shompen. Visit Corbyn’s Cove Beach, Jail Museum, and Cellular Jail Light & Sound show.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Hotel Shompen 3★ (Deluxe Room)',
+        activities: [
+          'Airport Meet & Transfer',
+          'Corbyn’s Cove Beach',
+          'Cellular Jail Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Port Blair to Havelock Island & Radhanagar Beach',
+        location: 'Havelock Island',
+        description: 'Private AC catamaran ferry to Havelock Island. Check in to Ocean Blue Resort and spend the evening enjoying Radhanagar Beach.',
+        meals: 'Breakfast Included',
+        stay: 'Ocean Blue 3★ (Deluxe)',
+        activities: [
+          'Pvt Ferry to Havelock',
+          'Radhanagar Beach Sunset'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Elephant Beach Speed Boat & Snorkeling',
+        location: 'Havelock Island',
+        description: 'Embark on a speed boat trip to Elephant Beach, known for vibrant coral reefs. Enjoy complimentary snorkeling session provided by Boat Association, followed by beach leisure.',
+        meals: 'Breakfast Included',
+        stay: 'Ocean Blue 3★ (Deluxe)',
+        activities: [
+          'Speed Boat to Elephant Beach',
+          'Complimentary Snorkeling',
+          'Coral Reef Viewing'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Havelock to Neil Island & Natural Bridge',
+        location: 'Neil Island',
+        description: 'Morning private ferry to Neil Island. Check in to C S Empire. Visit Bharatpur Beach, Laxmanpur Beach, and the Natural Coral Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'C S Empire 3★ (Premium Room)',
+        activities: [
+          'Private Ferry to Neil',
+          'Bharatpur & Laxmanpur',
+          'Natural Coral Bridge'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Neil to Port Blair & Sagarika Shopping',
+        location: 'Port Blair',
+        description: 'Return by private ferry to Port Blair. Check in to Hotel Shompen and visit Sagarika Emporium shopping complex.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Shompen 3★ (Deluxe Room)',
+        activities: [
+          'Private Ferry to Port Blair',
+          'Sagarika Shopping'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Port Blair Departure',
+        location: 'Port Blair',
+        description: 'Breakfast at hotel and private departure transfer to Port Blair Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '5 Nights accommodation (2N Port Blair, 2N Havelock, 1N Neil)',
+      'Daily breakfast (CP Plan)',
+      'Speed boat trip to Elephant Beach with complimentary snorkeling',
+      'All inter-island transfers by Private AC Catamaran Ferry',
+      'All private vehicle road transfers & sightseeing'
+    ],
+    exclusions: [
+      'Airfares',
+      'Water sports equipment beyond complimentary snorkeling',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Standard: 3★ Shompen, 3★ Ocean Blue, 3★ C S Empire',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: false,
+    cardFeatures: [
+      '2N Port Blair, 2N Havelock, 1N Neil',
+      '3★ Shompen, Ocean Blue & C S Empire',
+      'Elephant Beach Speed Boat & Snorkel',
+      'Transfers (Private) & CP Meals'
+    ]
+  },
+  {
+    slug: 'andaman-tropical-haven-deluxe-5n',
+    title: '5N Andaman Tropical Haven (Deluxe)',
+    tagline: '2N Port Blair, 2N Havelock & 1N Neil at Aquays Resorts with Elephant Beach',
+    destinationSlug: 'andaman',
+    destinationName: 'Andaman Islands',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 29975,
+    originalPriceINR: 25975,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Experience the best of Havelock and Neil with 2 nights in Port Blair at Bay Leaf and deluxe stays at 4★ Aquays Hotel & Resort in Havelock and Neil. Includes Elephant Beach speed boat excursion with complimentary snorkeling.',
+    highlights: [
+      '2N Port Blair, 2N Havelock, 1N Neil',
+      '3★ Bay Leaf (Standard), 4★ Aquays Havelock Plaza, 4★ Aquays Neil Plaza',
+      'Speed boat excursion to Elephant Beach with complimentary snorkeling',
+      'Radhanagar Beach & Natural Coral Bridge',
+      'Private AC Catamaran Ferry crossings'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Port Blair & Cellular Jail Show',
+        location: 'Port Blair',
+        description: 'Arrive at Port Blair Airport and private transfer to Bay Leaf. Visit Corbyn’s Cove Beach and Cellular Jail Light & Sound show.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Bay Leaf (Standard)',
+        activities: [
+          'Airport Meet & Transfer',
+          'Corbyn’s Cove Beach',
+          'Cellular Jail Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Port Blair to Havelock & Radhanagar Beach',
+        location: 'Havelock Island',
+        description: 'Private AC ferry to Havelock Island. Check in to 4★ Aquays Hotel & Resort Havelock Plaza. In the afternoon, relax at Radhanagar Beach.',
+        meals: 'Breakfast Included',
+        stay: 'Aquays Hotel & Resort 4★ (Havelock Plaza)',
+        activities: [
+          'Pvt Ferry to Havelock',
+          'Radhanagar Beach Sunset'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Elephant Beach Speed Boat & Snorkeling',
+        location: 'Havelock Island',
+        description: 'Speed boat ride to Elephant Beach. Enjoy complimentary snorkeling session and white sand beach relaxation.',
+        meals: 'Breakfast Included',
+        stay: 'Aquays Hotel & Resort 4★ (Havelock Plaza)',
+        activities: [
+          'Speed Boat to Elephant Beach',
+          'Complimentary Snorkeling'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Havelock to Neil Island & Natural Bridge',
+        location: 'Neil Island',
+        description: 'Morning private ferry to Neil Island. Check in to 4★ Aquays Hotel & Resort Neil Plaza. Visit Bharatpur, Laxmanpur, and Natural Coral Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'Aquays Hotel & Resort 4★ (Neil Plaza)',
+        activities: [
+          'Private Ferry to Neil',
+          'Bharatpur & Laxmanpur',
+          'Natural Bridge'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Neil to Port Blair & Sagarika Shopping',
+        location: 'Port Blair',
+        description: 'Return by private ferry to Port Blair. Check in to Bay Leaf and visit Sagarika Emporium.',
+        meals: 'Breakfast Included',
+        stay: 'Bay Leaf (Standard)',
+        activities: [
+          'Private Ferry to Port Blair',
+          'Sagarika Shopping'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Port Blair Departure',
+        location: 'Port Blair',
+        description: 'Breakfast at hotel and private departure transfer to Port Blair Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '5 Nights in Deluxe hotels (Bay Leaf & 4★ Aquays Resorts)',
+      'Daily breakfast (CP Plan)',
+      'Speed boat excursion to Elephant Beach with complimentary snorkeling',
+      'All inter-island transfers by Private AC Catamaran Ferry',
+      'All private vehicle road transfers & sightseeing'
+    ],
+    exclusions: [
+      'Airfares',
+      'Water sports charges',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Deluxe: 3★ Bay Leaf, 4★ Aquays Havelock, 4★ Aquays Neil',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: false,
+    cardFeatures: [
+      '2N Port Blair, 2N Havelock, 1N Neil',
+      '4★ Aquays Resorts & Bay Leaf',
+      'Elephant Beach Speed Boat & Snorkel',
+      'Transfers (Private) & CP Meals'
+    ]
+  },
+  {
+    slug: 'andaman-beachfront-splendor-premium-5n',
+    title: '5N Andaman Beachfront Splendor (Premium)',
+    tagline: '2N Port Blair, 2N Havelock & 1N Neil at 4★ Lemon Tree & Sandyy Waves',
+    destinationSlug: 'andaman',
+    destinationName: 'Andaman Islands',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 39995,
+    originalPriceINR: 35995,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Stay at premier 4-star properties across the Andaman archipelago: 4★ Lemon Tree in Port Blair, the beachfront luxury of 4★ Sandyy Waves in Havelock, and sea-view balcony rooms at 4★ TSG Aura in Neil. Includes Elephant Beach speed boat and snorkeling.',
+    highlights: [
+      '2N Port Blair, 2N Havelock, 1N Neil',
+      '4★ Lemon Tree Hotel (Superior), 4★ Sandyy Waves Beach Resort (Premium), 4★ TSG Aura (Sea Side Room with Balcony)',
+      'Speed boat excursion to Elephant Beach with complimentary snorkeling',
+      'Radhanagar Beach sunset & Neil Natural Bridge',
+      'Private AC Catamaran Ferry crossings'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Port Blair & Lemon Tree Check-in',
+        location: 'Port Blair',
+        description: 'Arrive at Port Blair Airport and private transfer to 4★ Lemon Tree Hotel. Visit Corbyn’s Cove Beach and Cellular Jail Light & Sound show.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Lemon Tree Hotel 4★ (Superior)',
+        activities: [
+          'Airport Meet & Transfer',
+          'Corbyn’s Cove Beach',
+          'Cellular Jail Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Port Blair to Havelock & Sandyy Waves Resort',
+        location: 'Havelock Island',
+        description: 'Private AC catamaran ferry to Havelock Island. Check in to Sandyy Waves Beach Resort. Afternoon sunset at Radhanagar Beach.',
+        meals: 'Breakfast Included',
+        stay: 'Sandyy Waves Beach Resort 4★ (Premium)',
+        activities: [
+          'Pvt AC Catamaran Ferry',
+          'Radhanagar Beach Sunset'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Elephant Beach Speed Boat & Snorkeling',
+        location: 'Havelock Island',
+        description: 'Speed boat ride to Elephant Beach. Enjoy complimentary snorkeling session and white sand beach relaxation.',
+        meals: 'Breakfast Included',
+        stay: 'Sandyy Waves Beach Resort 4★ (Premium)',
+        activities: [
+          'Speed Boat to Elephant Beach',
+          'Complimentary Snorkeling'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Havelock to Neil Island & TSG Aura Sea View Balcony',
+        location: 'Neil Island',
+        description: 'Private ferry to Neil Island. Check in to TSG Aura with sea-view balcony. Tour Bharatpur Beach, Laxmanpur Beach, and the Natural Coral Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'TSG Aura 4★ (Sea Side Room with Balcony)',
+        activities: [
+          'Private Ferry to Neil',
+          'Bharatpur & Laxmanpur',
+          'Natural Bridge'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Neil to Port Blair & Sagarika Shopping',
+        location: 'Port Blair',
+        description: 'Private ferry back to Port Blair. Check in to Lemon Tree Hotel and visit Sagarika Emporium shopping complex.',
+        meals: 'Breakfast Included',
+        stay: 'Lemon Tree Hotel 4★ (Superior)',
+        activities: [
+          'Private Ferry to Port Blair',
+          'Sagarika Shopping'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Port Blair Departure',
+        location: 'Port Blair',
+        description: 'Breakfast at Lemon Tree before your private departure transfer to Port Blair Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '5 Nights in Premium 4★ hotels (Lemon Tree, Sandyy Waves, TSG Aura)',
+      'Daily breakfast (CP Plan)',
+      'Speed boat excursion to Elephant Beach with complimentary snorkeling',
+      'All inter-island transfers by Private AC Catamaran Ferry',
+      'All private vehicle road transfers & sightseeing'
+    ],
+    exclusions: [
+      'Airfares',
+      'Water sports charges',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Premium: 4★ Lemon Tree, 4★ Sandyy Waves, 4★ TSG Aura',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: true,
+    cardFeatures: [
+      '2N Port Blair, 2N Havelock, 1N Neil',
+      '4★ Lemon Tree & Sandyy Waves Resort',
+      'Elephant Beach Speed Boat & Snorkel',
+      'Transfers (Private) & CP Meals'
+    ]
+  },
+  {
+    slug: 'andaman-symphony-luxury-experience-5star-5n',
+    title: '5N Andaman Symphony Luxury Experience (Luxury)',
+    tagline: '2N Port Blair, 2N Havelock & 1N Neil at 5★ Symphony Samudra & De Foret',
+    destinationSlug: 'andaman',
+    destinationName: 'Andaman Islands',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 45075,
+    originalPriceINR: 41075,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Ultimate 5-star island luxury: 5★ Symphony Samudra Jungle Resort in Port Blair, private tropical villas at 5★ De Foret Resort in Havelock, and 4★ Symphony Summer Sand Beach Resort in Neil Island. Includes Elephant Beach speed boat and snorkeling.',
+    highlights: [
+      '2N Port Blair, 2N Havelock, 1N Neil',
+      '5★ Symphony Samudra (Casa Tropicana), 5★ De Foret Resort (De Tropical Villa), 4★ Symphony Summer Sand (Casa Earth)',
+      'Speed boat excursion to Elephant Beach with complimentary snorkeling',
+      'Radhanagar Beach sunset & Neil Natural Bridge',
+      'High-speed Private AC Catamaran Ferry crossings'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Port Blair & 5★ Symphony Samudra Check-in',
+        location: 'Port Blair',
+        description: 'Arrive at Port Blair Airport and private transfer to 5★ Symphony Samudra. Visit Corbyn’s Cove Beach and Cellular Jail Light & Sound show.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Symphony Samudra 5★ (Casa Tropicana)',
+        activities: [
+          'Airport Meet & Transfer',
+          'Corbyn’s Cove Beach',
+          'Cellular Jail Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Port Blair to Havelock & 5★ De Foret Tropical Villa',
+        location: 'Havelock Island',
+        description: 'Private catamaran ferry to Havelock Island. Check in to your private tropical villa at 5★ De Foret Resort. Sunset at Radhanagar Beach.',
+        meals: 'Breakfast Included',
+        stay: 'De Foret Resort 5★ (De Tropical Villa)',
+        activities: [
+          'Pvt AC Catamaran Ferry',
+          'Radhanagar Beach Sunset'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Elephant Beach Speed Boat & Snorkeling',
+        location: 'Havelock Island',
+        description: 'Speed boat ride to Elephant Beach. Enjoy complimentary snorkeling session and white sand beach relaxation.',
+        meals: 'Breakfast Included',
+        stay: 'De Foret Resort 5★ (De Tropical Villa)',
+        activities: [
+          'Speed Boat to Elephant Beach',
+          'Complimentary Snorkeling'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Havelock to Neil Island & Symphony Summer Sand Resort',
+        location: 'Neil Island',
+        description: 'Private ferry to Neil Island. Check in to Symphony Summer Sand Beach Resort. Tour Bharatpur Beach, Laxmanpur Beach, and the Natural Coral Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'Symphony Summer Sand 4★ (Casa Earth)',
+        activities: [
+          'Private Ferry to Neil',
+          'Bharatpur & Laxmanpur',
+          'Natural Bridge'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Neil to Port Blair & Symphony Samudra Retreat',
+        location: 'Port Blair',
+        description: 'Private ferry back to Port Blair. Settle into 5★ Symphony Samudra. Visit Sagarika Emporium for island souvenirs and pearls.',
+        meals: 'Breakfast Included',
+        stay: 'Symphony Samudra 5★ (Casa Tropicana)',
+        activities: [
+          'Private Ferry to Port Blair',
+          'Sagarika Shopping'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Port Blair Departure',
+        location: 'Port Blair',
+        description: 'Breakfast at hotel and private departure transfer to Port Blair Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '5 Nights in 5★ & 4★ Luxury Resorts (Symphony Samudra, De Foret, Symphony Summer Sand)',
+      'Daily breakfast (CP Plan)',
+      'Speed boat excursion to Elephant Beach with complimentary snorkeling',
+      'All inter-island transfers by Private AC Catamaran Ferry',
+      'All private vehicle road transfers & sightseeing'
+    ],
+    exclusions: [
+      'Airfares',
+      'Water sports charges',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Luxury: 5★ Symphony Samudra, 5★ De Foret, 4★ Symphony Summer Sand',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: true,
+    cardFeatures: [
+      '2N Port Blair, 2N Havelock, 1N Neil',
+      '5★ Symphony Samudra & De Foret Villa',
+      'Elephant Beach Speed Boat & Snorkel',
+      'Transfers (Private) & CP Meals'
+    ]
+  },
+  {
+    slug: 'andaman-grand-island-explorer-standard-6n',
+    title: '6N Andaman Grand Island Explorer (Standard)',
+    tagline: '3N Port Blair, 2N Havelock & 1N Neil with Ross & North Bay Islands',
+    destinationSlug: 'andaman',
+    destinationName: 'Andaman Islands',
+    durationDays: 7,
+    durationNights: 6,
+    priceINR: 29932,
+    originalPriceINR: 25932,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'The complete 6-night Andaman experience: 3 nights in Port Blair, 2 nights in Havelock, and 1 night on Neil Island. Includes Elephant Beach speed boat with snorkeling, Radhanagar Beach, Neil’s Natural Bridge, and a day trip to Ross Island ruins & North Bay Island.',
+    highlights: [
+      '3N Port Blair, 2N Havelock, 1N Neil',
+      '3★ Hotel Shompen (Deluxe Room), 3★ Ocean Blue (Deluxe), 3★ C S Empire (Premium)',
+      'Day trip to Ross Island (Historical British Ruins) & North Bay Island',
+      'Elephant Beach Speed Boat with complimentary snorkeling',
+      'Private AC Catamaran Ferries throughout'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Port Blair & Cellular Jail Show',
+        location: 'Port Blair',
+        description: 'Arrive at Port Blair Airport and private transfer to Hotel Shompen. Visit Corbyn’s Cove Beach and Cellular Jail Light & Sound show.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Hotel Shompen 3★ (Deluxe Room)',
+        activities: [
+          'Airport Meet & Transfer',
+          'Corbyn’s Cove Beach',
+          'Cellular Jail Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Port Blair to Havelock & Radhanagar Beach',
+        location: 'Havelock Island',
+        description: 'Private AC ferry to Havelock Island. Check in to Ocean Blue Resort and spend the evening enjoying Radhanagar Beach.',
+        meals: 'Breakfast Included',
+        stay: 'Ocean Blue 3★ (Deluxe)',
+        activities: [
+          'Pvt Ferry to Havelock',
+          'Radhanagar Beach Sunset'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Elephant Beach Speed Boat & Snorkeling',
+        location: 'Havelock Island',
+        description: 'Speed boat ride to Elephant Beach. Enjoy complimentary snorkeling session and white sand beach relaxation.',
+        meals: 'Breakfast Included',
+        stay: 'Ocean Blue 3★ (Deluxe)',
+        activities: [
+          'Speed Boat to Elephant Beach',
+          'Complimentary Snorkeling'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Havelock to Neil Island & Natural Bridge',
+        location: 'Neil Island',
+        description: 'Private ferry to Neil Island. Check in to C S Empire. Visit Bharatpur Beach, Laxmanpur Beach, and Natural Coral Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'C S Empire 3★ (Premium Room)',
+        activities: [
+          'Private Ferry to Neil',
+          'Bharatpur & Laxmanpur',
+          'Natural Bridge'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Neil to Port Blair & Sagarika Shopping',
+        location: 'Port Blair',
+        description: 'Return by private ferry to Port Blair. Check in to Hotel Shompen and visit Sagarika Emporium shopping complex.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Shompen 3★ (Deluxe Room)',
+        activities: [
+          'Private Ferry to Port Blair',
+          'Sagarika Shopping'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Ross Island & North Bay Coral Island Excursion',
+        location: 'Ross & North Bay Islands',
+        description: 'Full-day boat trip from Aberdeen Jetty. Explore the fascinating British administrative ruins and wild deer at Ross Island (Netaji Subhash Chandra Bose Dweep), followed by North Bay Island (Coral Island) for water sports.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Shompen 3★ (Deluxe Room)',
+        activities: [
+          'Ross Island Ruins',
+          'North Bay Island Coral Reefs'
+        ]
+      },
+      {
+        day: 7,
+        title: 'Port Blair Departure',
+        location: 'Port Blair',
+        description: 'Breakfast at hotel and private departure transfer to Port Blair Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '6 Nights accommodation (3N Port Blair, 2N Havelock, 1N Neil)',
+      'Daily breakfast (CP Plan)',
+      'Speed boat excursion to Elephant Beach with complimentary snorkeling',
+      'Day trip to Ross Island & North Bay Island by boat',
+      'All inter-island transfers by Private AC Catamaran Ferry',
+      'All private vehicle road transfers & sightseeing'
+    ],
+    exclusions: [
+      'Airfares',
+      'Water sports charges at North Bay',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Standard: 3★ Shompen, 3★ Ocean Blue, 3★ C S Empire',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: false,
+    cardFeatures: [
+      '3N Port Blair, 2N Havelock, 1N Neil',
+      '3★ Shompen, Ocean Blue & C S Empire',
+      'Ross & North Bay + Elephant Beach',
+      'Transfers (Private) & CP Meals'
+    ]
+  },
+  {
+    slug: 'andaman-coral-heritage-voyage-deluxe-6n',
+    title: '6N Andaman Coral & Heritage Voyage (Deluxe)',
+    tagline: '3N Port Blair, 2N Havelock & 1N Neil at Aquays Resorts with Ross Island',
+    destinationSlug: 'andaman',
+    destinationName: 'Andaman Islands',
+    durationDays: 7,
+    durationNights: 6,
+    priceINR: 32925,
+    originalPriceINR: 28925,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'A premium 6-night Andaman escape staying at Bay Leaf in Port Blair and deluxe 4★ Aquays Resorts on Havelock and Neil. Includes Elephant Beach speed boat with snorkeling and Ross Island & North Bay excursion.',
+    highlights: [
+      '3N Port Blair, 2N Havelock, 1N Neil',
+      '3★ Bay Leaf (Standard), 4★ Aquays Havelock Plaza, 4★ Aquays Neil Plaza',
+      'Day trip to Ross Island & North Bay Island',
+      'Elephant Beach Speed Boat with complimentary snorkeling',
+      'Private AC Catamaran Ferry crossings'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Port Blair & Cellular Jail Show',
+        location: 'Port Blair',
+        description: 'Arrive at Port Blair Airport and private transfer to Bay Leaf. Visit Corbyn’s Cove Beach and Cellular Jail Light & Sound show.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Bay Leaf (Standard)',
+        activities: [
+          'Airport Meet & Transfer',
+          'Corbyn’s Cove Beach',
+          'Cellular Jail Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Port Blair to Havelock & Radhanagar Beach',
+        location: 'Havelock Island',
+        description: 'Private AC ferry to Havelock Island. Check in to 4★ Aquays Hotel & Resort Havelock Plaza. In the afternoon, relax at Radhanagar Beach.',
+        meals: 'Breakfast Included',
+        stay: 'Aquays Hotel & Resort 4★ (Havelock Plaza)',
+        activities: [
+          'Pvt Ferry to Havelock',
+          'Radhanagar Beach Sunset'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Elephant Beach Speed Boat & Snorkeling',
+        location: 'Havelock Island',
+        description: 'Speed boat ride to Elephant Beach. Enjoy complimentary snorkeling session and white sand beach relaxation.',
+        meals: 'Breakfast Included',
+        stay: 'Aquays Hotel & Resort 4★ (Havelock Plaza)',
+        activities: [
+          'Speed Boat to Elephant Beach',
+          'Complimentary Snorkeling'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Havelock to Neil Island & Natural Bridge',
+        location: 'Neil Island',
+        description: 'Morning private ferry to Neil Island. Check in to 4★ Aquays Hotel & Resort Neil Plaza. Visit Bharatpur, Laxmanpur, and Natural Coral Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'Aquays Hotel & Resort 4★ (Neil Plaza)',
+        activities: [
+          'Private Ferry to Neil',
+          'Bharatpur & Laxmanpur',
+          'Natural Bridge'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Neil to Port Blair & Sagarika Shopping',
+        location: 'Port Blair',
+        description: 'Return by private ferry to Port Blair. Check in to Bay Leaf and visit Sagarika Emporium.',
+        meals: 'Breakfast Included',
+        stay: 'Bay Leaf (Standard)',
+        activities: [
+          'Private Ferry to Port Blair',
+          'Sagarika Shopping'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Ross Island & North Bay Coral Island Excursion',
+        location: 'Ross & North Bay Islands',
+        description: 'Boat excursion from Aberdeen Jetty to the colonial ruins of Ross Island and the coral gardens of North Bay Island.',
+        meals: 'Breakfast Included',
+        stay: 'Bay Leaf (Standard)',
+        activities: [
+          'Ross Island Ruins',
+          'North Bay Island Coral Reefs'
+        ]
+      },
+      {
+        day: 7,
+        title: 'Port Blair Departure',
+        location: 'Port Blair',
+        description: 'Breakfast at hotel and private departure transfer to Port Blair Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '6 Nights in Deluxe hotels (Bay Leaf & 4★ Aquays Resorts)',
+      'Daily breakfast (CP Plan)',
+      'Speed boat trip to Elephant Beach with complimentary snorkeling',
+      'Day trip to Ross Island & North Bay Island by boat',
+      'All inter-island transfers by Private AC Catamaran Ferry',
+      'All private vehicle road transfers & sightseeing'
+    ],
+    exclusions: [
+      'Airfares',
+      'Water sports charges at North Bay',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Deluxe: 3★ Bay Leaf, 4★ Aquays Havelock, 4★ Aquays Neil',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: false,
+    cardFeatures: [
+      '3N Port Blair, 2N Havelock, 1N Neil',
+      '4★ Aquays Resorts & Bay Leaf',
+      'Ross & North Bay + Elephant Beach',
+      'Transfers (Private) & CP Meals'
+    ]
+  },
+  {
+    slug: 'andaman-premium-coral-discovery-6n',
+    title: '6N Andaman Premium Coral Discovery (Premium)',
+    tagline: '3N Port Blair, 2N Havelock & 1N Neil at 4★ Lemon Tree & Sandyy Waves',
+    destinationSlug: 'andaman',
+    destinationName: 'Andaman Islands',
+    durationDays: 7,
+    durationNights: 6,
+    priceINR: 45195,
+    originalPriceINR: 41195,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Immerse in refined comfort over 6 nights with 4★ Lemon Tree in Port Blair, the beachfront luxury of Sandyy Waves in Havelock, and sea-view balcony rooms at TSG Aura in Neil. Includes Elephant Beach speed boat, snorkeling, and Ross & North Bay island tours.',
+    highlights: [
+      '3N Port Blair, 2N Havelock, 1N Neil',
+      '4★ Lemon Tree Hotel (Superior), 4★ Sandyy Waves Beach Resort (Premium), 4★ TSG Aura (Sea Side Room with Balcony)',
+      'Ross Island & North Bay Coral Island day excursion',
+      'Elephant Beach Speed Boat with complimentary snorkeling',
+      'High-speed Private AC Catamaran Ferry crossings'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Port Blair & Lemon Tree Check-in',
+        location: 'Port Blair',
+        description: 'Arrive at Port Blair Airport and private transfer to 4★ Lemon Tree Hotel. Visit Corbyn’s Cove Beach and Cellular Jail Light & Sound show.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Lemon Tree Hotel 4★ (Superior)',
+        activities: [
+          'Airport Meet & Transfer',
+          'Corbyn’s Cove Beach',
+          'Cellular Jail Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Port Blair to Havelock & Sandyy Waves Resort',
+        location: 'Havelock Island',
+        description: 'Private AC catamaran ferry to Havelock Island. Check in to Sandyy Waves Beach Resort. Afternoon sunset at Radhanagar Beach.',
+        meals: 'Breakfast Included',
+        stay: 'Sandyy Waves Beach Resort 4★ (Premium)',
+        activities: [
+          'Pvt AC Catamaran Ferry',
+          'Radhanagar Beach Sunset'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Elephant Beach Speed Boat & Snorkeling',
+        location: 'Havelock Island',
+        description: 'Speed boat ride to Elephant Beach. Enjoy complimentary snorkeling session and white sand beach relaxation.',
+        meals: 'Breakfast Included',
+        stay: 'Sandyy Waves Beach Resort 4★ (Premium)',
+        activities: [
+          'Speed Boat to Elephant Beach',
+          'Complimentary Snorkeling'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Havelock to Neil Island & TSG Aura Sea View Balcony',
+        location: 'Neil Island',
+        description: 'Private ferry to Neil Island. Check in to TSG Aura with sea-view balcony. Tour Bharatpur Beach, Laxmanpur Beach, and the Natural Coral Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'TSG Aura 4★ (Sea Side Room with Balcony)',
+        activities: [
+          'Private Ferry to Neil',
+          'Bharatpur & Laxmanpur',
+          'Natural Bridge'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Neil to Port Blair & Sagarika Shopping',
+        location: 'Port Blair',
+        description: 'Private ferry back to Port Blair. Check in to Lemon Tree Hotel and visit Sagarika Emporium shopping complex.',
+        meals: 'Breakfast Included',
+        stay: 'Lemon Tree Hotel 4★ (Superior)',
+        activities: [
+          'Private Ferry to Port Blair',
+          'Sagarika Shopping'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Ross Island & North Bay Coral Island Excursion',
+        location: 'Ross & North Bay Islands',
+        description: 'Boat excursion from Aberdeen Jetty exploring the historical British ruins of Ross Island and the coral reefs of North Bay Island.',
+        meals: 'Breakfast Included',
+        stay: 'Lemon Tree Hotel 4★ (Superior)',
+        activities: [
+          'Ross Island Ruins',
+          'North Bay Island Coral Reefs'
+        ]
+      },
+      {
+        day: 7,
+        title: 'Port Blair Departure',
+        location: 'Port Blair',
+        description: 'Breakfast at Lemon Tree before your private departure transfer to Port Blair Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '6 Nights in Premium 4★ hotels (Lemon Tree, Sandyy Waves, TSG Aura)',
+      'Daily breakfast (CP Plan)',
+      'Speed boat trip to Elephant Beach with complimentary snorkeling',
+      'Day trip to Ross Island & North Bay Island by boat',
+      'All inter-island transfers by Private AC Catamaran Ferry',
+      'All private vehicle road transfers & sightseeing'
+    ],
+    exclusions: [
+      'Airfares',
+      'Water sports charges at North Bay',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Premium: 4★ Lemon Tree, 4★ Sandyy Waves, 4★ TSG Aura',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: true,
+    cardFeatures: [
+      '3N Port Blair, 2N Havelock, 1N Neil',
+      '4★ Lemon Tree & Sandyy Waves Resort',
+      'Ross & North Bay + Elephant Beach',
+      'Transfers (Private) & CP Meals'
+    ]
+  },
+  {
+    slug: 'andaman-ultimate-symphony-luxury-6n',
+    title: '6N Andaman Ultimate Symphony Luxury (Luxury)',
+    tagline: '3N Port Blair, 2N Havelock & 1N Neil at 5★ Symphony Samudra & De Foret',
+    destinationSlug: 'andaman',
+    destinationName: 'Andaman Islands',
+    durationDays: 7,
+    durationNights: 6,
+    priceINR: 53625,
+    originalPriceINR: 49625,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Luxury Escapes',
+    heroImage: 'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'The grandest luxury island holiday in India: 3 nights at 5★ Symphony Samudra Jungle Resort in Port Blair, private tropical villas at 5★ De Foret Resort in Havelock, and 4★ Symphony Summer Sand Beach Resort in Neil Island. Includes Elephant Beach speed boat, snorkeling, and Ross & North Bay island tours.',
+    highlights: [
+      '3N Port Blair, 2N Havelock, 1N Neil',
+      '5★ Symphony Samudra (Casa Tropicana), 5★ De Foret Resort (De Tropical Villa), 4★ Symphony Summer Sand (Casa Earth)',
+      'Ross Island & North Bay Coral Island boat excursion',
+      'Elephant Beach Speed Boat with complimentary snorkeling',
+      'High-speed Private AC Catamaran Ferry crossings'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Port Blair & 5★ Symphony Samudra Check-in',
+        location: 'Port Blair',
+        description: 'Arrive at Port Blair Airport and private transfer to 5★ Symphony Samudra. Visit Corbyn’s Cove Beach and Cellular Jail Light & Sound show.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Symphony Samudra 5★ (Casa Tropicana)',
+        activities: [
+          'Airport Meet & Transfer',
+          'Corbyn’s Cove Beach',
+          'Cellular Jail Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Port Blair to Havelock & 5★ De Foret Tropical Villa',
+        location: 'Havelock Island',
+        description: 'Private catamaran ferry to Havelock Island. Check in to your private tropical villa at 5★ De Foret Resort. Sunset at Radhanagar Beach.',
+        meals: 'Breakfast Included',
+        stay: 'De Foret Resort 5★ (De Tropical Villa)',
+        activities: [
+          'Pvt AC Catamaran Ferry',
+          'Radhanagar Beach Sunset'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Elephant Beach Speed Boat & Snorkeling',
+        location: 'Havelock Island',
+        description: 'Speed boat ride to Elephant Beach. Enjoy complimentary snorkeling session and white sand beach relaxation.',
+        meals: 'Breakfast Included',
+        stay: 'De Foret Resort 5★ (De Tropical Villa)',
+        activities: [
+          'Speed Boat to Elephant Beach',
+          'Complimentary Snorkeling'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Havelock to Neil Island & Symphony Summer Sand Resort',
+        location: 'Neil Island',
+        description: 'Private ferry to Neil Island. Check in to Symphony Summer Sand Beach Resort. Tour Bharatpur Beach, Laxmanpur Beach, and the Natural Coral Bridge.',
+        meals: 'Breakfast Included',
+        stay: 'Symphony Summer Sand 4★ (Casa Earth)',
+        activities: [
+          'Private Ferry to Neil',
+          'Bharatpur & Laxmanpur',
+          'Natural Bridge'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Neil to Port Blair & Symphony Samudra Retreat',
+        location: 'Port Blair',
+        description: 'Private ferry back to Port Blair. Settle into 5★ Symphony Samudra. Visit Sagarika Emporium for island souvenirs and pearls.',
+        meals: 'Breakfast Included',
+        stay: 'Symphony Samudra 5★ (Casa Tropicana)',
+        activities: [
+          'Private Ferry to Port Blair',
+          'Sagarika Shopping'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Ross Island & North Bay Coral Island Excursion',
+        location: 'Ross & North Bay Islands',
+        description: 'Boat excursion from Aberdeen Jetty to the colonial British ruins of Ross Island and the coral reef gardens of North Bay Island.',
+        meals: 'Breakfast Included',
+        stay: 'Symphony Samudra 5★ (Casa Tropicana)',
+        activities: [
+          'Ross Island Ruins',
+          'North Bay Island Coral Reefs'
+        ]
+      },
+      {
+        day: 7,
+        title: 'Port Blair Departure',
+        location: 'Port Blair',
+        description: 'Breakfast at hotel and private departure transfer to Port Blair Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '6 Nights in 5★ & 4★ Luxury Resorts (Symphony Samudra, De Foret, Symphony Summer Sand)',
+      'Daily breakfast (CP Plan)',
+      'Speed boat trip to Elephant Beach with complimentary snorkeling',
+      'Day trip to Ross Island & North Bay Island by boat',
+      'All inter-island transfers by Private AC Catamaran Ferry',
+      'All private vehicle road transfers & sightseeing'
+    ],
+    exclusions: [
+      'Airfares',
+      'Water sports charges at North Bay',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Luxury: 5★ Symphony Samudra, 5★ De Foret, 4★ Symphony Summer Sand',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: true,
+    cardFeatures: [
+      '3N Port Blair, 2N Havelock, 1N Neil',
+      '5★ Symphony Samudra & De Foret Villa',
+      'Ross & North Bay + Elephant Beach',
+      'Transfers (Private) & CP Meals'
+    ]
+  },
+  {
+    slug: 'bhutan-bliss-ex-bagdogra-standard-5n',
+    title: '5N Bhutan Bliss - Ex Bagdogra (Standard)',
+    tagline: '2N Paro, 1N Thimphu & 2N Phuntsholing with Tiger’s Nest Hike',
+    destinationSlug: 'bhutan',
+    destinationName: 'Bhutan',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 36215,
+    originalPriceINR: 32215,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1555821108-3fb2763b226a?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1532008779255-4b4dd2668c84?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1555821108-3fb2763b226a?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1532008779255-4b4dd2668c84?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1578556881786-851d4b79cb73?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1566020588139-c51e12355ffa?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1729176989155-2009f78225d6?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Embark on a soulful 5-night journey into the Himalayan Kingdom of Bhutan starting from Bagdogra. Discover the border town of Phuntsholing, the capital Thimphu with its giant golden Buddha Dordenma and Tashichho Dzong, and hike to the legendary cliffside Tiger’s Nest Monastery (Taktsang) in Paro.',
+    highlights: [
+      '2N Paro, 1N Thimphu, 2N Phuntsholing',
+      '3★ Gonju Boutique (Paro), 3★ Hotel Oro Villa (Thimphu), 3★ Hotel Legphel (Phuntsholing)',
+      'Day hike to the cliff-hanging Tiger’s Nest Monastery (Paro Taktsang)',
+      'Buddha Dordenma, Tashichho Dzong, Simply Bhutan Museum & Takin Preserve',
+      'Dedicated private vehicle transfers from/to Bagdogra Airport (IXB)'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival at Bagdogra & Transfer to Phuntsholing',
+        location: 'Bagdogra to Phuntsholing',
+        description: 'Arrive at Bagdogra Airport (IXB). Meet your private chauffeur and enjoy a scenic drive through the tea gardens of North Bengal to the border gateway town of Phuntsholing. Complete check-in formalities and relax.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Hotel Legphel 3★ (Phuntsholing)',
+        activities: [
+          'Bagdogra Airport Meet & Greet',
+          'Scenic Drive to Border',
+          'Hotel Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Phuntsholing to Thimphu via Kharbandi Gompa',
+        location: 'Phuntsholing to Thimphu (6 hrs / 2,300m)',
+        description: 'Breakfast at hotel, complete immigration formalities, and drive to capital Thimphu stopping at Kharbandi Gompa for valley views. Arrive in Thimphu, check in, view Tashichho Dzong, and stroll around Changlimithang and walking Buddha Park.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Oro Villa 3★ (Thimphu)',
+        activities: [
+          'Immigration Formalities',
+          'Kharbandi Gompa',
+          'Tashichho Dzong View',
+          'Thimphu Town Leisure'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Thimphu Sightseeing & Transfer to Paro',
+        location: 'Thimphu to Paro',
+        description: 'Visit the colossal Buddha Dordenma viewpoint, Simply Bhutan living museum, and the Takin Preserve. Drive to Paro, stopping at 17th-century Tachog Lhakhang iron-chain bridge. Try traditional Bhutanese attire (Gho/Kira) and enjoy evening leisure in Paro town.',
+        meals: 'Breakfast Included',
+        stay: 'Gonju Boutique 3★ (Paro)',
+        activities: [
+          'Buddha Dordenma Viewpoint',
+          'Simply Bhutan Museum',
+          'Takin Preserve',
+          'Tachog Lhakhang Bridge'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Paro — Pilgrimage Hike to Tiger’s Nest (Taktsang)',
+        location: 'Paro',
+        description: 'Early morning hike to the world-famous Tiger’s Nest Temple (Paro Taktsang), perched precariously on a granite cliff 900m above the valley floor. Afterward, visit Namgay Artisanal Brewery and explore local crafts with an optional traditional hot stone bath.',
+        meals: 'Breakfast Included',
+        stay: 'Gonju Boutique 3★ (Paro)',
+        activities: [
+          'Tiger’s Nest Monastery Trek',
+          'Namgay Brewery Visit',
+          'Paro Market Leisure'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Paro Dzong Sightseeing & Transfer to Phuntsholing',
+        location: 'Paro to Phuntsholing',
+        description: 'Visit Paro Rinpung Dzong (17th-century fortress) and the sacred 7th-century Kyichu Lhakhang. Enjoy lunch before descending through winding mountain roads back to Phuntsholing. Complete exit formalities.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Legphel 3★ (Phuntsholing)',
+        activities: [
+          'Paro Rinpung Dzong',
+          'Kyichu Lhakhang Temple',
+          'Scenic Drive to Phuntsholing'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Phuntsholing to Bagdogra Airport Departure',
+        location: 'Phuntsholing to Bagdogra',
+        description: 'Enjoy breakfast at your hotel before your private departure transfer back across the border to Bagdogra Airport (IXB) for your flight home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Bagdogra Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '5 Nights accommodation (2N Paro, 1N Thimphu, 2N Phuntsholing)',
+      'Daily breakfast (CP Plan)',
+      'All sightseeing and entry permits assistance',
+      'Dedicated private vehicle transfers Ex-Bagdogra (Swift Dzire / Ertiga in Bhutan)',
+      'Driver allowances, toll taxes, fuel, and parking charges'
+    ],
+    exclusions: [
+      'Airfares to/from Bagdogra',
+      'Sustainable Development Fee (SDF) / Monument entry fees where applicable',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Standard 3★: Gonju Boutique, Hotel Oro Villa, Hotel Legphel',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: true,
+    cardFeatures: [
+      '2N Paro, 1N Thimphu, 2N Phuntsholing',
+      'Gonju Boutique, Oro Villa & Legphel',
+      'Tiger’s Nest Hike & Buddha Dordenma',
+      'Pvt Vehicle & CP Breakfast Plan'
+    ]
+  },
+  {
+    slug: 'bhutan-bliss-ex-bagdogra-premium-5n',
+    title: '5N Bhutan Bliss - Ex Bagdogra (Premium)',
+    tagline: '2N Paro, 1N Thimphu & 2N Phuntsholing at Treenz Lite & Khamsum Inn',
+    destinationSlug: 'bhutan',
+    destinationName: 'Bhutan',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 38190,
+    originalPriceINR: 34190,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1578556881786-851d4b79cb73?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1555821108-3fb2763b226a?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1578556881786-851d4b79cb73?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1555821108-3fb2763b226a?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1532008779255-4b4dd2668c84?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1566020588139-c51e12355ffa?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1729176989155-2009f78225d6?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Upgrade your Bhutan holiday staying at premium 3-star handpicked properties: Treenz Lite in Paro, Hotel Khamsum Inn in Thimphu, and Hotel Meto Pema in Phuntsholing. Includes private vehicle transfers Ex-Bagdogra and the iconic Tiger’s Nest monastery hike.',
+    highlights: [
+      '2N Paro, 1N Thimphu, 2N Phuntsholing',
+      '3★ Premium: Treenz Lite (Paro), Hotel Khamsum Inn (Thimphu), Hotel Meto Pema (Phuntsholing)',
+      'Day hike to the cliffside Tiger’s Nest Monastery (Paro Taktsang)',
+      'Buddha Dordenma viewpoint, Tashichho Dzong & Simply Bhutan Museum',
+      'Private vehicle transfers throughout Ex-Bagdogra'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Bagdogra Arrival & Transfer to Phuntsholing',
+        location: 'Bagdogra to Phuntsholing',
+        description: 'Arrive at Bagdogra Airport and private transfer across the Dooars tea estates to Hotel Meto Pema in Phuntsholing.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Hotel Meto Pema 3★ Premium (Phuntsholing)',
+        activities: [
+          'Airport Meet & Transfer',
+          'Border Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Phuntsholing to Thimphu via Kharbandi Gompa',
+        location: 'Phuntsholing to Thimphu',
+        description: 'Complete immigration formalities and drive to Thimphu. Check into Hotel Khamsum Inn. Visit Tashichho Dzong and walking Buddha Park.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Khamsum Inn 3★ Premium (Thimphu)',
+        activities: [
+          'Immigration Formalities',
+          'Kharbandi Gompa',
+          'Tashichho Dzong View'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Thimphu Sightseeing & Transfer to Paro',
+        location: 'Thimphu to Paro',
+        description: 'Visit Buddha Dordenma, Simply Bhutan Museum, and Takin Preserve. Scenic drive to Paro via Tachog Lhakhang iron bridge. Check in to Treenz Lite.',
+        meals: 'Breakfast Included',
+        stay: 'Treenz Lite 3★ Premium (Paro)',
+        activities: [
+          'Buddha Dordenma',
+          'Simply Bhutan',
+          'Tachog Lhakhang Bridge'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Paro — Hike to Tiger’s Nest (Taktsang)',
+        location: 'Paro',
+        description: 'Hike through pine forests to the awe-inspiring Tiger’s Nest Monastery. Afternoon visit to Namgay Artisanal Brewery and Paro market.',
+        meals: 'Breakfast Included',
+        stay: 'Treenz Lite 3★ Premium (Paro)',
+        activities: [
+          'Tiger’s Nest Hike',
+          'Namgay Brewery Visit'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Paro Dzong to Phuntsholing',
+        location: 'Paro to Phuntsholing',
+        description: 'Visit Paro Rinpung Dzong and Kyichu Lhakhang before driving down to Phuntsholing. Check into Hotel Meto Pema.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Meto Pema 3★ Premium (Phuntsholing)',
+        activities: [
+          'Paro Rinpung Dzong',
+          'Kyichu Lhakhang',
+          'Transfer to Phuntsholing'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Phuntsholing to Bagdogra Departure',
+        location: 'Phuntsholing to Bagdogra',
+        description: 'Breakfast at hotel and private departure transfer to Bagdogra Airport for your return flight.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '5 Nights in 3★ Premium hotels (Treenz Lite, Khamsum Inn, Meto Pema)',
+      'Daily breakfast (CP Plan)',
+      'All sightseeing and entry permit assistance',
+      'Private vehicle road transfers Ex-Bagdogra and across Bhutan',
+      'Toll, fuel, parking, and driver allowances'
+    ],
+    exclusions: [
+      'Airfares to/from Bagdogra',
+      'SDF / Monument fees',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Premium 3★: Treenz Lite, Hotel Khamsum Inn, Hotel Meto Pema',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: false,
+    cardFeatures: [
+      '2N Paro, 1N Thimphu, 2N Phuntsholing',
+      'Treenz Lite, Khamsum Inn & Meto Pema',
+      'Tiger’s Nest Hike & Buddha Dordenma',
+      'Pvt Vehicle & CP Breakfast Plan'
+    ]
+  },
+  {
+    slug: 'bhutan-grand-discovery-standard-6n',
+    title: '6N Bhutan Grand Himalayan Discovery (Standard)',
+    tagline: '2N Paro, 2N Thimphu & 2N Phuntsholing with Full Day Thimphu Tour',
+    destinationSlug: 'bhutan',
+    destinationName: 'Bhutan',
+    durationDays: 7,
+    durationNights: 6,
+    priceINR: 43430,
+    originalPriceINR: 39430,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1532008779255-4b4dd2668c84?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1566020588139-c51e12355ffa?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1532008779255-4b4dd2668c84?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1566020588139-c51e12355ffa?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1555821108-3fb2763b226a?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1578556881786-851d4b79cb73?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1729176989155-2009f78225d6?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'An extensive 6-night Himalayan discovery allowing an extra day to absorb the culture of Thimphu and the serene valleys of Paro. Features 2 nights in Phuntsholing, 2 nights in Thimphu, 2 nights in Paro, and the unforgettable Tiger’s Nest pilgrimage hike.',
+    highlights: [
+      '2N Paro, 2N Thimphu, 2N Phuntsholing',
+      '3★ Gonju Boutique (Paro), 3★ Hotel Oro Villa (Thimphu), 3★ Hotel Legphel (Phuntsholing)',
+      'Tiger’s Nest (Taktsang) cliffside monastery day hike',
+      'Full-day Thimphu exploration: National Memorial Chorten, Buddha Dordenma & Takin Preserve',
+      'Private vehicle transfers Ex-Bagdogra'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival at Bagdogra & Transfer to Phuntsholing',
+        location: 'Bagdogra to Phuntsholing',
+        description: 'Arrive at Bagdogra Airport and transfer in a private vehicle through North Bengal tea estates to Hotel Legphel in Phuntsholing.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Hotel Legphel 3★ (Phuntsholing)',
+        activities: [
+          'Bagdogra Airport Meet & Transfer',
+          'Border Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Phuntsholing to Thimphu via Kharbandi Gompa',
+        location: 'Phuntsholing to Thimphu',
+        description: 'Complete immigration formalities and ascend past mountain clouds to Thimphu. Stop at Kharbandi Gompa. Check into Hotel Oro Villa.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Oro Villa 3★ (Thimphu)',
+        activities: [
+          'Immigration Formalities',
+          'Kharbandi Gompa',
+          'Thimphu Evening Stroll'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Full Day Cultural Thimphu Discovery',
+        location: 'Thimphu',
+        description: 'Discover the 52m golden Buddha Dordenma, National Memorial Chorten, Simply Bhutan living museum, Centenary Farmers Market, and Motithang Takin Preserve.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Oro Villa 3★ (Thimphu)',
+        activities: [
+          'Buddha Dordenma',
+          'Memorial Chorten',
+          'Simply Bhutan Museum',
+          'Takin Preserve'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Thimphu to Paro & Tachog Lhakhang Bridge',
+        location: 'Thimphu to Paro',
+        description: 'Drive along the river valley to Paro. Visit the 15th-century iron-chain bridge at Tachog Lhakhang. Try traditional Gho/Kira attire and explore Paro town.',
+        meals: 'Breakfast Included',
+        stay: 'Gonju Boutique 3★ (Paro)',
+        activities: [
+          'Tachog Lhakhang Bridge',
+          'Traditional Attire Experience',
+          'Paro Town Stroll'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Paro — Hike to Tiger’s Nest (Taktsang)',
+        location: 'Paro',
+        description: 'Pilgrimage day hike to Tiger’s Nest Monastery (Taktsang) hanging 900m above Paro valley floor. Visit Namgay Brewery for local craft beer tasting.',
+        meals: 'Breakfast Included',
+        stay: 'Gonju Boutique 3★ (Paro)',
+        activities: [
+          'Tiger’s Nest Trek',
+          'Namgay Artisanal Brewery',
+          'Paro Market Leisure'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Paro Sightseeing & Descent to Phuntsholing',
+        location: 'Paro to Phuntsholing',
+        description: 'Visit Paro Rinpung Dzong and 7th-century Kyichu Lhakhang before driving down to Phuntsholing for your final evening in Bhutan.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Legphel 3★ (Phuntsholing)',
+        activities: [
+          'Paro Rinpung Dzong',
+          'Kyichu Lhakhang',
+          'Transfer to Phuntsholing'
+        ]
+      },
+      {
+        day: 7,
+        title: 'Phuntsholing to Bagdogra Departure',
+        location: 'Phuntsholing to Bagdogra',
+        description: 'Breakfast at hotel and private departure transfer to Bagdogra Airport for your flight back home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '6 Nights accommodation (2N Paro, 2N Thimphu, 2N Phuntsholing)',
+      'Daily breakfast (CP Plan)',
+      'All sightseeing and entry permit assistance',
+      'Private vehicle road transfers Ex-Bagdogra and across Bhutan',
+      'Toll, fuel, parking, and driver allowances'
+    ],
+    exclusions: [
+      'Airfares to/from Bagdogra',
+      'SDF / Monument fees',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Standard 3★: Gonju Boutique, Hotel Oro Villa, Hotel Legphel',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: true,
+    cardFeatures: [
+      '2N Paro, 2N Thimphu, 2N Phuntsholing',
+      'Gonju Boutique, Oro Villa & Legphel',
+      'Tiger’s Nest Hike & Full Day Thimphu',
+      'Pvt Vehicle & CP Breakfast Plan'
+    ]
+  },
+  {
+    slug: 'bhutan-grand-discovery-premium-6n',
+    title: '6N Bhutan Grand Himalayan Discovery (Premium)',
+    tagline: '2N Paro, 2N Thimphu & 2N Phuntsholing at Treenz Lite & Khamsum Inn',
+    destinationSlug: 'bhutan',
+    destinationName: 'Bhutan',
+    durationDays: 7,
+    durationNights: 6,
+    priceINR: 45680,
+    originalPriceINR: 41680,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'international',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1578556881786-851d4b79cb73?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1729176989155-2009f78225d6?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1578556881786-851d4b79cb73?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1729176989155-2009f78225d6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1555821108-3fb2763b226a?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1532008779255-4b4dd2668c84?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1566020588139-c51e12355ffa?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Experience the Grand Bhutan Discovery with premium 3-star boutique stays: Treenz Lite in Paro, Hotel Khamsum Inn in Thimphu, and Hotel Meto Pema in Phuntsholing. Includes a dedicated full day in Thimphu and the Tiger’s Nest monastery hike.',
+    highlights: [
+      '2N Paro, 2N Thimphu, 2N Phuntsholing',
+      '3★ Premium: Treenz Lite (Paro), Hotel Khamsum Inn (Thimphu), Hotel Meto Pema (Phuntsholing)',
+      'Tiger’s Nest (Taktsang) cliffside monastery pilgrimage hike',
+      'Comprehensive Thimphu city tour including Buddha Dordenma & Memorial Chorten',
+      'Private vehicle transfers throughout Ex-Bagdogra'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Bagdogra Arrival & Transfer to Phuntsholing',
+        location: 'Bagdogra to Phuntsholing',
+        description: 'Arrive at Bagdogra Airport and transfer in a private vehicle to Hotel Meto Pema in Phuntsholing.',
+        meals: 'CP (Breakfast Included)',
+        stay: 'Hotel Meto Pema 3★ Premium (Phuntsholing)',
+        activities: [
+          'Bagdogra Airport Meet & Transfer',
+          'Border Check-in'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Phuntsholing to Thimphu via Kharbandi Gompa',
+        location: 'Phuntsholing to Thimphu',
+        description: 'Immigration formalities and drive through misty mountains to Thimphu. Check into Hotel Khamsum Inn.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Khamsum Inn 3★ Premium (Thimphu)',
+        activities: [
+          'Immigration Formalities',
+          'Kharbandi Gompa',
+          'Thimphu Evening Stroll'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Full Day Cultural Thimphu Discovery',
+        location: 'Thimphu',
+        description: 'Full day exploring Buddha Dordenma viewpoint, National Memorial Chorten, Simply Bhutan Museum, and Motithang Takin Preserve.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Khamsum Inn 3★ Premium (Thimphu)',
+        activities: [
+          'Buddha Dordenma',
+          'Memorial Chorten',
+          'Simply Bhutan Museum',
+          'Takin Preserve'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Thimphu to Paro & Tachog Lhakhang Bridge',
+        location: 'Thimphu to Paro',
+        description: 'Scenic drive to Paro. Visit Tachog Lhakhang iron suspension bridge. Check in to Treenz Lite.',
+        meals: 'Breakfast Included',
+        stay: 'Treenz Lite 3★ Premium (Paro)',
+        activities: [
+          'Tachog Lhakhang Bridge',
+          'Paro Town Stroll'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Paro — Hike to Tiger’s Nest (Taktsang)',
+        location: 'Paro',
+        description: 'Pilgrimage day hike to Tiger’s Nest Monastery (Taktsang) hanging 900m above Paro valley floor. Visit Namgay Brewery for local craft beer tasting.',
+        meals: 'Breakfast Included',
+        stay: 'Treenz Lite 3★ Premium (Paro)',
+        activities: [
+          'Tiger’s Nest Trek',
+          'Namgay Artisanal Brewery',
+          'Paro Market Leisure'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Paro Dzong Sightseeing & Descent to Phuntsholing',
+        location: 'Paro to Phuntsholing',
+        description: 'Visit Paro Rinpung Dzong and 7th-century Kyichu Lhakhang before driving down to Phuntsholing. Check in to Hotel Meto Pema.',
+        meals: 'Breakfast Included',
+        stay: 'Hotel Meto Pema 3★ Premium (Phuntsholing)',
+        activities: [
+          'Paro Rinpung Dzong',
+          'Kyichu Lhakhang',
+          'Transfer to Phuntsholing'
+        ]
+      },
+      {
+        day: 7,
+        title: 'Phuntsholing to Bagdogra Departure',
+        location: 'Phuntsholing to Bagdogra',
+        description: 'Breakfast at hotel and private departure transfer to Bagdogra Airport for your flight back home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Private Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '6 Nights in 3★ Premium hotels (Treenz Lite, Khamsum Inn, Meto Pema)',
+      'Daily breakfast (CP Plan)',
+      'All sightseeing and entry permit assistance',
+      'Private vehicle road transfers Ex-Bagdogra and across Bhutan',
+      'Toll, fuel, parking, and driver allowances'
+    ],
+    exclusions: [
+      'Airfares to/from Bagdogra',
+      'SDF / Monument fees',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Premium 3★: Treenz Lite, Hotel Khamsum Inn, Hotel Meto Pema',
+    groupSize: 'Custom Private FIT Itinerary (2 Pax Basis)',
+    featured: false,
+    cardFeatures: [
+      '2N Paro, 2N Thimphu, 2N Phuntsholing',
+      'Treenz Lite, Khamsum Inn & Meto Pema',
+      'Tiger’s Nest Hike & Full Day Thimphu',
+      'Pvt Vehicle & CP Breakfast Plan'
+    ]
+  },
+  {
+    slug: '1n-rann-utsav-premium-ac-tent',
+    title: '1N Gujarat Rann Utsav (Premium AC Tent)',
+    tagline: '1 Night at Praveg White Rann Resort with Sunset at White Desert & Cultural Night',
+    destinationSlug: 'gujarat',
+    destinationName: 'Gujarat — Rann of Kutch',
+    durationDays: 2,
+    durationNights: 1,
+    priceINR: 11000,
+    originalPriceINR: 7000,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1710305955511-22f4c80477c7?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1706013729724-caada9be0f97?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1710305955511-22f4c80477c7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706013729724-caada9be0f97?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1669015881702-951de590db31?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1670688599212-737088d7bbd5?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Experience the magic of the Great Rann of Kutch staying in a Premium AC Tent at Praveg White Rann Resort, Dhordo. Witness the surreal sunset over the endless salt flats, savor authentic Kutchi dining, and enjoy folk music, dance, and cultural bonfires.',
+    highlights: [
+      '1 Night in Premium AC Tent at Praveg White Rann Resort, Dhordo',
+      'Transfers between Bhuj Railway Station/Airport and Dhordo by AC coach (SIC)',
+      'Evening sunset & morning sunrise visits to the Great White Rann',
+      'All meals included: Lunch, High Tea, Dinner & Breakfast at dining area',
+      'Cultural folk dance, music performances & Grand Housie entertainment'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Bhuj to Dhordo, White Rann Sunset & Cultural Night',
+        location: 'Bhuj to Dhordo (White Rann)',
+        description: '09:30 am pickup from Bhuj Railway Station or Bhuj Airport by AC coach (SIC). Arrive at Praveg White Rann Resort, Dhordo (approx. 81 km, 2 hrs). Check in at 12:30 pm, relish a traditional Kutchi lunch, and enjoy resort activities. In the afternoon, enjoy High Tea followed by transfer to the Great White Rann to witness a mesmerizing sunset over the white salt desert. Return for dinner and an evening of cultural folk dance and music.',
+        meals: 'Lunch, High Tea & Dinner Included',
+        stay: 'Praveg White Rann Resort (Premium AC Tent)',
+        activities: [
+          'Bhuj AC Coach Transfer',
+          'Resort Check-in & Lunch',
+          'White Rann Sunset Visit',
+          'Folk Dance & Cultural Night'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Morning White Rann Sunrise, Bhuj Sightseeing & Departure',
+        location: 'Dhordo to Bhuj',
+        description: '06:30 am early morning visit to the White Rann to witness the sunrise over crystal salt beds. Return for breakfast at the resort dining hall. 09:30 am check-out and departure transfer to Bhuj with complimentary en route sightseeing (Aina Mahal, Prag Mahal, or Kutch Museum). Drop at Bhuj Railway Station/Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'White Rann Sunrise Stroll',
+          'Complimentary Bhuj City Sightseeing',
+          'Bhuj Station/Airport Drop'
+        ]
+      }
+    ],
+    inclusions: [
+      '1 Night in Premium AC Tent at Praveg White Rann Resort, Dhordo',
+      'All meals: Lunch, Evening High Tea, Dinner and Breakfast',
+      'Round-trip AC coach transfers from Bhuj Railway Station/Airport (SIC)',
+      'Evening sunset and morning sunrise visits to White Rann',
+      'Resort cultural performances, folk entertainment & Grand Housie'
+    ],
+    exclusions: [
+      'Train/Air tickets to Bhuj',
+      'Rann permit fee (online/at checkpost)',
+      'Personal expenses and adventure rides'
+    ],
+    hotelStandard: 'Praveg White Rann Resort, Dhordo (Premium AC Tent)',
+    groupSize: 'Custom Private / SIC Package (Twin Sharing)',
+    featured: true,
+    cardFeatures: [
+      '1N Praveg White Rann Resort, Dhordo',
+      'Premium AC Tent (Twin Sharing)',
+      'White Rann Sunset & Cultural Night',
+      'AC Coach Transfers from Bhuj (SIC) & All Meals'
+    ]
+  },
+  {
+    slug: '1n-rann-utsav-rajwadi-ac-bhunga',
+    title: '1N Gujarat Rann Utsav (Rajwadi AC Bhunga)',
+    tagline: '1 Night in Traditional Kutchi Mud Cottage with White Desert Sunset & Cultural Night',
+    destinationSlug: 'gujarat',
+    destinationName: 'Gujarat — Rann of Kutch',
+    durationDays: 2,
+    durationNights: 1,
+    priceINR: 11500,
+    originalPriceINR: 7500,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1669015881702-951de590db31?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1670688599212-737088d7bbd5?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1669015881702-951de590db31?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706013729724-caada9be0f97?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1710305955511-22f4c80477c7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1670688599212-737088d7bbd5?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Immerse in authentic Kutchi royalty staying in an air-conditioned Rajwadi Bhunga at Praveg White Rann Resort, Dhordo. Admire circular mud architecture with handcrafted Lippan mirror artwork, experience White Rann sunsets, and indulge in full hospitality.',
+    highlights: [
+      '1 Night in Rajwadi AC Bhunga at Praveg White Rann Resort, Dhordo',
+      'Traditional circular mud cottage with artisanal Lippan mirror-work & AC luxury',
+      'Round-trip AC coach transfers from Bhuj (SIC)',
+      'All meals included: Lunch, High Tea, Dinner & Breakfast',
+      'White Rann sunset, sunrise, folk music & cultural activities'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Bhuj to Dhordo, Rajwadi Bhunga Check-in & White Rann Sunset',
+        location: 'Bhuj to Dhordo',
+        description: '09:30 am pickup from Bhuj by AC coach. Arrive at Praveg White Rann Resort and check in to your handcrafted Rajwadi AC Bhunga. Enjoy a sumptuous lunch, High Tea, and a sunset excursion to the salt desert of the White Rann. Savor a Kutchi dinner followed by folk performances under the stars.',
+        meals: 'Lunch, High Tea & Dinner Included',
+        stay: 'Praveg White Rann Resort (Rajwadi AC Bhunga)',
+        activities: [
+          'Bhuj AC Coach Transfer',
+          'Rajwadi Bhunga Check-in',
+          'White Rann Sunset',
+          'Cultural Evening Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Sunrise at White Rann & Departure to Bhuj',
+        location: 'Dhordo to Bhuj',
+        description: 'Early morning sunrise excursion across the vast salt desert. Enjoy a hearty breakfast, check out at 09:30 am, and transfer back to Bhuj with complimentary heritage city sightseeing before airport/railway station drop.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'White Rann Sunrise Stroll',
+          'Complimentary Bhuj City Sightseeing',
+          'Bhuj Station/Airport Drop'
+        ]
+      }
+    ],
+    inclusions: [
+      '1 Night in Rajwadi AC Bhunga at Praveg White Rann Resort, Dhordo',
+      'All meals: Lunch, Evening High Tea, Dinner and Breakfast',
+      'Round-trip AC coach transfers from Bhuj Railway Station/Airport (SIC)',
+      'Sunset and sunrise visits to White Rann',
+      'Evening cultural folk performances & Grand Housie'
+    ],
+    exclusions: [
+      'Train/Air tickets to Bhuj',
+      'Rann permit fee',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Praveg White Rann Resort, Dhordo (Rajwadi AC Bhunga)',
+    groupSize: 'Custom Private / SIC Package (Twin Sharing)',
+    featured: false,
+    cardFeatures: [
+      '1N Praveg White Rann Resort, Dhordo',
+      'Rajwadi AC Bhunga Cottage (Twin Sharing)',
+      'White Rann Sunset & Cultural Night',
+      'AC Coach Transfers from Bhuj (SIC) & All Meals'
+    ]
+  },
+  {
+    slug: '2n-rann-utsav-premium-ac-tent',
+    title: '2N Gujarat Rann Utsav (Premium AC Tent)',
+    tagline: '2 Nights at Praveg White Rann Resort with Kalo Dungar & Gandhi nu Gam',
+    destinationSlug: 'gujarat',
+    destinationName: 'Gujarat — Rann of Kutch',
+    durationDays: 3,
+    durationNights: 2,
+    priceINR: 17500,
+    originalPriceINR: 13500,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1670688599212-737088d7bbd5?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1669015881702-951de590db31?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1670688599212-737088d7bbd5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1669015881702-951de590db31?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706013729724-caada9be0f97?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1710305955511-22f4c80477c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'The definitive Rann Utsav experience over 2 nights in a Premium AC Tent at Praveg White Rann Resort, Dhordo. Witness both sunset and sunrise at the White Desert, journey to Kalo Dungar (the highest point in Kutch) for panoramic views, visit the artisan handicraft village of Gandhi nu Gam, and indulge in full-board Kutchi meals.',
+    highlights: [
+      '2 Nights in Premium AC Tent at Praveg White Rann Resort, Dhordo',
+      'Round-trip AC coach transfers from Bhuj Railway Station/Airport (SIC)',
+      'Complimentary excursion to Kalo Dungar (Black Hill) & Gandhi nu Gam artisan village',
+      'Sunset & sunrise visits to the Great White Rann',
+      'All meals included (Buffet Lunches, High Teas, Dinners & Breakfasts)'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Bhuj to Dhordo, White Rann Sunset & Cultural Night',
+        location: 'Bhuj to Dhordo',
+        description: '09:30 am pickup from Bhuj Railway Station/Airport by AC coach (approx 81 km, 2 hrs). Arrive at Praveg White Rann Resort, check in at 12:30 pm, and enjoy a welcome buffet lunch. Afternoon at leisure for shopping and adventure rides. Enjoy High Tea at 04:30 pm, followed by transfer to the Great White Rann for sunset. Dinner at 08:00 pm followed by live folk music, Garba, and cultural performances.',
+        meals: 'Lunch, High Tea & Dinner Included',
+        stay: 'Praveg White Rann Resort (Premium AC Tent)',
+        activities: [
+          'Bhuj AC Coach Transfer',
+          'Resort Check-in & Lunch',
+          'White Rann Sunset Visit',
+          'Folk Music & Cultural Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Sunrise at White Rann, Kalo Dungar & Gandhi nu Gam Village',
+        location: 'Dhordo, Kalo Dungar & Gandhi nu Gam',
+        description: '06:30 am morning visit to the White Rann to catch the sunrise on the salt crystals. Breakfast at resort dining area. Relax or enjoy recreational games. After lunch, embark at 03:00 pm on a complimentary excursion to Kalo Dungar (Black Hill) — the highest peak in Kutch with panoramic views of the Indo-Pak border. Visit Gandhi nu Gam (Ludiya) to witness master embroidery artisans and mud craft. Return for dinner and cultural activities.',
+        meals: 'Breakfast, Lunch & Dinner Included',
+        stay: 'Praveg White Rann Resort (Premium AC Tent)',
+        activities: [
+          'White Rann Sunrise',
+          'Kalo Dungar Peak Excursion',
+          'Gandhi nu Gam Handicraft Village',
+          'Cultural Grand Housie'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Breakfast, Departure Transfer to Bhuj & City Sightseeing',
+        location: 'Dhordo to Bhuj',
+        description: 'Breakfast at the resort. Check-out at 09:30 am and departure transfer to Bhuj. Enjoy complimentary sightseeing in Bhuj covering Aina Mahal, Prag Mahal, and Kutch Museum before drop-off at Bhuj Railway Station/Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Breakfast at Resort',
+          'Complimentary Bhuj Heritage Sightseeing',
+          'Bhuj Station/Airport Drop'
+        ]
+      }
+    ],
+    inclusions: [
+      '2 Nights in Premium AC Tent at Praveg White Rann Resort, Dhordo',
+      'All meals: 2 Breakfasts, 2 Lunches, 1 High Tea, and 2 Dinners',
+      'Round-trip AC coach transfers from Bhuj Railway Station/Airport (SIC)',
+      'Complimentary excursion tour to Kalo Dungar & Gandhi nu Gam',
+      'White Rann sunset and sunrise visits',
+      'Complimentary Bhuj city sightseeing on departure day'
+    ],
+    exclusions: [
+      'Train/Air tickets to Bhuj',
+      'Rann permit fee',
+      'Entrance fees for Bhuj monuments',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Praveg White Rann Resort, Dhordo (Premium AC Tent)',
+    groupSize: 'Custom Private / SIC Package (Twin Sharing)',
+    featured: true,
+    cardFeatures: [
+      '2N Praveg White Rann Resort, Dhordo',
+      'Premium AC Tent (Twin Sharing)',
+      'Kalo Dungar, Gandhi nu Gam & White Rann',
+      'AC Coach Transfers from Bhuj (SIC) & All Meals'
+    ]
+  },
+  {
+    slug: '2n-rann-utsav-rajwadi-ac-bhunga',
+    title: '2N Gujarat Rann Utsav (Rajwadi AC Bhunga)',
+    tagline: '2 Nights in Traditional Luxury Bhunga with Kalo Dungar & White Desert Sunset',
+    destinationSlug: 'gujarat',
+    destinationName: 'Gujarat — Rann of Kutch',
+    durationDays: 3,
+    durationNights: 2,
+    priceINR: 18500,
+    originalPriceINR: 14500,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1706013729724-caada9be0f97?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1710305955511-22f4c80477c7?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1706013729724-caada9be0f97?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1710305955511-22f4c80477c7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1669015881702-951de590db31?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1670688599212-737088d7bbd5?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'The ultimate royal Kutchi experience staying 2 nights in a traditional Rajwadi AC Bhunga at Praveg White Rann Resort, Dhordo. Featuring intricate mud and mirror interior decor, full board dining, sunset & sunrise at White Rann, Kalo Dungar peak views, and Gandhi nu Gam craft exploration.',
+    highlights: [
+      '2 Nights in traditional Rajwadi AC Bhunga at Praveg White Rann Resort, Dhordo',
+      'Handcrafted mud cottage with traditional mirror mosaic & modern AC luxury',
+      'Complimentary excursion to Kalo Dungar (Black Hill) & Gandhi nu Gam artisan village',
+      'Sunset & sunrise visits to the Great White Rann of Kutch',
+      'Round-trip AC coach transfers from Bhuj & full-board Kutchi meals'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Bhuj to Dhordo, Rajwadi Bhunga Check-in & White Rann Sunset',
+        location: 'Bhuj to Dhordo',
+        description: '09:30 am AC coach transfer from Bhuj. Arrive at Praveg White Rann Resort, Dhordo. Check in to your luxurious Rajwadi AC Bhunga. Enjoy lunch, High Tea, and an afternoon sunset excursion to White Rann. Savor dinner accompanied by Kutchi cultural performances.',
+        meals: 'Lunch, High Tea & Dinner Included',
+        stay: 'Praveg White Rann Resort (Rajwadi AC Bhunga)',
+        activities: [
+          'Bhuj AC Coach Transfer',
+          'Rajwadi Bhunga Check-in',
+          'White Rann Sunset Visit',
+          'Folk Music Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'White Rann Sunrise, Kalo Dungar & Gandhi nu Gam Handicrafts',
+        location: 'Dhordo, Kalo Dungar & Gandhi nu Gam',
+        description: 'Morning sunrise stroll on the white salt flats. Breakfast and lunch at the resort. Afternoon 03:00 pm excursion to Kalo Dungar (highest point in Kutch) and the artisan hamlet of Gandhi nu Gam to observe Kutchi women crafting needlework and embroidery. Dinner and cultural Grand Housie at the resort.',
+        meals: 'Breakfast, Lunch & Dinner Included',
+        stay: 'Praveg White Rann Resort (Rajwadi AC Bhunga)',
+        activities: [
+          'White Rann Sunrise',
+          'Kalo Dungar Peak Excursion',
+          'Gandhi nu Gam Artisan Visit',
+          'Grand Housie Night'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Breakfast, Departure to Bhuj & Heritage Sightseeing',
+        location: 'Dhordo to Bhuj',
+        description: 'Breakfast at the resort. 09:30 am check-out and AC coach transfer to Bhuj with complimentary heritage sightseeing (Aina Mahal, Prag Mahal, Kutch Museum). Drop-off at Bhuj Railway Station or Airport.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Breakfast at Resort',
+          'Complimentary Bhuj Heritage Sightseeing',
+          'Bhuj Drop-off'
+        ]
+      }
+    ],
+    inclusions: [
+      '2 Nights in Rajwadi AC Bhunga at Praveg White Rann Resort, Dhordo',
+      'All meals: 2 Breakfasts, 2 Lunches, 1 High Tea, and 2 Dinners',
+      'Round-trip AC coach transfers from Bhuj Railway Station/Airport (SIC)',
+      'Complimentary excursion tour to Kalo Dungar & Gandhi nu Gam',
+      'White Rann sunset and sunrise visits',
+      'Complimentary Bhuj city sightseeing on departure day'
+    ],
+    exclusions: [
+      'Train/Air tickets to Bhuj',
+      'Rann permit fee',
+      'Entrance fees for Bhuj monuments',
+      'Personal expenses'
+    ],
+    hotelStandard: 'Praveg White Rann Resort, Dhordo (Rajwadi AC Bhunga)',
+    groupSize: 'Custom Private / SIC Package (Twin Sharing)',
+    featured: true,
+    cardFeatures: [
+      '2N Praveg White Rann Resort, Dhordo',
+      'Rajwadi AC Bhunga Cottage (Twin Sharing)',
+      'Kalo Dungar, Gandhi nu Gam & White Rann',
+      'AC Coach Transfers from Bhuj (SIC) & All Meals'
+    ]
+  },
+  {
+    slug: 'andaman-winter-fixed-departure-5n',
+    title: '5N Andaman Winter Fixed Departure',
+    tagline: '5 Nights in Port Blair, Havelock & Neil Island with Elephant Beach & Neil Stargazing',
+    destinationSlug: 'andaman',
+    destinationName: 'Andaman Islands',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 29000,
+    originalPriceINR: 25000,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'fixed-departure',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545762374-d18079617da8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1706629340086-e9e9d1aaf2ee?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1579317344982-256c49ab1e0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1731934430130-7274ba7276c7?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Join our curated Andaman Winter Fixed Departure exploring Port Blair, Havelock, and Neil Island. Stay in handpicked 4-star and luxury beach resorts with breakfast & dinner included, high-speed private catamaran ferries, speed boat ride to Elephant Beach, and magical stargazing at Neil Island.',
+    highlights: [
+      '5 Nights accommodation: 2N Port Blair, 2N Havelock, 1N Neil Island',
+      'Hotel SR Castle (Super Deluxe), Haywizz Havelock (Pool View Room), Pearl Park Beach Resort & SPA (Deluxe Garden View)',
+      'Daily Breakfast & Dinner (MAP Plan) included',
+      'High-speed Private AC Catamaran Ferries between islands',
+      'Elephant Beach Speed Boat excursion & Neil Island Stargazing session',
+      'Cellular Jail Light & Sound Show, Radhanagar Beach, Bharatpur & Laxmanpur beaches'
+    ],
+    departureDates: [
+      '12 Oct 2026',
+      '17 Oct 2026',
+      '09 Nov 2026',
+      '23 Nov 2026',
+      '30 Nov 2026',
+      '07 Dec 2026',
+      '18 Dec 2026 (Peak)',
+      '22 Dec 2026 (Xmas Gala)',
+      '29 Dec 2026 (New Year Gala)',
+      '18 Jan 2027',
+      '25 Jan 2027',
+      '28 Jan 2027',
+      '02 Feb 2027',
+      '08 Feb 2027',
+      '15 Feb 2027',
+      '22 Feb 2027',
+      '01 Mar 2027',
+      '08 Mar 2027',
+      '15 Mar 2027',
+      '22 Mar 2027',
+      '25 Mar 2027',
+      '28 Mar 2027'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival in Port Blair, Cellular Jail & Light & Sound Show',
+        location: 'Port Blair',
+        description: 'Arrive at Port Blair Airport by 2:00 PM. Meet our dedicated tour coordinator and transfer to Hotel SR Castle. Check into your Super Deluxe room. Afternoon visit to Cellular Jail Museum, followed by the iconic evening Light & Sound Show narrating the heroic saga of India’s freedom fighters.',
+        meals: 'Dinner Included (MAP)',
+        stay: 'Hotel SR Castle (Super Deluxe Room)',
+        activities: [
+          'Airport Meet & Transfer',
+          'Cellular Jail & Museum',
+          'Light & Sound Show'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Port Blair to Havelock Island & Radhanagar Beach',
+        location: 'Havelock Island',
+        description: 'Morning transfer to jetty for high-speed private AC catamaran ferry to Havelock Island (Swaraj Dweep). Check in to Haywizz Havelock Island Resort in a Pool View Room. In the afternoon, head to Radhanagar Beach (Beach No. 7) for a magnificent sunset along crystal turquoise waters.',
+        meals: 'Breakfast & Dinner Included',
+        stay: 'Haywizz Havelock Island Resort (Pool View Room)',
+        activities: [
+          'Private AC Ferry to Havelock',
+          'Radhanagar Beach Sunset Stroll'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Speed Boat Excursion to Elephant Beach',
+        location: 'Havelock Island',
+        description: 'Board a speed boat to Elephant Beach, known for its vibrant coral reef ecosystems and white sand coves. Enjoy optional snorkeling, sea walking, or relaxing along the pristine coastline.',
+        meals: 'Breakfast & Dinner Included',
+        stay: 'Haywizz Havelock Island Resort (Pool View Room)',
+        activities: [
+          'Speed Boat to Elephant Beach',
+          'Beach Relaxation & Coral Reef Viewing'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Havelock to Neil Island, Beaches & Stargazing',
+        location: 'Neil Island',
+        description: 'Board the morning private ferry to Neil Island (Shaheed Dweep). Check into Pearl Park Beach Resort & SPA. Visit Bharatpur Beach and Laxmanpur Beach for sunset, marvel at the Natural Coral Bridge (Howrah Bridge), and enjoy a complimentary night stargazing session on Neil’s dark, unpolluted shores.',
+        meals: 'Breakfast & Dinner Included',
+        stay: 'Pearl Park Beach Resort & SPA (Deluxe Room Garden View)',
+        activities: [
+          'Private Ferry to Neil',
+          'Bharatpur Beach',
+          'Laxmanpur Sunset',
+          'Natural Coral Bridge',
+          'Complimentary Neil Stargazing'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Neil to Port Blair, Corbyn’s Cove & Sagarika Shopping',
+        location: 'Port Blair',
+        description: 'Return by private catamaran ferry to Port Blair. Check in to Hotel SR Castle. Visit scenic coconut-palm lined Corbyn’s Cove Beach, followed by shopping for authentic handicrafts and pearl jewelry at Sagarika Emporium.',
+        meals: 'Breakfast & Dinner Included',
+        stay: 'Hotel SR Castle (Super Deluxe Room)',
+        activities: [
+          'Private Ferry to Port Blair',
+          'Corbyn’s Cove Beach',
+          'Sagarika Emporium Shopping'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Port Blair Departure',
+        location: 'Port Blair Airport (IXZ)',
+        description: 'Breakfast at hotel before your scheduled transfer to Veer Savarkar International Airport for your flight back home.',
+        meals: 'Breakfast Included',
+        stay: 'Departure',
+        activities: [
+          'Airport Departure Transfer'
+        ]
+      }
+    ],
+    inclusions: [
+      '5 Nights accommodation (2N Port Blair, 2N Havelock, 1N Neil Island)',
+      'Daily Breakfast & Dinner (MAP Plan)',
+      'All inter-island transfers by Private AC Catamaran Ferry',
+      'Speed boat excursion to Elephant Beach',
+      'All private cab road transfers & sightseeing as per occupancy',
+      'Cellular Jail entry and Light & Sound show tickets',
+      'Dedicated on-ground Tour Coordinator & 24×7 support',
+      'Complimentary stargazing experience at Neil Island'
+    ],
+    exclusions: [
+      'Flight tickets to/from Port Blair',
+      'Lunches',
+      'Water sports activities (scuba diving, sea walking, jet ski)',
+      'Personal expenses & shopping',
+      'Travel insurance'
+    ],
+    hotelStandard: 'Hotel SR Castle (Port Blair), Haywizz Havelock Resort, Pearl Park Beach Resort & SPA (Neil)',
+    groupSize: 'Fixed Group Departure (Triple: ₹29,000* | Double: ₹31,000* | Single: ₹42,000*)',
+    featured: true,
+    cardFeatures: [
+      '5N Port Blair, Havelock & Neil Island',
+      'SR Castle, Haywizz & Pearl Park Resort',
+      'Elephant Beach Speed Boat & Neil Star Gazing',
+      'Pvt AC Ferries, MAP Meals & Airport Transfers'
+    ]
+  },
+    {
+    slug: 'kerala-winter-package-early-bird',
+    title: 'Kerala Winter Package (Early Bird Offer)',
+    tagline: '3N to 6N across Munnar Tea Valleys, Thekkady Spices & Alleppey Houseboat Drift',
+    destinationSlug: 'kerala',
+    destinationName: 'Kerala',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 17450,
+    originalPriceINR: 13450,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Family Journey',
+    heroImage: 'https://images.unsplash.com/photo-1688714839198-22e9c6c7eede?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1714489896584-233675ee2f62?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1580818135730-ebd11086660b?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1621351652666-9d34b452a0db?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1688714839198-22e9c6c7eede?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Lock in premier winter rates for God’s Own Country with our Kerala Winter FIT Package (travel valid from 01 Oct to 31 Mar 2027). Choose from tailored 3N/4D, 4N/5D, 5N/6D, or 6N/7D circuits through mist-draped Munnar tea estates, Thekkady spice plantations, and tranquil Alleppey backwaters aboard an authentic teakwood houseboat. Published rates include private AC Sedan transportation and your choice of 3-Star Basic, 3-Star Premium, 4-Star Basic, and 4-Star Premium hotels with CP or MAP meal plans.',
+    highlights: [
+      'Flexible itineraries: 3N/4D (Munnar + Alleppey), 4N/5D (Munnar + Thekkady + Alleppey), 5N/6D (+ Cochin), 6N/7D (+ Kovalam)',
+      'Overnight private teakwood kettuvallam houseboat stay in Alleppey with AP plan (all meals prepared by personal chef)',
+      'Scenic ascent to Munnar with photo stops at Cheeyappara and Valara waterfalls',
+      'Tea estate trail, Mattupetty Dam, and Eravikulam National Park (Nilgiri Tahr habitat)',
+      'Periyar Wildlife Sanctuary spice plantations and boat safari in Thekkady',
+      'Chauffeured private AC Sedan (upgradeable to Innova for entire tour)'
+    ],
+    itinerary: [
+      {
+      day: 1,
+      title: 'Arrival in Cochin & Scenic Ascent to Munnar',
+      location: 'Cochin to Munnar',
+      description: 'Warm welcome on arrival at Cochin Airport / Railway Station. Board your private AC vehicle for the scenic drive to Munnar. En route, enjoy the lush Western Ghats vistas, spice plantations, and cascading Valara and Cheeyappara waterfalls. Check in to your Munnar resort and enjoy a tranquil evening amidst mountain mist.',
+      meals: 'Dinner Included (MAP Plan)',
+      stay: 'Green Cove / Amuse Vista / Winternote / Amber Dale Resort, Munnar',
+      activities: [
+        'Airport Chauffeur Meet',
+        'Cheeyappara & Valara Waterfalls',
+        'Tea Hill Check-in'
+      ]
+    },
+      {
+      day: 2,
+      title: 'Munnar Tea Valleys, Eravikulam & Mattupetty Lake',
+      location: 'Munnar',
+      description: 'Morning excursion to Eravikulam National Park (Rajamalai), home to the endangered Nilgiri Tahr. Afternoon visits to the Tata Tea Museum for tea tasting and production history, Mattupetty Dam reservoir, Echo Point, and Kundala Lake.',
+      meals: 'Breakfast & Dinner Included',
+      stay: 'Munnar Resort',
+      activities: [
+        'Eravikulam National Park',
+        'Tata Tea Museum',
+        'Mattupetty Dam & Echo Point'
+      ]
+    },
+      {
+      day: 3,
+      title: 'Munnar to Thekkady (Periyar Wildlife & Spice Groves)',
+      location: 'Thekkady (Periyar)',
+      description: 'After breakfast, drive along scenic winding roads to Thekkady, the spice capital of Kerala. Check in to your hotel. In the afternoon, enjoy an aromatic guided walk through organic spice plantations (cardamom, pepper, cinnamon) and optional boat cruise on Lake Periyar.',
+      meals: 'Breakfast & Dinner Included',
+      stay: 'The Patio / Hotel Seasons / Woodnote / Greenwoods Resort, Thekkady',
+      activities: [
+        'Spice Plantation Guided Walk',
+        'Periyar Lake Boat Safari (Optional)',
+        'Local Handicraft Markets'
+      ]
+    },
+      {
+      day: 4,
+      title: 'Thekkady to Alleppey & Private Houseboat Cruise',
+      location: 'Alleppey (Vembanad Backwaters)',
+      description: 'Descend to Alleppey and board your private luxury houseboat (Kettuvallam) by 12:00 PM. Glide gently through emerald canals, paddy fields, and coir-making villages. Savor traditional Kerala lunch, evening snacks, and freshly prepared dinner on board.',
+      meals: 'All Meals Included (AP Plan: Lunch, Evening High Tea, Dinner & Breakfast)',
+      stay: 'Royal River Houseboat (Deluxe / Premium AC One Bed)',
+      activities: [
+        'Houseboat Check-in & Welcome Drink',
+        'Vembanad Lagoon Cruise',
+        'Sunset over Backwaters'
+      ]
+    },
+      {
+      day: 5,
+      title: 'Alleppey to Cochin & Historic Fort Kochi',
+      location: 'Cochin',
+      description: 'Disembark after breakfast and drive to Cochin. Check in to your city hotel. Explore heritage Fort Kochi, the iconic cantilevered Chinese Fishing Nets, Santa Cruz Cathedral Basilica, and Jewish Synagogue at Mattancherry.',
+      meals: 'Breakfast & Dinner Included',
+      stay: 'Hotel Fort Queen / Broad Bean / Hotel Airlink Castle / Travancore Court, Cochin',
+      activities: [
+        'Chinese Fishing Nets',
+        'Fort Kochi Heritage Walk',
+        'Mattancherry Palace'
+      ]
+    },
+      {
+      day: 6,
+      title: 'Cochin Airport Departure',
+      location: 'Cochin International Airport (COK)',
+      description: 'Enjoy a leisurely breakfast before your chauffeured private transfer to Cochin Airport or Railway Station for your journey homeward.',
+      meals: 'Breakfast Included',
+      stay: 'Departure',
+      activities: [
+        'Airport Departure Transfer'
+      ]
+    }
+    ],
+    inclusions: [
+      'Accommodation for 5 Nights / 6 Days (or chosen 3N, 4N, 6N duration) in selected hotel tier',
+      'Daily Breakfast (CP Plan) or Daily Breakfast & Dinner (MAP Plan) as booked',
+      '1 Night Alleppey Houseboat stay with all meals (AP Plan: Lunch, Evening Tea, Dinner, Breakfast)',
+      'Private AC Sedan for all transfers, excursions, and inter-city travel as per itinerary',
+      'All toll taxes, parking fees, driver allowances, and fuel charges included',
+      'Full assistance on arrival and departure transfers'
+    ],
+    exclusions: [
+      'Airfare or Train tickets to and from Cochin',
+      'Entry tickets to Eravikulam National Park, Periyar boat safari, and museums',
+      'Personal expenses, laundry, telephone calls, and room service',
+      'Extra kilometers beyond agreed itinerary limits (Sedan extra KM @ ₹16/km)',
+      'Peak season surcharge during blackout dates (15-21 Oct, 1-18 Nov, 20 Dec - 10 Jan)',
+      '5% GST and optional vehicle upgrades (Innova upgrade available at ₹6,000 - ₹7,500)'
+    ],
+    hotelStandard: '3-Star Basic to 4-Star Premium (Green Cove / Amuse Vista / Winternote / Amber Dale)',
+    groupSize: 'Private FIT Tour (2 Pax: ₹21,700* | 4 Pax: ₹17,075* | 3N from ₹17,450*)',
+    featured: true,
+    cardFeatures: [
+      '3N to 6N Custom Munnar & Alleppey Circuit',
+      'Overnight Houseboat in Alleppey (All Meals AP)',
+      'Private AC Sedan Vehicle & Chauffeur',
+      'Choice of 3-Star & 4-Star Resort Tiers'
+    ]
+  },
+    {
+    slug: 'kerala-winter-fixed-departure-5n',
+    title: '5N Kerala Winter Fixed Departure',
+    tagline: '5 Nights across Cochin, Munnar Tea Gardens, Thekkady & Alleppey Houseboat',
+    destinationSlug: 'kerala',
+    destinationName: 'Kerala',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 21700,
+    originalPriceINR: 17700,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'fixed-departure',
+    style: 'Family Journey',
+    heroImage: 'https://images.unsplash.com/photo-1714489896584-233675ee2f62?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1580818135730-ebd11086660b?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1714489896584-233675ee2f62?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1580818135730-ebd11086660b?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1621351652666-9d34b452a0db?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1688714839198-22e9c6c7eede?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Experience the pristine beauty of God’s Own Country on our curated 5N/6D Kerala Winter Fixed Departure. Discover the tea-scented hills of Munnar, wildlife and spice forests of Thekkady, an enchanting overnight stay on an Alleppey backwater houseboat, and heritage colonial Cochin. Transparent pricing with hotel stays, private AC transportation, and key highlights covered.',
+    highlights: [
+      '5 Nights accommodation: 1N Cochin + 2N Munnar + 1N Thekkady + 1N Alleppey Houseboat',
+      'Private overnight kettuvallam cruise in Alleppey with freshly prepared Kerala delicacies (All Meals AP)',
+      'Munnar tea plantation guided walks, Cheeyappara waterfalls & Mattupetty lake',
+      'Thekkady spice plantation tour and Periyar wildlife exploration',
+      'Fort Kochi heritage exploration including Chinese Fishing Nets & Mattancherry',
+      'Dedicated on-ground tour coordination and private AC vehicle for the full circuit'
+    ],
+    departureDates: [
+      '10 Oct 2026',
+      '17 Oct 2026',
+      '24 Oct 2026',
+      '31 Oct 2026',
+      '07 Nov 2026',
+      '14 Nov 2026',
+      '21 Nov 2026',
+      '28 Nov 2026',
+      '05 Dec 2026',
+      '12 Dec 2026',
+      '19 Dec 2026',
+      '26 Dec 2026',
+      '02 Jan 2027',
+      '09 Jan 2027',
+      '16 Jan 2027',
+      '23 Jan 2027',
+      '30 Jan 2027',
+      '06 Feb 2027',
+      '13 Feb 2027',
+      '20 Feb 2027',
+      '27 Feb 2027',
+      '06 Mar 2027'
+    ],
+    itinerary: [
+      {
+      day: 1,
+      title: 'Arrival in Cochin & Transfer to Munnar Tea Valleys',
+      location: 'Cochin to Munnar',
+      description: 'Arrive at Cochin Airport or Ernakulam Railway Station by noon. Meet your dedicated tour coordinator and chauffeur. Enjoy a picturesque drive up the Western Ghats to Munnar, with stops at Cheeyappara and Valara waterfalls. Check in to your resort and unwind in the mountain air.',
+      meals: 'Dinner Included (MAP Plan)',
+      stay: 'Green Cove Resort / Similar, Munnar',
+      activities: [
+        'Airport Chauffeur Meet',
+        'Cheeyappara & Valara Waterfalls',
+        'Resort Check-in'
+      ]
+    },
+      {
+      day: 2,
+      title: 'Munnar Tea Plantations, Eravikulam & Mattupetty Lake',
+      location: 'Munnar',
+      description: 'Morning guided excursion to Eravikulam National Park to witness the Nilgiri Tahr. Proceed to the Tata Tea Museum, followed by scenic afternoon stops at Mattupetty Dam, Echo Point, and the lush Rose Garden.',
+      meals: 'Breakfast & Dinner Included',
+      stay: 'Green Cove Resort / Similar, Munnar',
+      activities: [
+        'Eravikulam National Park',
+        'Tata Tea Museum Visit',
+        'Mattupetty Dam & Echo Point'
+      ]
+    },
+      {
+      day: 3,
+      title: 'Munnar to Thekkady & Periyar Spice Trails',
+      location: 'Thekkady',
+      description: 'Scenic morning drive towards Thekkady, the spice center of South India. Check in to your hotel. In the afternoon, enjoy an aromatic guided walk through spice plantations and optional boat safari on Lake Periyar.',
+      meals: 'Breakfast & Dinner Included',
+      stay: 'The Patio / Similar, Thekkady',
+      activities: [
+        'Spice Plantation Guided Tour',
+        'Periyar Lake Safari (Optional)',
+        'Thekkady Local Craft Bazaar'
+      ]
+    },
+      {
+      day: 4,
+      title: 'Thekkady to Alleppey & Private Houseboat Cruise',
+      location: 'Alleppey Backwaters',
+      description: 'Drive down to Alleppey and board your traditional AC Houseboat by 12:00 PM. Enjoy a peaceful cruise past quiet canals, coconut groves, and rural villages. Enjoy fresh lunch, tea & snacks, and authentic dinner prepared on board.',
+      meals: 'All Meals Included (Lunch, High Tea, Dinner & Breakfast)',
+      stay: 'Royal River Houseboat (Deluxe AC)',
+      activities: [
+        'Houseboat Check-in',
+        'Vembanad Lake Cruise',
+        'Sunset over Backwaters'
+      ]
+    },
+      {
+      day: 5,
+      title: 'Alleppey to Cochin & Fort Kochi Heritage',
+      location: 'Cochin',
+      description: 'Disembark after breakfast and drive to Cochin. Check into your hotel. Afternoon sightseeing tour covering Chinese Fishing Nets, St. Francis Church, Santa Cruz Cathedral, and Jewish Town.',
+      meals: 'Breakfast & Dinner Included',
+      stay: 'Hotel Fort Queen / Similar, Cochin',
+      activities: [
+        'Chinese Fishing Nets',
+        'Fort Kochi Heritage Walk',
+        'Jew Town & Spice Market'
+      ]
+    },
+      {
+      day: 6,
+      title: 'Cochin Airport Departure',
+      location: 'Cochin International Airport (COK)',
+      description: 'Breakfast at hotel followed by transfer to Cochin International Airport for your departure flight.',
+      meals: 'Breakfast Included',
+      stay: 'Departure',
+      activities: [
+        'Airport Departure Transfer'
+      ]
+    }
+    ],
+    inclusions: [
+      '5 Nights accommodation: 1N Cochin, 2N Munnar, 1N Thekkady, 1N Alleppey Houseboat',
+      'Daily Breakfast at hotels + All Meals on Houseboat (AP Plan)',
+      'Private AC vehicle for all airport transfers and sightseeing as per itinerary',
+      'Dedicated on-ground coordinator and 24x7 guest support',
+      'All toll taxes, parking fees, driver allowances, and fuel charges'
+    ],
+    exclusions: [
+      'Airfare or train tickets to/from Cochin',
+      'Entry tickets for monuments, museums, and Periyar boating',
+      'Personal expenses & optional activities (Ayurvedic massage, Kathakali show)',
+      'Peak season surcharge during blackout dates (15-21 Oct, 1-18 Nov, 20 Dec - 10 Jan)',
+      '5% GST'
+    ],
+    hotelStandard: 'Hotel Fort Queen (Cochin), Green Cove (Munnar), The Patio (Thekkady), Royal River Houseboat (Alleppey)',
+    groupSize: 'Fixed Group Departure (2 Pax: ₹21,700* | 4 Pax: ₹17,075* | Extra Bed: ₹8,800*)',
+    featured: true,
+    cardFeatures: [
+      '1N Cochin, 2N Munnar, 1N Thekkady & 1N Alleppey',
+      'Overnight Houseboat in Alleppey (All Meals AP)',
+      'Private AC Vehicle for Transfers & Sightseeing',
+      'Munnar Tea Hills & Thekkady Periyar Wildlife'
+    ]
+  },
+    {
+    slug: 'kerala-winter-honeymoon-package',
+    title: 'Kerala Winter Special Packages for Honeymooners',
+    tagline: 'Romantic Munnar Tea Retreat & Alleppey Houseboat with Candle Light Dinner & Flower Bed',
+    destinationSlug: 'kerala',
+    destinationName: 'Kerala',
+    durationDays: 4,
+    durationNights: 3,
+    priceINR: 17450,
+    originalPriceINR: 13450,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Honeymoon',
+    heroImage: 'https://images.unsplash.com/photo-1580818135730-ebd11086660b?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1621351652666-9d34b452a0db?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1714489896584-233675ee2f62?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1580818135730-ebd11086660b?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1621351652666-9d34b452a0db?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1688714839198-22e9c6c7eede?auto=format&fit=crop&w=1200&q=80',
+    ],
+    overview: 'Celebrate your new beginnings with our specially curated Kerala Winter Honeymoon Package (travel valid from 01 Oct 2026 to 31 Mar 2027). Designed exclusively for couples, this romantic escape pairs the misty serenity of Munnar tea plantations with an enchanting overnight cruise along the tranquil backwaters of Alleppey. Enjoy special complimentary honeymoon inclusions on board your private houseboat: a special celebration cake, romantic candle light dinner, and floral bed decoration.',
+    highlights: [
+      'Complimentary Honeymoon Inclusions in Houseboat: Cake, Candle Light Dinner & Flower Bed Decoration',
+      '2 Nights stay in romantic mountain resorts in Munnar (Green Cove / Cloud Castle / Winternote / Amber Dale)',
+      '1 Night exclusive private luxury Houseboat stay in Alleppey with All Meals (AP Plan)',
+      'Scenic drives past Cheeyappara and Valara waterfalls into the misty tea slopes',
+      'Private sightseeing: Eravikulam National Park, Mattupetty Dam, Echo Point & Tea Gardens',
+      'Dedicated private AC Sedan car for the entire tour (500 KM included)'
+    ],
+    itinerary: [
+      {
+      day: 1,
+      title: 'Arrival in Cochin & Romantic Ascent to Munnar Hills',
+      location: 'Cochin to Munnar',
+      description: 'Warm chauffeur welcome at Cochin Airport or Ernakulam Railway Station. Embark on a picturesque journey to Munnar. Stop for scenic photos at Cheeyappara and Valara waterfalls flowing through lush emerald valleys. Arrive in Munnar, check in to your resort, and enjoy a cozy evening together surrounded by tea estates.',
+      meals: 'Dinner Included (MAP Plan)',
+      stay: 'Green Cove / Cloud Castle Resort & Spa / Winternote / Amber Dale, Munnar',
+      activities: [
+        'Private Airport Meet & Greet',
+        'Cheeyappara & Valara Waterfalls',
+        'Romantic Mountain Resort Check-in'
+      ]
+    },
+      {
+      day: 2,
+      title: 'Munnar Tea Valleys, Eravikulam & Scenic Viewpoints',
+      location: 'Munnar',
+      description: 'Morning visit to Eravikulam National Park (Rajamalai) for breathtaking views of the Western Ghats. In the afternoon, explore the aromatic tea plantations, Mattupetty Dam reservoir, Echo Point, and take a romantic stroll along Kundala Lake.',
+      meals: 'Breakfast & Dinner Included',
+      stay: 'Munnar Resort',
+      activities: [
+        'Eravikulam National Park Walk',
+        'Tata Tea Museum Experience',
+        'Mattupetty Dam & Echo Point'
+      ]
+    },
+      {
+      day: 3,
+      title: 'Munnar to Alleppey & Houseboat Honeymoon Night',
+      location: 'Alleppey (Vembanad Backwaters)',
+      description: 'Scenic descent towards Alleppey. Board your private luxury houseboat (Kettuvallam) by 12:00 PM. Drift serenely along palm-lined canals as your onboard chef prepares an authentic Kerala lunch. In the evening, celebrate with your special complimentary honeymoon cake, flower bed decoration, and an intimate candle light dinner under starlit backwater skies.',
+      meals: 'All Meals Included (Lunch, Evening High Tea, Candle Light Dinner & Breakfast)',
+      stay: 'Royal River Houseboat (Deluxe / Premium AC One Bed)',
+      activities: [
+        'Houseboat Boarding & Welcome Drink',
+        'Scenic Sunset Backwater Cruise',
+        'Special Candle Light Dinner & Celebration Cake'
+      ]
+    },
+      {
+      day: 4,
+      title: 'Alleppey Disembarkation & Cochin Departure',
+      location: 'Alleppey to Cochin Airport (COK)',
+      description: 'Wake up to the soft morning mist over the backwaters and enjoy breakfast on board. Disembark at 9:00 AM and take your private transfer back to Cochin Airport or Railway Station with beautiful memories.',
+      meals: 'Breakfast Included',
+      stay: 'Departure',
+      activities: [
+        'Morning Backwater Breakfast',
+        'Fort Kochi Photo Stop (Time Permitting)',
+        'Airport Departure Transfer'
+      ]
+    }
+    ],
+    inclusions: [
+      'Accommodation for 3 Nights / 4 Days (2N Munnar + 1N Alleppey Houseboat)',
+      'Complimentary Honeymoon Inclusions: Honeymoon Cake, Candle Light Dinner & Flower Bed Decoration on Houseboat',
+      'Daily Breakfast (CP Plan) or Breakfast & Dinner (MAP Plan) as selected',
+      'All meals on Alleppey Houseboat (Lunch, High Tea & Snacks, Romantic Dinner, Breakfast)',
+      'Private AC Sedan car for all transfers and sightseeing tours (500 KM included)',
+      'All toll taxes, parking fees, driver allowance, and fuel charges included'
+    ],
+    exclusions: [
+      'Airfare or Train tickets to and from Cochin',
+      'Entry fees for national parks, museums, and boat rides',
+      'Sedan extra kilometers beyond 500 KM (charged at ₹16/km)',
+      'Peak season surcharge during blackout dates (15-21 Oct, 1-18 Nov, 20 Dec - 10 Jan)',
+      '5% GST and personal expenses'
+    ],
+    hotelStandard: 'Green Cove / Cloud Castle Resort & Spa / Winternote / Amber Dale Luxury Resort',
+    groupSize: 'Couple / Honeymoon FIT (2 Pax: ₹17,450* CP | ₹18,450* MAP)',
+    featured: true,
+    cardFeatures: [
+      'Complimentary Cake, Candlelight Dinner & Flowers',
+      '2N Munnar Misty Hills & 1N Alleppey Houseboat',
+      'All Meals on Houseboat (AP) & Daily Breakfast',
+      'Private AC Sedan Car for Entire Romantic Tour'
+    ]
+  },
+    {
+    slug: 'spiti-winter-fixed-departure-delhi',
+    title: 'Spiti Valley Winter Road Trip (Delhi to Delhi Fixed Departure)',
+    tagline: '7N/8D Winter Expedition across Chitkul, Tabo, Kaza, Key Monastery, Chicham & Kalpa',
+    destinationSlug: 'spiti-valley',
+    destinationName: 'Spiti Valley',
+    durationDays: 8,
+    durationNights: 7,
+    priceINR: 21800,
+    originalPriceINR: 17800,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'fixed-departure',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1653844573020-71f77a0ccb8c?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1628782379401-4fff9cdcbbfe?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1653844573020-71f77a0ccb8c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1628782379401-4fff9cdcbbfe?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1638641088375-ddf026f736f4?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1709907153050-a668b4473c47?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Join our thrilling Spiti Valley Winter Road Trip Fixed Departure (2026-2027) starting and ending in Delhi. Experience the trans-Himalayan wonderland under thick snow, frozen rivers, and crystal clear blue skies. Explore Chitkul (the last village of India), Khab confluence, holy Nako Lake, the 1000-year-old Tabo Monastery, Lingti frozen waterfall, Key Monastery fortress, Chicham Bridge (Asia’s highest), and the high-altitude villages of Hikkim, Komic, and Langza. Features round-trip Delhi-Shimla Volvo tickets, mountain-tested taxi/tempo traveller, MAP meals, and experienced trip leader support. Age limit: 18 to 35 years due to extreme high-altitude winter conditions.',
+    highlights: [
+      'Complete Delhi to Delhi circuit with AC Semi-Sleeper Volvo tickets included',
+      'Shared mountain taxi / tempo traveller for entire Spiti road trip',
+      'Chitkul: The Last Inhabited Village of India along the Baspa River',
+      'Key Monastery, Chicham Bridge (highest suspension bridge in Asia) & Kibber',
+      'Highest operational post office in the world at Hikkim & Langza Buddha Statue',
+      'Ancient Tabo Monastery (996 AD), Dhankar Citadel & Lingti Frozen Waterfall',
+      'Kinner Kailash mountain views from Kalpa and Khab river sangam',
+      'Experienced Trip Leader, 24x7 support & first aid medical support'
+    ],
+    departureDates: [
+      '03 Oct 2026',
+      '10 Oct 2026',
+      '17 Oct 2026',
+      '24 Oct 2026',
+      '31 Oct 2026',
+      '07 Nov 2026',
+      '14 Nov 2026',
+      '21 Nov 2026',
+      '28 Nov 2026',
+      '05 Dec 2026',
+      '06 Dec 2026',
+      '09 Dec 2026',
+      '12 Dec 2026',
+      '13 Dec 2026',
+      '16 Dec 2026',
+      '19 Dec 2026 (Peak)',
+      '20 Dec 2026 (Peak)',
+      '21 Dec 2026 (Peak)',
+      '26 Dec 2026 (Peak)',
+      '27 Dec 2026 (Peak)',
+      '02 Jan 2027 (Peak)',
+      '03 Jan 2027 (Peak)',
+      '06 Jan 2027 (Peak)',
+      '09 Jan 2027 (Peak)',
+      '10 Jan 2027 (Peak)',
+      '16 Jan 2027',
+      '17 Jan 2027',
+      '23 Jan 2027',
+      '24 Jan 2027',
+      '30 Jan 2027',
+      '31 Jan 2027',
+      '06 Feb 2027',
+      '13 Feb 2027',
+      '20 Feb 2027',
+      '27 Feb 2027',
+      '06 Mar 2027',
+      '13 Mar 2027',
+      '20 Mar 2027',
+      '21 Mar 2027',
+      '27 Mar 2027',
+      '03 Apr 2027',
+      '10 Apr 2027',
+      '17 Apr 2027',
+      '24 Apr 2027',
+      '01 May 2027',
+      '08 May 2027',
+      '15 May 2027',
+      '22 May 2027'
+    ],
+    itinerary: [
+      {
+      day: 1,
+      title: 'Day 0: Night Departure for Shimla from Delhi',
+      location: 'Delhi to Shimla',
+      description: 'Meet at the designated boarding point in Delhi (Majnu Ka Tilla / Kashmere Gate) in the evening. Board your comfortable AC Semi-Sleeper Volvo bus and begin the overnight mountain climb to Shimla.',
+      meals: 'Onboard Transit',
+      stay: 'Overnight Volvo Coach',
+      activities: [
+        'Delhi Volvo Boarding',
+        'Overnight Transit to Shimla'
+      ]
+    },
+      {
+      day: 2,
+      title: 'Day 1: Travel from Shimla to Chitkul (Last Indian Village)',
+      location: 'Shimla to Chitkul (Sangla)',
+      description: 'Arrive in Shimla in the morning and meet your trip leader and fellow travelers. Board your mountain vehicle and travel via Narkanda, Rampur, and the scenic Kinnaur Valley into the Baspa River gorge. Arrive at Chitkul, the last inhabited village on the Indo-Tibetan border.',
+      meals: 'Dinner Included (MAP Plan)',
+      stay: 'Homestay / Hotel, Chitkul',
+      activities: [
+        'Shimla Meet & Greet',
+        'Kinnaur Valley Scenic Drive',
+        'Chitkul Village & Baspa River'
+      ]
+    },
+      {
+      day: 3,
+      title: 'Day 2: Chitkul to Tabo via Khab Sangam & Nako Lake',
+      location: 'Chitkul to Tabo',
+      description: 'Morning drive towards Spiti Valley through Khab—the roaring confluence of the Spiti and Sutlej rivers. Ascend the hairpins to sacred Nako Lake and explore the village monastery. Enter the cold desert trans-Himalayas and check in at Tabo.',
+      meals: 'Breakfast & Dinner Included',
+      stay: 'Homestay / Hotel, Tabo',
+      activities: [
+        'Khab River Sangam',
+        'Nako Sacred Lake & Village',
+        'Tabo Cold Desert Entry'
+      ]
+    },
+      {
+      day: 4,
+      title: 'Day 3: Tabo to Kaza via Dhankar Monastery & Lingti Frozen Waterfall',
+      location: 'Tabo to Kaza',
+      description: 'Visit the ancient UNESCO-nominated Tabo Monastery (founded 996 AD), celebrated for its preserved clay murals. Journey onwards to the cliff-perched Dhankar Citadel and monastery, witness the spectacular frozen waterfall at Lingti, and reach Kaza.',
+      meals: 'Breakfast & Dinner Included',
+      stay: 'Hotel / Homestay, Kaza',
+      activities: [
+        'Tabo Monastery (996 AD)',
+        'Dhankar Cliff Monastery',
+        'Lingti Frozen Waterfall Stop'
+      ]
+    },
+      {
+      day: 5,
+      title: 'Day 4: Spiti Sightseeing: Key Monastery & Chicham Bridge',
+      location: 'Kaza & Key',
+      description: 'Ascend to the majestic Key Monastery, an imposing multi-tiered Tibetan Buddhist fortress and training center. Continue upwards through Kibber village to cross the awe-inspiring Chicham Bridge—the highest suspension bridge in Asia at 13,596 ft.',
+      meals: 'Breakfast & Dinner Included',
+      stay: 'Hotel / Homestay, Kaza',
+      activities: [
+        'Key Monastery Fortress Tour',
+        'Chicham Bridge Suspension View',
+        'Kibber High Altitude Village'
+      ]
+    },
+      {
+      day: 6,
+      title: 'Day 5: Spiti Sightseeing: Hikkim, Komic & Langza',
+      location: 'Hikkim, Komic & Langza',
+      description: 'Excursion to Hikkim to post letters from the world’s highest operational post office. Proceed to Komic (one of the world’s highest motorable villages) and Langza, famous for its ancient marine fossils and the iconic giant Buddha statue facing snow-capped peaks.',
+      meals: 'Breakfast & Dinner Included',
+      stay: 'Hotel / Homestay, Kaza',
+      activities: [
+        'World’s Highest Post Office (Hikkim)',
+        'Komic Village & Tangyud Gompa',
+        'Langza Giant Buddha Statue'
+      ]
+    },
+      {
+      day: 7,
+      title: 'Day 6: Return Travel from Kaza to Kalpa',
+      location: 'Kaza to Kalpa',
+      description: 'Begin the return journey through the Spiti and Kinnaur valleys. Drive to the apple orchard town of Kalpa. Enjoy spectacular evening vistas of the sacred Kinner Kailash peak turning gold in sunset light.',
+      meals: 'Breakfast & Dinner Included',
+      stay: 'Hotel / Homestay, Kalpa',
+      activities: [
+        'Spiti Valley Return Drive',
+        'Kalpa Apple Orchard Walk',
+        'Kinner Kailash Sunset View'
+      ]
+    },
+      {
+      day: 8,
+      title: 'Day 7: Travel to Shimla & Return Volvo to Delhi',
+      location: 'Kalpa to Shimla / Delhi',
+      description: 'Witness sunrise over Kinner Kailash. Drive down the valley to Shimla. In the evening, board your scheduled AC Volvo coach for the overnight journey back to Delhi.',
+      meals: 'Breakfast Included',
+      stay: 'Overnight Volvo Coach',
+      activities: [
+        'Kinner Kailash Sunrise',
+        'Descent to Shimla',
+        'Overnight Volvo Departure to Delhi'
+      ]
+    }
+    ],
+    inclusions: [
+      'Round-trip Delhi <-> Shimla AC Semi-Sleeper Volvo Bus Tickets',
+      'Shared Mountain Taxi / Tempo Traveller for the complete Spiti road trip',
+      'Daily Breakfast & Dinner as per itinerary (MAP Meal Plan)',
+      'Accommodation in Mud House / Authentic Homestay / Hotel on sharing basis',
+      'All Inner Line Permits, environmental fees, parking, and road toll taxes',
+      'Experienced on-ground Trip Leader and 24x7 team support',
+      'First Aid Medical Support with Emergency Portable Oxygen Cylinder'
+    ],
+    exclusions: [
+      'Room heater charges (available directly at properties if required)',
+      'Personal expenses: laundry, tips, drinks, and snacks',
+      'Monastery, fort, and museum entry fees',
+      'Any form of medical, accidental, or travel insurance',
+      'Costs incurred due to flight/bus delays, natural calamities, roadblocks, or weather changes',
+      '5% GST'
+    ],
+    hotelStandard: 'Mud House / Homestay / Hotel on Sharing Basis (Triple / Double)',
+    groupSize: 'Fixed Group Departure · Age 18–35 Yrs (Triple: ₹21,800* | Double: ₹23,800*)',
+    featured: true,
+    cardFeatures: [
+      'Delhi-Shimla Volvo & Mountain Taxi/Tempo',
+      'Chitkul, Nako, Tabo, Kaza & Kalpa Circuit',
+      'Key Monastery, Chicham Bridge & Hikkim Post',
+      'MAP Plan (Breakfast & Dinner) & Permits'
+    ]
+  },
+    {
+    slug: 'kashmir-fit-winter-packages',
+    title: 'Kashmir FIT Winter Packages (Early Bird Offer)',
+    tagline: '4N to 7N across Srinagar, Gulmarg Snow Slopes, Pahalgam Valleys & Dal Lake Houseboat',
+    destinationSlug: 'kashmir',
+    destinationName: 'Kashmir',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 16250,
+    originalPriceINR: 12250,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Family Journey',
+    heroImage: 'https://images.unsplash.com/photo-1715457573748-8e8a70b2c1be?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1568889753852-196c487a536e?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1715457573748-8e8a70b2c1be?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1568889753852-196c487a536e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1707546519092-d801e35ebd46?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1666545380922-1296a4ac9521?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1718824845373-ed6a9b6e790d?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Experience the magic of Paradise on Earth this winter with our Kashmir FIT Winter Packages (travel window valid from 01 Oct 2026 to 28 Feb 2027). Tailor your journey across flexible 4N/5D, 5N/6D, 6N/7D, or 7N/8D itineraries covering the Mughal gardens of Srinagar, snow-blanketed ski slopes of Gulmarg, Lidder river pine valleys of Pahalgam, and the glacier panoramas of Sonmarg. Rates include private chauffeured AC vehicle (Etios / Dzire / Similar), MAP meal plan (Breakfast & Dinner), stay in traditional cedarwood Dal Lake houseboats, and a complimentary 40-minute Shikara ride.',
+    highlights: [
+      'Flexible durations: 4N/5D (from ₹16,250*), 5N/6D (from ₹18,250*), 6N/7D (from ₹22,550*), 7N/8D (from ₹25,050*)',
+      'Overnight stay in a heritage hand-carved cedarwood Houseboat on Dal Lake (MAP Plan)',
+      'Complimentary 40-minute Shikara boat ride across Dal Lake and floating markets',
+      'Gulmarg day trip: Famous ski slopes, Kongdori, and optional Apharwat Peak Gondola',
+      'Pahalgam excursion: Saffron fields of Pampore, Awantipora ruins, and Lidder river views',
+      'Dedicated private AC vehicle (Etios / Dzire / Similar) with airport transfers (Innova & Tempo upgrades available)'
+    ],
+    itinerary: [
+      {
+      day: 1,
+      title: 'Arrival in Srinagar & Dal Lake Shikara Ride',
+      location: 'Srinagar (Dal Lake)',
+      description: 'Warm welcome on arrival at Sheikh ul-Alam International Airport (Srinagar). Private transfer to your handpicked hotel or traditional cedarwood houseboat on Dal Lake. Enjoy a romantic 40-minute complimentary Shikara boat cruise past floating gardens and houseboats.',
+      meals: 'Dinner Included (MAP Plan)',
+      stay: 'D Shamoon / Kotroo Palace Deluxe Houseboat, Srinagar',
+      activities: [
+        'Airport Chauffeur Meet',
+        'Houseboat Check-in',
+        '40-Min Dal Lake Shikara Cruise'
+      ]
+    },
+      {
+      day: 2,
+      title: 'Srinagar to Gulmarg Snow Meadows & Gondola',
+      location: 'Srinagar to Gulmarg',
+      description: 'Drive along scenic pine-fringed highways to Gulmarg (Meadow of Flowers) at 8,825 ft. Witness snow-covered alpine slopes and take an optional ride on the world-famous Gulmarg Gondola (Phase 1 to Kongdori / Phase 2 to Apharwat Peak). Return to Srinagar in the evening.',
+      meals: 'Breakfast & Dinner Included',
+      stay: '3* D Shamoon / Similar, Srinagar',
+      activities: [
+        'Scenic Gulmarg Drive',
+        'Gulmarg Gondola Ride (Optional)',
+        'Snow Sports & Pine Walks'
+      ]
+    },
+      {
+      day: 3,
+      title: 'Srinagar to Pahalgam (Valley of Shepherds)',
+      location: 'Pahalgam',
+      description: 'Morning scenic drive to Pahalgam via the fragrant saffron fields of Pampore and historic Awantipora ruins. Check into your hotel in Pahalgam and enjoy a peaceful evening stroll along the rushing turquoise Lidder River.',
+      meals: 'Breakfast & Dinner Included',
+      stay: '3* Green Top Resort / Similar, Pahalgam',
+      activities: [
+        'Pampore Saffron Town',
+        'Awantipora Sun Temple Ruins',
+        'Lidder River Bank Stroll'
+      ]
+    },
+      {
+      day: 4,
+      title: 'Pahalgam Valley Exploration (Betaab & Aru Valleys)',
+      location: 'Pahalgam',
+      description: 'Full day to explore the picture-postcard valleys of Pahalgam. Take an optional local union cab to Betaab Valley, Aru Valley, and Chandanwari, or hire local ponies to the scenic meadow of Baisaran (Mini Switzerland).',
+      meals: 'Breakfast & Dinner Included',
+      stay: '3* Green Top Resort / Similar, Pahalgam',
+      activities: [
+        'Betaab Valley (Optional Union Cab)',
+        'Aru & Chandanwari Exploration',
+        'Baisaran Valley Pine Forest'
+      ]
+    },
+      {
+      day: 5,
+      title: 'Pahalgam to Srinagar & Mughal Heritage Gardens',
+      location: 'Srinagar',
+      description: 'Return to Srinagar. Visit the magnificent historic Mughal Gardens: Nishat Bagh (Garden of Pleasure), Shalimar Bagh (Abode of Love), and the sacred Hazratbal Shrine overlooking Dal Lake. Enjoy souvenir shopping for authentic Kashmiri shawls, saffron, and dry fruits.',
+      meals: 'Breakfast & Dinner Included',
+      stay: '3* D Shamoon / Similar, Srinagar',
+      activities: [
+        'Nishat & Shalimar Mughal Gardens',
+        'Hazratbal Dargah Visit',
+        'Lal Chowk Artisan Shopping'
+      ]
+    },
+      {
+      day: 6,
+      title: 'Srinagar Airport Departure Transfer',
+      location: 'Srinagar International Airport (SXR)',
+      description: 'After breakfast, transfer to Srinagar International Airport for your return flight with unforgettable memories of Kashmir.',
+      meals: 'Breakfast Included',
+      stay: 'Departure',
+      activities: [
+        'Airport Departure Transfer'
+      ]
+    }
+    ],
+    inclusions: [
+      'Accommodation for chosen duration (4N/5D, 5N/6D, 6N/7D, 7N/8D) in listed 3-Star hotels & Deluxe Houseboat',
+      'Daily Breakfast & Dinner at all properties (MAP Meal Plan)',
+      'Dedicated AC vehicle (Etios / Dzire / Similar) for all airport pickups, drops, and sightseeing as per itinerary',
+      'Complimentary 40-Minute Shikara boat ride on Dal Lake',
+      'All toll taxes, parking fees, driver allowances, and fuel included'
+    ],
+    exclusions: [
+      'Airfare to and from Srinagar',
+      'Union Taxi at Pahalgam for Betaab Valley, Aru Valley & Chandanwari (approx ₹2,800 per cab)',
+      'Gulmarg Gondola tickets (approx ₹2,000 per person for both phases) & guide fees',
+      'Snow jeep at Tangmarg in case of heavy snowfall and road blockages',
+      'Pony charges at Baisaran / Thajwas Glacier & Zero Point union taxi in Sonmarg',
+      'Room heater charges (payable directly if needed), 5% GST, and personal expenses'
+    ],
+    hotelStandard: 'D Shamoon (Srinagar), Green Top Resort (Pahalgam), Green Park (Gulmarg), Kotroo Palace Houseboat',
+    groupSize: 'Private FIT Tour (4N from ₹16,250* | 5N from ₹18,250* | 4 Pax from ₹13,000*)',
+    featured: true,
+    cardFeatures: [
+      '4N to 7N Custom Valley & Snow Circuit',
+      'Overnight Cedarwood Houseboat & Shikara Ride',
+      'Pahalgam, Gulmarg & Sonmarg Excursions',
+      'MAP Plan (Breakfast & Dinner) & Pvt Vehicle'
+    ]
+  },
+    {
+    slug: 'kashmir-winter-fixed-departure-5n',
+    title: '5N Kashmir Winter Fixed Departure',
+    tagline: '5 Nights across Srinagar, Gulmarg Snow Slopes, Pahalgam & Dal Lake Houseboat',
+    destinationSlug: 'kashmir',
+    destinationName: 'Kashmir',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 18250,
+    originalPriceINR: 14250,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'fixed-departure',
+    style: 'Family Journey',
+    heroImage: 'https://images.unsplash.com/photo-1715457573748-8e8a70b2c1be?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1568889753852-196c487a536e?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1715457573748-8e8a70b2c1be?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1568889753852-196c487a536e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1707546519092-d801e35ebd46?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1666545380922-1296a4ac9521?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1718824845373-ed6a9b6e790d?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Join our popular 5N/6D Kashmir Winter Fixed Departure exploring Srinagar, the snow meadows of Gulmarg, pine forests of Pahalgam, and a memorable stay on Dal Lake. Includes round-trip Srinagar airport transfers, handpicked hotels, MAP meals (Breakfast & Dinner), private sightseeing vehicle, and a 40-minute Shikara ride.',
+    highlights: [
+      '5 Nights accommodation: 4N Srinagar / Pahalgam hotel + 1N Dal Lake Houseboat',
+      'Complimentary 40-Minute Shikara boat ride on Dal Lake',
+      'Gulmarg day excursion: Snow sports, pine trails & optional Gondola ride',
+      'Pahalgam day excursion: Saffron fields of Pampore and Lidder river banks',
+      'Heritage Mughal Gardens of Srinagar: Nishat Bagh & Shalimar Bagh',
+      'Daily Breakfast & Dinner (MAP Plan) included at all properties'
+    ],
+    departureDates: [
+      '03 Oct 2026',
+      '10 Oct 2026',
+      '17 Oct 2026',
+      '24 Oct 2026',
+      '31 Oct 2026',
+      '07 Nov 2026',
+      '14 Nov 2026',
+      '21 Nov 2026',
+      '28 Nov 2026',
+      '05 Dec 2026',
+      '12 Dec 2026',
+      '19 Dec 2026 (Peak)',
+      '26 Dec 2026 (Peak)',
+      '02 Jan 2027 (Peak)',
+      '09 Jan 2027 (Peak)',
+      '16 Jan 2027',
+      '23 Jan 2027',
+      '30 Jan 2027',
+      '06 Feb 2027',
+      '13 Feb 2027',
+      '20 Feb 2027',
+      '27 Feb 2027'
+    ],
+    itinerary: [
+      {
+      day: 1,
+      title: 'Arrival in Srinagar & Dal Lake Shikara Cruise',
+      location: 'Srinagar',
+      description: 'Arrive at Srinagar Airport. Meet your tour coordinator and transfer to your hotel or Deluxe Houseboat on Dal Lake. Enjoy an evening 40-minute Shikara ride.',
+      meals: 'Dinner Included (MAP Plan)',
+      stay: 'Kotroo Palace Houseboat / Similar, Srinagar',
+      activities: [
+        'Airport Chauffeur Meet',
+        'Houseboat Check-in',
+        'Dal Lake Shikara Cruise'
+      ]
+    },
+      {
+      day: 2,
+      title: 'Full Day Gulmarg Snow Meadow Excursion',
+      location: 'Gulmarg',
+      description: 'Day tour to Gulmarg (8,825 ft). Enjoy snow activities and an optional Gondola ride up to Apharwat Peak. Return to Srinagar hotel.',
+      meals: 'Breakfast & Dinner Included',
+      stay: '3* D Shamoon / Similar, Srinagar',
+      activities: [
+        'Gulmarg Alpine Drive',
+        'Optional Gondola Ride',
+        'Snow Walking & Pine Views'
+      ]
+    },
+      {
+      day: 3,
+      title: 'Pahalgam Valley & Saffron Trails Excursion',
+      location: 'Pahalgam',
+      description: 'Scenic day trip to Pahalgam via Pampore saffron fields and Awantipora ruins. Walk along the scenic Lidder river and explore the local markets.',
+      meals: 'Breakfast & Dinner Included',
+      stay: '3* D Shamoon / Similar, Srinagar',
+      activities: [
+        'Pampore Saffron Valley',
+        'Lidder River Walk',
+        'Pahalgam Bazaar'
+      ]
+    },
+      {
+      day: 4,
+      title: 'Mughal Gardens & Old Srinagar Heritage',
+      location: 'Srinagar',
+      description: 'Visit the historic Mughal Gardens of Nishat Bagh, Shalimar Bagh, and the Hazratbal Shrine. Afternoon free for local handicraft shopping.',
+      meals: 'Breakfast & Dinner Included',
+      stay: '3* D Shamoon / Similar, Srinagar',
+      activities: [
+        'Nishat & Shalimar Gardens',
+        'Hazratbal Dargah',
+        'Artisan Craft Shopping'
+      ]
+    },
+      {
+      day: 5,
+      title: 'Day at Leisure or Optional Sonmarg Glacier Trip',
+      location: 'Srinagar / Sonmarg',
+      description: 'Enjoy a leisurely day in Srinagar or take an optional day trip to the golden meadows and snow glacier of Sonmarg.',
+      meals: 'Breakfast & Dinner Included',
+      stay: '3* D Shamoon / Similar, Srinagar',
+      activities: [
+        'Leisure or Optional Sonmarg Tour',
+        'Dal Lake Boulevard Walk',
+        'Farewell Dinner'
+      ]
+    },
+      {
+      day: 6,
+      title: 'Srinagar Airport Departure',
+      location: 'Srinagar International Airport (SXR)',
+      description: 'Breakfast at hotel followed by timely transfer to Srinagar Airport for your return flight.',
+      meals: 'Breakfast Included',
+      stay: 'Departure',
+      activities: [
+        'Airport Departure Transfer'
+      ]
+    }
+    ],
+    inclusions: [
+      '5 Nights accommodation in 3-Star hotel + Deluxe Houseboat on Dal Lake',
+      'Daily Breakfast & Dinner at all properties (MAP Plan)',
+      'Private AC vehicle for all transfers and sightseeing tours as per itinerary',
+      'Complimentary 40-Minute Shikara boat ride on Dal Lake',
+      'All toll taxes, parking fees, and driver allowances'
+    ],
+    exclusions: [
+      'Airfare to and from Srinagar',
+      'Gondola tickets in Gulmarg and union cabs in Pahalgam',
+      'Personal expenses, room heaters, tips, and 5% GST'
+    ],
+    hotelStandard: '3* D Shamoon (Srinagar) + Kotroo Palace Deluxe Houseboat',
+    groupSize: 'Fixed Group Departure (2 Pax: ₹18,250* | 4 Pax: ₹14,575*)',
+    featured: true,
+    cardFeatures: [
+      '5 Nights Srinagar, Gulmarg & Pahalgam',
+      'Overnight Deluxe Dal Lake Houseboat Stay',
+      'Complimentary 40-Minute Shikara Ride',
+      'MAP Plan (Daily Breakfast & Dinner) Included'
+    ]
+  },
+    {
+    slug: 'meghalaya-fit-4n-5n',
+    title: 'Meghalaya FIT Explorer (4N/5D & 5N/6D)',
+    tagline: 'Shillong, Cherrapunji Root Bridges, Dawki Umngot River & Phe Phe Falls',
+    destinationSlug: 'meghalaya',
+    destinationName: 'Meghalaya',
+    durationDays: 5,
+    durationNights: 4,
+    priceINR: 24950,
+    originalPriceINR: 20950,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'india',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1686472886489-1d2d7e08ff9c?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1521437620269-f477f5437820?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1686472886489-1d2d7e08ff9c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1521437620269-f477f5437820?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1689089526066-c7e6e95ee265?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1698429358246-807d8972da9a?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1664946495672-f2941e39fdb6?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Discover the untamed beauty of Meghalaya with our customizable private FIT packages. Choose between the essential 4N/5D or extended 5N/6D itinerary exploring serene Umiam Lake, Scotland of the East (Shillong), thunderous Nohkalikai Falls and Mawsmai limestone cave in Cherrapunji, the bio-engineered Double Decker Living Root Bridge, the glass-clear waters of the Umngot River at Dawki and Shnongpdeng, and the stunning two-tier Phe Phe Waterfall. Private dedicated transport and daily breakfast included.',
+    highlights: [
+      'Flexible itineraries: 4N/5D (from ₹24,950*) & 5N/6D (from ₹29,750*)',
+      'Trek to the iconic Double Decker Living Root Bridge in Nongriat & Lyngksiar Waterfalls',
+      'Boating along the crystal transparent waters of Umngot River at Dawki & Shnongpdeng',
+      'Nohkalikai Falls (India’s tallest plunge), Seven Sisters Falls & Mawsmai Caves',
+      'Explore hidden gems: Phe Phe Waterfall and tiered Elephant Falls (5N/6D circuit)',
+      'Dedicated private vehicle with Guwahati Airport / Railway Station pickup & drop'
+    ],
+    itinerary: [
+      {
+      day: 1,
+      title: 'Arrival in Guwahati & Transfer to Shillong via Umiam Lake',
+      location: 'Guwahati to Shillong',
+      description: 'Warm welcome at Guwahati Airport or Railway Station. Board your private vehicle and drive up to Shillong (Scotland of the East). En route, pause at the scenic viewpoint of Umiam Lake (Barapani) surrounded by rolling pine hills. Check in to your Shillong hotel and enjoy an evening walk around Police Bazar.',
+      meals: 'Breakfast Included (CP Plan)',
+      stay: 'Hotel in Shillong',
+      activities: [
+        'Guwahati Airport Meet',
+        'Umiam Lake Viewpoint',
+        'Shillong Police Bazar Walk'
+      ]
+    },
+      {
+      day: 2,
+      title: 'Shillong to Cherrapunji: Nohkalikai Falls & Mawsmai Cave',
+      location: 'Cherrapunji (Sohra)',
+      description: 'Scenic morning drive to Cherrapunji across mist-shrouded valleys and deep gorges. Visit the roaring Nohkalikai Falls, the limestone formations of Mawsmai Cave, Seven Sisters Falls, and the Eco Park. Check into your Cherrapunji resort.',
+      meals: 'Breakfast Included',
+      stay: 'Resort in Cherrapunji',
+      activities: [
+        'Nohkalikai Falls (Tallest Plunge)',
+        'Mawsmai Limestone Caves',
+        'Seven Sisters Falls'
+      ]
+    },
+      {
+      day: 3,
+      title: 'Double Decker Living Root Bridge & Lyngksiar Falls',
+      location: 'Nongriat & Cherrapunji',
+      description: 'Embark on an exhilarating trek through lush rainforests down to the bio-engineered Double Decker Living Root Bridge at Nongriat. Swim in natural turquoise pools and marvel at the indigenous Khasi engineering. Visit Lyngksiar Waterfalls on your return.',
+      meals: 'Breakfast Included',
+      stay: 'Resort in Cherrapunji',
+      activities: [
+        'Double Decker Root Bridge Hike',
+        'Natural River Pools',
+        'Lyngksiar Waterfalls'
+      ]
+    },
+      {
+      day: 4,
+      title: 'Cherrapunji to Dawki (Umngot River) & Shnongpdeng',
+      location: 'Dawki & Shnongpdeng',
+      description: 'Drive along the southern ridges to Dawki on the Indo-Bangladesh border. Witness the world-famous transparent waters of the Umngot River where boats seem to float on thin air. Visit the vibrant riverside village of Shnongpdeng for water activities and check into Betel Nut Resort.',
+      meals: 'Breakfast Included',
+      stay: 'Betel Nut Resort (Deluxe Room), Dawki',
+      activities: [
+        'Umngot River Crystal Waters',
+        'Dawki Indo-Bangladesh Border',
+        'Shnongpdeng Village Stroll'
+      ]
+    },
+      {
+      day: 5,
+      title: 'Dawki to Guwahati Airport Departure Transfer',
+      location: 'Dawki to Guwahati (GAU)',
+      description: 'Enjoy a peaceful morning by the river. Drive back through Meghalaya’s scenic plateaus directly to Guwahati Airport or Railway Station for your departure flight.',
+      meals: 'Breakfast Included',
+      stay: 'Departure',
+      activities: [
+        'Morning Riverside Views',
+        'Guwahati Airport Drop'
+      ]
+    }
+    ],
+    inclusions: [
+      'Accommodation for 4 Nights / 5 Days (or 5N/6D) in verified hotels and resorts (Betel Nut Resort Dawki)',
+      'Daily Breakfast at all properties (CP Plan)',
+      'Guwahati Airport / Railway Station pickup and drop',
+      'Dedicated private vehicle for all transfers and sightseeing as per itinerary',
+      '24-Hour on-call guest assistance during your stay',
+      'All road taxes, parking fees, fuel, and driver allowances'
+    ],
+    exclusions: [
+      'Railway fare or airfare to/from Guwahati',
+      'Local guide for Double Decker Root Bridge trek',
+      'Boating charges on Umngot River at Dawki',
+      'Sightseeing entrance tickets and camera fees',
+      'Lunches, dinners (dinner available as add-on), and personal expenses',
+      '5% GST'
+    ],
+    hotelStandard: 'Boutique Resorts & Hotels (Betel Nut Resort Dawki Deluxe Room, Shillong & Sohra)',
+    groupSize: 'Private FIT (2 Pax: ₹24,950* | 4 Pax: ₹21,180* | 6 Pax: ₹19,200*)',
+    featured: true,
+    cardFeatures: [
+      '4N/5D & 5N/6D Shillong & Cherrapunji',
+      'Double Decker Root Bridge & Nohkalikai',
+      'Crystal Clear Dawki & Shnongpdeng River',
+      'CP Plan (Daily Breakfast) & Pvt Vehicle'
+    ]
+  },
+        {
+    slug: 'meghalaya-fd-2026-2027',
+    title: 'Meghalaya Fixed Departure 2026-2027 (5N/6D & 6N/7D)',
+    tagline: '5N/6D Shillong, Cherrapunji & Dawki Camping (Optional 6N/7D Kaziranga Rhino Safari)',
+    destinationSlug: 'meghalaya',
+    destinationName: 'Meghalaya',
+    durationDays: 6,
+    durationNights: 5,
+    priceINR: 19900,
+    originalPriceINR: 15900,
+    priceValidUntil: '',
+    hasStarMark: true,
+    type: 'fixed-departure',
+    style: 'Expedition & Culture',
+    heroImage: 'https://images.unsplash.com/photo-1689089526066-c7e6e95ee265?auto=format&fit=crop&w=2000&q=85',
+    cardImage: 'https://images.unsplash.com/photo-1698429358246-807d8972da9a?auto=format&fit=crop&w=1200&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1689089526066-c7e6e95ee265?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1698429358246-807d8972da9a?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1686472886489-1d2d7e08ff9c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1521437620269-f477f5437820?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1664946495672-f2941e39fdb6?auto=format&fit=crop&w=1200&q=80'
+    ],
+    overview: 'Join our premier Meghalaya Fixed Departure 2026-2027 operating every Saturday from September 2026 through April 2027. Choose between the 5N/6D Meghalaya Group Tour or the 6N/7D Meghalaya + Kaziranga National Park edition. Covering over 25+ iconic attractions including Umiam Lake, Nohkalikai Falls, Mawsmai Cave, the legendary Double Decker Living Root Bridge with Blue Lagoon & Rainbow Falls (guide included), riverside camping at Dawki with dinner, and crystal-clear Umngot River at Shnongpdeng.',
+    highlights: [
+      '25+ Attractions Covered across Shillong, Cherrapunji, Dawki & Kaziranga',
+      'Trek to Double Decker Living Root Bridge, Blue Lagoon & Rainbow Falls (Guide fee included!)',
+      '1 Night riverside camping accommodation in Dawki with campfire dinner included',
+      '5 Nights stay: 2N Shillong, 2N Cherrapunji & 1N Dawki (plus 1N Kaziranga on 6N/7D)',
+      'Jeep Safari included for Kaziranga Group Tour variant',
+      'Transportation by dedicated Tempo Traveller or Ertiga/Dzire with Guwahati Airport pickup & drop'
+    ],
+    departureDates: [
+      '05 Sep 2026',
+      '12 Sep 2026',
+      '19 Sep 2026',
+      '26 Sep 2026',
+      '03 Oct 2026',
+      '10 Oct 2026',
+      '17 Oct 2026',
+      '24 Oct 2026',
+      '31 Oct 2026',
+      '07 Nov 2026',
+      '14 Nov 2026',
+      '21 Nov 2026',
+      '28 Nov 2026',
+      '05 Dec 2026',
+      '12 Dec 2026',
+      '19 Dec 2026 (Peak)',
+      '26 Dec 2026 (Peak)',
+      '02 Jan 2027 (Peak)',
+      '09 Jan 2027 (Peak)',
+      '16 Jan 2027',
+      '23 Jan 2027',
+      '30 Jan 2027',
+      '06 Feb 2027',
+      '13 Feb 2027',
+      '20 Feb 2027',
+      '27 Feb 2027',
+      '06 Mar 2027',
+      '13 Mar 2027',
+      '20 Mar 2027',
+      '27 Mar 2027',
+      '03 Apr 2027',
+      '10 Apr 2027',
+      '17 Apr 2027',
+      '24 Apr 2027'
+    ],
+    itinerary: [
+      {
+      day: 1,
+      title: 'Arrival in Guwahati & Transfer to Shillong',
+      location: 'Guwahati to Shillong',
+      description: 'Arrival at Guwahati Airport / Railway Station. Meet your fellow travelers and group coordinator. Drive up to Shillong via the scenic Umiam Lake (Barapani). Check into your Shillong hotel and enjoy an evening stroll around Police Bazar.',
+      meals: 'Breakfast Included on subsequent mornings',
+      stay: 'Ramson Stay Inn / Treebo Staying Center / Similar, Shillong',
+      activities: [
+        'Guwahati Chauffeur Meet',
+        'Umiam Lake Viewpoint',
+        'Shillong Check-in'
+      ]
+    },
+      {
+      day: 2,
+      title: 'Shillong to Cherrapunji Sightseeing',
+      location: 'Cherrapunji (Sohra)',
+      description: 'Scenic mountain drive to Cherrapunji. Visit Nohkalikai Falls (India’s tallest plunge), Mawsmai limestone cave, Seven Sisters Falls, and the breathtaking Wakaba Falls. Check into your Cherrapunji homestay.',
+      meals: 'Breakfast Included',
+      stay: 'Valley View Homestay / ADO Homestay / Brookside, Cherrapunji',
+      activities: [
+        'Nohkalikai Falls',
+        'Mawsmai Limestone Cave',
+        'Seven Sisters Waterfalls'
+      ]
+    },
+      {
+      day: 3,
+      title: 'Double Decker Root Bridge, Blue Lagoon & Rainbow Falls Trek',
+      location: 'Nongriat',
+      description: 'Trek down to the world-famous bio-engineered Double Decker Living Root Bridge in Nongriat with our experienced local guide. Continue to the azure natural pools of the Blue Lagoon and Rainbow Falls.',
+      meals: 'Breakfast Included',
+      stay: 'Valley View / ADO Homestay, Cherrapunji',
+      activities: [
+        'Double Decker Root Bridge Trek',
+        'Blue Lagoon Rock Pools',
+        'Rainbow Falls Exploration'
+      ]
+    },
+      {
+      day: 4,
+      title: 'Cherrapunji to Dawki & Shnongpdeng (Riverside Camping)',
+      location: 'Dawki & Shnongpdeng',
+      description: 'Drive along the Bangladesh border ridge to Dawki. Marvel at the crystal clear transparent waters of the Umngot River where boats float on glass. Arrive at Shnongpdeng for water activities and check into riverside camps with dinner included.',
+      meals: 'Breakfast & Dinner Included',
+      stay: 'Marvel’s Camps / Gawooh Camps / Lamin Guest House, Dawki',
+      activities: [
+        'Umngot River Glass Waters',
+        'Shnongpdeng Village Stroll',
+        'Riverside Camping & Dinner'
+      ]
+    },
+      {
+      day: 5,
+      title: 'Dawki to Shillong via Phe Phe & Elephant Falls',
+      location: 'Dawki to Shillong',
+      description: 'Morning sunrise by the river. Drive up through the Jaintia Hills to the stunning two-tier Phe Phe Falls and tiered Elephant Falls. Return to Shillong for your final night stay.',
+      meals: 'Breakfast Included',
+      stay: 'Ramson Stay Inn / Treebo Staying Center, Shillong',
+      activities: [
+        'Phe Phe Waterfall',
+        'Elephant Falls',
+        'Shillong Evening Leisure'
+      ]
+    },
+      {
+      day: 6,
+      title: 'Shillong to Guwahati Airport Departure Transfer',
+      location: 'Guwahati Airport (GAU)',
+      description: 'After breakfast, group transfer back to Guwahati Airport or Railway Station for your departure journey.',
+      meals: 'Breakfast Included',
+      stay: 'Departure',
+      activities: [
+        'Guwahati Airport Drop Transfer'
+      ]
+    }
+    ],
+    inclusions: [
+      'Transportation for the entire trip by Tempo Traveller or Ertiga / Dzire',
+      '5 Nights accommodation (2N Shillong, 2N Cherrapunji, 1N Dawki) on sharing basis',
+      '1 Night camping accommodation in Dawki with Dinner included',
+      'Daily Breakfast included',
+      'Driver night charges, toll taxes, and parking fees included',
+      'Guide charges for the Double Decker Root Bridge included',
+      'Guwahati Airport pickup and drop included',
+      'Jeep Safari included for 6N/7D Kaziranga variant'
+    ],
+    exclusions: [
+      'Flight or train tickets to Guwahati',
+      'Boating in Umngot River at Dawki',
+      'Entry fees for viewpoints, caves, and waterfalls',
+      'Lunches and personal expenses',
+      '5% GST'
+    ],
+    hotelStandard: 'Ramson Stay Inn (Shillong), Valley View Homestay (Cherrapunji), Marvel’s Camps (Dawki)',
+    groupSize: 'Fixed Group Departure (5N: Triple ₹19,900* | Double ₹21,900* | 6N Kaziranga from ₹25,500*)',
+    featured: true,
+    cardFeatures: [
+      '5N/6D Shillong, Cherrapunji & Dawki Camping',
+      'Double Decker Root Bridge Trek (Guide Included)',
+      '1N Dawki Riverside Camp with Dinner Included',
+      'Tempo Traveller / Ertiga & Guwahati Transfers'
+    ]
+  }
 ];

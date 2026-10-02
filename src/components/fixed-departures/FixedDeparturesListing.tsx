@@ -25,10 +25,21 @@ const routeMap: Record<string, string[]> = {
   'singapore-cruise-getaway-5n-fixed-departure-flights-included': ['Genting Highlands', 'Sentosa'],
   'vietnam-4-nights-central-vietnam-coastal-bliss': ['Da Nang', 'Hoi An'],
   'all-in-thailand-8-nights-across-bangkok-pattaya-phuket-krabi': ['Bangkok', 'Pattaya', 'Phuket', 'Krabi'],
+  'egypt-journey-through-time-oct-nov': ['Cairo', 'Aswan', 'Luxor', 'Hurghada'],
+  'egypt-journey-through-time-december': ['Cairo', 'Aswan', 'Luxor', 'Hurghada'],
+  'egypt-journey-through-time-christmas-special': ['Cairo', 'Aswan', 'Luxor', 'Hurghada'],
+  'japan-cherry-blossom-special-with-flights-7n': ['Tokyo', 'Mt. Fuji', 'Hakone', 'Osaka', 'Kyoto', 'Nara', 'Amanohashidate'],
+  'japan-grand-explorer-7n8d': ['Tokyo', 'Mt. Fuji', 'Hakone', 'Osaka', 'Kyoto', 'Nara'],
+  'japan-land-package-7n8d': ['Osaka', 'Kyoto', 'Nara', 'Mt. Fuji', 'Hakone', 'Tokyo'],
+  'andaman-winter-fixed-departure-5n': ['Port Blair', 'Havelock', 'Neil Island'],
+  'kerala-winter-fixed-departure-5n': ['Cochin', 'Munnar', 'Thekkady', 'Alleppey'],
+  'spiti-winter-fixed-departure-delhi': ['Delhi', 'Shimla', 'Chitkul', 'Tabo', 'Kaza', 'Kalpa'],
+  'kashmir-winter-fixed-departure-5n': ['Srinagar', 'Gulmarg', 'Pahalgam', 'Dal Lake'],
+  'meghalaya-fd-2026-2027': ['Guwahati', 'Shillong', 'Cherrapunji', 'Dawki'],
 };
 
 export function FixedDeparturesListing() {
-  const [selectedPlace, setSelectedPlace] = useState<'all' | 'vietnam' | 'thailand' | 'singapore'>('all');
+  const [selectedPlace, setSelectedPlace] = useState<'all' | 'japan' | 'egypt' | 'vietnam' | 'thailand' | 'singapore' | 'andaman' | 'kerala' | 'spiti-valley' | 'kashmir' | 'meghalaya'>('all');
   const [selectedLength, setSelectedLength] = useState<'all' | 'short' | 'medium' | 'long'>('all');
   const [savedSlugs, setSavedSlugs] = useState<string[]>([]);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -63,9 +74,16 @@ export function FixedDeparturesListing() {
   const placeCounts = useMemo(() => {
     return {
       all: fixedDeparturePackages.length,
+      japan: fixedDeparturePackages.filter(p => p.destinationSlug === 'japan').length,
+      egypt: fixedDeparturePackages.filter(p => p.destinationSlug === 'egypt').length,
       vietnam: fixedDeparturePackages.filter(p => p.destinationSlug === 'vietnam').length,
       thailand: fixedDeparturePackages.filter(p => p.destinationSlug === 'thailand').length,
       singapore: fixedDeparturePackages.filter(p => p.destinationSlug === 'singapore').length,
+      andaman: fixedDeparturePackages.filter(p => p.destinationSlug === 'andaman').length,
+      kerala: fixedDeparturePackages.filter(p => p.destinationSlug === 'kerala').length,
+      'spiti-valley': fixedDeparturePackages.filter(p => p.destinationSlug === 'spiti-valley').length,
+      kashmir: fixedDeparturePackages.filter(p => p.destinationSlug === 'kashmir').length,
+      meghalaya: fixedDeparturePackages.filter(p => p.destinationSlug === 'meghalaya').length,
     };
   }, []);
 
@@ -107,12 +125,12 @@ export function FixedDeparturesListing() {
             <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-xs text-muted-foreground border-y border-obsidian-border/80 py-3.5">
               <span className="flex items-center gap-1.5 text-parchment font-medium">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#c48c58]" />
-                6 published holidays
+                {fixedDeparturePackages.length} published holidays
               </span>
               <span>·</span>
-              <span>3 places</span>
+              <span>{Object.keys(placeCounts).length - 1} destinations</span>
               <span>·</span>
-              <span className="text-[#c48c58]">from ₹19,999 per person</span>
+              <span className="text-[#c48c58]">starting from ₹19,999 per person</span>
             </div>
 
             {/* Action buttons */}
@@ -154,6 +172,13 @@ export function FixedDeparturesListing() {
               <div className="flex flex-wrap gap-2">
                 {[
                   { id: 'all', label: 'All', count: placeCounts.all },
+                  { id: 'meghalaya', label: 'Meghalaya', count: placeCounts.meghalaya },
+                  { id: 'kashmir', label: 'Kashmir', count: placeCounts.kashmir },
+                  { id: 'spiti-valley', label: 'Spiti Valley', count: placeCounts['spiti-valley'] },
+                  { id: 'andaman', label: 'Andaman', count: placeCounts.andaman },
+                  { id: 'kerala', label: 'Kerala', count: placeCounts.kerala },
+                  { id: 'japan', label: 'Japan', count: placeCounts.japan },
+                  { id: 'egypt', label: 'Egypt', count: placeCounts.egypt },
                   { id: 'vietnam', label: 'Vietnam', count: placeCounts.vietnam },
                   { id: 'singapore', label: 'Singapore', count: placeCounts.singapore },
                   { id: 'thailand', label: 'Thailand', count: placeCounts.thailand },
@@ -295,11 +320,14 @@ export function FixedDeparturesListing() {
                   {/* Price & Footer */}
                   <div className="pt-4 border-t border-obsidian-border/80 flex items-end justify-between">
                     <div>
+                      <div className="font-mono text-[10px] uppercase tracking-wider text-muted-stone">
+                        Starting from
+                      </div>
                       <div className="font-serif text-2xl text-parchment font-semibold">
-                        ₹{holiday.priceINR.toLocaleString('en-IN')}
+                        ₹{holiday.priceINR.toLocaleString('en-IN')}{holiday.hasStarMark ? '*' : ''}
                       </div>
                       <div className="font-mono text-[11px] text-muted-foreground mt-0.5">
-                        per person · valid to {holiday.priceValidUntil}
+                        per person · all taxes included
                       </div>
                     </div>
 

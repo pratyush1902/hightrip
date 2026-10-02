@@ -8,7 +8,7 @@ export const travelStories: TravelStory[] = [
     author: {
       name: 'Dhirendra Kashyap',
       role: 'Founder & Chief Curator',
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
+      avatar: '/images/founder.jpg',
     },
     publishedAt: '12 Sep 2026',
     readingTime: '5 min read',

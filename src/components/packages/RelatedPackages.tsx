@@ -64,10 +64,10 @@ export function RelatedPackages({ currentSlug }: RelatedPackagesProps) {
               </h4>
               <div className="pt-2 flex items-baseline justify-between text-xs font-mono">
                 <span className="text-sand font-bold">
-                  ₹{pkg.priceINR.toLocaleString('en-IN')}
+                  Starting from ₹{pkg.priceINR.toLocaleString('en-IN')}{pkg.hasStarMark ? '*' : ''}
                 </span>
-                <span className="text-muted-stone text-[10px]">
-                  Valid to {pkg.priceValidUntil}
+                <span className="text-bronze text-[10px] uppercase font-semibold">
+                  View Journey →
                 </span>
               </div>
             </div>

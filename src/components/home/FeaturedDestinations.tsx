@@ -14,9 +14,9 @@ export function FeaturedDestinations() {
     <section id="destinations" className="py-24 sm:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <SectionHeader
         kicker="The view is only the beginning"
-        title="Some places change"
-        accent="your perspective."
-        subtitle="Pick the view. We’ll take care of the journey."
+        title="The world looks"
+        accent="different from here."
+        subtitle="Choose your destination. We’ll take care of the journey."
         actionText="Explore all destinations"
         actionHref="/destinations"
       />
@@ -73,7 +73,7 @@ export function FeaturedDestinations() {
                 {dest.name}
               </h3>
               <span className="mono font-mono text-xs text-bronze font-semibold">
-                From ₹{dest.startingPriceINR.toLocaleString('en-IN')}
+                Starting from ₹{dest.startingPriceINR.toLocaleString('en-IN')}
               </span>
             </div>
 

@@ -27,8 +27,7 @@ export function DestinationScene({
         isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       } ${className}`}
     >
-      {/* Dark Ambient Overlays for Cinematic Legibility */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/60 pointer-events-none" />
+      {/* No dark overlay */}
 
       {/* Main Full-Screen Destination Content Box */}
       <div className="relative z-40 h-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 flex flex-col justify-between py-16 sm:py-22 lg:py-26 pointer-events-none">

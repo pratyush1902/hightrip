@@ -43,12 +43,12 @@ export interface EthicalCodeItem {
 
 export const availableExperiences: AvailableExperience[] = [
   {
-    id: '01 / 08',
+    id: '01 / 07',
     slug: 'mayong',
     name: 'Mayong',
     location: 'Morigaon district, Assam, India',
     oneLine: "A Brahmaputra-side village long feared as India's centre of tantra and black magic.",
-    heroImage: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1800&q=85',
+    heroImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRrmdqdyP_Lr8af1I2wUkvdPUfeU_ZBPdMCZO7ne9QAA&s=10',
     story: {
       lead: "Mayong sits on the bank of the Brahmaputra in Morigaon district. For centuries travellers and even Mughal generals are said to have feared the village; the Alamgir Nama records that Aurangzeb's general Raja Ram Singh hesitated to invade Assam partly because of Mayong's reputation for sorcery. Local tradition holds that tantriks and healers practising Ayurveda and Tantra Kriya sheltered in its forests.",
       fullStory: "Excavations near the village turned up sharp implements resembling tools used in ritual sacrifice, feeding the legend further. None of this has been independently verified by archaeologists as proof of historical human sacrifice; it remains local lore documented by the museum and popular press. In 2002 the Mayong Central Museum and Emporium opened to preserve what is left of this tantric and Ayurvedic heritage, displaying Sanchipat manuscripts, artefacts from local digs and dioramas of healing and taming rituals. It sits beside Pobitora Wildlife Sanctuary, home to one of the densest one-horned rhino populations in the world.",
@@ -75,12 +75,12 @@ export const availableExperiences: AvailableExperience[] = [
     },
   },
   {
-    id: '02 / 08',
+    id: '02 / 07',
     slug: 'cellular-jail',
     name: 'The Cellular Jail',
     location: 'Port Blair, Andaman and Nicobar Islands, India',
     oneLine: "The British colonial prison in Port Blair where Indian freedom fighters were exiled across the 'black water'.",
-    heroImage: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1800&q=85',
+    heroImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfbDXN-URAottUJC4aTN71NN_U20m2DmKZ_yMwLQ71nA&s=10',
     story: {
       lead: "Constructed between 1896 and 1906 by the British colonial administration, the Cellular Jail was specifically engineered for solitary confinement to crush the morale of Indian freedom fighters. Exiled across the Kala Pani ('black water'), hundreds of political prisoners endured relentless hard labour in individual cells radiating like spokes from a central watchtower.",
       fullStory: "Each of the original seven wings was positioned so that no prisoner could see or communicate with another. Prominent revolutionaries including Veer Savarkar, Barindra Kumar Ghosh, and Batukeshwar Dutt were incarcerated here. Following India's independence, four wings were dismantled due to earthquake damage, while the surviving three wings and central tower were declared a National Memorial Monument in 1969 to preserve the collective memory of the freedom struggle.",
@@ -107,12 +107,12 @@ export const availableExperiences: AvailableExperience[] = [
     },
   },
   {
-    id: '03 / 08',
+    id: '03 / 07',
     slug: 'jallianwala-bagh',
     name: 'Jallianwala Bagh',
     location: 'Amritsar, Punjab, India',
     oneLine: 'The walled garden in Amritsar where British troops fired on an unarmed crowd on 13 April 1919.',
-    heroImage: 'https://images.unsplash.com/photo-1609137144822-45e0545fe221?auto=format&fit=crop&w=1800&q=85',
+    heroImage: 'https://images.unsplash.com/photo-1644406733884-f90d90af8bc8?auto=format&fit=crop&w=1800&q=85',
     story: {
       lead: "On Baisakhi day, 13 April 1919, thousands of men, women, and children gathered peacefully in Jallianwala Bagh to protest the arrest of national leaders under the Rowlatt Act. Acting Brigadier-General Reginald Dyer deployed troops to seal the only narrow passage out of the garden and ordered continuous firing without giving an order to disperse.",
       fullStory: "For ten agonizing minutes, 1,650 rounds were fired point-blank into the trapped crowd. Hundreds died, many drowning in the garden's deep well while attempting to escape the volley. Rabindranath Tagore renounced his British knighthood in protest, and Mahatma Gandhi cited the massacre as the definitive moment that shattered Indian trust in the British colonial empire. Today, the preserved bullet marks on the high brick walls stand as quiet, indelible witnesses.",
@@ -139,12 +139,12 @@ export const availableExperiences: AvailableExperience[] = [
     },
   },
   {
-    id: '04 / 08',
+    id: '04 / 07',
     slug: 'kuldhara-bhangarh',
     name: 'Kuldhara & Bhangarh',
     location: 'Jaisalmer and Alwar districts, Rajasthan, India',
     oneLine: "An abandoned Paliwal Brahmin village and a 16th-century fort, each wrapped in India's best-known curse legends.",
-    heroImage: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1800&q=85',
+    heroImage: 'https://images.unsplash.com/photo-1621744299074-cc0ac49afc9d?auto=format&fit=crop&w=1800&q=85',
     story: {
       lead: "Kuldhara, situated 18 km southwest of Jaisalmer, was once a thriving settlement of wealthy Paliwal Brahmins who had pioneered ingenious arid-zone agriculture. Around 1825 CE, the entire village and 84 surrounding hamlets abandoned their homes overnight to protect their honour and escape the tyrannical extortion of the prime minister Salim Singh.",
       fullStory: "Legend says the departing elders laid a curse ensuring no one could ever inhabit the village again. Hundreds of years later, its sandstone streets, carved doorframes, and empty courtyards remain open to the desert wind. In Alwar, the 16th-century fortress city of Bhangarh tells a parallel story: founded in 1573 by Raja Bhagwant Das, it was abruptly abandoned following military invasion, famine, and dark sorcery legends, leaving an intricate ghost citadel where the Archaeological Survey of India strictly prohibits entry after dusk.",
@@ -171,12 +171,12 @@ export const availableExperiences: AvailableExperience[] = [
     },
   },
   {
-    id: '05 / 08',
+    id: '05 / 07',
     slug: 'dhanushkodi',
     name: 'Dhanushkodi',
     location: 'Rameswaram, Tamil Nadu, India',
     oneLine: 'A ghost town at India’s southeastern tip, wiped out by a cyclone in 1964 and never rebuilt.',
-    heroImage: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1800&q=85',
+    heroImage: 'https://images.unsplash.com/photo-1712305407926-b9057c496645?auto=format&fit=crop&w=1800&q=85',
     story: {
       lead: "Located on the slender eastern tip of Pamban Island just 18 miles from Sri Lanka, Dhanushkodi was once a bustling commercial port where passenger ferries met the famous Boat Mail express train. On the catastrophic night of 22 December 1964, a category-5 super cyclone brought 20-foot storm surges that completely erased the town.",
       fullStory: "A passenger train approaching the station with over 100 passengers was swept into the ocean with no survivors. Following the devastation, the Government of Madras declared Dhanushkodi 'unfit for human habitation' and ordered that it never be rebuilt. Today, bleached brick walls of the railway station, customs office, and St. Anthony’s Church rise silently from the shimmering coastal sands where the Bay of Bengal meets the Indian Ocean.",
@@ -203,12 +203,12 @@ export const availableExperiences: AvailableExperience[] = [
     },
   },
   {
-    id: '06 / 08',
+    id: '06 / 07',
     slug: 'nahargarh',
     name: 'Nahargarh',
     location: 'Jaipur, Rajasthan, India',
     oneLine: 'A hilltop Jaipur fort said to have been built only after the restless spirit of a Rathore prince, Nahar Singh Bhomia, was appeased with a temple in his name.',
-    heroImage: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1800&q=85',
+    heroImage: 'https://images.unsplash.com/photo-1578631048213-4162386d2bf0?auto=format&fit=crop&w=1800&q=85',
     story: {
       lead: "Commanding the steep crest of the Aravalli ridge directly above the Pink City, Nahargarh ('Abode of Tigers') formed a formidable defensive triad alongside Amer Fort and Jaigarh. Commissioned in 1734 by the astronomer-king Maharaja Sawai Jai Singh II, the fort's construction was repeatedly plagued by nocturnal collapses attributed to the spirit of Prince Nahar Singh Bhomia.",
       fullStory: "To pacify the restless spirit whose land had been claimed for the fortress, Jai Singh built a memorial temple within the ramparts and renamed the citadel in his honour, after which construction proceeded without hindrance. Later expanded in 1868 with the Madhavendra Bhawan — nine identical, interconnected two-storey royal suites designed for the queens — Nahargarh stands as a monument to tactical mountain architecture and enduring folklore.",
@@ -234,12 +234,12 @@ export const availableExperiences: AvailableExperience[] = [
     },
   },
   {
-    id: '07 / 08',
+    id: '07 / 07',
     slug: 'lambi-dehar-mines',
     name: 'Lambi Dehar',
     location: 'Near Mussoorie, Uttarakhand, India',
     oneLine: 'Abandoned limestone quarry ruins above the Doon Valley, left behind after India’s first major environmental court order shut the mines down.',
-    heroImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1800&q=85',
+    heroImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-mFrmauyJO-KAQBA-91FIpvUitH8Ej6YZrVfD9-gsMw&s=10',
     story: {
       lead: "Perched along the cloud-veiled ridges near Mussoorie, Lambi Dehar represents one of modern India's most significant industrial ruins. Throughout the mid-20th century, extensive open-cast limestone quarrying ripped through the Himalayan slopes, inflicting severe lung ailments upon hundreds of laborers and stripping the Doon Valley of its protective canopy.",
       fullStory: "In the 1980s, local communities and environmentalists filed a landmark public interest litigation in the Supreme Court of India. The historic ruling permanently shut down the quarrying operations to halt ecological ruin, leaving behind an eerie, overgrown ghost colony of collapsed worker settlements, limestone rubble, and rusting machines. As nature gradually reclaims the hillside, the site remains an atmospheric monument to the ecological cost of unchecked industrial exploitation.",
@@ -261,38 +261,6 @@ export const availableExperiences: AvailableExperience[] = [
       howToVisit: [
         'Travel strictly with an experienced local guide due to steep drops and loose scree.',
         'Treat the site with respectful ecological mindfulness; leave no trace.',
-      ],
-    },
-  },
-  {
-    id: '08 / 08',
-    slug: 'nalanda',
-    name: 'Nalanda',
-    location: 'Nalanda district, Bihar, India (about 90 km from Patna)',
-    oneLine: 'The ruined Gupta-era university where Xuanzang studied for two years, sacked around 1200 CE — and still debated by historians as to how, and how completely.',
-    heroImage: 'https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=1800&q=85',
-    story: {
-      lead: "Established in the 5th century CE under the patronage of the Gupta emperors, Nalanda Mahavihara stood for over seven centuries as the ancient world's foremost residential university. In its zenith, 10,000 monks, philosophers, and scholars gathered from China, Korea, Japan, Tibet, and Persia to master astronomy, medicine, logic, mathematics, and Buddhist metaphysics.",
-      fullStory: "Chinese traveler Xuanzang lived and studied here for two years, recording vivid descriptions of its soaring multi-tiered shrines, gardens, and pristine debate courtyards. Around 1200 CE, the university was sacked and its colossal nine-storey library, Dharmaganja ('Treasury of Truth'), was said to have burned for months. Today, the red-brick excavated ruins spanning 12 hectares — a UNESCO World Heritage site — offer an awe-inspiring glimpse into an unparalleled center of global learning.",
-    },
-    keyFacts: [
-      { label: 'Founded', value: '5th century CE under Gupta Emperor Kumaragupta I' },
-      { label: 'Capacity', value: '10,000 students and 2,000 resident faculty' },
-      { label: 'Library', value: 'Dharmaganja comprised 3 nine-storey buildings (Ratnasagara, Ratnodadhi, Ratnaranjaka)' },
-      { label: 'UNESCO Inscription', value: 'Designated World Heritage Site in 2016' },
-    ],
-    stopsOnTrail: [
-      { num: '01', title: 'Sariputta Stupa (Temple 3)', desc: 'The iconic stepped red-brick votive stupa surrounded by smaller commemorative shrines.' },
-      { num: '02', title: 'Monastic Courtyards (Monasteries 1–11)', desc: 'Double-row student cells, meditation niches, lecture platforms, and deep central wells.' },
-      { num: '03', title: 'Nalanda Archaeological Museum', desc: 'Pala-era bronze statues, stone carvings, terracotta seals, and preserved burnt grains.' },
-      { num: '04', title: 'Xuanzang Memorial Hall', desc: 'Peaceful memorial hall commemorating the Chinese monk whose travelogues rediscovered Nalanda.' },
-    ],
-    practical: {
-      whenToGo: 'October to March when weather in Bihar is cool and sunny.',
-      gettingThere: 'Jay Prakash Narayan Airport, Patna (PAT) is 90 km away; direct rail link connects to Rajgir and Nalanda.',
-      howToVisit: [
-        'Engage an ASI-certified heritage historian to appreciate the architectural evolution.',
-        'Plan at least 3–4 hours to explore the excavated grounds and adjacent museum.',
       ],
     },
   },

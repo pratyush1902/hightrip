@@ -53,7 +53,7 @@ const flashOffers: FlashOfferTour[] = [
     discountPercent: 19,
     glowLabel: '⚡ FLASH SALE',
     slotsLeft: 3,
-    image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1400&q=85',
+    image: 'https://images.unsplash.com/photo-1620065487644-1080510335f5?auto=format&fit=crop&w=1400&q=85',
     departureDates: 'Valid Oct 2026 - Jan 2027',
     includesFlight: false,
     highlights: [
@@ -76,7 +76,7 @@ const flashOffers: FlashOfferTour[] = [
     discountPercent: 21,
     glowLabel: '🔥 FLIGHTS INCLUDED',
     slotsLeft: 4,
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1400&q=85',
+    image: 'https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=1400&q=85',
     departureDates: 'Weekly Direct Flights (Ex-DEL/BOM)',
     includesFlight: true,
     highlights: [
@@ -99,7 +99,7 @@ const flashOffers: FlashOfferTour[] = [
     discountPercent: 26,
     glowLabel: '⚡ LIMITED SLOTS',
     slotsLeft: 5,
-    image: 'https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=1400&q=85',
+    image: 'https://images.unsplash.com/photo-1493863438658-3e7743ac61cd?auto=format&fit=crop&w=1400&q=85',
     departureDates: 'Fixed Departures Every Friday',
     includesFlight: true,
     highlights: [
@@ -145,7 +145,7 @@ const flashOffers: FlashOfferTour[] = [
     discountPercent: 20,
     glowLabel: '⚡ CRUISE SPECIAL',
     slotsLeft: 3,
-    image: 'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1400&q=85',
+    image: 'https://images.unsplash.com/photo-1496939376851-89342e90adcd?auto=format&fit=crop&w=1400&q=85',
     departureDates: 'Departures Twice Monthly',
     includesFlight: true,
     highlights: [
@@ -240,25 +240,26 @@ export function FlashSaleSlider() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header with Dim-to-Bright Red Pill & Countdown */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
-          <div className="max-w-2xl">
+          <div className="max-w-3xl">
             {/* Crisp Dim-to-Bright Red Flash Banner Pill */}
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-mono font-bold tracking-wider uppercase mb-5 border dim-bright-red">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="beacon-pulse inline-flex h-full w-full rounded-full bg-red-400"></span>
               </span>
-              <span>⚡ Limited-Time Flash Sale</span>
-              <span className="opacity-40">|</span>
-              <span>Exclusive Travel Offers</span>
+              <span>The High Trip Edit</span>
+              <span className="opacity-40">•</span>
+              <span>Limited-Time Offers</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-white tracking-tight leading-tight">
-              Curated Escapes at{' '}
-              <span className="italic font-light text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-rose-400 to-red-500">
-                Special Flash Rates.
+              Exceptional Journeys.{' '}
+              <br />
+              <span className="inline-block italic font-light text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-rose-400 to-red-500 pr-3 pb-1">
+                Exceptional Rates.
               </span>
             </h2>
             <p className="mt-4 text-stone-300 text-sm sm:text-base max-w-xl font-light leading-relaxed">
-              Locked-in season pricing with complimentary luxury inclusions and upgrades. Grab these rare rates before the timer runs out.
+              Limited-time offers on selected journeys, stays and experiences.
             </p>
           </div>
 
@@ -422,6 +423,7 @@ export function FlashSaleSlider() {
                       ₹{tour.originalPrice.toLocaleString('en-IN')}
                     </span>
                     <div className="flex items-baseline gap-2">
+                      <span className="text-xs font-mono text-stone-400">Starting from</span>
                       <span className="text-3xl sm:text-4xl font-serif font-bold text-red-400 tracking-tight">
                         ₹{tour.flashPrice.toLocaleString('en-IN')}
                       </span>

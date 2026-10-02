@@ -1,15 +1,50 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { Compass, Globe, Calendar, Banknote, ArrowRight } from 'lucide-react';
 import { destinations } from '@/data/destinations';
+import { travelPackages } from '@/data/packages';
 
 export function TripFinder() {
   const router = useRouter();
   const [tripType, setTripType] = useState('all');
   const [selectedDestination, setSelectedDestination] = useState('');
   const [budget, setBudget] = useState('all');
+
+  const availableDestinations = useMemo(() => {
+    if (tripType === 'all') return destinations;
+    if (tripType === 'international') return destinations.filter((d) => d.region === 'International');
+    if (tripType === 'india') return destinations.filter((d) => d.region === 'India');
+    if (tripType === 'fixed-departure') {
+      const fdSlugs = new Set(
+        travelPackages.filter((p) => p.type === 'fixed-departure').map((p) => p.destinationSlug)
+      );
+      return destinations.filter((d) => fdSlugs.has(d.slug));
+    }
+    return destinations;
+  }, [tripType]);
+
+  const handleTripTypeChange = (newType: string) => {
+    setTripType(newType);
+    if (selectedDestination) {
+      let allowedSlugs: Set<string>;
+      if (newType === 'all') {
+        allowedSlugs = new Set(destinations.map((d) => d.slug));
+      } else if (newType === 'international') {
+        allowedSlugs = new Set(destinations.filter((d) => d.region === 'International').map((d) => d.slug));
+      } else if (newType === 'india') {
+        allowedSlugs = new Set(destinations.filter((d) => d.region === 'India').map((d) => d.slug));
+      } else {
+        allowedSlugs = new Set(
+          travelPackages.filter((p) => p.type === 'fixed-departure').map((p) => p.destinationSlug)
+        );
+      }
+      if (!allowedSlugs.has(selectedDestination)) {
+        setSelectedDestination('');
+      }
+    }
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -51,12 +86,12 @@ export function TripFinder() {
               </label>
               <select
                 value={tripType}
-                onChange={(e) => setTripType(e.target.value)}
+                onChange={(e) => handleTripTypeChange(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl bg-obsidian border border-obsidian-border text-sm text-parchment focus:outline-none focus:ring-1 focus:ring-bronze"
               >
                 <option value="all">Every kind of escape</option>
                 <option value="international">Somewhere abroad (International)</option>
-                <option value="india">Closer to home (India escapes)</option>
+                <option value="india">Closer to home (Domestic / India)</option>
                 <option value="fixed-departure">With a group (Fixed departures)</option>
               </select>
             </div>
@@ -72,10 +107,10 @@ export function TripFinder() {
                 onChange={(e) => setSelectedDestination(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl bg-obsidian border border-obsidian-border text-sm text-parchment focus:outline-none focus:ring-1 focus:ring-bronze"
               >
-                <option value="">I’m open to inspiration</option>
-                {destinations.map((d) => (
+                <option value="">{tripType === 'india' ? 'All Domestic Destinations' : 'I’m open to inspiration'}</option>
+                {availableDestinations.map((d) => (
                   <option key={d.slug} value={d.slug}>
-                    {d.name} ({d.airportCode}) — from ₹{d.startingPriceINR.toLocaleString('en-IN')}
+                    {d.name} ({d.airportCode}) — starting from ₹{d.startingPriceINR.toLocaleString('en-IN')}
                   </option>
                 ))}
               </select>

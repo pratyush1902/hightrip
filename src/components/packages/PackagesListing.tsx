@@ -17,6 +17,7 @@ import { travelPackages } from '@/data/packages';
 import { destinations } from '@/data/destinations';
 import { InquiryModal } from '@/components/common/InquiryModal';
 import { StaggerReveal } from '@/components/animation/StaggerReveal';
+import { PackageCard } from '@/components/packages/PackageCard';
 
 export function PackagesListing() {
   const searchParams = useSearchParams();
@@ -30,6 +31,29 @@ export function PackagesListing() {
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<'featured' | 'price-asc' | 'price-desc' | 'duration'>('featured');
   const [inquiryPackage, setInquiryPackage] = useState<string | null>(null);
+
+  // Dynamically filter destination options according to active type tab
+  const availableDestinations = useMemo(() => {
+    if (typeFilter === 'all') return destinations;
+    const matchingSlugs = new Set(
+      travelPackages.filter((p) => p.type === typeFilter).map((p) => p.destinationSlug)
+    );
+    return destinations.filter((d) => matchingSlugs.has(d.slug));
+  }, [typeFilter]);
+
+  const handleTypeChange = (newType: string) => {
+    setTypeFilter(newType);
+    if (destinationFilter) {
+      const matchingSlugs = new Set(
+        newType === 'all'
+          ? destinations.map((d) => d.slug)
+          : travelPackages.filter((p) => p.type === newType).map((p) => p.destinationSlug)
+      );
+      if (!matchingSlugs.has(destinationFilter)) {
+        setDestinationFilter('');
+      }
+    }
+  };
 
   const filteredPackages = useMemo(() => {
     return travelPackages
@@ -81,16 +105,16 @@ export function PackagesListing() {
           {[
             { id: 'all', label: `All Packages (${travelPackages.length})` },
             { id: 'international', label: `International Escapes (${travelPackages.filter(p => p.type === 'international').length})` },
-            { id: 'india', label: `Closer to Home / India (${travelPackages.filter(p => p.type === 'india').length})` },
+            { id: 'india', label: `Domestic / India (${travelPackages.filter(p => p.type === 'india').length})` },
             { id: 'fixed-departure', label: `Fixed Group Departures (${travelPackages.filter(p => p.type === 'fixed-departure').length})` },
           ].map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setTypeFilter(tab.id)}
+              onClick={() => handleTypeChange(tab.id)}
               className={`px-4 py-2 rounded-full text-xs font-mono transition-all cursor-pointer ${
                 typeFilter === tab.id
-                  ? 'bg-sand text-obsidian font-bold shadow'
-                  : 'bg-obsidian text-muted-foreground hover:text-parchment border border-obsidian-border'
+                  ? 'bg-[#c48c58] text-white font-medium shadow-sm'
+                  : 'bg-obsidian text-muted-foreground hover:text-parchment border border-obsidian-border hover:border-bronze/40'
               }`}
             >
               {tab.label}
@@ -119,8 +143,8 @@ export function PackagesListing() {
               onChange={(e) => setDestinationFilter(e.target.value)}
               className="w-full px-3.5 py-2.5 rounded-xl bg-obsidian border border-obsidian-border text-xs text-parchment focus:outline-none focus:ring-1 focus:ring-bronze"
             >
-              <option value="">All Destinations</option>
-              {destinations.map((d) => (
+              <option value="">{typeFilter === 'india' ? 'All Domestic Destinations' : 'All Destinations'}</option>
+              {availableDestinations.map((d) => (
                 <option key={d.slug} value={d.slug}>
                   {d.name} ({d.airportCode})
                 </option>
@@ -162,106 +186,7 @@ export function PackagesListing() {
       {filteredPackages.length > 0 ? (
         <StaggerReveal className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filteredPackages.map((pkg) => (
-            <div
-              key={pkg.slug}
-              className="bg-obsidian border border-obsidian-border rounded-2xl overflow-hidden hover:border-bronze/50 transition-all duration-300 flex flex-col justify-between group shadow-xl"
-            >
-              <div>
-                {/* Photo & Badges */}
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-obsidian-surface">
-                  <Image
-                    src={pkg.heroImage}
-                    alt={pkg.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent" />
-
-                  {/* Top Floating Badges */}
-                  <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
-                    <span className="px-3 py-1 rounded-full text-xs font-mono bg-black/75 backdrop-blur-md border border-white/10 text-sand flex items-center gap-1.5">
-                      <Clock className="w-3 h-3 text-bronze" />
-                      <span>{pkg.durationDays}D / {pkg.durationNights}N</span>
-                    </span>
-
-                    <span className="px-3 py-1 rounded-full text-xs font-mono bg-bronze/90 text-obsidian font-semibold">
-                      {pkg.style}
-                    </span>
-                  </div>
-
-                  {/* Bottom Price Bar */}
-                  <div className="absolute bottom-4 left-4 right-4 flex items-baseline justify-between">
-                    <div>
-                      <span className="text-[10px] font-mono uppercase tracking-wider text-muted-stone block">
-                        Published Price
-                      </span>
-                      <span className="text-2xl font-serif font-bold text-parchment">
-                        ₹{pkg.priceINR.toLocaleString('en-IN')}
-                      </span>
-                      {pkg.originalPriceINR && (
-                        <span className="ml-2 text-xs font-mono text-muted-stone line-through">
-                          ₹{pkg.originalPriceINR.toLocaleString('en-IN')}
-                        </span>
-                      )}
-                    </div>
-                    <span className="text-[11px] font-mono text-bronze-light bg-black/70 px-2.5 py-1 rounded border border-sand/15">
-                      Valid to {pkg.priceValidUntil}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Card Body */}
-                <div className="p-6 sm:p-8 space-y-4">
-                  <div>
-                    <span className="text-xs font-mono text-bronze-light uppercase tracking-wider">
-                      {pkg.destinationName}
-                    </span>
-                    <h2 className="font-serif text-2xl text-parchment mt-1 group-hover:text-bronze-light transition-colors">
-                      <Link href={`/packages/${pkg.slug}`}>{pkg.title}</Link>
-                    </h2>
-                    <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                      {pkg.overview}
-                    </p>
-                  </div>
-
-                  {/* Highlights List */}
-                  <div className="pt-3 border-t border-obsidian-border/80 space-y-2 text-xs text-sand">
-                    {pkg.highlights.slice(0, 3).map((h, i) => (
-                      <div key={i} className="flex items-start gap-2">
-                        <Check className="w-3.5 h-3.5 text-bronze flex-shrink-0 mt-0.5" />
-                        <span className="line-clamp-1">{h}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Hotel Standard Info */}
-                  <div className="pt-2 text-[11px] font-mono text-muted-stone flex items-center justify-between">
-                    <span>Stay: {pkg.hotelStandard}</span>
-                    <span>Group: {pkg.groupSize}</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Actions Footer */}
-              <div className="p-6 sm:p-8 pt-0 flex items-center gap-3">
-                <Link
-                  href={`/packages/${pkg.slug}`}
-                  className="flex-1 py-3 px-4 rounded-xl bg-obsidian-surface border border-obsidian-border text-center text-xs font-semibold text-sand hover:text-parchment hover:border-bronze transition-colors flex items-center justify-center gap-1.5"
-                >
-                  <span>View Itinerary</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-bronze" />
-                </Link>
-
-                <button
-                  type="button"
-                  onClick={() => setInquiryPackage(pkg.title)}
-                  className="py-3 px-6 rounded-xl bg-bronze-gradient text-obsidian text-xs font-semibold hover:opacity-95 transition-opacity flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
-                >
-                  <span>Enquire</span>
-                </button>
-              </div>
-            </div>
+            <PackageCard key={pkg.slug} package={pkg} />
           ))}
         </StaggerReveal>
       ) : (
@@ -277,7 +202,7 @@ export function PackagesListing() {
               setStyleFilter('all');
               setSearchQuery('');
             }}
-            className="mt-6 px-6 py-2.5 rounded-full bg-sand text-obsidian text-xs font-semibold font-mono"
+            className="mt-6 px-6 py-2.5 rounded-full bg-[#c48c58] text-white hover:bg-[#b57d4a] transition-all text-xs font-semibold font-mono shadow-sm cursor-pointer"
           >
             Reset Filters
           </button>

@@ -32,7 +32,7 @@ export function HeroIntro({
 
       {/* Supporting Copy */}
       <div className="hero-intro-sub max-w-xs sm:max-w-md lg:max-w-xl">
-        <p className="text-xs sm:text-base lg:text-lg text-[#59534c] font-light leading-relaxed">
+        <p className="text-xs sm:text-base lg:text-lg text-[#59534c] font-bold leading-relaxed">
           India’s only travel company that takes dark tourism into mainstream travel.
         </p>
       </div>

@@ -1,9 +1,49 @@
 'use client';
 
 import { useState } from 'react';
-import { CalendarCheck, ShieldCheck, Compass, MessageSquare, Phone } from 'lucide-react';
+import {
+  Sparkles,
+  ShieldCheck,
+  Headphones,
+  Compass,
+  Landmark,
+  MessageSquare,
+} from 'lucide-react';
 import { FadeReveal } from '@/components/animation/FadeReveal';
 import { InquiryModal } from '@/components/common/InquiryModal';
+
+const whyHighTripPillars = [
+  {
+    num: '01',
+    title: 'THOUGHTFULLY CURATED',
+    description: 'Every journey is built around the details that matter.',
+    icon: Sparkles,
+  },
+  {
+    num: '02',
+    title: 'BEST RATES',
+    description: 'Competitive pricing across flights, stays and experiences.',
+    icon: ShieldCheck,
+  },
+  {
+    num: '03',
+    title: 'HUMAN ASSISTANCE',
+    description: 'Real people, real support when you need it.',
+    icon: Headphones,
+  },
+  {
+    num: '04',
+    title: 'CUSTOM TRAVEL',
+    description: 'Your dates. Your pace. Your journey.',
+    icon: Compass,
+  },
+  {
+    num: '05',
+    title: 'EXPERIENCES BEYOND THE ORDINARY',
+    description: 'Including our signature Dark Tourism experiences.',
+    icon: Landmark,
+  },
+];
 
 export function PhilosophyBanner() {
   const [inquiryOpen, setInquiryOpen] = useState(false);
@@ -14,55 +54,60 @@ export function PhilosophyBanner() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top Headline */}
           <FadeReveal className="text-center max-w-3xl mx-auto mb-16">
-            <span className="font-mono text-xs uppercase tracking-[0.25em] text-bronze-light block mb-3">
-              The High Trip Promise
-            </span>
-            <h2 className="font-serif text-3xl sm:text-5xl text-parchment leading-tight">
-              A slower, more deliberate way <br />
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <span className="w-8 sm:w-12 h-[1px] bg-bronze/50 inline-block" />
+              <span className="font-mono text-xs uppercase tracking-[0.25em] text-bronze font-semibold">
+                WHY HIGH TRIP?
+              </span>
+              <span className="w-8 sm:w-12 h-[1px] bg-bronze/50 inline-block" />
+            </div>
+
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-parchment leading-tight font-bold tracking-tight">
+              A slower, more deliberate way <br className="hidden sm:inline" />
               to <em className="italic text-bronze font-normal">cross the world.</em>
             </h2>
-            <p className="mt-4 text-base text-muted-foreground leading-relaxed">
+            <p className="mt-4 text-sm sm:text-base text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               We started High Trip Holidays because we were tired of generic package tourism with inflated prices, crowded busses, and invisible asterisks.
             </p>
           </FadeReveal>
 
-          {/* 3 Value Pillars */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <FadeReveal delay={0.1} className="p-8 rounded-2xl bg-obsidian-surface border border-obsidian-border space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-bronze/10 border border-bronze/20 flex items-center justify-center text-bronze mb-4">
-                <CalendarCheck className="w-5 h-5" />
-              </div>
-              <h3 className="font-serif text-xl text-parchment">
-                Every price carries its date
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed font-light">
-                We publish the exact validity date alongside every package price. When you inquire within that window, that price is honoured — no bait-and-switch.
-              </p>
-            </FadeReveal>
+          {/* 5 Value Pillars */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 sm:gap-6">
+            {whyHighTripPillars.map((pillar, idx) => {
+              const Icon = pillar.icon;
+              const isLast = idx === whyHighTripPillars.length - 1;
+              return (
+                <FadeReveal
+                  key={pillar.num}
+                  delay={0.08 * (idx + 1)}
+                  className={`p-6 sm:p-7 rounded-2xl bg-white border border-[#e8ded0] space-y-3.5 shadow-sm hover:shadow-md hover:border-bronze/50 transition-all flex flex-col justify-between group ${
+                    isLast ? 'sm:col-span-2 lg:col-span-1' : ''
+                  }`}
+                >
+                  <div>
+                    {/* Top Row: Number Tag & Icon */}
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="font-mono text-xs font-bold tracking-widest text-bronze">
+                        {pillar.num}
+                      </span>
+                      <div className="w-8 h-8 rounded-lg bg-bronze/10 border border-bronze/20 flex items-center justify-center text-bronze group-hover:bg-bronze group-hover:text-white transition-colors">
+                        <Icon className="w-4 h-4" />
+                      </div>
+                    </div>
 
-            <FadeReveal delay={0.2} className="p-8 rounded-2xl bg-obsidian-surface border border-obsidian-border space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-bronze/10 border border-bronze/20 flex items-center justify-center text-bronze mb-4">
-                <ShieldCheck className="w-5 h-5" />
-              </div>
-              <h3 className="font-serif text-xl text-parchment">
-                Handpicked boutique stays
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed font-light">
-                We refuse standardized charter hotels. We inspect every property for architectural character, proximity to nature, quiet balconies, and thoughtful service.
-              </p>
-            </FadeReveal>
+                    {/* Title */}
+                    <h3 className="font-serif text-base sm:text-lg font-bold text-[#1c1917] leading-snug tracking-tight">
+                      {pillar.title}
+                    </h3>
 
-            <FadeReveal delay={0.3} className="p-8 rounded-2xl bg-obsidian-surface border border-obsidian-border space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-bronze/10 border border-bronze/20 flex items-center justify-center text-bronze mb-4">
-                <Compass className="w-5 h-5" />
-              </div>
-              <h3 className="font-serif text-xl text-parchment">
-                Personal concierge support
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed font-light">
-                You receive a dedicated private concierge coordinator on WhatsApp available from the day of booking until your flight lands safely back home.
-              </p>
-            </FadeReveal>
+                    {/* Description */}
+                    <p className="mt-2 text-xs sm:text-sm text-[#57534e] leading-relaxed font-light">
+                      {pillar.description}
+                    </p>
+                  </div>
+                </FadeReveal>
+              );
+            })}
           </div>
 
           {/* Bottom Conversion Box */}

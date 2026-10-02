@@ -53,15 +53,15 @@ export function DestinationsListing() {
           {[
             { id: 'all', label: 'All Destinations' },
             { id: 'International', label: 'International Escapes' },
-            { id: 'India', label: 'Closer to Home (India)' },
+            { id: 'India', label: 'Domestic (India)' },
           ].map((tab) => (
             <button
               key={tab.id}
               onClick={() => setRegionFilter(tab.id as any)}
               className={`px-4 py-2 rounded-full text-xs font-mono transition-all cursor-pointer ${
                 regionFilter === tab.id
-                  ? 'bg-sand text-obsidian font-bold shadow'
-                  : 'bg-obsidian text-muted-foreground hover:text-parchment border border-obsidian-border'
+                  ? 'bg-[#c48c58] text-white font-medium shadow-sm'
+                  : 'bg-obsidian text-muted-foreground hover:text-parchment border border-obsidian-border hover:border-bronze/40'
               }`}
             >
               {tab.label}
@@ -143,7 +143,7 @@ export function DestinationsListing() {
                       {dest.name}
                     </h2>
                     <span className="font-mono text-xs text-bronze-light bg-black/70 px-2 py-1 rounded border border-bronze/20">
-                      From ₹{dest.startingPriceINR.toLocaleString('en-IN')}
+                      Starting from ₹{dest.startingPriceINR.toLocaleString('en-IN')}
                     </span>
                   </div>
                   <p className="mt-1 text-xs text-sand/80 line-clamp-1 font-light">

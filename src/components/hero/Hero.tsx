@@ -83,9 +83,7 @@ export function Hero() {
 
       const isDesktop = window.innerWidth >= 1024;
 
-      if (bgEl) {
-        gsap.set(bgEl, { opacity: 0 });
-      }
+
 
       // Master Scroll-Driven Takeoff & Destination Morphing Timeline
       const masterTl = gsap.timeline({
@@ -168,13 +166,7 @@ export function Hero() {
       // Flight accelerates UPWARDS in 3D WebGL leaving the strips!
       // Full-page background photograph fades in to 100%
       // ========================================================
-      if (bgEl) {
-        masterTl.to(
-          bgEl,
-          { opacity: 1, ease: 'power1.inOut', duration: 0.24 },
-          0.22
-        );
-      }
+
     }, containerRef);
 
     // Refresh on resize
@@ -220,8 +212,9 @@ export function Hero() {
         {/* Layer 0: Full-Page Destination Photo (Edge-to-Edge Canvas) */}
         <div
           ref={fullPageBgRef}
-          style={{ opacity: 0 }}
-          className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none will-change-[opacity]"
+          className={`absolute inset-0 w-full h-full overflow-hidden pointer-events-none transition-opacity duration-700 ${
+            isExpanded ? 'opacity-100' : 'opacity-0'
+          }`}
         >
           {heroDestinations.map((dest, idx) => {
             const isActive = idx === activeDestIndex;
@@ -230,15 +223,12 @@ export function Hero() {
                 key={dest.id}
                 className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
                   isActive ? 'opacity-100 scale-100 z-10' : 'opacity-0 scale-105 z-0'
-                } transform transition-transform duration-[4000ms]`}
+                }`}
               >
-                <Image
+                <img
                   src={dest.image}
                   alt={`${dest.name} - ${dest.tagline}`}
-                  fill
-                  priority={idx === 0}
-                  sizes="100vw"
-                  className="object-cover object-center filter brightness-[0.78] contrast-[1.06]"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             );
