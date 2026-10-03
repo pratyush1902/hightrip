@@ -110,27 +110,27 @@ export function TripFinder() {
                 <option value="">{tripType === 'india' ? 'All Domestic Destinations' : 'I’m open to inspiration'}</option>
                 {availableDestinations.map((d) => (
                   <option key={d.slug} value={d.slug}>
-                    {d.name} ({d.airportCode}) — starting from ₹{d.startingPriceINR.toLocaleString('en-IN')}
+                    {d.name} ({d.airportCode})
                   </option>
                 ))}
               </select>
             </div>
 
-            {/* Budget Range */}
+            {/* Budget Range / Experience Tier */}
             <div className="md:col-span-2 space-y-2">
               <label className="text-xs font-mono text-muted-foreground flex items-center gap-1.5">
                 <Banknote className="w-3.5 h-3.5 text-bronze" />
-                <span>Price per guest</span>
+                <span>Experience Tier</span>
               </label>
               <select
                 value={budget}
                 onChange={(e) => setBudget(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl bg-obsidian border border-obsidian-border text-sm text-parchment focus:outline-none focus:ring-1 focus:ring-bronze"
               >
-                <option value="all">Any budget</option>
-                <option value="under50k">Under ₹50,000</option>
-                <option value="50k-100k">₹50k - ₹1 Lakh</option>
-                <option value="above100k">Above ₹1 Lakh</option>
+                <option value="all">All Tiers</option>
+                <option value="under50k">Essential Luxury</option>
+                <option value="50k-100k">Signature Expedition</option>
+                <option value="above100k">Ultra-Luxe Private</option>
               </select>
             </div>
 

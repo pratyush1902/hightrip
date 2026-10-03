@@ -64,7 +64,7 @@ export function RelatedPackages({ currentSlug }: RelatedPackagesProps) {
               </h4>
               <div className="pt-2 flex items-baseline justify-between text-xs font-mono">
                 <span className="text-sand font-bold">
-                  Starting from ₹{pkg.priceINR.toLocaleString('en-IN')}{pkg.hasStarMark ? '*' : ''}
+                  Price On Request
                 </span>
                 <span className="text-bronze text-[10px] uppercase font-semibold">
                   View Journey →

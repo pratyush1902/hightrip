@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { destinations } from '@/data/destinations';
 import { SectionHeader } from '@/components/common/SectionHeader';
+import { formatPriceDisplay } from '@/utils/pricing';
 
 export function FeaturedDestinations() {
   const featured = destinations.filter((d) => d.featured).slice(0, 8);
@@ -134,7 +135,7 @@ export function FeaturedDestinations() {
                 {dest.name}
               </h3>
               <span className="mono font-mono text-[11px] sm:text-xs text-bronze font-semibold whitespace-nowrap">
-                Starting from ₹{dest.startingPriceINR.toLocaleString('en-IN')}
+                {formatPriceDisplay(dest.startingPriceINR)}
               </span>
             </div>
 

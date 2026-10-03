@@ -66,8 +66,8 @@ export function PackageCard({ package: pkg, className = '' }: PackageCardProps) 
 
           {/* 4. Pricing */}
           <div className="pt-0.5">
-            <span className="font-mono text-sm sm:text-base font-bold text-[#1c1917] tracking-wide uppercase">
-              STARTING FROM ₹{pkg.priceINR.toLocaleString('en-IN')}{pkg.hasStarMark ? '*' : ''} / PERSON
+            <span className="font-mono text-xs sm:text-sm font-bold text-[#c48c58] tracking-wide uppercase">
+              PRICE ON REQUEST
             </span>
           </div>
 

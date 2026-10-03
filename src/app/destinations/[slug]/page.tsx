@@ -253,10 +253,10 @@ export default async function DestinationDetailPage({
                       </div>
                       <div className="absolute bottom-4 left-4 right-4 flex flex-col items-start">
                         <span className="text-[10px] font-mono uppercase tracking-wider text-stone-300 drop-shadow-sm">
-                          Starting from
+                          Bespoke Pricing
                         </span>
-                        <span className="text-2xl font-serif font-bold text-white drop-shadow-md">
-                          ₹{pkg.priceINR.toLocaleString('en-IN')}{pkg.hasStarMark ? '*' : ''}
+                        <span className="text-xl font-serif font-bold text-white drop-shadow-md">
+                          Price On Request
                         </span>
                       </div>
                     </div>

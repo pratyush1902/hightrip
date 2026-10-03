@@ -293,7 +293,7 @@ export function HeroWindow() {
             <span className="text-sand/40">·</span>
             <span className="text-sand">{current.destination.name}</span>
             <span className="text-sand/40">·</span>
-            <span className="text-bronze-light">Starting from ₹{current.destination.startingPriceINR.toLocaleString('en-IN')}</span>
+            <span className="text-bronze-light">Price On Request</span>
             <Link
               href={`/destinations/${current.destination.slug}`}
               className="ml-1 inline-flex items-center gap-1 text-parchment hover:text-bronze transition-colors underline"

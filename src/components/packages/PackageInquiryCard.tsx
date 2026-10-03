@@ -74,16 +74,15 @@ export function PackageInquiryCard({ pkg }: PackageInquiryCardProps) {
       {/* Price Block */}
       <div className="pb-4 border-b border-obsidian-border">
         <span className="text-[11px] font-mono uppercase tracking-wider text-muted-stone block">
-          Starting from
+          Bespoke Pricing
         </span>
         <div className="flex items-baseline gap-2 mt-1">
           <span className="text-3xl font-serif font-bold text-parchment">
-            ₹{pkg.priceINR.toLocaleString('en-IN')}{pkg.hasStarMark ? '*' : ''}
+            Price On Request
           </span>
-          <span className="text-xs text-muted-foreground font-mono">/ person</span>
         </div>
         <p className="text-[11px] font-mono text-bronze-light mt-1">
-          All local taxes included · Transparent published price
+          Customized itineraries · Instant quote via WhatsApp
         </p>
       </div>
 
@@ -171,9 +170,9 @@ export function PackageInquiryCard({ pkg }: PackageInquiryCardProps) {
 
           {/* Total Price preview */}
           <div className="p-3 rounded-lg bg-obsidian border border-obsidian-border flex items-center justify-between text-xs font-mono">
-            <span className="text-muted-foreground">Estimated Total ({guests} Guests):</span>
-            <span className="text-sm font-bold text-bronze-light">
-              ₹{totalPrice.toLocaleString('en-IN')}
+            <span className="text-muted-foreground">Estimated Quote ({guests} Guests):</span>
+            <span className="text-xs font-bold text-bronze-light">
+              Bespoke Quote On Request
             </span>
           </div>
 

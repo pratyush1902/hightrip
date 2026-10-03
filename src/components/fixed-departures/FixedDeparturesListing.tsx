@@ -130,7 +130,7 @@ export function FixedDeparturesListing() {
               <span>·</span>
               <span>{Object.keys(placeCounts).length - 1} destinations</span>
               <span>·</span>
-              <span className="text-[#c48c58]">starting from ₹19,999 per person</span>
+              <span className="text-[#c48c58]">Curated Rates On Request</span>
             </div>
 
             {/* Action buttons */}
@@ -321,13 +321,13 @@ export function FixedDeparturesListing() {
                   <div className="pt-4 border-t border-obsidian-border/80 flex items-end justify-between">
                     <div>
                       <div className="font-mono text-[10px] uppercase tracking-wider text-muted-stone">
-                        Starting from
+                        Group Departure
                       </div>
-                      <div className="font-serif text-2xl text-parchment font-semibold">
-                        ₹{holiday.priceINR.toLocaleString('en-IN')}{holiday.hasStarMark ? '*' : ''}
+                      <div className="font-serif text-xl text-parchment font-semibold">
+                        Price On Request
                       </div>
                       <div className="font-mono text-[11px] text-muted-foreground mt-0.5">
-                        per person · all taxes included
+                        Inquire for published dates
                       </div>
                     </div>
 

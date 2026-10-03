@@ -379,7 +379,7 @@ export function FlashSaleSlider() {
 
                     {/* Crisp Dim-to-Bright Savings Tag */}
                     <span className="dim-bright-badge px-3 py-1.5 rounded-full text-xs font-mono font-bold tracking-tight bg-red-950/85 text-red-200 border border-red-500 backdrop-blur-md">
-                      SAVE ₹{tour.savings.toLocaleString('en-IN')}
+                      LIMITED FIXED DEPARTURE
                     </span>
                   </div>
 
@@ -405,7 +405,7 @@ export function FlashSaleSlider() {
                   <div className="flex items-center justify-between text-xs sm:text-sm font-mono text-red-300 bg-red-950/40 border border-red-900/60 px-4 py-2 rounded-xl">
                     <span className="flex items-center gap-2">
                       <span className="beacon-pulse inline-flex h-2.5 w-2.5 rounded-full bg-red-500"></span>
-                      <span>Only {tour.slotsLeft} slots remaining at this price</span>
+                      <span>Only {tour.slotsLeft} slots remaining for departure</span>
                     </span>
                     <span className="text-[11px] text-stone-400 uppercase font-semibold">{tour.airportCode}</span>
                   </div>
@@ -442,20 +442,15 @@ export function FlashSaleSlider() {
               <div className="p-6 sm:p-8 pt-0 border-t border-[#261414] mt-2">
                 <div className="flex items-baseline justify-between pt-5 pb-5">
                   <div>
-                    <span className="text-sm text-stone-400 line-through font-mono">
-                      ₹{tour.originalPrice.toLocaleString('en-IN')}
-                    </span>
                     <div className="flex items-baseline gap-2">
-                      <span className="text-xs font-mono text-stone-400">Starting from</span>
-                      <span className="text-3xl sm:text-4xl font-serif font-bold text-red-400 tracking-tight">
-                        ₹{tour.flashPrice.toLocaleString('en-IN')}
+                      <span className="text-2xl sm:text-3xl font-serif font-bold text-red-400 tracking-tight">
+                        Price On Request
                       </span>
-                      <span className="text-xs font-mono text-stone-400">/ person</span>
                     </div>
                   </div>
 
                   <span className="dim-bright-badge text-xs sm:text-sm font-mono font-bold px-3 py-1 rounded-lg bg-red-950/80 text-red-300 border border-red-500/80">
-                    {tour.discountPercent}% OFF
+                    EXCLUSIVELY CURATED
                   </span>
                 </div>
 

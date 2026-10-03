@@ -74,22 +74,17 @@ export function PackageDetailHero({ pkg }: PackageDetailHeroProps) {
         <div className="mt-8 flex flex-wrap items-baseline gap-4 pt-5 border-t border-white/15">
           <div>
             <span className="text-[11px] font-mono uppercase tracking-wider text-stone-400 block font-medium mb-1">
-              Starting from
+              Bespoke Pricing
             </span>
             <div className="flex items-baseline gap-2">
               <span className="text-3xl sm:text-4xl font-serif font-bold text-white drop-shadow-md">
-                ₹{pkg.priceINR.toLocaleString('en-IN')}{pkg.hasStarMark ? '*' : ''}
+                Price On Request
               </span>
-              {pkg.originalPriceINR && (
-                <span className="ml-2 text-base font-mono text-stone-400 line-through">
-                  ₹{pkg.originalPriceINR.toLocaleString('en-IN')}
-                </span>
-              )}
             </div>
           </div>
 
           <div className="text-xs font-mono text-[#e0a66d] bg-black/70 backdrop-blur-md px-4 py-2 rounded-xl border border-[#c48c58]/40 shadow-lg">
-            All taxes included · Transparent pricing
+            Custom Tailored · Guaranteed Best Rates
           </div>
         </div>
       </div>

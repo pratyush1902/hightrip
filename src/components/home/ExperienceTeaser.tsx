@@ -89,12 +89,12 @@ export function ExperienceTeaser() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6">
-                <span className="font-mono text-[11px] text-bronze-light uppercase tracking-wider block">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
+              <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-black/75 backdrop-blur-md border border-white/15 p-4 sm:p-5 rounded-xl shadow-xl">
+                <span className="font-mono text-[10px] sm:text-[11px] text-[#e2b785] uppercase tracking-widest font-semibold block mb-1">
                   Field Dispatch · Port Blair & Vietnam DMZ
                 </span>
-                <p className="font-serif italic text-lg text-parchment mt-1">
+                <p className="font-serif italic text-sm sm:text-base text-[#fbf9f5] leading-snug">
                   “A memorial is not a backdrop for a vacation selfie; it is a conversation across generations.”
                 </p>
               </div>

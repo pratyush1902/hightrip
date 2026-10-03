@@ -142,8 +142,8 @@ export function DestinationsListing() {
                     <h2 className="font-serif text-2xl text-parchment tracking-tight group-hover:text-bronze-light transition-colors">
                       {dest.name}
                     </h2>
-                    <span className="font-mono text-xs text-bronze-light bg-black/70 px-2 py-1 rounded border border-bronze/20">
-                      Starting from ₹{dest.startingPriceINR.toLocaleString('en-IN')}
+                    <span className="font-mono text-xs text-bronze-light bg-black/70 px-2.5 py-1 rounded border border-bronze/20">
+                      Price On Request
                     </span>
                   </div>
                   <p className="mt-1 text-xs text-sand/80 line-clamp-1 font-light">

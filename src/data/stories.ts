@@ -13,7 +13,7 @@ export const travelStories: TravelStory[] = [
     publishedAt: '12 Sep 2026',
     readingTime: '5 min read',
     category: 'Field Notes',
-    coverImage: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1644406733884-f90d90af8bc8?auto=format&fit=crop&w=1600&q=80',
     content: {
       lead: 'To travel is to witness what people build, what they celebrate, and inevitably, what they have survived.',
       sections: [

@@ -190,7 +190,7 @@ export function Navbar() {
                                   </span>
                                 </div>
                                 <div className="text-[11px] font-mono text-bronze">
-                                  Starting from ₹{dest.startingPriceINR.toLocaleString('en-IN')}
+                                  Price On Request
                                 </div>
                               </div>
                             </Link>

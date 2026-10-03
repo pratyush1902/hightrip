@@ -133,7 +133,7 @@ export function Hero() {
       if (introEl) {
         masterTl.to(
           introEl,
-          { opacity: 0, y: -30, ease: 'power1.out', duration: 0.10 },
+          { opacity: 0, y: -30, ease: 'power1.out', duration: 0.05 },
           0
         );
       }
@@ -236,7 +236,9 @@ export function Hero() {
 
         {/* Layer 2: Editorial Typography & Intro (Visible in Initial View) */}
         <div
-          className="relative z-20 w-full h-full max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 flex items-start lg:items-center pt-24 sm:pt-28 lg:pt-0 pointer-events-none"
+          className={`relative z-20 w-full h-full max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 flex items-start lg:items-center pt-24 sm:pt-28 lg:pt-0 pointer-events-none transition-opacity duration-300 ${
+            isExpanded ? 'opacity-0 invisible pointer-events-none' : 'opacity-100'
+          }`}
         >
           <div className="w-full lg:w-1/2 pointer-events-auto">
             <HeroIntro
