@@ -14,19 +14,23 @@ function checkUrl(url) {
 
 async function run() {
   try {
+    const sitemapHtmlRes = await checkUrl('http://localhost:3000/sitemap');
+    console.log('--- VISUAL /sitemap PAGE RESULT ---');
+    console.log('Status:', sitemapHtmlRes.status);
+    console.log('Content-Type:', sitemapHtmlRes.contentType);
+    console.log('Length:', sitemapHtmlRes.length);
+
     const robotsRes = await checkUrl('http://localhost:3000/robots.txt');
-    console.log('--- ROBOTS.TXT RESULT ---');
+    console.log('\n--- ROBOTS.TXT RESULT ---');
     console.log('Status:', robotsRes.status);
     console.log('Content-Type:', robotsRes.contentType);
-    console.log('Snippet:\n', robotsRes.snippet);
 
-    const sitemapRes = await checkUrl('http://localhost:3000/sitemap.xml');
+    const sitemapXmlRes = await checkUrl('http://localhost:3000/sitemap.xml');
     console.log('\n--- SITEMAP.XML RESULT ---');
-    console.log('Status:', sitemapRes.status);
-    console.log('Content-Type:', sitemapRes.contentType);
-    console.log('Snippet:\n', sitemapRes.snippet);
+    console.log('Status:', sitemapXmlRes.status);
+    console.log('Content-Type:', sitemapXmlRes.contentType);
   } catch (err) {
-    console.error('Error fetching SEO endpoints:', err.message);
+    console.error('Error fetching endpoints:', err.message);
   }
 }
 
