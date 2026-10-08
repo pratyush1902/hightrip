@@ -5,7 +5,7 @@ import { travelStories } from '@/data/stories';
 import { availableExperiences } from '@/data/experiences';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://hightripholidays.ronic.ai';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://hightripholidays.in';
   const currentDate = new Date();
 
   // Static high-priority pages

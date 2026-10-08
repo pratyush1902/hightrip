@@ -51,12 +51,12 @@ export const metadata: Metadata = {
     'fixed departures',
   ],
   authors: [{ name: 'High Trip Holidays Private Limited' }],
-  metadataBase: new URL('https://hightripholidays.ronic.ai'),
+  metadataBase: new URL('https://hightripholidays.in'),
   openGraph: {
     title: 'High Trip Holidays | A window to somewhere extraordinary',
     description:
       'Find your next view with High Trip Holidays. Thoughtfully planned international holidays, India escapes, and meaningful dark-tourism experiences.',
-    url: 'https://hightripholidays.ronic.ai',
+    url: 'https://hightripholidays.in',
     siteName: 'High Trip Holidays',
     locale: 'en_IN',
     type: 'website',
@@ -94,7 +94,7 @@ export default function RootLayout({
               name: 'High Trip Holidays',
               legalName: 'High Trip Holidays Private Limited',
               slogan: 'Travel. Explore. Experience.',
-              url: 'https://hightripholidays.ronic.ai/',
+              url: 'https://hightripholidays.in/',
               telephone: '+919155566268',
               email: 'sales@hightripholidays.in',
               address: {

@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "hightripholidays.ronic.ai",
+        hostname: "hightripholidays.in",
       },
       {
         protocol: "https",
