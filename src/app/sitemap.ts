@@ -1,64 +1,96 @@
 import { MetadataRoute } from 'next';
-import { travelPackages } from '@/data/packages';
 import { destinations } from '@/data/destinations';
+import { travelPackages } from '@/data/packages';
 import { travelStories } from '@/data/stories';
 import { availableExperiences } from '@/data/experiences';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://hightripholidays.ronic.ai';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://hightripholidays.ronic.ai';
+  const currentDate = new Date();
 
-  // Static Pages
-  const staticRoutes = [
-    '',
-    '/packages',
-    '/fixed-departures',
-    '/destinations',
-    '/experiences',
-    '/about',
-    '/contact',
-    '/enquire',
-    '/blog',
-    '/privacy-policy',
-    '/terms',
-    '/cancellation-policy',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1.0 : 0.8,
-  }));
+  // Static high-priority pages
+  const staticRoutes: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}`,
+      lastModified: currentDate,
+      changeFrequency: 'daily',
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/destinations`,
+      lastModified: currentDate,
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/packages`,
+      lastModified: currentDate,
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/fixed-departures`,
+      lastModified: currentDate,
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/experiences`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+  ];
 
-  // Dynamic Packages
-  const packageRoutes = travelPackages.map((pkg) => ({
-    url: `${baseUrl}/packages/${pkg.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.9,
-  }));
-
-  // Dynamic Destinations
-  const destinationRoutes = destinations.map((dest) => ({
+  // Dynamic destination routes
+  const destinationRoutes: MetadataRoute.Sitemap = destinations.map((dest) => ({
     url: `${baseUrl}/destinations/${dest.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.85,
+    lastModified: currentDate,
+    changeFrequency: 'weekly',
+    priority: 0.8,
   }));
 
-  // Dynamic Blog Stories
-  const storyRoutes = travelStories.map((story) => ({
+  // Dynamic package routes
+  const packageRoutes: MetadataRoute.Sitemap = travelPackages.map((pkg) => ({
+    url: `${baseUrl}/packages/${pkg.slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly',
+    priority: 0.8,
+  }));
+
+  // Dynamic blog / journal routes
+  const blogRoutes: MetadataRoute.Sitemap = travelStories.map((story) => ({
     url: `${baseUrl}/blog/${story.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
+    lastModified: currentDate,
+    changeFrequency: 'monthly',
     priority: 0.7,
   }));
 
-  // Dynamic Experiences
-  const experienceRoutes = availableExperiences.map((exp) => ({
+  // Dynamic experience routes
+  const experienceRoutes: MetadataRoute.Sitemap = availableExperiences.map((exp) => ({
     url: `${baseUrl}/experiences/${exp.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.85,
+    lastModified: currentDate,
+    changeFrequency: 'monthly',
+    priority: 0.8,
   }));
 
-  return [...staticRoutes, ...packageRoutes, ...destinationRoutes, ...storyRoutes, ...experienceRoutes];
+  return [...staticRoutes, ...destinationRoutes, ...packageRoutes, ...blogRoutes, ...experienceRoutes];
 }
